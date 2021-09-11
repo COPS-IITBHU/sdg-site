@@ -1,0 +1,51 @@
+{
+  "name": "template",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build -m=client",
+    "start": "nuxt start",
+    "generate": "nuxt generate -m",
+    "lint": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
+    "lint:fix": "pnpm lint --fix",
+    "format": "prettier --write . --ignore-path ./.gitignore"
+  },
+  "dependencies": {
+    "@iconify/iconify": "^2.0.1",
+    "@nuxt/content": "^1.9.0",
+    "@nuxt/image": "^0.6.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/composition-api": "^0.29.0",
+    "@nuxtjs/pwa": "^3.0.2",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.6",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@vue/runtime-dom": "^3.2.11",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.6.0",
+    "eslint-plugin-vuejs-accessibility": "^0.7.1",
+    "fibers": "^5.0.0",
+    "husky": "^7.0.2",
+    "is-ci": "^3.0.0",
+    "nuxt-purge-icons-module": "^0.7.0",
+    "nuxt-windicss": "^1.2.3",
+    "prettier": "^2.1.2",
+    "sass": "^1.35.2",
+    "sass-loader": "^10.1.1"
+  },
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=3"
+  }
+}
