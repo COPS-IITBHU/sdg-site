@@ -84,6 +84,9 @@ export default {
       },
     },
   },
+  sitemap: {
+    hostname: 'https://sdg.copsiitbhu.co.in',
+  },
   generate: {
     crawler: true,
     fallback: true,
