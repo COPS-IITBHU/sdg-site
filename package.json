@@ -9,7 +9,8 @@
     "generate": "nuxt generate -m",
     "lint": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
     "lint:fix": "pnpm lint --fix",
-    "format": "prettier --write . --ignore-path ./.gitignore"
+    "format": "prettier --write . --ignore-path ./.gitignore",
+    "postinstall": "is-ci || husky install"
   },
   "dependencies": {
     "@iconify/iconify": "^2.0.1",
