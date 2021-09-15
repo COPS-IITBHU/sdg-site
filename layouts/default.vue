@@ -1,13 +1,23 @@
 <template>
-  <nuxt />
+  <main>
+    <header>
+      <Navbar />
+    </header>
+    <Nuxt />
+  </main>
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api';
+import Navbar from '@/components/navbar.vue';
+export default defineComponent({
+  components: {
+    Navbar,
+  },
   data() {
     return {
       title: 'SDG Site',
     };
   },
-};
+});
 </script>
