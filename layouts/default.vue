@@ -1,7 +1,7 @@
 <template>
   <main>
     <header>
-      <Navbar />
+      <navbar />
     </header>
     <Nuxt />
   </main>
@@ -9,11 +9,8 @@
 
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
-import Navbar from '@/components/navbar.vue';
+
 export default defineComponent({
-  components: {
-    Navbar,
-  },
   data() {
     return {
       title: 'SDG Site',

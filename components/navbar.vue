@@ -1,30 +1,55 @@
 <template>
   <nav>
-    <div class="box" @click="play" @keydown="play">
-      <div class="burgers b1"></div>
-      <div class="burgers b2"></div>
-      <div class="burgers b3"></div>
+    <div
+      class="box fixed flex w-30px h-30px top-50px right-50px"
+      @click="play"
+      @keydown="play"
+    >
+      <div class="burgers w-3/5 h-1/10 bg-black"></div>
+      <div class="burgers w-4/5 h-1/10 bg-black"></div>
+      <div class="burgers w-full h-1/10 bg-black"></div>
     </div>
-    <div v-if="show" class="container">
-      <div class="circle"></div>
-      <div class="menu_container">
-        <ul class="menu">
-          <li class="list_item" @click="pause" @keydown="pause">
+    <div v-if="show" class="container fixed flex w-full h-screen">
+      <div class="circle fixed w-0 h-0"></div>
+      <div class="flex fixed">
+        <ul class="menu fixed top-half left-half">
+          <li class="list_item py-20px my-40px" @click="pause" @keydown="pause">
             <nuxt-link to="/">Home</nuxt-link>
           </li>
-          <li class="list_item" @click="pause" @keydown="pause">
+          <li
+            class="list_item py-20px my-40px mx-15px"
+            @click="pause"
+            @keydown="pause"
+          >
             <nuxt-link to="/projects">Projects</nuxt-link>
           </li>
-          <li class="list_item" @click="pause" @keydown="pause">
+          <li class="list_item py-20px my-40px" @click="pause" @keydown="pause">
             <nuxt-link to="/">Blogs</nuxt-link>
           </li>
-          <li class="list_item" @click="pause" @keydown="pause">
+          <li class="list_item py-20px my-40px" @click="pause" @keydown="pause">
             <nuxt-link to="/">About Us</nuxt-link>
           </li>
         </ul>
-        <div class="close" @click="pause" @keydown="pause">
-          <div class="cross cross1"></div>
-          <div class="cross cross2"></div>
+        <div
+          class="
+            close
+            justify-center
+            items-center
+            opacity-0
+            flex-col
+            hidden
+            cursor-pointer
+            fixed
+            w-30px
+            h-30px
+            top-50px
+            right-50px
+          "
+          @click="pause"
+          @keydown="pause"
+        >
+          <div class="w-full h-1/10 absolute bg-white cross1"></div>
+          <div class="w-full h-1/10 absolute bg-white cross2"></div>
         </div>
       </div>
     </div>
@@ -33,13 +58,13 @@
 
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
-import gsap from 'gsap';
 
 export default defineComponent({
   data() {
     return {
       show: false,
       t1: null,
+      hover: false,
     };
   },
   mounted() {},
@@ -49,7 +74,7 @@ export default defineComponent({
     },
     async play() {
       await this.showEl();
-      this.t1 = gsap
+      this.t1 = this.$gsap
         .timeline({ paused: true })
         .to('.circle', { duration: 0.5, width: '300%', height: '300vh' })
         .to('.menu_container', { display: 'flex' })
@@ -76,65 +101,31 @@ export default defineComponent({
 }
 
 .container {
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
   overflow: hidden;
-  position: fixed;
 }
 
 .box {
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  width: 30px;
-  height: 30px;
   cursor: pointer;
-  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.burgers {
-  height: 10%;
-  background: #000000;
-}
-.b1 {
-  width: 60%;
-}
-.b2 {
-  width: 80%;
-}
-.b3 {
-  width: 100%;
-}
-
 .circle {
   clip-path: circle(50%);
-  background: #30663e;
-  width: 0;
-  height: 0;
-  position: fixed;
-}
-
-.menu_container {
-  top: 20%;
-  position: fixed;
-  display: flex;
+  background: #2c2525;
 }
 
 .menu {
-  left: 0;
   list-style: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .list_item {
   position: relative;
-  padding: 20px 15px;
-  margin: 40px 15px;
   font-size: 35px;
   letter-spacing: 12px;
   font-family: 'Montserrat', sans-serif;
@@ -145,7 +136,8 @@ export default defineComponent({
   opacity: 0;
 }
 
-.list_item::before {
+.list_item:before {
+  content: ' ';
   display: block;
   position: absolute;
   right: 0;
@@ -156,11 +148,12 @@ export default defineComponent({
   transition: 0.3s;
 }
 
-.list_item:hover::before {
+.list_item:hover:before {
   width: 50%;
 }
 
-.list_item::after {
+.list_item:after {
+  content: ' ';
   display: block;
   position: absolute;
   bottom: 0;
@@ -172,35 +165,12 @@ export default defineComponent({
   transition: 0.3s;
 }
 
-.list_item:hover::after {
+.list_item:hover:after {
   width: 50%;
 }
-
-.close {
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.cross {
-  position: absolute;
-  width: 100%;
-  height: 10%;
-  background: #ffffff;
-}
-
 .cross1 {
   transform: rotate(45deg);
 }
-
 .cross2 {
   transform: rotate(-45deg);
 }

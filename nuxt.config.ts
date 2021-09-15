@@ -43,6 +43,7 @@ export default {
     '@nuxtjs/composition-api/module',
     'nuxt-purge-icons-module',
     '@nuxt/image',
+    'nuxt-gsap-module',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -109,5 +110,8 @@ export default {
         'nuxt-img': 'img',
       },
     },
+  },
+  gsap: {
+    /* module options */
   },
 };
