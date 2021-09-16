@@ -112,6 +112,9 @@ export default {
     },
   },
   gsap: {
-    /* module options */
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true
+    },
   },
 };

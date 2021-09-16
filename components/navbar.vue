@@ -1,7 +1,18 @@
 <template>
   <nav>
     <div
-      class="box fixed flex w-30px h-30px top-50px right-50px"
+      class="
+        cursor-pointer
+        items-center
+        flex-col
+        justify-around
+        fixed
+        flex
+        w-30px
+        h-30px
+        top-50px
+        right-50px
+      "
       @click="play"
       @keydown="play"
     >
@@ -9,10 +20,30 @@
       <div class="burgers w-4/5 h-1/10 bg-black"></div>
       <div class="burgers w-full h-1/10 bg-black"></div>
     </div>
-    <div v-if="show" class="container fixed flex w-full h-screen">
+    <div
+      v-if="show"
+      class="
+        overflow-hidden
+        z-1
+        items-center
+        justify-center
+        fixed
+        flex
+        w-full
+        h-screen
+      "
+    >
       <div class="circle fixed w-0 h-0"></div>
       <div class="flex fixed">
-        <ul class="menu fixed top-half left-half">
+        <ul
+          class="
+            transform
+            -translate-x-half -translate-y-half
+            fixed
+            top-half
+            left-half
+          "
+        >
           <nuxt-link to="/">
             <li
               class="list_item py-20px my-40px"
@@ -68,8 +99,12 @@
           @click="pause"
           @keydown="pause"
         >
-          <div class="w-full h-1/10 absolute bg-white cross1"></div>
-          <div class="w-full h-1/10 absolute bg-white cross2"></div>
+          <div
+            class="w-full transform rotate-45 h-1/10 absolute bg-white"
+          ></div>
+          <div
+            class="w-full transform -rotate-45 h-1/10 absolute bg-white"
+          ></div>
         </div>
       </div>
     </div>
@@ -114,34 +149,9 @@ export default defineComponent({
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.box {
-  cursor: pointer;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .circle {
   clip-path: circle(50%);
   background: #2c2525;
-}
-
-.menu {
-  list-style: none;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .list_item {
@@ -187,11 +197,5 @@ export default defineComponent({
 
 .list_item:hover:after {
   width: 50%;
-}
-.cross1 {
-  transform: rotate(45deg);
-}
-.cross2 {
-  transform: rotate(-45deg);
 }
 </style>
