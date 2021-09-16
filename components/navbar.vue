@@ -13,22 +13,42 @@
       <div class="circle fixed w-0 h-0"></div>
       <div class="flex fixed">
         <ul class="menu fixed top-half left-half">
-          <li class="list_item py-20px my-40px" @click="pause" @keydown="pause">
-            <nuxt-link to="/">Home</nuxt-link>
-          </li>
-          <li
-            class="list_item py-20px my-40px mx-15px"
-            @click="pause"
-            @keydown="pause"
-          >
-            <nuxt-link to="/projects">Projects</nuxt-link>
-          </li>
-          <li class="list_item py-20px my-40px" @click="pause" @keydown="pause">
-            <nuxt-link to="/">Blogs</nuxt-link>
-          </li>
-          <li class="list_item py-20px my-40px" @click="pause" @keydown="pause">
-            <nuxt-link to="/">About Us</nuxt-link>
-          </li>
+          <nuxt-link to="/">
+            <li
+              class="list_item py-20px my-40px"
+              @click="pause"
+              @keydown="pause"
+            >
+              Home
+            </li>
+          </nuxt-link>
+          <nuxt-link to="/projects">
+            <li
+              class="list_item py-20px my-40px mx-15px"
+              @click="pause"
+              @keydown="pause"
+            >
+              Projects
+            </li>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <li
+              class="list_item py-20px my-40px"
+              @click="pause"
+              @keydown="pause"
+            >
+              Blogs
+            </li>
+          </nuxt-link>
+          <nuxt-link to="/">
+            <li
+              class="list_item py-20px my-40px"
+              @click="pause"
+              @keydown="pause"
+            >
+              About Us
+            </li>
+          </nuxt-link>
         </ul>
         <div
           class="
@@ -77,7 +97,6 @@ export default defineComponent({
       this.t1 = this.$gsap
         .timeline({ paused: true })
         .to('.circle', { duration: 0.5, width: '300%', height: '300vh' })
-        .to('.menu_container', { display: 'flex' })
         .to('.list_item', { duration: 0.3, y: 0, stagger: 0.15, opacity: 1 })
         .to('.close', { display: 'block' })
         .to('.close', { opacity: 1, duration: 0.07 });
@@ -104,6 +123,7 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: 1;
 }
 
 .box {
