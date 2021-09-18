@@ -22,9 +22,11 @@ specifiers:
   eslint-plugin-vue: ^7.6.0
   eslint-plugin-vuejs-accessibility: ^0.7.1
   fibers: ^5.0.0
+  gsap: ^3.7.1
   husky: ^7.0.2
   is-ci: ^3.0.0
   nuxt: ^2.14.6
+  nuxt-gsap-module: ^1.4.0
   nuxt-purge-icons-module: ^0.7.0
   nuxt-windicss: ^1.2.3
   prettier: ^2.1.2
@@ -41,6 +43,7 @@ dependencies:
   '@nuxtjs/robots': 2.5.0
   '@nuxtjs/sitemap': 2.4.0
   core-js: 3.17.3
+  gsap: 3.7.1
   nuxt: 2.15.8
 
 devDependencies:
@@ -58,6 +61,7 @@ devDependencies:
   fibers: 5.0.0
   husky: 7.0.2
   is-ci: 3.0.0
+  nuxt-gsap-module: 1.4.0
   nuxt-purge-icons-module: 0.7.0
   nuxt-windicss: 1.2.3
   prettier: 2.4.0
@@ -5521,6 +5525,9 @@ packages:
       strip-bom-string: 1.0.0
     dev: false
 
+  /gsap/3.7.1:
+    resolution: {integrity: sha512-4qxuaC2yFWRjMRof5tI/7c9/+L4xMsCoqHrZAmuh+IbOokTnZyoeF0VgvcVHq3uo+/VJZCs7PTvjrFasfGl+ww==}
+
   /gzip-size/6.0.0:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
     engines: {node: '>=10'}
@@ -7494,6 +7501,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
     optional: true
+
+  /nuxt-gsap-module/1.4.0:
+    resolution: {integrity: sha512-fnAje9u9bmGMUj90BCinNS3zZZeXFHqcD9DwnZ5rJJJ36XF64iUwOM9aWgTCrx88cMTB7HHL9y30k0d6HxvPLg==}
+    dependencies:
+      gsap: 3.7.1
+    dev: true
 
   /nuxt-purge-icons-module/0.7.0:
     resolution: {integrity: sha512-sldOBwAKlt0ZkbcMqg8UiVbPBB0d0zjHS13bE+iklebNgwTm3hLE8NMTe551/T5BAnfHOXmV7Mr11iwv7hiQZA==}
