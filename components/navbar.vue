@@ -24,7 +24,7 @@
       v-if="show"
       class="
         overflow-hidden
-        z-1
+        z-10
         items-center
         justify-center
         fixed
