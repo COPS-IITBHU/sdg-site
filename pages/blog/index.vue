@@ -1,6 +1,8 @@
 <template>
   <div class="container mx-auto">
-    <h1 class="text-5xl font-bold text-center my-8">Blogs📚</h1>
+    <h1 class="text-5xl font-bold text-center my-8">
+      Blogs<span role="img" aria-label="books">📚</span>
+    </h1>
     <section class="text-gray-700 body-font overflow-hidden">
       <div class="container px-5 pt-24 mx-auto">
         <div v-for="article in articles" :key="article.id" class="-my-8">
@@ -33,7 +35,7 @@
           </nuxt-link>
         </div>
       </div>
-    </section>      
+    </section>
   </div>
 </template>
 
@@ -41,15 +43,15 @@
 export default {
   name: 'Blog',
   filters: {},
-  async asyncData({ $content, app }) {
+  async asyncData({ $content }) {
     let articles;
     try {
-      articles = await $content(`blog`, {deep:true}).sortBy('date', 'asc').fetch();
+      articles = await $content(`blog`, { deep: true })
+        .sortBy('date', 'asc')
+        .fetch();
     } catch (error) {
       try {
-        articles = await $content(`blog`)
-          .sortBy('date', 'desc')
-          .fetch();
+        articles = await $content(`blog`).sortBy('date', 'desc').fetch();
       } catch (error) {
         return { statusCode: 404, message: 'Page not found' };
       }

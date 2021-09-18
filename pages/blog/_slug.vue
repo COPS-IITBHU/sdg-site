@@ -32,9 +32,9 @@
           >
           <ul v-if="post.tags" class="flex space-x-3 mt-2">
             <li
-              class="text-gray-400 font-bold"
               v-for="tag in post.tags"
               :key="tag"
+              class="text-gray-400 font-bold"
             >
               {{ tag }}
             </li>
@@ -49,15 +49,14 @@
 
 <script>
 export default {
-  async asyncData({ $content, app, params }) {
+  async asyncData({ $content, params }) {
     const { slug } = params;
-    console.log(slug);
     let post;
     try {
-      post = await $content(`blog`, slug, {deep:true}).fetch();
+      post = await $content(`blog`, slug, { deep: true }).fetch();
     } catch (error) {
       try {
-        post = await $content(`blog`, slug, {deep:true}).fetch();
+        post = await $content(`blog`, slug, { deep: true }).fetch();
       } catch (error) {
         return { statusCode: 404, message: 'Page not found' };
       }

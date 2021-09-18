@@ -47,9 +47,9 @@ You may choose to compete in any number of tracks.
 
 #### Topics for Week 1
 
-1. [Android Development]()
-2. [Web Development]()
-3. [Cross Platform Development using Flutter]()
+1. [Android Development](csoc21-frontend-week1-Native-Android)
+2. [Web Development](csoc21-frontend-week1-Web-Development)
+3. [Cross Platform Development using Flutter](csoc21-frontend-week1-Flutter)
 
 # Week 2
 
@@ -67,9 +67,9 @@ You may choose to compete in any number of tracks.
 
 #### Topics for Week 2
 
-1. [Android Development]()
-2. [Web Development]()
-3. [Cross Platform Development using Flutter]()
+1. [Android Development](csoc21-frontend-week2-Native-Android)
+2. [Web Development](csoc21-frontend-week2-Web-Development)
+3. [Cross Platform Development using Flutter](csoc21-frontend-week2-Flutter)
 
 # Week 3
 
@@ -83,10 +83,10 @@ You may choose to compete in any number of tracks.
 
 #### Topics for Week 3
 
-1. [Flutter (Network Calls)]()
-2. [Javascript Framework VueJS]()
-3. [JavaScript Library React]()
-4. [Android (Network Calls)]()
+1. [Flutter (Network Calls)](csoc21-frontend-week3-Flutter)
+2. [Javascript Framework VueJS](csoc21-frontend-week3-VueJS)
+3. [JavaScript Library React](csoc21-frontend-week3-React)
+4. [Android (Network Calls)](csoc21-frontend-week3-Native-Android)
 
 # Things to keep in mind
 
