@@ -15,7 +15,7 @@ subblogs: [ "csoc21-frontend-week0-GitGitHub.md",
             "csoc21-frontend-week3-VueJS.md",
             "csoc21-frontend-week3-React.md",
             "csoc21-frontend-week3-Native-Android.md"]
-initial-display: True
+display: True
 ---
 ## CSOC'21 Dev Frontend
 
