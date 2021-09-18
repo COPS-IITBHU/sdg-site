@@ -11,7 +11,7 @@ Welcome to CSoC'21 Dev! Here's all the resources and tasks you need to know, com
 
 All the great learning resources of COPS Dev group can also be found at [COPS Dev Resources](https://copsiitbhu.co.in/resources/dev/).
 
-For backend resources you should refer [CSoC'21 Dev Backend](https://www.notion.so/CSoC-21-Dev-Backend-640126aa2ec2473ab98f6fd316a229c9).
+For backend resources you should refer [CSoC'21 Dev Backend](csoc21-backend).
 
 # Week 0
 
