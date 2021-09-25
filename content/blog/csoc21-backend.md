@@ -2,8 +2,14 @@
 title: CSOC'21 Dev Backend
 date: 2020-09-21T11:51:59.091Z
 description: "Welcome to CSoC'21 Dev! Here's all the resources and tasks you need to know, complete, and focus on for every week."
-array: [1,2,3]
+subblogs: [ "csoc21-backend-week4-Django.md",
+            "csoc21-backend-week4-Express.md",
+            "csoc21-backend-week5-Django-REST-Framework.md",
+            "csoc21-backend-week5-Express-REST-Framework.md"]
+display: True
 ---
+
+
 # CSoC'21 Dev Backend
 
 Welcome to CSoC'21 Dev! Here's all the backend resources and tasks you need to know, complete, and focus on for every week.
@@ -24,7 +30,11 @@ This week you will learn about two most popular backend frameworks **Django** an
 
 You may choose to compete in any number of tracks.
 
-[Topics for Week 4](CSoC'21%20Dev%20Backend%20303739b6f07c4cee8e66f291556cb92a/Topics%20for%20Week%204%2016768cd61fe649ab90e958e95c2e1eb5.csv)
+#### Topics for Week 4
+
+1. [Django](csoc21-backend-week4-Django)
+2. [Express](csoc21-backend-week4-Express)
+
 
 # Week 5
 
@@ -40,7 +50,11 @@ Needless to say, we have so lovingly prepared an assignment for you that will ma
 
 You may choose to compete in any number of tracks.
 
-[ Topics for Week 5](CSoC'21%20Dev%20Backend%20303739b6f07c4cee8e66f291556cb92a/Topics%20for%20Week%205%2076c4776161dc4e679ba5d65cc99a5b49.csv)
+#### Topics for Week 5
+
+1. [Django](csoc21-backend-week5-Django-REST-Framework)
+2. [Express](csoc21-backend-week5-Express-REST-Framework)
+
 
 # Things to keep in mind
 
