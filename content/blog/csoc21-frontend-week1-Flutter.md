@@ -2,6 +2,7 @@
 title: Flutter - CSOC'21 Dev Frontend Week 1
 date: 2020-09-21T11:51:59.091Z
 description: "Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase."
+parentBlog: CSOC'21 Dev Frontend
 ---
 # Flutter
 

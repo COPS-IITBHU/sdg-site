@@ -2,19 +2,6 @@
 title: CSOC'21 Dev Frontend
 date: 2020-09-21T11:51:59.091Z
 description: "Welcome to CSoC'21 Dev! Here's all the resources and tasks you need to know, complete, and focus on for every week."
-subblogs: [ "csoc21-frontend-week0-GitGitHub.md",
-            "csoc21-frontend-week0-Linux.md",
-            "csoc21-frontend-week0-Web-Dev-Basics.md",
-            "csoc21-frontend-week1-Native-Android.md",
-            "csoc21-frontend-week1-Web-Development.md",
-            "csoc21-frontend-week1-Flutter.md",
-            "csoc21-frontend-week2-Native-Android.md",
-            "csoc21-frontend-week2-Web-Development.md",
-            "csoc21-frontend-week2-Flutter.md",
-            "csoc21-frontend-week3-Flutter.md",
-            "csoc21-frontend-week3-VueJS.md",
-            "csoc21-frontend-week3-React.md",
-            "csoc21-frontend-week3-Native-Android.md"]
 display: True
 ---
 ## CSOC'21 Dev Frontend

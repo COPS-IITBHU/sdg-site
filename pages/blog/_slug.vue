@@ -48,24 +48,23 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api';
+
+export default defineComponent({
   async asyncData({ $content, params }) {
     const { slug } = params;
     let post;
     try {
-      post = await $content(`blog`, slug, { deep: true }).fetch();
-    } catch (error) {
-      try {
-        post = await $content(`blog`, slug, { deep: true }).fetch();
-      } catch (error) {
-        return { statusCode: 404, message: 'Page not found' };
-      }
+      post = await $content(`blog`, slug).fetch();
+    } 
+    catch (error) {
+      return { statusCode: 404, message: 'Page not found' };
     }
     return {
       post,
     };
   },
-};
+});
 </script>
 
 <style>

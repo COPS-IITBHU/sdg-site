@@ -20,7 +20,7 @@
                   >Dev</span
                 >
                 <span class="mt-1 text-gray-500 text-md">{{
-                  article.createdAt
+                  article.date.substring(0, 10)
                 }}</span>
               </div>
               <div class="md:flex-grow">
@@ -28,7 +28,7 @@
                   {{ article.title }}
                 </h2>
                 <p class="leading-relaxed">
-                  {{ article.description }}
+                  {{ article.description.substring(0, 150) }}...
                 </p>
               </div>
             </div>
@@ -40,30 +40,45 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api';
+
+export default defineComponent({
   name: 'Blog',
   filters: {},
   async asyncData({ $content }) {
     let articles;
     try {
-      articles = await $content(`blog`, { deep: true })
-        .sortBy('date', 'asc')
-        .fetch();
+      articles = await $content(`blog`).sortBy('date', 'desc').fetch();
     } catch (error) {
-      try {
-        articles = await $content(`blog`).sortBy('date', 'desc').fetch();
-      } catch (error) {
-        return { statusCode: 404, message: 'Page not found' };
-      }
+      return { statusCode: 404, message: 'Page not found' };
     }
     return {
       articles,
     };
   },
-  head() {
-    return {
-      //   title: this.$i18n.t('blog.title')
-    };
+  methods: {
+    test() {
+      const hashTable = new Map();
+      const posts = this.articles;
+      posts.forEach(
+        (aData) => hashTable.set(aData.title, {...aData, childNodes: []})
+      );
+      const dataTree = [];
+      posts.forEach((aData) => {
+        if (aData.parentBlog)
+          // console.log(aData.title,aData.parentBlog)
+          hashTable.get(aData.parentBlog).childNodes.push(hashTable.get(aData.title))
+        else dataTree.push(hashTable.get(aData.title));
+      });
+      this.articles = dataTree;
+      console.log(this.articles)
+    },
   },
-};
+  head() {
+    return {};
+  },
+  mounted() {
+    this.test();
+  },
+});
 </script>

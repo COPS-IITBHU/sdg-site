@@ -2,6 +2,7 @@
 title: Native Android - CSOC'21 Dev Frontend Week 1
 date: 2020-09-21T11:51:59.091Z
 description: "The aptest definition for android is - \"Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.\""
+parentBlog: CSOC'21 Dev Frontend
 ---
 # Native Android
 

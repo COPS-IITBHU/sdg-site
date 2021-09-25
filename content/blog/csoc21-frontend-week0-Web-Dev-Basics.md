@@ -2,6 +2,7 @@
 title: Bonus Task - CSOC'21 Dev Frontend Week 0
 date: 2020-09-21T11:51:59.091Z
 description: "In this task you have to create a static portfolio page, using basic web development tools(HTML, CSS & Javascript)."
+parentBlog: CSOC'21 Dev Frontend
 ---
 
 # Web Dev Basics

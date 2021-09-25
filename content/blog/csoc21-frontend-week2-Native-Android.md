@@ -2,6 +2,7 @@
 title: Native Android - CSOC'21 Dev Frontend Week 2
 date: 2020-09-21T11:51:59.091Z
 description: "Android uses a file system that's similar to disk-based file systems on other platforms."
+parentBlog: CSOC'21 Dev Frontend
 ---
 
 # Native Android

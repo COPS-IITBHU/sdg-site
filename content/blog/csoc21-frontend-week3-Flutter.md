@@ -2,6 +2,7 @@
 title: Flutter - CSOC'21 Dev Frontend Week 3
 date: 2020-09-21T11:51:59.091Z
 description: "What happens when you log out of your Social Media account from one device and open it again on a different device? You see that all your chat messages, profile picture, groups etc. are preserved. It feels like you never changed your device at all. But how did this happen?"
+parentBlog: CSOC'21 Dev Frontend
 ---
 
 # Flutter ( Network Calls )
