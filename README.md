@@ -1,6 +1,6 @@
 # SDG Site
 
-Nuxt Template for quick setup and getting started.
+_Under Heavy Development_
 
 ## Dependecies Include
 
