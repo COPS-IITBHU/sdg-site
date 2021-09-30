@@ -33,7 +33,6 @@
     </button>
     <div class="navbar top-0 left-0 w-screen z-10 fixed flex">
       <div v-for="div in 4" :key="div" class="navBg h-0"></div>
-
       <ul
         v-show="isOpen"
         class="
