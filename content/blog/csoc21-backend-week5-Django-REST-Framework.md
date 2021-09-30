@@ -1,6 +1,6 @@
 ---
 title: Django REST Framework- CSOC'21 Dev Backend Week 5
-date: 2020-09-21T11:51:59.091Z
+date: 2020-07-14T11:51:59.091Z
 description: "Consider that after having completed the CSOC Django Assignment, you now built your own web app backed with Django as the backend."
 subblogs: []
 display: False
