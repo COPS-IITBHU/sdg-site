@@ -1,6 +1,6 @@
 ---
 title: Web Development - CSOC'21 Dev Frontend Week 1
-date: 2020-09-21T11:51:59.091Z
+date: 2021-06-07T11:51:59.091Z
 description: "Web development is a basic skill that is often said as a good start to the development field."
 parentBlog: CSOC'21 Dev Frontend
 ---
