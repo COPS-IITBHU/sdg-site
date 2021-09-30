@@ -12,6 +12,7 @@
         h-30px
         top-50px
         right-50px
+        z-1
       "
       @click="play"
       @keydown="play"
@@ -78,6 +79,15 @@
               @keydown="pause"
             >
               About Us
+            </li>
+          </nuxt-link>
+          <nuxt-link to="/portfolio" target="_blank">
+            <li
+              class="list_item py-20px my-40px mx-15px"
+              @click="pause"
+              @keydown="pause"
+            >
+              Portfolio
             </li>
           </nuxt-link>
         </ul>

@@ -13,7 +13,6 @@
     "postinstall": "is-ci || husky install"
   },
   "dependencies": {
-    "@iconify/iconify": "^2.0.1",
     "@nuxt/content": "^1.9.0",
     "@nuxt/image": "^0.6.0",
     "@nuxtjs/axios": "^5.12.2",
@@ -23,7 +22,9 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.6.5",
     "gsap": "^3.7.1",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "particles.js": "^2.0.0",
+    "particlesjs": "^2.2.3"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",
@@ -40,12 +41,14 @@
     "fibers": "^5.0.0",
     "husky": "^7.0.2",
     "is-ci": "^3.0.0",
+    "nuxt-fontawesome": "^0.4.0",
     "nuxt-gsap-module": "^1.4.0",
     "nuxt-purge-icons-module": "^0.7.0",
     "nuxt-windicss": "^1.2.3",
     "prettier": "^2.1.2",
     "sass": "^1.35.2",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "unplugin-icons": "^0.11.4"
   },
   "engines": {
     "node": ">=14",
