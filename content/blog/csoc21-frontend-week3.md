@@ -1,6 +1,6 @@
 ---
 title: CSOC'21 Dev Frontend Week 3
-date: 2020-06-22T11:51:59.091Z
+date: 2021-06-22T11:51:59.091Z
 description: "The last week to enable you to build a successful frontend for your application as well as be called a Frontend Dev"
 parentBlog: CSOC'21 Dev Frontend
 --- 

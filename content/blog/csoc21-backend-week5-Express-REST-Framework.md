@@ -4,7 +4,7 @@ date: 2020-07-14T11:51:59.091Z
 description: "Express provides support for using both Relational and NoSQL databases.Creating a backend without user login and authentication is incomplete. "
 subblogs: []
 display: False
-parentBlog: CSOC'21 Dev Backend
+parentBlog: CSOC'21 Dev Backend Week 5
 ---
 
 # Express

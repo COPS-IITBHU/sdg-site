@@ -57,20 +57,28 @@ export default defineComponent({
     };
   },
   methods: {
-    test() {
+    sortByTime(obj){
+      obj.sort((childObj1,childObj2)=> {
+        if(childObj1.date<childObj2.date)return 1;
+        if(childObj1.date>childObj2.date)return -1;
+        return 0;
+      })
+      obj.forEach(childObj => { childObj.childNodes = this.sortByTime(childObj.childNodes)})
+      return obj
+    },
+    blogTree() {
       const hashTable = new Map();
       const posts = this.articles;
       posts.forEach(
-        (aData) => hashTable.set(aData.title, {...aData, childNodes: []})
+        (blog) => hashTable.set(blog.title, {...blog, childNodes: []})
       );
-      const dataTree = [];
-      posts.forEach((aData) => {
-        if (aData.parentBlog)
-          // console.log(aData.title,aData.parentBlog)
-          hashTable.get(aData.parentBlog).childNodes.push(hashTable.get(aData.title))
-        else dataTree.push(hashTable.get(aData.title));
+      let dataTree = [];
+      posts.forEach((blog) => {
+        if (blog.parentBlog)
+          hashTable.get(blog.parentBlog).childNodes.push(hashTable.get(blog.title))
+        else dataTree.push(hashTable.get(blog.title));
       });
-      this.articles = dataTree;
+      this.articles = this.sortByTime(dataTree);
       console.log(this.articles)
     },
   },
@@ -78,7 +86,7 @@ export default defineComponent({
     return {};
   },
   mounted() {
-    this.test();
+    this.blogTree();
   },
 });
 </script>

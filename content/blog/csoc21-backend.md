@@ -1,6 +1,6 @@
 ---
 title: CSOC'21 Dev Backend
-date: 2020-06-22T11:51:59.091Z
+date: 2021-06-22T11:51:59.091Z
 description: "Welcome to CSoC'21 Backend Development! Here's all the resources and tasks you need to know, complete, and focus on for every week."
 display: True
 ---
