@@ -17,7 +17,7 @@
       "
       type="button"
       :class="{ active: isActive }"
-      @click="openNavbar"
+      v-on="isActive ? { click: closeNavbar } : { click: openNavbar }"
     >
       <svg viewBox="0 0 100 100" width="80">
         <path
@@ -101,27 +101,17 @@ export default {
           height: '100vh',
           stagger: 0.3,
         })
-        .to(
-          '.list_item',
-          { duration: 0.6, y: 0, stagger: 0.15, opacity: 1 },
-          1
-        );
+        .to('.list_item', { duration: 0.4, y: 0, stagger: 0.3, opacity: 1 }, 1);
     },
     async openNavbar() {
-      if (this.isActive) {
-        this.isActive = false;
-        await this.openTimeline.reverse();
-        this.isOpen = false;
-      } else {
-        this.openTimeline.play();
-        this.isActive = true;
-        this.isOpen = true;
-      }
+      this.isActive = true;
+      this.isOpen = true;
+      await this.openTimeline.play();
     },
     async closeNavbar() {
       this.isActive = false;
-      await this.openTimeline.reverse();
       this.isOpen = false;
+      await this.openTimeline.reverse();
     },
   },
 };
