@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper">
+  <nav>
     <button
       id="toggle"
       class="
@@ -31,8 +31,8 @@
         />
       </svg>
     </button>
-    <div class="navbar top-0 left-0 w-screen z-10 fixed flex">
-      <div v-for="div in 4" :key="div" class="navBg h-0"></div>
+    <section class="navbar top-0 left-0 w-screen z-10 fixed flex">
+      <aside v-for="div in 4" :key="div" class="navBg h-0"></aside>
 
       <ul
         v-show="isOpen"
@@ -48,63 +48,44 @@
           left-1/2
         "
       >
-        <nuxt-link to="/">
+        <nuxt-link v-for="(page, index) in pages" :key="index" :to="page.url">
           <li
-            class="list_item py-10px my-20px"
+            class="
+              list_item
+              relative
+              tracking-12px
+              cursor-pointer
+              text-white text-center
+              translate-y-half
+              opacity-0
+              py-10px
+              my-20px
+            "
             @click="closeNavbar"
             @keydown="closeNavbar"
           >
-            Home
-          </li>
-        </nuxt-link>
-        <nuxt-link to="/projects">
-          <li
-            class="list_item py-10px my-20px mx-25px"
-            @click="closeNavbar"
-            @keydown="closeNavbar"
-          >
-            Projects
-          </li>
-        </nuxt-link>
-        <nuxt-link to="/">
-          <li
-            class="list_item py-10px my-20px"
-            @click="closeNavbar"
-            @keydown="closeNavbar"
-          >
-            Blogs
-          </li>
-        </nuxt-link>
-        <nuxt-link to="/">
-          <li
-            class="list_item py-10px my-20px"
-            @click="closeNavbar"
-            @keydown="closeNavbar"
-          >
-            Portfolio
-          </li>
-        </nuxt-link>
-        <nuxt-link to="/">
-          <li
-            class="list_item py-10px my-20px"
-            @click="closeNavbar"
-            @keydown="closeNavbar"
-          >
-            About Us
+            {{ page.name }}
           </li>
         </nuxt-link>
       </ul>
-    </div>
-  </div>
+    </section>
+  </nav>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   data() {
     return {
       openTimeline: null,
       isActive: false,
       isOpen: false,
+      pages: [
+        { name: 'Home', url: '/' },
+        { name: 'Projects', url: '/projects' },
+        { name: 'Blogs', url: '/blogs' },
+        { name: 'Portfolio', url: '/portfolio' },
+        { name: 'About Us', url: '/aboutus' },
+      ],
     };
   },
   mounted() {
@@ -114,12 +95,12 @@ export default {
     configNavbar() {
       this.openTimeline = this.$gsap
         .timeline({ paused: true })
+        .to('.line', { duration: 0.7, stroke: '#ece9e9', stagger: 0.1 })
         .to('.navBg', {
           duration: 0.8,
           height: '100vh',
           stagger: 0.3,
         })
-        .to('#navTitle', { duration: 0.6, opacity: 1 })
         .to(
           '.list_item',
           { duration: 0.6, y: 0, stagger: 0.15, opacity: 1 },
@@ -172,9 +153,7 @@ export default {
 .navbar-toggle.active {
   transform: rotate(45deg);
 }
-.navbar-toggle.active .line {
-  stroke: rgb(236, 233, 233);
-}
+
 .navbar-toggle.active .line.top {
   stroke-dashoffset: -98px;
 }
@@ -192,15 +171,8 @@ export default {
 }
 
 .list_item {
-  position: relative;
   font-size: 35px;
-  letter-spacing: 12px;
   font-family: 'Montserrat', sans-serif;
-  cursor: pointer;
-  color: #ffffff;
-  text-align: center;
-  transform: translate(0, 50%);
-  opacity: 0;
 }
 
 .list_item:before {
