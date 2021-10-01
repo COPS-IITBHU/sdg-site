@@ -1,6 +1,6 @@
 ---
 title: Django - CSOC'21 Dev Backend Week 4
-date: 2020-09-21T11:51:59.091Z
+date: 2020-06-22T11:51:59.091Z
 description: "So After Frontend, we are left with Web Backend to gain a good command over web dev. That is why we bring you here, to Django!"
 subblogs: []
 display: False

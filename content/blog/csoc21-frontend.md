@@ -1,7 +1,7 @@
 ---
 title: CSOC'21 Dev Frontend
-date: 2020-09-21T11:51:59.091Z
-description: "Welcome to CSoC'21 Dev! Here's all the resources and tasks you need to know, complete, and focus on for every week."
+date: 2021-05-30T11:51:59.091Z
+description: "Welcome to CSoC'21 Frontend Development! Here's all the resources and tasks you need to know, complete, and focus on for every week."
 display: True
 ---
 ## CSOC'21 Dev Frontend
@@ -10,84 +10,16 @@ Welcome to CSoC'21 Dev! Here's all the resources and tasks you need to know, com
 
 ### Heads up!
 
-All the great learning resources of COPS Dev group can also be found at [COPS Dev Resources](https://copsiitbhu.co.in/resources/dev/).
+All the great learning resources of COPS Dev group can also be found at [COPS Dev Resources](https://copsiitbhu.co.in/resources/dev/). For backend resources you should refer [CSoC'21 Dev Backend](csoc21-backend).
 
-For backend resources you should refer [CSoC'21 Dev Backend](csoc21-backend).
+The frontend track can be ideally completed in 3-4 weeks starting from the very basics of using Linux to becoming a frontend developer. Tasks are given that are to be completed by the end of each week that test and improve your practical skills on the technologies. You may choose to compete in any number of tracks.
 
-# Week 0
+### Weeks
 
-Consider this week as "revision of the fundamentals" since most have already cleared some or all of the topics of this week. If you think you're weak in any of the topics below or haven't finished even one of the tasks listed, then make sure to finish them now. 
-
-Throughout this course, we would require Linux to do assignments and resources will be posted for the same OS. It's expected that most have their Linux system ready due to COPS Linux Installation fest, but no worries! We're sharing all the required resources to get your system in shape for the following weeks and the basic shell commands you need to master. 
-
-This week will be critical for the beginners to learn to work productively on their software projects and also to learn the art of asking questions the “hacker’s way”. 
-
-We've also covered Git and [GitHub](https://github.com/) earlier, during the Dev-OSS workshops, so make sure to revise it well!
-
-There's a basic web dev project too to finish by the end of this week (June 6), so get your HTML tools back in shape! 
-
-#### Topics for Week 0
-
-1. [Git and GitHub](csoc21-frontend-week0-GitGitHub)
-2. [Linux](csoc21-frontend-week0-Linux)
-3. [Web Dev Basics](csoc21-frontend-week0-Web-Dev-Basics)
-
-# Week 1
-
-This week, we'll jump with the basics of development with three tracks -
-
-1. Android Development
-2. Web Development
-3. Cross Platform Development using Flutter
-
-Having knowledge of the previous week is necessary since Git remains highly used in this week. If you think you're weak in any of the topics, then try to revise them.
-
-There's a basic project in each track as well to finish by the end of this week (June 13), so get your tools back in shape! 
-
-You may choose to compete in any number of tracks.
-
-#### Topics for Week 1
-
-1. [Android Development](csoc21-frontend-week1-Native-Android)
-2. [Web Development](csoc21-frontend-week1-Web-Development)
-3. [Cross Platform Development using Flutter](csoc21-frontend-week1-Flutter)
-
-# Week 2
-
-This week, we'll jump with the some advanced topics development continuing with our previous tracks :
-
-1. Android Development
-2. Web Development
-3. Cross Platform Development using Flutter
-
-Having knowledge of the previous week is necessary since that covered basics of UI and UX for the respective track
-
-There's a project in each track to finish by the end of this week (June 21), so get your tools back in shape!
-
-You may choose to compete in any number of tracks.
-
-#### Topics for Week 2
-
-1. [Android Development](csoc21-frontend-week2-Native-Android)
-2. [Web Development](csoc21-frontend-week2-Web-Development)
-3. [Cross Platform Development using Flutter](csoc21-frontend-week2-Flutter)
-
-# Week 3
-
-This week will be the last week for Frontend Development track after this week you will be aware of all the design patters and methods to build a successful frontend for your application as well as be called a Frontend Dev
-
-The tasks are based off last weeks assignment so you can will be building better and more complex applications out of the simple applications for Todo that you built during last week.
-
-There's a project in each track to finish by the end of this week (June 27), so get your tools back in shape!
-
-You may choose to compete in any number of tracks.
-
-#### Topics for Week 3
-
-1. [Flutter (Network Calls)](csoc21-frontend-week3-Flutter)
-2. [Javascript Framework VueJS](csoc21-frontend-week3-VueJS)
-3. [JavaScript Library React](csoc21-frontend-week3-React)
-4. [Android (Network Calls)](csoc21-frontend-week3-Native-Android)
+- [Week 0](csoc21-frontend-week0)
+- [Week 1](csoc21-frontend-week1)
+- [Week 2](csoc21-frontend-week2)
+- [Week 3](csoc21-frontend-week3)
 
 # Things to keep in mind
 
