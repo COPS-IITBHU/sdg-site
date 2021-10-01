@@ -31,14 +31,9 @@
         />
       </svg>
     </button>
-<<<<<<< HEAD
     <section class="navbar top-0 left-0 w-screen z-10 fixed flex">
       <aside v-for="div in 4" :key="div" class="navBg h-0"></aside>
 
-=======
-    <div class="navbar top-0 left-0 w-screen z-10 fixed flex">
-      <div v-for="div in 4" :key="div" class="navBg h-0"></div>
->>>>>>> 64b6d3791b002840608a8c85edef3d386645c381
       <ul
         v-show="isOpen"
         class="
