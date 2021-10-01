@@ -214,7 +214,6 @@
 </template>
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
-import gsap from 'gsap';
 import Particles from '~/components/Particles.vue';
 export default defineComponent({
   components: {
@@ -265,7 +264,7 @@ export default defineComponent({
       el.style.transform = 'translateY(-60px)';
     },
     enter(el) {
-      gsap.to(el, {
+      this.$gsap.to(el, {
         opacity: 1,
         y: 0,
         duration: 1,
