@@ -1,179 +1,168 @@
 <template>
   <nav>
-    <div
+    <button
+      id="toggle"
       class="
+        navbar-toggle
+        bg-transparent
+        select-none
+        border-none
+        focus:outline-none
         cursor-pointer
-        items-center
-        flex-col
-        justify-around
         fixed
-        flex
-        w-30px
-        h-30px
-        top-50px
-        right-50px
-        z-1
+        z-20
+        top-4
+        right-4
+        p-0
       "
-      @click="play"
-      @keydown="play"
+      type="button"
+      :class="{ active: isActive }"
+      v-on="isActive ? { click: closeNavbar } : { click: openNavbar }"
     >
-      <div class="burgers w-3/5 h-1/10 bg-black"></div>
-      <div class="burgers w-4/5 h-1/10 bg-black"></div>
-      <div class="burgers w-full h-1/10 bg-black"></div>
-    </div>
-    <div
-      v-if="show"
-      class="
-        overflow-hidden
-        z-10
-        items-center
-        justify-center
-        fixed
-        flex
-        w-full
-        h-screen
-      "
-    >
-      <div class="circle fixed w-0 h-0"></div>
-      <div class="flex fixed">
-        <ul
-          class="
-            transform
-            -translate-x-half -translate-y-half
-            fixed
-            top-half
-            left-half
-          "
-        >
-          <nuxt-link to="/">
-            <li
-              class="list_item py-20px my-40px"
-              @click="pause"
-              @keydown="pause"
-            >
-              Home
-            </li>
-          </nuxt-link>
-          <nuxt-link to="/projects">
-            <li
-              class="list_item py-20px my-40px mx-15px"
-              @click="pause"
-              @keydown="pause"
-            >
-              Projects
-            </li>
-          </nuxt-link>
-          <nuxt-link to="/">
-            <li
-              class="list_item py-20px my-40px"
-              @click="pause"
-              @keydown="pause"
-            >
-              Blogs
-            </li>
-          </nuxt-link>
-          <nuxt-link to="/">
-            <li
-              class="list_item py-20px my-40px"
-              @click="pause"
-              @keydown="pause"
-            >
-              About Us
-            </li>
-          </nuxt-link>
-          <nuxt-link to="/portfolio" target="_blank">
-            <li
-              class="list_item py-20px my-40px mx-15px"
-              @click="pause"
-              @keydown="pause"
-            >
-              Portfolio
-            </li>
-          </nuxt-link>
-        </ul>
-        <div
-          class="
-            close
-            justify-center
-            items-center
-            opacity-0
-            flex-col
-            hidden
-            cursor-pointer
-            fixed
-            w-30px
-            h-30px
-            top-50px
-            right-50px
-          "
-          @click="pause"
-          @keydown="pause"
-        >
-          <div
-            class="w-full transform rotate-45 h-1/10 absolute bg-white"
-          ></div>
-          <div
-            class="w-full transform -rotate-45 h-1/10 absolute bg-white"
-          ></div>
-        </div>
-      </div>
-    </div>
+      <svg viewBox="0 0 100 100" width="80">
+        <path
+          class="line top"
+          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+        />
+        <path class="line middle" d="m 30,50 h 40" />
+        <path
+          class="line bottom"
+          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+        />
+      </svg>
+    </button>
+    <section class="navbar top-0 left-0 w-screen z-10 fixed flex">
+      <aside v-for="div in 4" :key="div" class="navBg h-0"></aside>
+
+      <ul
+        v-show="isOpen"
+        class="
+          routeList
+          transform
+          -translate-y-half -translate-x-half
+          fixed
+          z-10
+          flex flex-col
+          list-none
+          top-1/2
+          left-1/2
+        "
+      >
+        <nuxt-link v-for="(page, index) in pages" :key="index" :to="page.url">
+          <li
+            class="
+              list_item
+              relative
+              tracking-12px
+              cursor-pointer
+              text-white text-center
+              translate-y-half
+              opacity-0
+              py-10px
+              my-20px
+            "
+            @click="closeNavbar"
+            @keydown="closeNavbar"
+          >
+            {{ page.name }}
+          </li>
+        </nuxt-link>
+      </ul>
+    </section>
   </nav>
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
-
-export default defineComponent({
+export default {
   data() {
     return {
-      show: false,
-      t1: null,
-      hover: false,
+      openTimeline: null,
+      isActive: false,
+      isOpen: false,
+      pages: [
+        { name: 'Home', url: '/' },
+        { name: 'Projects', url: '/projects' },
+        { name: 'Blogs', url: '/blogs' },
+        { name: 'Portfolio', url: '/portfolio' },
+        { name: 'About Us', url: '/aboutus' },
+      ],
     };
   },
-  mounted() {},
+  mounted() {
+    this.configNavbar();
+  },
   methods: {
-    showEl() {
-      this.show = !this.show;
-    },
-    async play() {
-      await this.showEl();
-      this.t1 = this.$gsap
+    configNavbar() {
+      this.openTimeline = this.$gsap
         .timeline({ paused: true })
-        .to('.circle', { duration: 0.5, width: '300%', height: '300vh' })
-        .to('.list_item', { duration: 0.3, y: 0, stagger: 0.15, opacity: 1 })
-        .to('.close', { display: 'block' })
-        .to('.close', { opacity: 1, duration: 0.07 });
-      this.t1.play();
+        .to('.line', { duration: 0.7, stroke: '#ece9e9', stagger: 0.1 })
+        .to('.navBg', {
+          duration: 0.8,
+          height: '100vh',
+          stagger: 0.3,
+        })
+        .to('.list_item', { duration: 0.4, y: 0, stagger: 0.3, opacity: 1 }, 1);
     },
-    async pause() {
-      await this.t1.reverse();
-      this.t1 = null;
-      this.showEl();
+    async openNavbar() {
+      this.isActive = true;
+      this.isOpen = true;
+      await this.openTimeline.play();
+    },
+    async closeNavbar() {
+      this.isActive = false;
+      this.isOpen = false;
+      await this.openTimeline.reverse();
     },
   },
-});
+};
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+<style scoped>
+/* BUTTON STYLING */
+.navbar-toggle {
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+}
+.navbar-toggle .line {
+  fill: none;
+  transition-delay: 400ms, 0;
+  transition-property: stroke, stroke-dasharray, stroke-dashoffset;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.navbar-toggle .line.top {
+  stroke-dasharray: 40 139;
+}
+.navbar-toggle .line.bottom {
+  stroke-dasharray: 20 180;
+  stroke-dashoffset: -20px;
+}
+.navbar-toggle.active {
+  transform: rotate(45deg);
+}
 
-.circle {
-  clip-path: circle(50%);
-  background: #2c2525;
+.navbar-toggle.active .line.top {
+  stroke-dashoffset: -98px;
+}
+.navbar-toggle.active .line.bottom {
+  stroke-dashoffset: -138px;
+}
+.navbar-toggle:not(.active):hover .line.bottom {
+  stroke-dasharray: 40 180;
+  stroke-dashoffset: 0px;
+}
+/* NAVBAR STYLING */
+.navBg {
+  width: 25%;
+  background-color: #2c2525;
 }
 
 .list_item {
-  position: relative;
   font-size: 35px;
-  letter-spacing: 12px;
   font-family: 'Montserrat', sans-serif;
-  cursor: pointer;
-  color: #ffffff;
-  text-align: center;
-  transform: translate(0, 50%);
-  opacity: 0;
 }
 
 .list_item:before {
@@ -203,6 +192,7 @@ export default defineComponent({
   height: 100%;
   border-bottom: 2px solid white;
   transition: 0.3s;
+  letter-spacing: 15px;
 }
 
 .list_item:hover:after {
