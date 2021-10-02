@@ -43,11 +43,7 @@
             rounded-3xl
           "
         >
-          <img
-            src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-coding-interface-kiranshastry-lineal-color-kiranshastry.png"
-            alt="sdg"
-            class="float-left w-12 h-12"
-          />
+          <nuxt-img src="/coding.png" alt="sdg" class="float-left w-12 h-12" />
           <h2 class="block text-right text-lg m-auto">Software Development</h2>
           <a
             href="#mem"
@@ -69,7 +65,7 @@
         </div>
         <div
           class="
-            w-85
+            w-95
             h-30
             shadow-xl
             float-right
@@ -78,14 +74,12 @@
             rounded-3xl
           "
         >
-          <img
-            src="https://img-premium.flaticon.com/png/512/2115/premium/2115955.png?token=exp=1632721086~hmac=edb5b82a73cd0c1fd935667d495d2b51"
-            alt="sdg"
+          <nuxt-img
+            src="/binary-code.png"
+            alt="cp"
             class="float-left w-12 h-12"
           />
-          <h2 class="block text-right text-lg m-auto">
-            Competitive Programming
-          </h2>
+          <h2 class="text-md m-auto">Competitive Programming</h2>
           <a
             href="#mem"
             class="
@@ -104,11 +98,7 @@
             View Team
           </a>
         </div>
-        <img
-          src="https://www.pngkit.com/png/full/63-639012_github-octocat-logo-png-transparent-github-octocat.png"
-          alt="octacat"
-          class="m-auto w-70 mt-20"
-        />
+        <nuxt-img src="/octocat.png" alt="octacat" class="m-auto w-70 mt-20" />
         <div
           class="
             w-85
@@ -120,8 +110,8 @@
             rounded-3xl
           "
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2103/2103626.png"
+          <nuxt-img
+            src="/machine-learning.png"
             alt="sdg"
             class="float-left w-15 h-15"
           />
@@ -156,8 +146,8 @@
             rounded-3xl
           "
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2092/2092757.png"
+          <nuxt-img
+            src="/cyber-security.png"
             alt="sdg"
             class="float-left w-15 h-15"
           />
@@ -214,11 +204,8 @@
 </template>
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
-import Particles from '~/components/Particles.vue';
 export default defineComponent({
-  components: {
-    Particles,
-  },
+  components: {},
   data() {
     return {
       members: 8,
@@ -285,7 +272,7 @@ export default defineComponent({
   position: absolute;
   top: 0;
   width: 100%;
-  height: 55vh;
+  height: 40vh;
   left: 0;
   z-index: 0;
 }
