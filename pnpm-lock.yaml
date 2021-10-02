@@ -1,6 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@iconify/json': ^1.1.409
+  '@iconify/vue': ^3.0.0
   '@nuxt/content': ^1.9.0
   '@nuxt/image': ^0.6.0
   '@nuxt/types': ^2.14.6
@@ -25,7 +27,6 @@ specifiers:
   husky: ^7.0.2
   is-ci: ^3.0.0
   nuxt: ^2.14.6
-  nuxt-fontawesome: ^0.4.0
   nuxt-gsap-module: ^1.4.0
   nuxt-purge-icons-module: ^0.7.0
   nuxt-windicss: ^1.2.3
@@ -51,6 +52,8 @@ dependencies:
   particlesjs: 2.2.3
 
 devDependencies:
+  '@iconify/json': 1.1.409
+  '@iconify/vue': 3.0.0
   '@nuxt/types': 2.15.8_fibers@5.0.0+sass@1.39.2
   '@nuxt/typescript-build': 2.1.0_@nuxt+types@2.15.8
   '@nuxtjs/eslint-config-typescript': 6.0.1_eslint@7.32.0
@@ -65,14 +68,13 @@ devDependencies:
   fibers: 5.0.0
   husky: 7.0.2
   is-ci: 3.0.0
-  nuxt-fontawesome: 0.4.0
   nuxt-gsap-module: 1.4.0
   nuxt-purge-icons-module: 0.7.0
   nuxt-windicss: 1.2.3
   prettier: 2.4.0
   sass: 1.39.2
   sass-loader: 10.1.1_fibers@5.0.0+sass@1.39.2
-  unplugin-icons: 0.11.4
+  unplugin-icons: 0.11.4_@iconify+json@1.1.409
 
 packages:
 
@@ -1267,29 +1269,6 @@ packages:
       - supports-color
     dev: true
 
-  /@fortawesome/fontawesome-common-types/0.2.36:
-    resolution: {integrity: sha512-a/7BiSgobHAgBWeN7N0w+lAhInrGxksn13uK7231n2m8EDPE3BMCl9NZLTGrj9ZXfCmC6LM0QLqXidIizVQ6yg==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dev: true
-
-  /@fortawesome/fontawesome-svg-core/1.2.36:
-    resolution: {integrity: sha512-YUcsLQKYb6DmaJjIHdDWpBIGCcyE/W+p/LMGvjQem55Mm2XWVAP5kWTMKWLv9lwpCVjpLxPyOMOyUocP1GxrtA==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dependencies:
-      '@fortawesome/fontawesome-common-types': 0.2.36
-    dev: true
-
-  /@fortawesome/vue-fontawesome/0.1.10_e6ddecce7e87e8c100be6749b6963e80:
-    resolution: {integrity: sha512-b2+SLF31h32LSepVcXe+BQ63yvbq5qmTCy4KfFogCYm2bn68H5sDWUnX+U7MBqnM2aeEk9M7xSoqGnu+wSdY6w==}
-    peerDependencies:
-      '@fortawesome/fontawesome-svg-core': '>= 1.2.0 < 1.3'
-      vue: ~2
-    dependencies:
-      '@fortawesome/fontawesome-svg-core': 1.2.36
-    dev: true
-
   /@gar/promisify/1.1.2:
     resolution: {integrity: sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==}
     dev: false
@@ -1323,6 +1302,16 @@ packages:
 
   /@iconify/json-tools/1.0.10:
     resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
+    dev: true
+
+  /@iconify/json/1.1.409:
+    resolution: {integrity: sha512-8ozw0ZjqAYRHzkse/TMe+iGm56XxMj6RtTT8W6pLSybgBln8foUQ3n2KHinM/qyklwqqs/gpH+yelNXSCtF2Rw==}
+    dev: true
+
+  /@iconify/vue/3.0.0:
+    resolution: {integrity: sha512-7heVMHkpB3d7l+/ofAQ+f9k5mETi/FWEnI5dXFQqsDmc/yuO2Nz5D9XkSDvO1b6TRVawf/kleN8JXRaClTM4nQ==}
+    peerDependencies:
+      vue: ^3.0.11
     dev: true
 
   /@lokidb/full-text-search/2.1.0:
@@ -7548,15 +7537,6 @@ packages:
     dev: false
     optional: true
 
-  /nuxt-fontawesome/0.4.0:
-    resolution: {integrity: sha512-4oHIot/WLUBFM7o944EQks7WmntD/YsLxZ+g9mJjY9pHw1FJZBaD7Bd+cDsXvl3h/0/f87QwIXf/AA+vOIY0Ag==}
-    dependencies:
-      '@fortawesome/fontawesome-svg-core': 1.2.36
-      '@fortawesome/vue-fontawesome': 0.1.10_e6ddecce7e87e8c100be6749b6963e80
-    transitivePeerDependencies:
-      - vue
-    dev: true
-
   /nuxt-gsap-module/1.4.0:
     resolution: {integrity: sha512-fnAje9u9bmGMUj90BCinNS3zZZeXFHqcD9DwnZ5rJJJ36XF64iUwOM9aWgTCrx88cMTB7HHL9y30k0d6HxvPLg==}
     dependencies:
@@ -10584,7 +10564,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /unplugin-icons/0.11.4:
+  /unplugin-icons/0.11.4_@iconify+json@1.1.409:
     resolution: {integrity: sha512-vmUqYCf+uFZF33GyL5/1X3LqNJrn6RfI8K85EPs8PzTTqMF6lGnO9wERSo2yKt2wzkCye10urZFdaYrReheA8A==}
     peerDependencies:
       '@iconify/json': '*'
@@ -10603,6 +10583,7 @@ packages:
         optional: true
     dependencies:
       '@antfu/utils': 0.3.0
+      '@iconify/json': 1.1.409
       '@iconify/json-tools': 1.0.10
       has-pkg: 0.0.1
       unplugin: 0.2.16
