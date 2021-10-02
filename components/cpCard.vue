@@ -1,110 +1,96 @@
 <template>
-  <div class="col-md-3 col-sm-6">
-    <div class="our-team">
-      <div class="pic">
-        <img
-          src="https://pbs.twimg.com/profile_images/1388911828403589123/miOWknjs_400x400.jpg"
-          alt=""
-        />
+  <section class="col-md-3 col-sm-6 m-auto w-400">
+    <div class="our-team w-80 float-left relative p-10">
+      <div
+        class="
+          pic
+          rounded-l-3xl
+          overflow-hidden
+          border-t-5 border-b-5 border-gray-600
+          hover:border-hex-8f2d56 hover:transition-colors
+        "
+      >
+        <nuxt-img src="/822711_user_512x512.png" alt="profile" class="w-100%" />
       </div>
-      <div class="team-content">
-        <h3 class="title">Williamson</h3>
-        <span class="post">web developer</span>
-        <ul class="social">
-          <li>
-            <a href="#">
-              <img
-                src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-2--v1.png"
-                alt="linkedin"
-              />
+      <div class="team-content m-auto">
+        <h3 class="title text-xl font-600 text-hex-8f2d56 pt-10 uppercase">
+          NAME
+        </h3>
+        <span class="post text-hex-878484 font-500 text-lg"> Title </span>
+        <ul class="social m-0 p-0">
+          <li class="inline-block">
+            <a
+              aria-label="linkedin"
+              href="#"
+              class="
+                border-solid border
+                block
+                h-8
+                text-base
+                leading-9
+                text-center
+                w-8
+                rounded-full
+                border-hex-8f2d56
+                bg-white
+                hover:bg-hex-8f2d56
+              "
+            >
+              <span
+                class="iconify text-hex-8f2d56 text-2xl"
+                data-icon="uim:linkedin-alt"
+              ></span>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img :src="code" alt="codeforces" class="w-6 m-auto mt-1" />
+          <li class="inline-block">
+            <a
+              aria-label="codeforces"
+              href="#"
+              class="
+                border-solid border
+                block
+                h-8
+                text-base
+                leading-9
+                text-center
+                w-8
+                rounded-full
+                border-hex-8f2d56
+                bg-white
+                hover:bg-hex-8f2d56
+              "
+            >
+              <span
+                class="iconify text-hex-8f2d56 text-xl"
+                data-icon="simple-icons:codeforces"
+              ></span>
             </a>
           </li>
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
-import code from '../assets/4691584_codeforces_icon (1).png';
 export default {
   data() {
-    return {
-      code,
-    };
+    return {};
   },
 };
 </script>
 <style>
-.our-team {
-  width: 250px;
-  position: relative;
-  float: left;
-  margin: auto;
-  padding: 20px;
-  margin: 50px;
-}
 .our-team .pic {
-  border-top: 5px solid #ff8e72;
-  border-bottom: 5px solid #ff8e72;
   border-radius: 50% 50% 50% 0;
-  overflow: hidden;
   transition: all 0.5s ease 0s;
 }
 .our-team:hover .pic {
-  border-top-color: #8f2d56;
-  border-bottom-color: #8f2d56;
   border-radius: 50% 0;
 }
-.our-team .pic img {
-  width: 100%;
-  height: auto;
-  transition: all 0.5s ease 0s;
-}
-.our-team .team-content {
-  padding: 20px 0;
-}
-.our-team .title {
-  font-size: 22px;
-  font-weight: 700;
-  color: #8f2d56;
-  text-transform: uppercase;
-  margin: 0 0 5px 0;
-}
-.our-team .post {
-  display: block;
-  font-size: 17px;
-  color: #878484;
-  text-transform: capitalize;
-  margin-bottom: 10px;
-}
-.our-team .social {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.our-team .social li {
-  display: inline-block;
-}
-.our-team .social li a {
-  display: block;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  border-radius: 50%;
-  border: 1px solid #8f2d56;
-  background: #89428b;
-  font-size: 17px;
-  color: #8f2d56;
-  text-align: center;
-  transition: all 0.5s ease 0s;
-}
 .our-team:hover .social li a {
+  transition: all 0.5s ease 0s;
   background: #8f2d56;
+}
+.our-team:hover .social li a .iconify {
   color: #fff;
 }
 @media only screen and (max-width: 990px) {

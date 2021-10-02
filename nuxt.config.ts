@@ -47,6 +47,12 @@ export default {
     'nuxt-purge-icons-module',
     '@nuxt/image',
     'nuxt-gsap-module',
+    [
+      'unplugin-icons/nuxt',
+      {
+        /* options */
+      },
+    ],
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
