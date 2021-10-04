@@ -22,3 +22,52 @@ There's a basic web dev project too to finish by the end of this week (June 6), 
 1. [Git and GitHub](csoc21-frontend-week0-GitGitHub)
 2. [Linux](csoc21-frontend-week0-Linux)
 3. [Web Dev Basics](csoc21-frontend-week0-Web-Dev-Basics)
+
+
+<style>
+
+    .cards-container {
+        display: flex;
+        width: 100%;
+    }
+    .card {
+        border: 2px solid black;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 40px;
+        height: 20%;
+        width: 45%;
+    }
+    .card-image {
+        margin-left: auto;
+        margin-right: auto;
+        max-width:100%;
+        max-height:100%;
+    }
+    .card-text {
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+        
+</style>
+<div class="cards-container">
+    <div class="card">
+        <a href="/blog/csoc21-frontend-week0-GitGitHub/">
+            <img src="https://cdn.artandlogic.com/wp-content/uploads/github-git-octocat-programming-code-it-logo.jpg" alt="" class="card-image">
+            </a>
+            <p class="card-text">Git and Github</p>
+    </div>
+    <div class="card">
+        <a href="/blog/csoc21-frontend-week0-Linux/">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/s2-1.jpg" alt="" class="card-image">
+        </a>
+        <p class="card-text">Linux</p>
+    </div>
+    <div class="card">
+        <a href="/blog/csoc21-frontend-week0-Web-Dev-Basics/">
+            <img src="https://www.kindpng.com/picc/m/557-5574265_web-design-web-development-png-transparent-png.png" alt="" class="card-image">
+        </a>
+        <p class="card-text">Web Dev Basics</p>
+    </div>
+</div>

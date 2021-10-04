@@ -56,8 +56,7 @@ export default defineComponent({
     let post;
     try {
       post = await $content(`blog`, slug).fetch();
-    } 
-    catch (error) {
+    } catch (error) {
       return { statusCode: 404, message: 'Page not found' };
     }
     return {
