@@ -35,7 +35,7 @@ There's a basic web dev project too to finish by the end of this week (June 6), 
         margin-left: 8px;
         margin-right: 8px;
         margin-bottom: 40px;
-        height: 20%;
+        height: 250px;
         width: 45%;
     }
     .card-image {

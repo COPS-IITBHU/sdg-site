@@ -6,7 +6,7 @@
     <section class="text-gray-700 body-font overflow-hidden">
       <div class="container px-5 pt-24 mx-auto">
         <div v-for="article in articles" :key="article.id" class="-my-8">
-          <nuxt-link :to="`blog/${article.slug}`">
+          <nuxt-link :to="`/blog/${article.slug}`">
             <div class="py-8 flex flex-wrap md:flex-no-wrap">
               <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                 <span
