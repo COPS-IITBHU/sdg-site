@@ -129,7 +129,7 @@ export default {
   transition-property: stroke, stroke-dasharray, stroke-dashoffset;
   transition-timing-function: ease;
   transition-duration: 400ms;
-  stroke: #000;
+  stroke: #fff;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
