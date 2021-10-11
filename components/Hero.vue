@@ -4,7 +4,10 @@
       <section
         class="container items-center flex-col flex fixed z-2 top-48 max-w-lg"
       >
-        <h1 data-text="COPS" class="text-9xl antialiased py-4 text-center">
+        <h1
+          data-text="COPS"
+          class="text-6xl sm:text-7xl md:text-9xl antialiased py-4 text-center"
+        >
           COPS
         </h1>
         <p class="antialiased text-shadow-md text-center">
@@ -22,139 +25,89 @@
         class="row relative flex p-0 whitespace-nowrap text-6xl -top-110"
       >
         <div class="flex">
-          <span class="iconify icon" data-icon="bi:github"></span>
-          <span class="iconify icon" data-icon="fa-solid:graduation-cap"></span>
-          <span class="iconify icon" data-icon="bx:bxl-apple"></span>
-          <span class="iconify icon" data-icon="entypo:code"></span>
-          <span
-            class="iconify icon"
-            data-icon="fluent:clipboard-task-list-rtl-24-regular"
-          ></span>
-          <span class="iconify icon" data-icon="ion:logo-angular"></span>
-          <span class="iconify icon" data-icon="dashicons:database"></span>
-          <span class="iconify icon" data-icon="cib:octopus-deploy"></span>
-          <span class="iconify icon" data-icon="icons8:idea"></span>
-          <span
-            class="iconify icon"
-            data-icon="fluent:branch-fork-24-filled"
-          ></span>
-          <span class="iconify icon" data-icon="teenyicons:npm-outline"></span>
-          <span class="iconify icon" data-icon="akar-icons:react-fill"></span>
-          <span class="iconify icon" data-icon="fa-brands:js-square"></span>
-          <span class="iconify icon" data-icon="whh:ironman"></span>
-          <span class="iconify icon" data-icon="ci:cookie"></span>
-          <span class="iconify icon" data-icon="bx:bx-heart"></span>
-          <span
-            class="iconify icon"
-            data-icon="fluent:meet-now-48-filled"
-          ></span>
-          <span class="iconify icon" data-icon="la:node-js"></span>
-          <span
-            class="iconify icon"
-            data-icon="fa-solid:robot"
-            data-width="65"
-            data-height="55"
-          ></span>
-          <span class="iconify icon" data-icon="fa-solid:bolt"></span>
-          <span class="iconify icon" data-icon="bx:bx-coffee-togo"></span>
-          <span class="iconify icon" data-icon="bi:headset"></span>
-          <span class="iconify icon" data-icon="akar-icons:google-fill"></span>
-          <span class="iconify icon" data-icon="bi:facebook"></span>
-          <span class="iconify icon" data-icon="brandico:linkedin-rect"></span>
-          <span
-            class="iconify icon"
-            data-icon="fluent:people-team-16-regular"
-          ></span>
-          <span class="iconify icon" data-icon="fa-solid:quidditch"></span>
-          <span
-            class="iconify icon"
-            data-icon="fluent:food-pizza-20-filled"
-          ></span>
+          <Icon v-for="name in iconRow1" :key="name" :name="name" />
         </div>
         <div class="flex">
-          <span class="iconify icon" data-icon="akar-icons:clock"></span>
-          <span
-            class="iconify icon"
-            data-icon="ic:baseline-cloud-download"
-          ></span>
-          <span
-            class="iconify icon"
-            data-icon="fluent:brain-circuit-20-filled"
-          ></span>
-          <span class="iconify icon" data-icon="bi:camera-fill"></span>
-          <span class="iconify icon" data-icon="uis:calender"></span>
-          <span class="iconify icon" data-icon="fa-regular:copy"></span>
-
-          <span class="iconify icon" data-icon="la:reddit"></span>
-          <span class="iconify icon" data-icon="ion:logo-python"></span>
-          <span class="iconify icon" data-icon="ic:baseline-copyright"></span>
-          <span class="iconify icon" data-icon="dashicons:book"></span>
-
-          <span
-            class="iconify icon"
-            data-icon="la:github-alt"
-            data-width="65"
-            data-height="65"
-          ></span>
-          <span class="iconify icon" data-icon="ph:chalkboard-fill"></span>
-          <span
-            class="iconify icon"
-            data-icon="fluent:bluetooth-24-filled"
-          ></span>
-
-          <span class="iconify icon" data-icon="fa-solid:user-secret"></span>
-          <span class="iconify icon" data-icon="bx:bxs-share-alt"></span>
-          <span class="iconify icon" data-icon="akar-icons:discord-fill"></span>
-          <span class="iconify icon" data-icon="ic:outline-android"></span>
-          <span
-            class="iconify icon"
-            data-icon="grommet-icons:technology"
-          ></span>
-          <span
-            class="iconify icon"
-            data-icon="bi:hourglass-split"
-            data-width="53"
-            data-height="53"
-          ></span>
-          <span class="iconify icon" data-icon="bx:bxs-like"></span>
-          <span
-            class="iconify icon"
-            data-icon="cib:google-chrome"
-            data-width="57"
-            data-height="57"
-          ></span>
-          <span class="iconify icon" data-icon="bx:bxl-vuejs"></span>
-          <span class="iconify icon" data-icon="bx:bxs-trash"></span>
-          <span class="iconify icon" data-icon="grommet-icons:gamepad"></span>
-          <span class="iconify icon" data-icon="bx:bxs-star"></span>
-          <span class="iconify icon" data-icon="bx:bxl-telegram"></span>
-          <span class="iconify icon" data-icon="ant-design:html5-filled"></span>
-          <span class="iconify icon" data-icon="majesticons:ghost"></span>
+          <Icon v-for="name in iconRow2" :key="name" :name="name" />
         </div>
       </div>
     </section>
   </div>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      iconRow1: [
+        'bi:github',
+        'fa-solid:graduation-cap',
+        'bx:bxl-apple',
+        'entypo:code',
+        'fluent:clipboard-task-list-rtl-24-regular',
+        'ion:logo-angular',
+        'dashicons:database',
+        'cib:octopus-deploy',
+        'icons8:idea',
+        'fluent:branch-fork-24-filled',
+        'ion:logo-linkedin',
+        'akar-icons:react-fill',
+        'fa-brands:js-square',
+        'whh:ironman',
+        'ci:cookie',
+        'bx:bx-heart',
+        'fluent:meet-now-48-filled',
+        'la:node-js',
+        'fa-solid:robot',
+        'fa-solid:bolt',
+        'bx:bx-coffee-togo',
+        'bi:headset',
+        'akar-icons:google-fill',
+        'teenyicons:npm-outline',
+        'ci:facebook',
+        'fluent:people-team-16-regular',
+        'fa-solid:quidditch',
+        'fluent:food-pizza-20-filled',
+      ],
+      iconRow2: [
+        'akar-icons:clock',
+        'ic:baseline-cloud-download',
+        'fluent:brain-circuit-20-filled',
+        'bi:camera-fill',
+        'uis:calender',
+        'fa-regular:copy',
+        'la:reddit',
+        'bx:bxs-book-bookmark',
+        'ic:baseline-copyright',
+        'ion:logo-python',
+        'la:github-alt',
+        'ph:chalkboard-fill',
+        'fluent:bluetooth-24-filled',
+        'fa-solid:user-secret',
+        'bx:bxs-share-alt',
+        'akar-icons:discord-fill',
+        'ic:outline-android',
+        'grommet-icons:technology',
+        'bi:hourglass-split',
+        'bx:bxs-like',
+        'cib:google-chrome',
+        'bx:bxl-vuejs',
+        'bx:bxs-trash',
+        'grommet-icons:gamepad',
+        'bx:bxs-star',
+        'bx:bxl-telegram',
+        'ant-design:html5-filled',
+        'majesticons:ghost',
+      ],
+    };
+  },
+};
+</script>
 <style scoped>
 #box {
   background: #111;
 }
 .row {
   transform: rotate(-30deg);
-}
-
-.icon {
-  color: rgba(0, 0, 0, 0.5);
-  transition: 1s ease-in-out;
-  padding: 5px 5px;
-  user-select: none;
-  cursor: default;
-}
-.icon:hover {
-  transition: 0s ease-in-out;
-  color: #0f0;
-  text-shadow: 0 0 120px #0f0;
 }
 
 .row div {
