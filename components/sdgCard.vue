@@ -10,7 +10,7 @@
           hover:border-hex-8f2d56 hover:transition-colors
         "
       >
-        <nuxt-img src="/822711_user_512x512.png" alt="" class="w-100%" />
+        <nuxt-img src="/822711_user_512x512.png" alt="profile" class="w-100%" />
       </div>
       <div class="team-content m-auto">
         <h3 class="title text-xl font-600 text-hex-8f2d56 pt-10 uppercase">
@@ -42,30 +42,32 @@
               ></span>
             </a>
           </li>
-          <li class="inline-block">
-            <a
-              aria-label="github"
-              href="#"
-              class="
-                border-solid border
-                block
-                h-8
-                text-base
-                leading-9
-                text-center
-                w-8
-                rounded-full
-                border-hex-8f2d56
-                bg-white
-                hover:bg-hex-8f2d56
-              "
-            >
-              <span
-                class="iconify text-hex-8f2d56 text-xl"
-                data-icon="zmdi:github-alt"
-              ></span>
-            </a>
-          </li>
+          <slot>
+            <li class="inline-block">
+              <a
+                aria-label="github"
+                href="#"
+                class="
+                  border-solid border
+                  block
+                  h-8
+                  text-base
+                  leading-9
+                  text-center
+                  w-8
+                  rounded-full
+                  border-hex-8f2d56
+                  bg-white
+                  hover:bg-hex-8f2d56
+                "
+              >
+                <span
+                  class="iconify text-hex-8f2d56 text-2xl m-auto"
+                  data-icon="zmdi:github-alt"
+                ></span>
+              </a>
+            </li>
+          </slot>
         </ul>
       </div>
     </div>
@@ -73,7 +75,6 @@
 </template>
 <script>
 export default {
-  components: {},
   data() {
     return {};
   },
