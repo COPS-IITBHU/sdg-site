@@ -33,17 +33,4 @@ export default {
   },
 };
 </script>
-<style>
-.our-team:hover .social li a {
-  transition: all 0.5s ease 0s;
-  background: #8f2d56;
-}
-.our-team:hover .social li a .iconify {
-  color: #fff;
-}
-@media only screen and (max-width: 990px) {
-  .our-team {
-    margin-bottom: 30px;
-  }
-}
-</style>
+<style></style>
