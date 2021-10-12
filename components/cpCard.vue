@@ -27,9 +27,7 @@
   </sdg-card>
 </template>
 <script>
-import sdgCard from './sdgCard.vue';
 export default {
-  components: { sdgCard },
   data() {
     return {};
   },
