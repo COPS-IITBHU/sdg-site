@@ -1,6 +1,6 @@
 <template>
   <section class="col-md-3 col-sm-6 m-auto w-400">
-    <div class="our-team w-80 float-left relative p-10">
+    <div class="our-team w-70 float-left relative p-10">
       <div
         class="
           pic
@@ -14,14 +14,14 @@
       </div>
       <div class="team-content m-auto">
         <h3 class="title text-xl font-600 text-hex-8f2d56 pt-10 uppercase">
-          NAME
+          {{ name }}
         </h3>
-        <span class="post text-hex-878484 font-500 text-lg"> Title </span>
+        <span class="post text-hex-878484 font-500 text-lg"> {{ title }} </span>
         <ul class="social m-0 p-0">
           <li class="inline-block">
             <a
               aria-label="linkedin"
-              href="#"
+              :href="linkedinId"
               class="
                 border-solid border
                 block
@@ -75,6 +75,20 @@
 </template>
 <script>
 export default {
+  props: {
+    name: {
+      type: String,
+      default: 'Name',
+    },
+    title: {
+      type: String,
+      default: 'Title',
+    },
+    linkedinId: {
+      type: String,
+      default: '#',
+    },
+  },
   data() {
     return {};
   },
