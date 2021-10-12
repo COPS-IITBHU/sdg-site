@@ -1,14 +1,34 @@
 <template>
-  <div>
-    <div class="cont h-100 p-10 m-auto lg:text-xl scrollbar scrollbar-blue-600">
+  <section class="overflow-hidden">
+    <div class="h-50vh relative z-1 bg-hex-1f2124 lg:text-xl w-100%">
       <transition appear @before-enter="beforeEnter" @enter="enter">
-        <h2 class="text-white text-7xl font-mono font-700 text-center">
+        <h2
+          class="
+            text-white text-4xl
+            md:text-5xl
+            lg:text-7xl
+            font-mono font-700
+            text-center
+            p-10
+          "
+        >
           Meet the Team
         </h2>
       </transition>
       <transition appear @before-enter="beforeEnter" @enter="enter">
         <p
-          class="mt-20 w-300 m-auto text-gray-300 font-400 text-2xl text-center"
+          class="
+            w-80
+            md:w-200
+            lg:w-300
+            m-auto
+            text-gray-300
+            font-400
+            text-lg
+            md:text-xl
+            sm:text-md
+            text-center
+          "
         >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sit
           vitae pariatur, debitis maiores quisquam deleniti impedit quae dolores
@@ -18,7 +38,7 @@
       </transition>
       <client-only>
         <Particles
-          class="particles z-0"
+          class="z-0 absolute w-100% inset-0 h-40vh"
           color="#ccc"
           :particles-number="70"
           shape-type="circle"
@@ -31,13 +51,27 @@
       </client-only>
     </div>
     <transition appear @before-enter="beforeEnter" @enter="enter">
-      <div class="p-30 m-auto w-350 h-120 drop-shadow-sm do">
+      <div
+        class="
+          m-auto
+          w-150
+          md:w-200
+          lg:w-350 lg:p-20
+          drop-shadow-sm
+          z-1
+          relative
+        "
+      >
         <div
           class="
-            w-85
-            h-30
+            w-80vw
+            md:w-65
+            lg:w-95
             shadow-xl
-            float-left
+            m-auto
+            mx-10
+            md:float-left
+            lg:float-left
             p-10
             text-stroke-blue-gray-800 text-xl text-center
             rounded-3xl
@@ -50,10 +84,9 @@
             class="
               bg-hex-8c4d79
               hover:bg-hex-5a003f
-              text-white text-center
+              text-white text-center text-sm
+              px-2
               py-2
-              px-4
-              text-sm
               font-500
               mb-10
               rounded
@@ -65,10 +98,14 @@
         </div>
         <div
           class="
-            w-95
-            h-30
+            w-80vw
+            md:w-65
+            lg:w-95
             shadow-xl
-            float-right
+            m-auto
+            mx-10
+            md:float-right
+            lg:float-right
             p-10
             text-stroke-blue-gray-800 text-xl text-center
             rounded-3xl
@@ -87,7 +124,7 @@
               hover:bg-hex-5a003f
               text-white text-center
               py-2
-              px-4
+              px-2
               text-sm
               font-500
               mb-10
@@ -98,12 +135,20 @@
             View Team
           </a>
         </div>
-        <nuxt-img src="/octocat.png" alt="octacat" class="m-auto w-70 mt-20" />
+        <nuxt-img
+          src="/octocat.png"
+          alt="octacat"
+          class="m-auto w-40 md:w-60 lg:w-70 mt-20 mx-25 md:mx-75"
+        />
         <div
           class="
-            w-85
-            h-30
-            float-right
+            w-80vw
+            md:w-65
+            lg:w-85
+            m-auto
+            mx-10
+            md:float-right
+            lg:float-right
             shadow-xl
             p-10
             text-stroke-blue-gray-800 text-xl text-center
@@ -123,7 +168,7 @@
               hover:bg-hex-5a003f
               text-white text-center
               py-2
-              px-4
+              px-2
               text-sm
               font-500
               mb-10
@@ -137,10 +182,15 @@
 
         <div
           class="
-            w-85
-            h-30
+            overflow-hidden
+            w-80vw
+            md:w-65
+            lg:w-85
             shadow-xl
-            float-left
+            m-auto
+            mx-10
+            md:float-left
+            lg:float-left
             p-10
             text-stroke-blue-gray-800 text-xl text-center
             rounded-3xl
@@ -159,7 +209,7 @@
               hover:bg-hex-5a003f
               text-white text-center
               py-2
-              px-4
+              px-2
               text-sm
               font-500
               mb-10
@@ -172,35 +222,59 @@
         </div>
       </div>
     </transition>
-    <div class="">
-      <h2 v-if="showCard" class="text-center text-6xl mt-50">
+    <div class="text-center mt-20">
+      <h2
+        v-if="showCard"
+        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
+      >
         Software Development Group
       </h2>
-      <h2 v-if="showCpCard" class="text-center text-6xl mt-50">
+      <h2
+        v-if="showCpCard"
+        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
+      >
         Competitive Programming Group
       </h2>
-      <h2 v-if="showMlCard" class="text-center text-6xl mt-50">
+      <h2
+        v-if="showMlCard"
+        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
+      >
         Machine Learning Group
       </h2>
-      <h2 v-if="showInfosecCard" class="text-center text-6xl mt-50">
+      <h2
+        v-if="showInfosecCard"
+        class="text-center text-2xl md:text-4xl lg:text-6xl mt-50"
+      >
         InfoSec Group
       </h2>
-      <div v-for="member in members" id="mem" :key="member" class="">
+      <div v-for="member in members" id="mem" :key="member" class="m-auto">
         <transition appear @before-enter="beforeEnter" @enter="enter">
-          <sdgCard v-show="showCard" />
+          <sdgCard
+            v-show="showCard"
+            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
+          />
         </transition>
         <transition appear @before-enter="beforeEnter" @enter="enter">
-          <cpCard v-show="showCpCard" />
+          <cpCard
+            v-show="showCpCard"
+            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
+          />
         </transition>
         <transition appear @before-enter="beforeEnter" @enter="enter">
-          <mlCard v-show="showMlCard" />
+          <mlCard
+            v-show="showMlCard"
+            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
+          />
         </transition>
         <transition appear @before-enter="beforeEnter" @enter="enter">
-          <infosecCard v-show="showInfosecCard" />
+          <infosecCard
+            v-show="showInfosecCard"
+            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
+          />
         </transition>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
@@ -262,22 +336,7 @@ export default defineComponent({
 });
 </script>
 <style>
-.cont {
-  background: #1f2124;
-  background-size: cover;
-  max-width: 100%;
-  z-index: 1;
-}
-.particles {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 40vh;
-  left: 0;
-  z-index: 0;
-}
-.do {
-  z-index: 1;
-  position: relative;
+body {
+  scroll-behavior: smooth;
 }
 </style>
