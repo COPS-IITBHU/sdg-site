@@ -1,6 +1,6 @@
 <template>
-  <main class="text-center">
-    <h1 class="text-3xl hover:text-teal-500 py-4">HOME</h1>
+  <main>
+    <hero />
   </main>
 </template>
 

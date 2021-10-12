@@ -26,6 +26,7 @@
     "nuxt": "^2.14.6"
   },
   "devDependencies": {
+    "@iconify/json": "^1.1.412",
     "@nuxt/types": "^2.14.6",
     "@nuxt/typescript-build": "^2.0.3",
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
@@ -45,7 +46,8 @@
     "nuxt-windicss": "^1.2.3",
     "prettier": "^2.1.2",
     "sass": "^1.35.2",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "unplugin-icons": "^0.12.12"
   },
   "engines": {
     "node": ">=14",
