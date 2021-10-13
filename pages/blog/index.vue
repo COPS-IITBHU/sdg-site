@@ -4,7 +4,9 @@
     <main-section theme="one-column">
       <template v-slot:default>
         <!-- All Posts -->
+      <div>
         <posts-grid :resources="articles" />
+      </div>
       </template>
       <template v-slot:sidebar>
         <!-- Nothing here -->
@@ -90,4 +92,5 @@ export default defineComponent({
 .home-page .under-subtitle {
   border-top: none;
 }
+
 </style>
