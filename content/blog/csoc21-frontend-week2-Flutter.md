@@ -3,6 +3,8 @@ title: Flutter - CSOC'21 Dev Frontend Week 2
 date: 2021-06-15T11:51:59.091Z
 description: "You must have encountered keywords like async, await and Future till now. These are very important blocks that one should comprehend."
 parentBlog: CSOC'21 Dev Frontend Week 2
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 # Flutter
 

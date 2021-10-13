@@ -3,6 +3,8 @@ title: CSOC'21 Dev Frontend Week 1
 date: 2021-06-07T11:51:59.091Z
 description: "The first week into development, that familiarizes you with basics of development"
 parentBlog: CSOC'21 Dev Frontend
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 # Week 1

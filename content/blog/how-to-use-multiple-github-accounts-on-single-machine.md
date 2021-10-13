@@ -6,7 +6,9 @@ description: "A detailed blog about using multiple GitHub accounts on a single m
 keywords: "git, github, version control, vcs, open source"
 categories: [Blog]
 tags: [knowledge]
-icon:
+
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 ---

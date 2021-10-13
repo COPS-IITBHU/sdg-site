@@ -3,6 +3,8 @@ title: Javascript Framework React - CSOC'21 Dev Frontend Week 3
 date: 2021-06-22T11:51:59.091Z
 description: "React is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications by dividing the UI into composable elements."
 parentBlog: CSOC'21 Dev Frontend Week 3
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 # Javascript Library React

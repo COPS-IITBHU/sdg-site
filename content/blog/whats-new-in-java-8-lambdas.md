@@ -6,7 +6,9 @@ description: "A hands-on introduction to Java 8's most exciting new feature ✨"
 keywords: "Jekyll,gh-pages,website,blog,easy"
 categories: Blog
 tags: [Java,New feature]
-icon: 
+
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 # What’s new in Java 8: Lambdas :octocat:
