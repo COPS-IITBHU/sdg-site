@@ -21,7 +21,7 @@
           <li class="inline-block">
             <a
               aria-label="linkedin"
-              :href="linkedinId"
+              :href="socialMediaLink"
               class="
                 border-solid border
                 block
@@ -37,7 +37,7 @@
               "
             >
               <span
-                class="iconify text-hex-8f2d56 hover:text-white text-2xl"
+                class="iconify text-hex-8f2d56 text-2xl m-auto"
                 data-icon="uim:linkedin-alt"
               ></span>
             </a>
@@ -62,8 +62,8 @@
                 "
               >
                 <span
-                  class="iconify text-hex-8f2d56 text-2xl m-auto"
-                  data-icon="zmdi:github-alt"
+                  class="iconify text-hex-8f2d56 text-2xl m-auto mt-0.5"
+                  :data-icon="icon"
                 ></span>
               </a>
             </li>
@@ -84,9 +84,13 @@ export default {
       type: String,
       default: 'Title',
     },
-    linkedinId: {
+    socialMediaLink: {
       type: String,
       default: '#',
+    },
+    icon: {
+      type: String,
+      default: 'uim:github-alt',
     },
   },
   data() {
@@ -105,14 +109,5 @@ export default {
 }
 .our-team:hover .social li a {
   transition: all 0.5s ease 0s;
-  background: #8f2d56;
-}
-.our-team:hover .social li a .iconify {
-  color: #fff;
-}
-@media only screen and (max-width: 990px) {
-  .our-team {
-    margin-bottom: 30px;
-  }
 }
 </style>

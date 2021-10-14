@@ -1,28 +1,3 @@
 <template>
-  <sdg-card>
-    <li class="inline-block">
-      <a
-        aria-label="codeforces"
-        href="#"
-        class="
-          border-solid border
-          block
-          h-8
-          text-base
-          leading-9
-          text-center
-          w-8
-          rounded-full
-          border-hex-8f2d56
-          bg-white
-          hover:bg-hex-8f2d56
-        "
-      >
-        <span
-          class="iconify text-hex-8f2d56 text-2xl m-auto"
-          data-icon="simple-icons:codeforces"
-        ></span>
-      </a>
-    </li>
-  </sdg-card>
+  <sdg-card icon="simple-icons:codeforces" />
 </template>
