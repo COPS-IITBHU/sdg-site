@@ -1,17 +1,17 @@
 <template>
   <div id="home-page" class="page-wrapper home-page">
     <site-hero :title="title" :subtitle="subtitle" :image="featureImage" />
-    <main-section theme="one-column">
-      <template v-slot:default>
+    <!-- <main-section theme="one-column">
+      <template v-slot:default> -->
         <!-- All Posts -->
-      <div>
+      <!-- <div> -->
         <posts-grid :resources="articles" />
-      </div>
+      <!-- </div>
       </template>
       <template v-slot:sidebar>
-        <!-- Nothing here -->
+        Nothing here 
       </template>
-    </main-section>
+    </main-section> -->
     <!-- <news-letter-form-modal /> -->
   </div>
 </template>
