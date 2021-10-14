@@ -1,25 +1,21 @@
 <template>
-  <section :class="`hero is-medium hero-theme-${computedTheme}`">
-    <img
-      class="hero-bg-img"
-      :src="require(`@/assets${image}`)"
-      :lazy="false"
-      :srcset="responsiveImage.srcSet"
-    />
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title animated fadeInUp">
-          {{ title }}
-        </h1>
-        <h2 class="subtitle animated fadeInUp slower">
-          {{ subtitle }}
-        </h2>
-        <br />
-        <div
-          v-if="$slots.default"
-          class="under-subtitle animated fadeInDown slower"
-        >
-          <slot />
+  <section :class="`hero hero-theme-${computedTheme}`">
+    <div class="banner">
+      <img
+        class="hero-bg-img"
+        :src="require(`@/assets${image}`)"
+        :lazy="false"
+        :srcset="responsiveImage.srcSet"
+      />
+      <div class="hero-body">
+        <div>
+          <h1 class="title animated fadeInUp">
+            {{ title }}
+          </h1>
+          <h2 class="subtitle">
+            {{ subtitle }}            
+          </h2>
+          <br />
         </div>
       </div>
     </div>
@@ -33,7 +29,7 @@ export default {
     subtitle: { type: String, default: '' },
     image: { type: String, default: '' },
     color: { type: String, default: '#469af0' },
-    theme: { type: String, default: '' }
+    theme: { type: String, default: '' },
   },
   computed: {
     responsiveImage() {
@@ -42,16 +38,16 @@ export default {
       // return require(`~/assets${this.image}`)
       // }
       // this.image = `@/assets${this.image}`
-      return { source: `@/assets${this.image}`, srcSet: '' }
+      return { source: `@/assets${this.image}`, srcSet: '' };
     },
     computedTheme() {
       if (this.theme === '') {
-        return 'dark'
+        return 'dark';
       }
-      return this.theme || 'mist'
-    }
-  }
-}
+      return this.theme || 'mist';
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -62,10 +58,18 @@ export default {
   text-align: center;
   overflow: hidden;
   position: relative;
+  margin-bottom: 52px;
 }
 
+.banner {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title {
-  font-weight: 300;
+  font-weight: 400;
   @media (min-width: 768px) {
     font-size: 3.2rem;
   }
@@ -94,49 +98,59 @@ export default {
 }
 </style>
 <style lang="scss">
-// .hero {
-//   .hero-bg-img {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     object-fit: cover;
-//     width: 100%;
-//     height: 100%;
-//   }
-//   .opti-image {
-//     opacity: 0;
-//   }
-//   .opti-image-loaded {
-//     opacity: 1;
-//   }
-// }
-// .hero-theme-mist {
-//   .hero-bg-img {
-//     filter: grayscale(1);
-//   }
-//   .opti-image-loaded {
-//     opacity: 0.12;
-//     animation: blurInGrayscale 4.5s ease;
-//   }
-// }
-// .hero-theme-dark,
-// .hero-theme-light {
-//   &.hero:after {
-//     content: '';
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background: rgba(0, 0, 0, 0.65);
-//     position: absolute;
-//   }
-//   .hero-body {
-//     position: relative;
-//     z-index: 2;
-//   }
-// }
+.hero {
+  .hero-bg-img {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .opti-image {
+    opacity: 0;
+  }
+  .opti-image-loaded {
+    opacity: 1;
+  }
+}
+.hero-theme-mist {
+  .hero-bg-img {
+    filter: grayscale(1);
+  }
+  .opti-image-loaded {
+    opacity: 0.12;
+    animation: blurInGrayscale 4.5s ease;
+  }
+}
+.hero-theme-dark,
+.hero-theme-light {
+  &.hero:after {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+  }
+  .hero-body {
+    position: relative;
+    z-index: 2;
+  }
+}
 .hero-theme-dark {
   .title,
   .subtitle,
