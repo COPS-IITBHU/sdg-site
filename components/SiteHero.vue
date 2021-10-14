@@ -13,8 +13,7 @@
             {{ title }}
           </h1>
           <h2 class="subtitle">
-            {{ subtitle }}
-            Yash Prakash
+            {{ subtitle }}            
           </h2>
           <br />
         </div>
