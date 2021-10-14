@@ -1,8 +1,10 @@
 ---
 title: Native Android - CSOC'21 Dev Frontend Week 2
 date: 2021-06-15T11:51:59.091Z
-description: "Android uses a file system that's similar to disk-based file systems on other platforms."
+subtitle: "Android uses a file system that's similar to disk-based file systems on other platforms."
 parentBlog: CSOC'21 Dev Frontend Week 2
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 # Native Android
@@ -48,6 +50,7 @@ To give users better control over their files and cut down on clutter, apps now 
 [Android External Storage with Examples - Tutlane](https://www.tutlane.com/tutorial/android/android-external-storage-with-examples#:~:text=In)
 
 [https://www.youtube.com/watch?v=7CEcevGbIZU](https://www.youtube.com/watch?v=7CEcevGbIZU)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7CEcevGbIZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## SQLite database
 

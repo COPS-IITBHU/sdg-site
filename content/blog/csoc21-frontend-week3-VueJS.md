@@ -3,6 +3,8 @@ title: Javascript Framework VueJS - CSOC'21 Dev Frontend Week 3
 date: 2021-06-22T11:51:59.091Z
 description: "VueJS is a Progressive Javascript Framework which was born as a cumulation of the best parts from older frameworks like React and Angular."
 parentBlog: CSOC'21 Dev Frontend Week 3
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 # Javascript Framework VueJS

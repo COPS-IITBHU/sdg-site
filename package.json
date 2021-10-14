@@ -22,7 +22,11 @@
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "lodash.isstring": "^4.0.1",
+    "lodash.range": "^3.2.0",
+    "nuxt": "^2.14.6",
+    "opti-image": "^0.10.0",
+    "v-runtime-template": "^1.10.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",

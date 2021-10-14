@@ -3,6 +3,8 @@ title: CSOC'21 Dev Backend Week 5
 date: 2020-07-14T11:51:59.091Z
 description: "Now that you have completed the CSOC Backend Assignment, you built your own web app backed with Django/Express as the backend."
 parentBlog: CSOC'21 Dev Backend
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 # Week 5

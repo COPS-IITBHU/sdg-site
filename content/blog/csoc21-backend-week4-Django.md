@@ -5,6 +5,8 @@ description: "So After Frontend, we are left with Web Backend to gain a good com
 subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 4
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 

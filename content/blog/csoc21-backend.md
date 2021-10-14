@@ -3,13 +3,13 @@ title: CSOC'21 Dev Backend
 date: 2021-06-22T11:51:59.091Z
 description: "Welcome to CSoC'21 Backend Development! Here's all the resources and tasks you need to know, complete, and focus on for every week."
 display: True
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
-
-# CSoC'21 Dev Backend
 
 Welcome to CSoC'21 Dev! Here's all the backend resources and tasks you need to know, complete, and focus on for every week.
 
-For frontend resources you should refer [CSoC'21 Dev Frontend](csoc21-frontend).
+For frontend resources you should refer [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
 
 # Heads up!
 
@@ -19,10 +19,10 @@ The backend track can be completed in about 3-4 weeks, beginning with the fundam
 
 ### Weeks
 
-- [Week 4](csoc21-backend-week4)
-- [Week 5](csoc21-backend-week5)
+- [Week 4](/blog/csoc21-backend-week4)
+- [Week 5](/blog/csoc21-backend-week5)
 
-_Note: - Weeks 0-3 are covered in the frontend development track. For frontend resources you should refer [CSoC'21 Dev Frontend](csoc21-frontend)._
+_Note: - Weeks 0-3 are covered in the frontend development track. For frontend resources you should refer [CSoC'21 Dev Frontend](/blog/csoc21-frontend)._
 
 # Things to keep in mind
 

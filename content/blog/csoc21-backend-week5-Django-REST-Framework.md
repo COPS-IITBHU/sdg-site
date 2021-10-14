@@ -5,6 +5,8 @@ description: "Consider that after having completed the CSOC Django Assignment, y
 subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 5
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 # Django REST Framework

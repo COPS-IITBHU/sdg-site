@@ -3,8 +3,9 @@ title: CSOC'21 Dev Frontend
 date: 2021-05-30T11:51:59.091Z
 description: "Welcome to CSoC'21 Frontend Development! Here's all the resources and tasks you need to know, complete, and focus on for every week."
 display: True
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
-## CSOC'21 Dev Frontend
 
 Welcome to CSoC'21 Dev! Here's all the resources and tasks you need to know, complete, and focus on for every week.
 

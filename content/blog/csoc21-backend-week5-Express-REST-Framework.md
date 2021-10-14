@@ -5,6 +5,8 @@ description: "Express provides support for using both Relational and NoSQL datab
 subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 5
+author: Daniel Kelly
+featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
 ---
 
 # Express
