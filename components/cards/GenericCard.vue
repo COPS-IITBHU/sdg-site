@@ -11,7 +11,7 @@
             :height="imageRatio[1]"
             :sizes="`(min-width: 768px) ${100 / 3}vw`"
           />
-          <loading-spinner position="absolute" />
+<!-- <loading-spinner position="absolute" /> -->
         </figure>
       </component>
     </div>
