@@ -1,7 +1,10 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <component :is="link ? 'nuxt-link' : 'span'" :to="{ path: link, params: { subBlogs }}">
+      <component
+        :is="link ? 'nuxt-link' : 'span'"
+        :to="{ path: link, params: { subBlogs } }"
+      >
         <figure :class="`image is-${imageRatioClass}`">
           <opti-image
             v-if="image"
@@ -11,45 +14,34 @@
             :height="imageRatio[1]"
             :sizes="`(min-width: 768px) ${100 / 3}vw`"
           />
-          <loading-spinner position="absolute" />
+          <!-- <loading-spinner position="absolute" /> -->
         </figure>
       </component>
     </div>
     <div class="card-content">
-      <div class="media">
-        <div class="media-content">
-          <nuxt-link :to="link">
-            <h3
-              :class="
-                `title
-                is-5
-                has-text-weight-light
-                ${title ? '' : 'empty-content-placeholder'}`
-              "
-            >
-              {{ title }}
-            </h3>
-            <h4
-              :class="{
-                subtitle: true,
-                'is-6': true,
-                'empty-content-placeholder': !$slots.default
-              }"
-            >
-              <slot></slot>
-            </h4>
-          </nuxt-link>
-        </div>
-      </div>
+      <nuxt-link :to="link">
+        <h2 :class="`${title ? '' : 'empty-content-placeholder'}`">
+          {{ title }}
+        </h2>
+        <h4
+          :class="{
+            subtitle: true,
+            'is-6': true,
+            'empty-content-placeholder': !$slots.default,
+          }"
+        >
+          <slot></slot>
+        </h4>
+      </nuxt-link>
     </div>
   </div>
 </template>
 <script>
-import { OptiImage } from 'opti-image'
-const imageDimensionDefault = '16x9'
+import { OptiImage } from 'opti-image';
+const imageDimensionDefault = '16x9';
 export default {
   components: {
-    OptiImage
+    OptiImage,
   },
   props: {
     title: { type: String, default: '' },
@@ -59,30 +51,30 @@ export default {
     // subBlogs: { type: Array, default: [] }
   },
   computed: {
-    subBlogs(){
-      return []
+    subBlogs() {
+      return [];
     },
     imageRatioClass() {
-      const imageDimensions = this.imageDimensions || imageDimensionDefault
-      return imageDimensions.toLowerCase().replace('x', 'by')
+      const imageDimensions = this.imageDimensions || imageDimensionDefault;
+      return imageDimensions.toLowerCase().replace('x', 'by');
     },
     imageRatio() {
-      const imageDimensions = this.imageDimensions || imageDimensionDefault
+      const imageDimensions = this.imageDimensions || imageDimensionDefault;
       return imageDimensions
         .toLowerCase()
         .split('x')
         .map((size) => {
-          return size * 2000
-        })
+          return size * 2000;
+        });
     },
     responsiveImage() {
       // if (this.image.indexOf('/uploads') === 0) {
       //   return require(`~/assets${this.image}`)
       // }
-      return { src: this.image, srcSet: '' }
-    }
-  }
-}
+      return { src: this.image, srcSet: '' };
+    },
+  },
+};
 </script>
 <style scoped lang="scss">
 .subtitle {
@@ -107,6 +99,9 @@ export default {
   &.subtitle {
     width: 70%;
   }
+}
+.card-content {
+  padding: 1rem;
 }
 </style>
 <style lang="scss">

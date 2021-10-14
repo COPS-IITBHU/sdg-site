@@ -4,23 +4,29 @@
     :resource="resources"
     :theme="null" 
   > -->
-    <template>
-    <div>
-      <post-card v-for="(item,i) in resources" :key="i"
+<template>
+  <div>
+    <div class="cards">
+      <post-card
+        v-for="(item, i) in resources"
+        :key="i"
         :title="item.title"
         :link="`/blog/${item.slug}/`"
         :image="item.featureImage"
         :author="item.author"
         :date="item.date"
         :subBlogs="item.subBlogs"
-      /></div>
-    </template>
-  <!-- </resource-grid> 
+      />
+    </div>
+  </div>
+</template>
+<!-- </resource-grid> 
 </template>-->
 
 <script>
-import PostCard from '~/components/cards/PostCard'
-import ResourceGrid from '~/components/grids/ResourceGrid.vue'
+
+import PostCard from '~/components/cards/PostCard';
+import ResourceGrid from '~/components/grids/ResourceGrid.vue';
 export default {
   name: 'PostsGrid',
   components: { PostCard, ResourceGrid },
@@ -32,10 +38,29 @@ export default {
     category: {
       type: Array,
       default() {
-        return []
-      }
+        return [];
+      },
     },
-    exclude: { type: String, default: '' }
-  }
-}
+    exclude: { type: String, default: '' },
+  },
+};
+
 </script>
+
+<style scoped>
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  list-style: none;
+
+}
+
+
+
+
+
+
+
+</style>
