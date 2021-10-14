@@ -52,9 +52,9 @@ export default {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   list-style: none;
-  justify-content: center;
+
 }
 
 

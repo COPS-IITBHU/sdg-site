@@ -13,7 +13,8 @@
             {{ title }}
           </h1>
           <h2 class="subtitle">
-            {{ subtitle }}            
+            {{ subtitle }}
+            Yash Prakash
           </h2>
           <br />
         </div>
@@ -58,6 +59,7 @@ export default {
   text-align: center;
   overflow: hidden;
   position: relative;
+  margin-bottom: 52px;
 }
 
 .banner {

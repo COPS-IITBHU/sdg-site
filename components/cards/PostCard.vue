@@ -8,6 +8,7 @@
     :image-dimensions="null"
     :subBlogs="subBlogs"
   >
+  <div class="card-details">
     <span
       v-if="author"
       class="author-wrapper"
@@ -17,7 +18,7 @@
     <span v-if="date" class="date-wrapper">
       <strong>Published on:</strong> {{ datePretty }}
     </span>
-  
+  </div>
   </generic-card>
     </div>
   </div>
@@ -91,6 +92,8 @@ export default {
   overflow: hidden;  
 }
 
-
+.card-details {
+  padding-top: 0.25rem;
+}
 
 </style>
