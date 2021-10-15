@@ -9,18 +9,16 @@
   </modal-overlay>
 </template>
 <script>
-import ModalOverlay from '~/components/ModalOverlay.vue'
-import NewsLetterForm from '~/components/NewsLetterForm.vue'
+import ModalOverlay from '~/components/ModalOverlay.vue';
+import NewsLetterForm from '~/components/NewsLetterForm.vue';
 export default {
   components: { ModalOverlay, NewsLetterForm },
   computed: {
     title() {
-      return (
-        'Subscribe to Our Newsletter'
-      )
-    }
-  }
-}
+      return 'Subscribe to Our Newsletter';
+    },
+  },
+};
 </script>
 
 <style lang="scss">

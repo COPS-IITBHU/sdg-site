@@ -1,10 +1,10 @@
 ---
 title: Flutter - CSOC'21 Dev Frontend Week 3
 date: 2020-06-22T11:51:59.091Z
-description: "What happens when you log out of your Social Media account from one device and open it again on a different device? You see that all your chat messages, profile picture, groups etc. are preserved. It feels like you never changed your device at all. But how did this happen?"
+description: 'What happens when you log out of your Social Media account from one device and open it again on a different device? You see that all your chat messages, profile picture, groups etc. are preserved. It feels like you never changed your device at all. But how did this happen?'
 parentBlog: CSOC'21 Dev Frontend Week 3
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/Flutter.jpg
 ---
 
 # Flutter ( Network Calls )
@@ -22,17 +22,17 @@ This can be made possible if we have a system that can store our app-data online
 
 - A backend server that supplies the API endpoints to the frontend.
 
-    [Back-End Web Architecture | Codecademy](https://www.codecademy.com/articles/back-end-architecture)
+  [Back-End Web Architecture | Codecademy](https://www.codecademy.com/articles/back-end-architecture)
 
-    Endpoints are important aspects of interacting with server-side web APIs, as they specify where resources lie that can be accessed by third party software. Usually the access is via a URI to which HTTP requests are posted, and from which the response is thus expected.
+  Endpoints are important aspects of interacting with server-side web APIs, as they specify where resources lie that can be accessed by third party software. Usually the access is via a URI to which HTTP requests are posted, and from which the response is thus expected.
 
-    [An Introduction To Backend Development and REST APIs](https://medium.com/techloop/an-introduction-to-backend-development-and-rest-apis-b1a1a978821f)
+  [An Introduction To Backend Development and REST APIs](https://medium.com/techloop/an-introduction-to-backend-development-and-rest-apis-b1a1a978821f)
 
 - A server environment (we shall use node) and HTTPS server that listens to server ports and sends responses from the server back to the client (Also known as MiddleWare).
 
-    [The HTTP Server Explained](https://medium.com/@gabriellamedas/the-http-server-explained-c41380307917)
+  [The HTTP Server Explained](https://medium.com/@gabriellamedas/the-http-server-explained-c41380307917)
 
-    [What is Node? | Codecademy](https://www.codecademy.com/articles/what-is-node)
+  [What is Node? | Codecademy](https://www.codecademy.com/articles/what-is-node)
 
 - The frontend code which would interact with the user.
 
@@ -48,7 +48,7 @@ So this week you are going to get started with using API endpoints. For basic kn
 
 [What is an API?](https://www.youtube.com/watch?v=s7wmiS2mSXY)
 
-For apps of all shapes and sizes (mobile app, web app, IoT, desktop app) they need a well-defined **Application Programming *Interface* (API)** to abstract away the business logic of backend and to cater to any client supporting only HTTP.
+For apps of all shapes and sizes (mobile app, web app, IoT, desktop app) they need a well-defined **Application Programming _Interface_ (API)** to abstract away the business logic of backend and to cater to any client supporting only HTTP.
 
 Now that you know what an API actually is, the next stage is to learn how can we use APIs and what are the ways to interact with these APIs
 
@@ -64,7 +64,7 @@ We'll cover the most popular pattern of HTTP APIs, the so-called RESTful APIs ne
 
 ---
 
-So much for the conceptual part, let's get started with the practical knowledge! 
+So much for the conceptual part, let's get started with the practical knowledge!
 
 # Using REST APIs for handling data over internet
 

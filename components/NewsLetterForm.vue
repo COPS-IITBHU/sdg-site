@@ -34,16 +34,16 @@
 export default {
   data() {
     return {
-      email: ''
-    }
+      email: '',
+    };
   },
   computed: {
     formAction() {
       if (this.$siteConfig.newsletter.mailchimp.on) {
-        return this.$siteConfig.newsletter.mailchimp.formAction
+        return this.$siteConfig.newsletter.mailchimp.formAction;
       }
-      return this.$siteConfig.newsletter.custom.formAction
-    }
-  }
-}
+      return this.$siteConfig.newsletter.custom.formAction;
+    },
+  },
+};
 </script>

@@ -1,11 +1,12 @@
 ---
 title: Web Development - CSOC'21 Dev Frontend Week 2
 date: 2021-06-15T11:51:59.091Z
-description: "Last week you learned about creating static websites. The next step before moving on to creating Web Applications is to know about what is the difference between the two."
+description: 'Last week you learned about creating static websites. The next step before moving on to creating Web Applications is to know about what is the difference between the two.'
 parentBlog: CSOC'21 Dev Frontend Week 2
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/WEB.png
 ---
+
 # Web Development
 
 Due Date: June 21, 2021
@@ -13,7 +14,7 @@ type: Mandatory
 
 # What is a Web Application?
 
-Last week you learned about creating static websites. The next step before moving on to creating Web Applications is to know about what is the difference between the two. 
+Last week you learned about creating static websites. The next step before moving on to creating Web Applications is to know about what is the difference between the two.
 
 Very often, the terminologies dynamic websites and web applications are used exchangably.
 
@@ -23,25 +24,25 @@ A very basic and detailed answer to the difference between static websites and d
 
 ## Components of a Web App
 
-A web app is more of functionality than just the design.  Anything worthwhile is not simple and does not come easily. Technically, a Web app is an application program that is stored on a remote server and delivered over the Internet through a browser interface. Creating and serving a web app requires
+A web app is more of functionality than just the design. Anything worthwhile is not simple and does not come easily. Technically, a Web app is an application program that is stored on a remote server and delivered over the Internet through a browser interface. Creating and serving a web app requires
 
 - A backend server that supplies the API endpoints to the frontend.
 
-    [Back-End Web Architecture | Codecademy](https://www.codecademy.com/articles/back-end-architecture)
+  [Back-End Web Architecture | Codecademy](https://www.codecademy.com/articles/back-end-architecture)
 
-    Endpoints are important aspects of interacting with server-side web APIs, as they specify where resources lie that can be accessed by third party software. Usually the access is via a URI to which HTTP requests are posted, and from which the response is thus expected.
+  Endpoints are important aspects of interacting with server-side web APIs, as they specify where resources lie that can be accessed by third party software. Usually the access is via a URI to which HTTP requests are posted, and from which the response is thus expected.
 
-    [An Introduction To Backend Development and REST APIs](https://medium.com/techloop/an-introduction-to-backend-development-and-rest-apis-b1a1a978821f)
+  [An Introduction To Backend Development and REST APIs](https://medium.com/techloop/an-introduction-to-backend-development-and-rest-apis-b1a1a978821f)
 
 - A server environment (we shall use node) and HTTPS server that listens to server ports and sends responses from the server back to the client (Also known as MiddleWare).
 
-    [The HTTP Server Explained](https://medium.com/@gabriellamedas/the-http-server-explained-c41380307917)
+  [The HTTP Server Explained](https://medium.com/@gabriellamedas/the-http-server-explained-c41380307917)
 
-    [What is Node? | Codecademy](https://www.codecademy.com/articles/what-is-node)
+  [What is Node? | Codecademy](https://www.codecademy.com/articles/what-is-node)
 
 - The frontend code which will actually be running in the users' browser.
 
-    Read the HTML, CSS and Javascript from here.
+  Read the HTML, CSS and Javascript from here.
 
 **Why Separate backend and frontend code?**
 
@@ -61,7 +62,7 @@ So this week you are going to get started with using API endpoints. For basic kn
 
 [What is an API?](https://www.youtube.com/watch?v=s7wmiS2mSXY)
 
-For apps of all shapes and sizes (mobile app, web app, IoT, desktop app) they need a well-defined **Application Programming *Interface* (API)** to abstract away the business logic of backend and to cater to any client supporting only HTTP.
+For apps of all shapes and sizes (mobile app, web app, IoT, desktop app) they need a well-defined **Application Programming _Interface_ (API)** to abstract away the business logic of backend and to cater to any client supporting only HTTP.
 
 Now that you know what an API actually is, the next stage is to learn how can we use APIs and what are the ways to interact with these APIs
 
@@ -77,11 +78,11 @@ We'll cover the most popular pattern of HTTP APIs, the so-called RESTful APIs ne
 
 ---
 
-So much for the conceptual part, let's get started with the practical knowledge! 
+So much for the conceptual part, let's get started with the practical knowledge!
 
 # Axios
 
-In a nutshell, `Axios` is a JavaScript library used to make HTTP requests from Node.js or XMLHttpRequests from the browser that also supports the ES6 Promise API. 
+In a nutshell, `Axios` is a JavaScript library used to make HTTP requests from Node.js or XMLHttpRequests from the browser that also supports the ES6 Promise API.
 
 In simpler terms, Axios allows us to communicate with APIs easily in our web apps. Though this can also be achieved by other methods like `fetch` , Axios can provide a little more functionality that makes our job easier. It is one of the most convenient and popular libraries for making HTTP requests to APIs.
 
@@ -103,7 +104,7 @@ The complete documentation can be found here in case you wish to dive deep
 
 # Bonus Treats
 
-In this task we have provided you with a Development Enviornment which has been configured using **Vite** ( French for Fast pronounced as *Veet* ) which is the new standard for Hot Module Replacement and build step uses **Rollup** which is a javascript bundler. To know more about what thing does Next Gen bundlers do different from something like **Webpack** or **Parcel**
+In this task we have provided you with a Development Enviornment which has been configured using **Vite** ( French for Fast pronounced as _Veet_ ) which is the new standard for Hot Module Replacement and build step uses **Rollup** which is a javascript bundler. To know more about what thing does Next Gen bundlers do different from something like **Webpack** or **Parcel**
 
 [448: Next Gen Bundlers with Jason Miller and Fred Schott - ShopTalk](https://shoptalkshow.com/448/)
 

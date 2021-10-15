@@ -1,10 +1,10 @@
 ---
 title: Native Android - CSOC'21 Dev Frontend Week 3
 date: 2020-06-22T11:51:59.091Z
-description: "What happens when you log out of your Social Media account from one device and open it again on a different device? You see that all your chat messages, profile picture, groups etc. are preserved. It feels like you never changed your device at all. But how did this happen?"
+description: 'What happens when you log out of your Social Media account from one device and open it again on a different device? You see that all your chat messages, profile picture, groups etc. are preserved. It feels like you never changed your device at all. But how did this happen?'
 parentBlog: CSOC'21 Dev Frontend Week 3
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/android.png
 ---
 
 # Android (Network Calls)
@@ -22,9 +22,9 @@ type: Mandatory
 
 # Introduction
 
-What happens when you log out of your Social Media account from one device and open it again on a different device? You see that all your chat messages, profile picture, groups etc. are preserved. It feels like you never changed your device at all. But how did this happen? 
+What happens when you log out of your Social Media account from one device and open it again on a different device? You see that all your chat messages, profile picture, groups etc. are preserved. It feels like you never changed your device at all. But how did this happen?
 
-This can be made possible if we have a system that can store our app-data online and whenever required, this data can be provided to the client apps. For doing so our apps should be able to send and receive data to and from the Internet, and hence we need to learn about making network calls and online data storage. 
+This can be made possible if we have a system that can store our app-data online and whenever required, this data can be provided to the client apps. For doing so our apps should be able to send and receive data to and from the Internet, and hence we need to learn about making network calls and online data storage.
 
 # How to make Network Calls
 
@@ -36,19 +36,19 @@ You will be interacting with a Rest API to authenticate your user and also store
 
 - What is Rest API
 
-    This is something which you should try to learn about your self but here is a video to help you understand it 
+  This is something which you should try to learn about your self but here is a video to help you understand it
 
-    [What is REST API? | Web Service](https://www.youtube.com/watch?v=qVTAB8Z2VmA)
+  [What is REST API? | Web Service](https://www.youtube.com/watch?v=qVTAB8Z2VmA)
 
 - How to use Retrofit (Important)
 
-    This networking library will help you to write code for retrieving/storing data from an API. You will have to create models on how to use parse a network response into a structure. This video series will help you guide on how to use Retrofit  
+  This networking library will help you to write code for retrieving/storing data from an API. You will have to create models on how to use parse a network response into a structure. This video series will help you guide on how to use Retrofit
 
-    [Retrofit Tutorial for Beginners - Android Programming](https://www.youtube.com/playlist?list=PLrnPJCHvNZuCbuD3xpfKzQWOj3AXybSaM)
+  [Retrofit Tutorial for Beginners - Android Programming](https://www.youtube.com/playlist?list=PLrnPJCHvNZuCbuD3xpfKzQWOj3AXybSaM)
 
 # Assignment
 
-In the previous week, you guys got to learn about how to store data locally on your Android Device. This week tasks will be an extension of the previous TODO List App. 
+In the previous week, you guys got to learn about how to store data locally on your Android Device. This week tasks will be an extension of the previous TODO List App.
 
 ## T**ODO Maker 2.0**
 

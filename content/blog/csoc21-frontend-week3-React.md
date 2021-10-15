@@ -1,10 +1,10 @@
 ---
 title: Javascript Framework React - CSOC'21 Dev Frontend Week 3
 date: 2021-06-22T11:51:59.091Z
-description: "React is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications by dividing the UI into composable elements."
+description: 'React is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications by dividing the UI into composable elements.'
 parentBlog: CSOC'21 Dev Frontend Week 3
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/React.png
 ---
 
 # Javascript Library React
@@ -92,7 +92,7 @@ This article will help you in doing so
 
 Ever since the enormous spike in popularity of highly dynamic front-end frameworks such as React, web developers have been trying to find a balance between the interactive user experience offered by client-side rendering, and the various speed and optimization related benefits provided by server-side data rendering.
 
-One easy way of combining these techniques to get the best of both worlds is by using [Next JS](https://nextjs.org/), a simple and flexible framework built on top of React, which allows users to utilize a wide range of features like server-side rendering, static site generation, easy file-based routing and much more! 
+One easy way of combining these techniques to get the best of both worlds is by using [Next JS](https://nextjs.org/), a simple and flexible framework built on top of React, which allows users to utilize a wide range of features like server-side rendering, static site generation, easy file-based routing and much more!
 
 To know more about Next JS, you can read this tutorial
 
@@ -102,17 +102,17 @@ Some other resources that will come handy while working with Next JS
 
 - Page Routing
 
-    [Next.js Tutorial : Static and Dynamic Routing](https://codeburst.io/next-js-tutorial-static-and-dynamic-routing-fba70e26359a)
+  [Next.js Tutorial : Static and Dynamic Routing](https://codeburst.io/next-js-tutorial-static-and-dynamic-routing-fba70e26359a)
 
 - CSS Modules
 
-    [Basic Features: Built-in CSS Support | Next.js](https://nextjs.org/docs/basic-features/built-in-css-support)
+  [Basic Features: Built-in CSS Support | Next.js](https://nextjs.org/docs/basic-features/built-in-css-support)
 
 - Next JS Handbook
 
-    [The Next.js Handbook](https://www.freecodecamp.org/news/the-next-js-handbook/)
+  [The Next.js Handbook](https://www.freecodecamp.org/news/the-next-js-handbook/)
 
-*So much for the conceptual part, let's get started with coding!* 
+_So much for the conceptual part, let's get started with coding!_
 
 Here's a crash course which will guide you in setting up your first React Project
 

@@ -1,12 +1,12 @@
 ---
 title: Express REST Framework - CSOC'21 Dev Backend Week 5
 date: 2020-07-14T11:51:59.091Z
-description: "Express provides support for using both Relational and NoSQL databases.Creating a backend without user login and authentication is incomplete. "
+description: 'Express provides support for using both Relational and NoSQL databases.Creating a backend without user login and authentication is incomplete. '
 subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 5
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/Nodejs.jpg
 ---
 
 # Express
@@ -84,7 +84,7 @@ Well anything untested is never reliable. We provide you resources for setting u
 
 **So much for learning, here is your next Assignment!**
 
-**All the details of the task are provided in the [README.md](https://github.com/COPS-IITBHU/CSOC-2021-task-5-Express-Apis/blob/master/README.md) file.** 
+**All the details of the task are provided in the [README.md](https://github.com/COPS-IITBHU/CSOC-2021-task-5-Express-Apis/blob/master/README.md) file.**
 
 **As you are aware, you need to fork from and the repository, clone the forked repository, complete the task, commit and push your changes and finally open the pull request back here.**
 
