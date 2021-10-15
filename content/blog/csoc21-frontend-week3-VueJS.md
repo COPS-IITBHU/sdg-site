@@ -1,10 +1,10 @@
 ---
 title: Javascript Framework VueJS - CSOC'21 Dev Frontend Week 3
 date: 2021-06-22T11:51:59.091Z
-description: "VueJS is a Progressive Javascript Framework which was born as a cumulation of the best parts from older frameworks like React and Angular."
+description: 'VueJS is a Progressive Javascript Framework which was born as a cumulation of the best parts from older frameworks like React and Angular.'
 parentBlog: CSOC'21 Dev Frontend Week 3
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/VUE.png
 ---
 
 # Javascript Framework VueJS
@@ -14,7 +14,7 @@ type: Mandatory
 
 # Introduction
 
-VueJS is a Progressive Javascript Framework which was born as a cumulation of the best parts from older frameworks like React and Angular. It provides you out of the box access to a reactive system, state mangement and template compiler. VueJS is performant, versatile and approachable. 
+VueJS is a Progressive Javascript Framework which was born as a cumulation of the best parts from older frameworks like React and Angular. It provides you out of the box access to a reactive system, state mangement and template compiler. VueJS is performant, versatile and approachable.
 
 VueJS is very intuitive and beginner friendly and that doesn't mean your page performance has to suffer because of that in any way. You know HTML, CSS and JS that's great you can dive into Vue right away!
 
@@ -38,7 +38,7 @@ One of the best courses that you can find for learning VueJS and its not some bi
 
 [Learn Vue 3 in this Introduction to Vue.js Course by Core Vue Team Member, Sarah Drasner](https://frontendmasters.com/courses/vue-3/)
 
-For accessing the course you will need a Frontend Masters Account which you don't have to worry about as Github Education Pack got you covered with a 6 month subscription. If you dont have apply for it or use your friends till you get yours ;) 
+For accessing the course you will need a Frontend Masters Account which you don't have to worry about as Github Education Pack got you covered with a 6 month subscription. If you dont have apply for it or use your friends till you get yours ;)
 
 [GitHub Student Developer Pack](https://education.github.com/pack)
 
@@ -58,7 +58,7 @@ Vue uses directives things like `v-if` , `v-model` , `v-for` , `v-bind` etc to p
 
 ## Single File Component ( SFC )
 
-In earlier guide you might have seen use of things like Vue.use .... blah blah we dont do that here. We have a single file that does it all for us. VueJS uses a single file architecture where your `HTML` lies in `template` tag, `javascript` inside of `script` tag and finally all your `styles` lie inside `style` tag. 
+In earlier guide you might have seen use of things like Vue.use .... blah blah we dont do that here. We have a single file that does it all for us. VueJS uses a single file architecture where your `HTML` lies in `template` tag, `javascript` inside of `script` tag and finally all your `styles` lie inside `style` tag.
 
 [](https://vuejs.org/v2/guide/single-file-components.html)
 
@@ -102,11 +102,11 @@ Check this only to know how you import components in a page and how we use them.
 
 ## State Management
 
-You might have used `localStorage` for managing global state in your app but that changes from here onwards because using `localStorage` is not a fast neither a scalable solution. VueJS comes out of the box with `VueX` its global state management solution unlike some libraries that call themselves frameworks and dont even have their own routing and state management ( ahem ahem  `R` something :P )
+You might have used `localStorage` for managing global state in your app but that changes from here onwards because using `localStorage` is not a fast neither a scalable solution. VueJS comes out of the box with `VueX` its global state management solution unlike some libraries that call themselves frameworks and dont even have their own routing and state management ( ahem ahem `R` something :P )
 
 [State | Vuex](https://vuex.vuejs.org/guide/state.html#single-state-tree)
 
-Changes to state are made using `mutations` in `VueX` and for asynchronous changes like making axios calls we use `actions` 
+Changes to state are made using `mutations` in `VueX` and for asynchronous changes like making axios calls we use `actions`
 
 [Mutations | Vuex](https://vuex.vuejs.org/guide/mutations.html)
 
@@ -156,13 +156,13 @@ Vue3 introduced several new features biggest of which is the composition api. Yo
 
 [Using Axios to Consume APIs - Vue.js](http://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html)
 
-## Challenges  and Submission
+## Challenges and Submission
 
 This week will again provide you will a UI ready Todo frontend Application and you will have to integrate the API into using VueJS tooling.
 
 If you see **lang=**"**ts"** or **.ts** somewhere dont worry its just typescript a super set of javascript which you dont need to worry about as of now its only there to provide you with code completions to make your life easy.
 
-At some places **setup** function has been used for providing access to **Composition API** which you dont need to you are to continue with **Options API.** Thats the default for all your tasks except login that much you can handle :) 
+At some places **setup** function has been used for providing access to **Composition API** which you dont need to you are to continue with **Options API.** Thats the default for all your tasks except login that much you can handle :)
 
 ### Useful Extensions
 

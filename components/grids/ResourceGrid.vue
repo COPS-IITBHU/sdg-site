@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import isString from 'lodash.isstring'
-import PresentationalGrid from './PresentationalGrid'
+import isString from 'lodash.isstring';
+import PresentationalGrid from './PresentationalGrid';
 
 export default {
   name: 'ResourceGrid',
@@ -35,10 +35,10 @@ export default {
     category: {
       type: Array,
       default() {
-        return []
-      }
+        return [];
+      },
     },
-    exclude: { type: String, default: '' }
+    exclude: { type: String, default: '' },
   },
   data() {
     return {
@@ -47,13 +47,13 @@ export default {
       resources: [],
       page: 0,
       allPostsLoaded: false,
-      loading: false
-    }
+      loading: false,
+    };
   },
   computed: {
     resourceController() {
-      return isString(this.resource) ? this.$cms[this.resource] : this.resource
-    }
+      return isString(this.resource) ? this.$cms[this.resource] : this.resource;
+    },
   },
   // created() {
   //   this.$eventBus.$on('route-changed', this.reset)
@@ -63,61 +63,61 @@ export default {
   // },
   methods: {
     reset() {
-      console.log('resetting resource grid')
-      this.resourceController.reset()
-      this.page = 0
-      this.allLoaded = false
-      this.firstPageLoaded = false
-      this.loading = false
-      this.resources = []
+      console.log('resetting resource grid');
+      this.resourceController.reset();
+      this.page = 0;
+      this.allLoaded = false;
+      this.firstPageLoaded = false;
+      this.loading = false;
+      this.resources = [];
     },
     loadMore() {
       if (this.loading) {
-        return
+        return;
       }
       if (!this.firstPageLoaded) {
-        this.reset()
+        this.reset();
       }
       if (!this.allLoaded) {
-        this.page++
-        this.addResources()
+        this.page++;
+        this.addResources();
       }
     },
     async addResources() {
-      this.loading = true
-      let resources = []
+      this.loading = true;
+      let resources = [];
       if (this.number) {
-        resources = await this.getPostsByNumber()
-        this.allLoaded = true
+        resources = await this.getPostsByNumber();
+        this.allLoaded = true;
       } else {
         try {
           resources = await this.resourceController.getByPage(
             this.page,
             this.resourceFilters
-          )
+          );
         } catch (err) {
-          this.allLoaded = true
-          return
+          this.allLoaded = true;
+          return;
         }
       }
 
       if (!this.firstPageLoaded) {
-        this.resources = resources
-        this.firstPageLoaded = true
+        this.resources = resources;
+        this.firstPageLoaded = true;
       } else {
-        this.resources = this.resources.concat(resources)
+        this.resources = this.resources.concat(resources);
       }
-      this.loading = false
+      this.loading = false;
     },
     async getPostsByNumber() {
       try {
         const resources = await this.resourceController.getByNumber(
           this.number,
           this.resourceFilters
-        )
-        return resources
+        );
+        return resources;
       } catch (err) {
-        return []
+        return [];
       }
     },
     resourceFilters(resource) {
@@ -125,28 +125,28 @@ export default {
         if (Array.isArray(this.category)) {
           return (
             resource.category.some((cat) => {
-              return this.category.includes(cat)
+              return this.category.includes(cat);
             }) && resource.slug !== this.exclude
-          )
+          );
         }
         return (
           resource.category.includes(this.category) &&
           resource.slug !== this.exclude
-        )
+        );
       }
       if (this.category.length) {
         if (Array.isArray(this.category)) {
           return resource.category.some((cat) => {
-            return this.category.includes(cat)
-          })
+            return this.category.includes(cat);
+          });
         }
-        return resource.category.includes(this.category)
+        return resource.category.includes(this.category);
       }
       if (this.exclude) {
-        return resource.slug !== this.exclude
+        return resource.slug !== this.exclude;
       }
-      return resource
-    }
-  }
-}
+      return resource;
+    },
+  },
+};
 </script>

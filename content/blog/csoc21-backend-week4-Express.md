@@ -1,12 +1,12 @@
 ---
 title: Express - CSOC'21 Dev Backend Week 4
 date: 2020-06-22T11:51:59.091Z
-description: "So After Frontend, we are left with Web Backend to gain a good command over web dev. That is why we bring you here, to Express!"
+description: 'So After Frontend, we are left with Web Backend to gain a good command over web dev. That is why we bring you here, to Express!'
 subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 4
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/Nodejs.jpg
 ---
 
 # Express
@@ -88,13 +88,13 @@ Here you can learn more about it:
 
 [Documentation](http://www.passportjs.org/docs/)
 
-*We are sure by now you've realized that world of web development is dominated by javascript.* 
+_We are sure by now you've realized that world of web development is dominated by javascript._
 
 ## Challenge and submission
 
 **So much for learning, here is your next Assignment!**
 
-**All the details of the task are provided in the [](https://github.com/COPS-IITBHU/csoc-2020-task-2/blob/master/README.md)[README.md](https://github.com/COPS-IITBHU/csoc2021-task4-express#readme) file.** 
+**All the details of the task are provided in the [](https://github.com/COPS-IITBHU/csoc-2020-task-2/blob/master/README.md)[README.md](https://github.com/COPS-IITBHU/csoc2021-task4-express#readme) file.**
 
 **As you are aware, you need to fork from and the repository, clone the forked repository, complete the task, commit and push your changes and finally open the pull request back here.**
 

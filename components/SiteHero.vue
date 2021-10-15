@@ -13,7 +13,7 @@
             {{ title }}
           </h1>
           <h2 class="subtitle">
-            {{ subtitle }}            
+            {{ subtitle }}
           </h2>
           <br />
         </div>

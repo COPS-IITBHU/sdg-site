@@ -1,10 +1,10 @@
 ---
 title: CSOC'21 Dev Frontend Week 2
 date: 2021-06-15T11:51:59.091Z
-description: "The second week moves onto some advanced topics development continuing with our previous tracks."
+description: 'The second week moves onto some advanced topics development continuing with our previous tracks.'
 parentBlog: CSOC'21 Dev Frontend
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/FRONTEND.png
 ---
 
 # Week 2

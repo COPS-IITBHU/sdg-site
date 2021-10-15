@@ -24,7 +24,6 @@
 </template>-->
 
 <script>
-
 import PostCard from '~/components/cards/PostCard';
 import ResourceGrid from '~/components/grids/ResourceGrid.vue';
 export default {
@@ -44,23 +43,13 @@ export default {
     exclude: { type: String, default: '' },
   },
 };
-
 </script>
 
 <style scoped>
-
 .cards {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
   list-style: none;
-
 }
-
-
-
-
-
-
-
 </style>

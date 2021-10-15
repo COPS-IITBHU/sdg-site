@@ -5,27 +5,27 @@
 </template>
 
 <script>
-import GenericCard from './GenericCard'
+import GenericCard from './GenericCard';
 export default {
   name: 'CategoryCard',
   components: { GenericCard },
   props: {
     title: {
       type: String,
-      default: ''
+      default: '',
     },
     image: {
       type: String,
-      default: ''
+      default: '',
     },
     link: {
       type: String,
-      default: ''
+      default: '',
     },
     description: {
       type: String,
-      default: ''
-    }
-  }
-}
+      default: '',
+    },
+  },
+};
 </script>

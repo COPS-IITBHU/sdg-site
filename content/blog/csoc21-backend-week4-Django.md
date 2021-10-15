@@ -1,14 +1,13 @@
 ---
 title: Django - CSOC'21 Dev Backend Week 4
 date: 2020-06-22T11:51:59.091Z
-description: "So After Frontend, we are left with Web Backend to gain a good command over web dev. That is why we bring you here, to Django!"
+description: 'So After Frontend, we are left with Web Backend to gain a good command over web dev. That is why we bring you here, to Django!'
 subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 4
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/django.jpg
 ---
-
 
 # Django
 
@@ -29,7 +28,7 @@ Check out the official site:
 
 [Django](https://www.djangoproject.com/)
 
-Django likes to call itself *"The Web Framework for Perfectionists with Deadlines"*. Hopefully you'll be able to validate the authenticity of their claim by the end of next week! 😉
+Django likes to call itself _"The Web Framework for Perfectionists with Deadlines"_. Hopefully you'll be able to validate the authenticity of their claim by the end of next week! 😉
 
 ### Why was Django made?
 
@@ -41,7 +40,7 @@ The hard-core coders needed a framework that allowed them to rapidly deploy chan
 
 ### Features
 
-Django has 
+Django has
 
 - Simple syntax
 - Its own web server to test locally
@@ -64,7 +63,7 @@ Most important principles to remember:
 4. **EAFP** aka **Easier to Ask Forgiveness than Permission** ([read more](https://devblogs.microsoft.com/python/idiomatic-python-eafp-versus-lbyl/))
 5. Efficient SQL Queries
 
-Don't worry, if you do not understand all of the above principles right now. You'll understand and appreciate them as you work more with the framework. 
+Don't worry, if you do not understand all of the above principles right now. You'll understand and appreciate them as you work more with the framework.
 
 # Resources
 
@@ -82,11 +81,11 @@ Alternatively, another popular Django learning site is Django Girls.
 
 [Django Girls Tutorial](https://tutorial.djangogirls.org/en/)
 
-With so much serious content, you could also do well with something less technical. Here you go! 
+With so much serious content, you could also do well with something less technical. Here you go!
 
 [A Complete Beginner's Guide to Django - Part 1](https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html)
 
-Being just introduced to Django, it would be of help to get tips from time tested users of Django. 
+Being just introduced to Django, it would be of help to get tips from time tested users of Django.
 
 [Article Archive - Simple is Better Than Complex](https://simpleisbetterthancomplex.com/archive/)
 
@@ -106,7 +105,7 @@ For Custom Login UI, try out this:
 
 **So much for learning, here is your next Assignment!**
 
-**All the details of the task are provided in the [](https://github.com/COPS-IITBHU/csoc-2020-task-2/blob/master/README.md)[README.md](https://github.com/COPS-IITBHU/csoc-2021-task-4-Django/blob/master/README.md) file.** 
+**All the details of the task are provided in the [](https://github.com/COPS-IITBHU/csoc-2020-task-2/blob/master/README.md)[README.md](https://github.com/COPS-IITBHU/csoc-2021-task-4-Django/blob/master/README.md) file.**
 
 **As you are aware, you need to fork from and the repository, clone the forked repository, complete the task, commit and push your changes and finally open the pull request back here.**
 

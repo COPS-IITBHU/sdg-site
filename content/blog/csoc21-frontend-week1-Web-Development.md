@@ -1,11 +1,12 @@
 ---
 title: Web Development - CSOC'21 Dev Frontend Week 1
 date: 2021-06-07T11:51:59.091Z
-description: "Web development is a basic skill that is often said as a good start to the development field."
+description: 'Web development is a basic skill that is often said as a good start to the development field.'
 parentBlog: CSOC'21 Dev Frontend Week 1
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/WEB.png
 ---
+
 # Web Development
 
 Due Date: June 13, 2021
@@ -21,17 +22,17 @@ Web development is a basic skill that is often said as a good start to the devel
 
 - HTML
 
-    [HTML Tutorial](https://www.w3schools.com/html/default.asp)
+  [HTML Tutorial](https://www.w3schools.com/html/default.asp)
 
 - CSS
 
-    [CSS Tutorial](https://www.w3schools.com/css/default.asp)
+  [CSS Tutorial](https://www.w3schools.com/css/default.asp)
 
 - JavaScript
 
-    [JavaScript basics - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+  [JavaScript basics - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 
-    [JavaScript building blocks - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks)
+  [JavaScript building blocks - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks)
 
 ## Developer Tools
 
@@ -65,25 +66,25 @@ Frameworks to the rescue! Frameworks let you focus more on building great sites 
 
 - TailwindCSS 2.1
 
-    [https://www.youtube.com/watch?v=3u_vIdnJYLc](https://www.youtube.com/watch?v=3u_vIdnJYLc)
+  [https://www.youtube.com/watch?v=3u_vIdnJYLc](https://www.youtube.com/watch?v=3u_vIdnJYLc)
 
-    [01: Setting Up Tailwind CSS - Tailwind CSS: From Zero to Production](https://www.youtube.com/watch?v=qYgogv4R8zg)
+  [01: Setting Up Tailwind CSS - Tailwind CSS: From Zero to Production](https://www.youtube.com/watch?v=qYgogv4R8zg)
 
-    [Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.](https://tailwindcss.com/)
+  [Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.](https://tailwindcss.com/)
 
-    [Responsive Design - Tailwind CSS](https://tailwindcss.com/docs/responsive-design)
+  [Responsive Design - Tailwind CSS](https://tailwindcss.com/docs/responsive-design)
 
 - Bootstrap 5
 
-    [Introduction](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+  [Introduction](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
-    [Grid system](https://getbootstrap.com/docs/5.0/layout/grid/)
+  [Grid system](https://getbootstrap.com/docs/5.0/layout/grid/)
 
-    [Bootstrap 5 Tutorials](https://www.youtube.com/playlist?list=PLp50dWW_m40UvCxL8K83_DotLYiG4mDcM)
+  [Bootstrap 5 Tutorials](https://www.youtube.com/playlist?list=PLp50dWW_m40UvCxL8K83_DotLYiG4mDcM)
 
 ### **Optional Stuff**
 
-**Emmet** 
+**Emmet**
 
 [Emmet in Visual Studio Code](https://code.visualstudio.com/docs/editor/emmet)
 
@@ -116,7 +117,7 @@ Remember, the deadline for this week's task is **June 13th, 2021, 23:59**.
 
 **Objective:** You need to build a Tic Tac Toe game
 
-**Tasks:-** 
+**Tasks:-**
 
 - **Task 1**: Implement a two-player mode that allows two people to compete against each other.
 - **Task 2**: Add a single-player mode that allows users to play with an intelligent bot that never loses.
@@ -134,7 +135,7 @@ Remember, the deadline for this week's task is **June 13th, 2021, 23:59**.
 
 **Objective:** You need to build a Sudoku board game.
 
-**Tasks:-** 
+**Tasks:-**
 
 - **Task 1**: Implement a Sudoku game. (The board may remain the same every time).
 - **Task 2**: Implement a board generator and generate a random board in every game. You may use backtracking or naive approaches to generate the board.

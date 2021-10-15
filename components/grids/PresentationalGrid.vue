@@ -19,36 +19,36 @@
 </template>
 
 <script>
-import range from 'lodash.range'
+import range from 'lodash.range';
 export default {
   props: {
     items: {
       type: Array,
       default: () => {
-        return []
-      }
+        return [];
+      },
     },
     bottomLoader: { type: Boolean, default: false },
     theme: {
       type: String,
-      default: 'boxes'
+      default: 'boxes',
     },
     perRow: {
       type: Number,
-      default: 3
-    }
+      default: 3,
+    },
   },
   data() {
     return {
-      placeholders: range(this.perRow).fill({})
-    }
+      placeholders: range(this.perRow).fill({}),
+    };
   },
   computed: {
     itemsComputed() {
-      return this.items.length ? this.items : this.placeholders
-    }
-  }
-}
+      return this.items.length ? this.items : this.placeholders;
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 .grid {

@@ -1,11 +1,12 @@
 ---
 title: Flutter - CSOC'21 Dev Frontend Week 2
 date: 2021-06-15T11:51:59.091Z
-description: "You must have encountered keywords like async, await and Future till now. These are very important blocks that one should comprehend."
+description: 'You must have encountered keywords like async, await and Future till now. These are very important blocks that one should comprehend.'
 parentBlog: CSOC'21 Dev Frontend Week 2
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/Flutter.jpg
 ---
+
 # Flutter
 
 Due Date: June 21, 2021
@@ -13,7 +14,7 @@ type: Mandatory
 
 # Asynchronous code in Dart & Flutter
 
-You must have encountered keywords like async, await and Future till now. These are very important blocks that one should comprehend. 
+You must have encountered keywords like async, await and Future till now. These are very important blocks that one should comprehend.
 
 Get this concept with this video created by Google developers themselves
 
@@ -33,7 +34,7 @@ or you can read this tutorial
 
 [Store key-value data on disk](https://flutter.dev/docs/cookbook/persistence/key-value)
 
-Although key-value storage is easy and convenient to use, it has limitations: 
+Although key-value storage is easy and convenient to use, it has limitations:
 
 - Only primitive types can be used: int, double, bool, string, and stringList.
 - It’s not designed to store a lot of data.
@@ -48,7 +49,7 @@ Before moving any forward, you must know what exactly is SQLite. The following t
 
 [What is SQLite? Top SQLite Features You Should Know](https://www.sqlitetutorial.net/what-is-sqlite/)
 
-### Creating a local SQLite database using   [sqflite](https://pub.dev/packages/sqflite)  package Flutter
+### Creating a local SQLite database using [sqflite](https://pub.dev/packages/sqflite) package Flutter
 
 Here comes the Flutter part.
 
@@ -72,7 +73,7 @@ sqflite is all you need for storing structured data locally therefore, explore t
 
 ### Hive
 
-Hive is a key-value (NoSQL) based database that is much faster than sqflite. 
+Hive is a key-value (NoSQL) based database that is much faster than sqflite.
 
 [Hive Docs](https://docs.hivedb.dev)
 

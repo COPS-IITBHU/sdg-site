@@ -1,10 +1,10 @@
 ---
 title: CSOC'21 Dev Backend Week 5
 date: 2020-07-14T11:51:59.091Z
-description: "Now that you have completed the CSOC Backend Assignment, you built your own web app backed with Django/Express as the backend."
+description: 'Now that you have completed the CSOC Backend Assignment, you built your own web app backed with Django/Express as the backend.'
 parentBlog: CSOC'21 Dev Backend
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/backend.png
 ---
 
 # Week 5
@@ -17,7 +17,7 @@ That opens the door to many possible mistakes… And that is where rest APIs shi
 
 Djnago Rest Framework (DRF) and Express enable you to host the same backend for web, mobile and desktop applications.
 
-Needless to say, we have so lovingly prepared an assignment for you that will make you "REST-less" (pun intended :)) 
+Needless to say, we have so lovingly prepared an assignment for you that will make you "REST-less" (pun intended :))
 
 You may choose to compete in any number of tracks.
 
@@ -25,4 +25,3 @@ You may choose to compete in any number of tracks.
 
 1. [Django](csoc21-backend-week5-Django-REST-Framework)
 2. [Express](csoc21-backend-week5-Express-REST-Framework)
-
