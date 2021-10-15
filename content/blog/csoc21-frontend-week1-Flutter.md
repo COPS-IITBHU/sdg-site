@@ -3,8 +3,8 @@ title: Flutter - CSOC'21 Dev Frontend Week 1
 date: 2021-06-07T11:51:59.091Z
 description: "Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase."
 parentBlog: CSOC'21 Dev Frontend Week 1
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/Flutter.jpg
 ---
 # Flutter
 
@@ -27,9 +27,9 @@ A UI kit generally contains a bunch of graphic files including UI components (bu
 
 Native mobile application, are usually applications that has been written using the native development language and tools specific to that platform. A native iOS application written in Swift or Objective-C and compiled through Xcode, a native Android application written in Kotlin or Java and compiled using Android Studio.
 
-Since these applications are developed using the platform’s default solutions, developers have full and easier access to the device’s capabilities; like all the device’s sensors, the user’s address book. Native applications are also more performant than web or hybrid applications. 
+Since these applications are developed using the platform’s default solutions, developers have full and easier access to the device’s capabilities; like all the device’s sensors, the user’s address book. Native applications are also more performant than web or hybrid applications.
 
-However, any application written for iOS using Swift cannot run on Android, and vice versa, thus forcing you to develop specifically for each platform. 
+However, any application written for iOS using Swift cannot run on Android, and vice versa, thus forcing you to develop specifically for each platform.
 
 These disadvantages are not the issue in flutter. To know why, see [Flutter Architecture.]()
 
@@ -76,7 +76,7 @@ To use flutter consistently between different terminal sessions, go through this
 
 [Linux install](https://flutter.dev/docs/get-started/install/linux#update-your-path)
 
-Install a suitable IDE. VS Code (compared to Android Studio) is good choice for a light and better experience. 
+Install a suitable IDE. VS Code (compared to Android Studio) is good choice for a light and better experience.
 
 # Basics
 
@@ -100,7 +100,7 @@ Use the links below for issues related to dart language
 
 The best way to learn flutter is to create an app on your own. Dont worry, its easy!
 
-If you are more of a watch-and-learn person, here's a full video to help you get started. Just skip the initial installation parts: 
+If you are more of a watch-and-learn person, here's a full video to help you get started. Just skip the initial installation parts:
 
 [Flutter Tutorial for Beginners - Build iOS and Android Apps with Google's Flutter & Dart](https://youtu.be/GLSG_Wh_YWc)
 

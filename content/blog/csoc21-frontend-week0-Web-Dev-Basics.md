@@ -1,10 +1,10 @@
 ---
 title: Bonus Task - CSOC'21 Dev Frontend Week 0
 date: 2021-05-30T11:51:59.091Z
-description: "In this task you have to create a static portfolio page, using basic web development tools(HTML, CSS & Javascript)."
+description: 'In this task you have to create a static portfolio page, using basic web development tools(HTML, CSS & Javascript).'
 parentBlog: CSOC'21 Dev Frontend Week 0
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/web dev basic.png
 ---
 
 # Web Dev Basics
@@ -18,17 +18,17 @@ Alright! Let's get to Web Development! HTML, CSS, JavaScript are the fundamental
 
 - HTML
 
-    [HTML Reference](https://htmlreference.io/)
+  [HTML Reference](https://htmlreference.io/)
 
 - CSS
 
-    [CSS-Tricks](https://css-tricks.com/)
+  [CSS-Tricks](https://css-tricks.com/)
 
-    [CSS Reference](https://cssreference.io/)
+  [CSS Reference](https://cssreference.io/)
 
 - JavaScript
 
-    [JavaScript Reference](https://www.w3schools.com/jsref/jsref_reference.asp)
+  [JavaScript Reference](https://www.w3schools.com/jsref/jsref_reference.asp)
 
 ### To practice using with HTML page, read DOM manipulation
 

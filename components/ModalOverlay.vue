@@ -3,7 +3,7 @@
     :class="{
       modal: true,
       'is-active': active,
-      'is-closing': closing
+      'is-closing': closing,
     }"
   >
     <div class="modal-background"></div>
@@ -41,13 +41,13 @@ export default {
     triggerText: { type: String, default: '' },
     confirmText: { type: String, default: 'Save' },
     footer: { type: Boolean, default: false },
-    id: { type: String, required: true }
+    id: { type: String, required: true },
   },
   data() {
     return {
       active: false,
-      closing: false
-    }
+      closing: false,
+    };
   },
   created() {
     // this.$eventBus.$on(`modal-triggered`, (id) => {
@@ -56,14 +56,14 @@ export default {
   },
   methods: {
     close() {
-      this.closing = true
+      this.closing = true;
       setTimeout(() => {
-        this.active = false
-        this.closing = false
-      }, 300)
-    }
-  }
-}
+        this.active = false;
+        this.closing = false;
+      }, 300);
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 .modal {

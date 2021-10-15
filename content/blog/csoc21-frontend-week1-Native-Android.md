@@ -1,11 +1,12 @@
 ---
 title: Native Android - CSOC'21 Dev Frontend Week 1
 date: 2021-06-07T11:51:59.091Z
-description: "The aptest definition for android is - \"Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.\""
+description: 'The aptest definition for android is - "Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets."'
 parentBlog: CSOC'21 Dev Frontend Week 1
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/android.png
 ---
+
 # Native Android
 
 Due Date: June 13, 2021
@@ -31,11 +32,11 @@ While developing an android app you will need to test it on a device. You can te
 
 - Real Device (Preffered for slower systems)
 
-    For testing you apps on a real device you will need to have a USB cable and an Android device. Follow this tutorial to enable USB debugging in order to run your app in the device.
+  For testing you apps on a real device you will need to have a USB cable and an Android device. Follow this tutorial to enable USB debugging in order to run your app in the device.
 
 - Emulator
 
-    An Android Emulator simulates Android devices on your computer so that you can test your application on a variety of devices and Android API levels without needing to have each physical device. It provides almost all of the capabilities of a real Android device.
+  An Android Emulator simulates Android devices on your computer so that you can test your application on a variety of devices and Android API levels without needing to have each physical device. It provides almost all of the capabilities of a real Android device.
 
 # How to get started
 
@@ -43,15 +44,15 @@ If you haven't had any chance to develop android apps earlier then don't worry i
 
 - Video Tutorial
 
-    [Android Development Tutorial for Beginners](https://www.youtube.com/playlist?list=PLUcsbZa0qzu3Mri2tL1FzZy-5SX75UJfb)
+  [Android Development Tutorial for Beginners](https://www.youtube.com/playlist?list=PLUcsbZa0qzu3Mri2tL1FzZy-5SX75UJfb)
 
-    [Android Tutorials [Beginner ]](https://www.youtube.com/playlist?list=PLgCYzUzKIBE8TUoCyjomGFqzTFcJ05OaC)
+  [Android Tutorials [Beginner ]](https://www.youtube.com/playlist?list=PLgCYzUzKIBE8TUoCyjomGFqzTFcJ05OaC)
 
 - Written Tutorials
-    1. [Create A Project](https://developer.android.com/training/basics/firstapp/creating-project)
-    2. [Run Your App](https://developer.android.com/training/basics/firstapp/running-app)
-    3. [Include new UI](https://developer.android.com/training/basics/firstapp/building-ui)
-    4. [Make it functional](https://developer.android.com/training/basics/firstapp/starting-activity)
+  1. [Create A Project](https://developer.android.com/training/basics/firstapp/creating-project)
+  2. [Run Your App](https://developer.android.com/training/basics/firstapp/running-app)
+  3. [Include new UI](https://developer.android.com/training/basics/firstapp/building-ui)
+  4. [Make it functional](https://developer.android.com/training/basics/firstapp/starting-activity)
 
 # Challenge
 

@@ -3,8 +3,8 @@ title: CSOC'21 Dev Backend Week 4
 date: 2020-06-22T11:51:59.091Z
 description: "Welcome to CSoC'21 Dev! Here's all the resources and tasks you need to know, complete, and focus on for every week."
 parentBlog: CSOC'21 Dev Backend
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/backend.png
 ---
 
 # Week 4

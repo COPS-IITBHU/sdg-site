@@ -1,11 +1,11 @@
 <template>
   <div id="post-page" class="page-wrapper post-page">
-    <site-hero :title="post.title" :subtitle="post.subtitle" :image="post.featureImage">
-      <span
-        v-if="post.author"
-
-        class="author-wrapper"
-      >
+    <site-hero
+      :title="post.title"
+      :subtitle="post.subtitle"
+      :image="post.featureImage"
+    >
+      <span v-if="post.author" class="author-wrapper">
         <strong>Author:</strong> {{ post.author }}
       </span>
       <span v-if="post.date" class="date-wrapper">
@@ -35,43 +35,52 @@
 </template>
 <script>
 // import { mapState } from 'vuex'
-import { setPageData, getFormattedDate } from '@/helper'
 import { defineComponent } from '@nuxtjs/composition-api';
-import PostSidebar from '~/components/PostSidebar'
+import { setPageData, getFormattedDate } from '@/helper';
+import PostSidebar from '~/components/PostSidebar';
 export default defineComponent({
+  components: {
+    PostSidebar,
+  },
   // data(){
   //   title, subtitle, featureImage, underSubtitle, author, category, slug, date
   // },
   async asyncData({ $content, params }) {
     const { singlePost } = params;
-    let post = await $content(`blog`, singlePost).fetch();
+    const post = await $content(`blog`, singlePost).fetch();
     return {
       post,
     };
   },
-  components: {
-    PostSidebar
-  },
   computed: {
     date() {
-      return getFormattedDate(this.post.date)
+      return getFormattedDate(this.post.date);
     },
     url() {
-      return `${process.env.URL}/${this.$route.fullPath}`
-    }
+      return `${process.env.URL}/${this.$route.fullPath}`;
+    },
   },
   // fetch({ store, params }) {
   //   setPageData(store, { resource: 'post', slug: params.singlePost })
   // }
-})
+});
 </script>
-<style scoped lang="scss">  // Fix font-size issue for all sizes of screens
+<style scoped lang="scss">
+// Fix font-size issue for all sizes of screens
 .nuxt-content {
-  width: 50%;
+  // title{
+  //   font-size: 125%;
+  // }
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 .edit-post {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 750px) {
+  .nuxt-content {
+    font-size: 25px;
+  }
 }
 </style>

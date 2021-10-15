@@ -3,8 +3,8 @@ title: Native Android - CSOC'21 Dev Frontend Week 2
 date: 2021-06-15T11:51:59.091Z
 subtitle: "Android uses a file system that's similar to disk-based file systems on other platforms."
 parentBlog: CSOC'21 Dev Frontend Week 2
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/android.png
 ---
 
 # Native Android
@@ -29,7 +29,7 @@ Android uses a file system that's similar to disk-based file systems on other pl
 
 Shared Preferences is the way to go if you’re saving primitive data as key-value pairs. It requires a key, which is a String, and the corresponding value for the said key. The value can be any of the following: a boolean, float, int, long, or another string.
 
-[](https://developer.android.com/reference/android/content/SharedPreferences](https://developer.android.com/reference/android/content/SharedPreferences))
+[](<https://developer.android.com/reference/android/content/SharedPreferences](https://developer.android.com/reference/android/content/SharedPreferences)>)
 
 [Shared Preferences in Android with Example - GeeksforGeeks](https://www.geeksforgeeks.org/shared-preferences-in-android-with-examples/)
 
@@ -50,13 +50,14 @@ To give users better control over their files and cut down on clutter, apps now 
 [Android External Storage with Examples - Tutlane](https://www.tutlane.com/tutorial/android/android-external-storage-with-examples#:~:text=In)
 
 [https://www.youtube.com/watch?v=7CEcevGbIZU](https://www.youtube.com/watch?v=7CEcevGbIZU)
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7CEcevGbIZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## SQLite database
 
 Android provides support for apps to use SQLite databases for data storage. The databases you create remain specific to your app and can only be accessed inside your app. Of course, you should have at least some knowledge of SQL before you attempt to store data with an SQLite database.
 
-[](https://developer.android.com/jetpack/androidx/releases/sqlite?gclid=CjwKCAjwn6GGBhADEiwAruUcKm3bIpx8ec_3s6U7EnBthTh-jqwdp-3SJpnLMGXx-1erwDR6Gc9EvhoCgcgQAvD_BwE&gclsrc=aw.ds](https://developer.android.com/jetpack/androidx/releases/sqlite?gclid=CjwKCAjwn6GGBhADEiwAruUcKm3bIpx8ec_3s6U7EnBthTh-jqwdp-3SJpnLMGXx-1erwDR6Gc9EvhoCgcgQAvD_BwE&gclsrc=aw.ds))
+[](<https://developer.android.com/jetpack/androidx/releases/sqlite?gclid=CjwKCAjwn6GGBhADEiwAruUcKm3bIpx8ec_3s6U7EnBthTh-jqwdp-3SJpnLMGXx-1erwDR6Gc9EvhoCgcgQAvD_BwE&gclsrc=aw.ds](https://developer.android.com/jetpack/androidx/releases/sqlite?gclid=CjwKCAjwn6GGBhADEiwAruUcKm3bIpx8ec_3s6U7EnBthTh-jqwdp-3SJpnLMGXx-1erwDR6Gc9EvhoCgcgQAvD_BwE&gclsrc=aw.ds)>)
 
 We recommend using android library "Room" to make task easier.
 
@@ -76,14 +77,14 @@ Because of these considerations, we highly recommend that you use Room instead o
 
 ## NOTE:
 
-Don't forget to give permissions to your app for accessing your device local storage . 
+Don't forget to give permissions to your app for accessing your device local storage .
 
 # Challenge and submission
 
-Let's dig in to the challenges of this week . 
+Let's dig in to the challenges of this week .
 
 [COPS-IITBHU/csoc-2021-task-2](https://github.com/COPS-IITBHU/csoc-2021-task-2)
 
 All details have been provided in the README.md file.
 
-For submission create your own repo and  make a PR in above repo and add your entry into [**Android.md**](https://github.com/COPS-IITBHU/csoc-2021-task-2/blob/master/Android.md) with **apk link and repo link only .**
+For submission create your own repo and make a PR in above repo and add your entry into [**Android.md**](https://github.com/COPS-IITBHU/csoc-2021-task-2/blob/master/Android.md) with **apk link and repo link only .**
