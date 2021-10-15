@@ -15,7 +15,7 @@
             'is-offset-2':
               oneColumnConstrained && computedTheme === 'one-column',
             'is-8': oneColumnConstrained && computedTheme === 'one-column',
-            'is-three-quarters': computedTheme !== 'one-column'
+            'is-three-quarters': computedTheme !== 'one-column',
           }"
         >
           <slot></slot>
@@ -35,7 +35,7 @@ export default {
   name: 'MainSection',
   props: {
     oneColumnConstrained: { type: Boolean, default: false },
-    theme: { type: String, default: '' }
+    theme: { type: String, default: '' },
   },
   computed: {
     computedTheme() {
@@ -45,10 +45,10 @@ export default {
       // if (this.$siteConfig.layout.theme) {
       //   return this.$siteConfig.layout.theme
       // }
-      return 'one-column'
-    }
-  }
-}
+      return 'one-column';
+    },
+  },
+};
 </script>
 
 <style lang="scss">

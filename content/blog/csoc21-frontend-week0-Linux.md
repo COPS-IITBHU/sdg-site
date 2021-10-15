@@ -1,10 +1,10 @@
 ---
 title: Linux - CSOC'21 Dev Frontend Week 0
 date: 2021-05-30T11:51:59.091Z
-description: "Linux has become the de facto OS of programmers worldwide, and so you all must get comfortable with it."
+description: 'Linux has become the de facto OS of programmers worldwide, and so you all must get comfortable with it.'
 parentBlog: CSOC'21 Dev Frontend Week 0
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/linux-logo.jpg
 ---
 
 # Linux
@@ -32,7 +32,7 @@ NOTE: Take precaution before choosing “Erase disk and Install Ubuntu”. It’
 
 Please follow these steps properly and then refer the video
 
-- Disbale fast and secure boot on your  system
+- Disbale fast and secure boot on your system
 - Download ISO Image for Ubuntu 20.04
 
 [Download Ubuntu Desktop | Download | Ubuntu](https://ubuntu.com/download/desktop)
@@ -59,7 +59,7 @@ Linux won't limit you like macOS or Windows where you have to wait for the owner
 
 ## Windows Subsystem for Linux
 
-Although not the recommended way to go about for any programmer, Windows finally had to support Ubuntu within its very system for programmers, which is known as WSL. WSL is a wrapper for Ubuntu presented to you in your old and clanky Windows 10 :P. 
+Although not the recommended way to go about for any programmer, Windows finally had to support Ubuntu within its very system for programmers, which is known as WSL. WSL is a wrapper for Ubuntu presented to you in your old and clanky Windows 10 :P.
 
 Sooner or later you will have to switch to Linux for Software Development purposes. But if you are a bit afraid of damaging your system during installation you can check out the following WSL resources.
 

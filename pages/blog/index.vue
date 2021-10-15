@@ -3,10 +3,10 @@
     <site-hero :title="title" :subtitle="subtitle" :image="featureImage" />
     <!-- <main-section theme="one-column">
       <template v-slot:default> -->
-        <!-- All Posts -->
-      <!-- <div> -->
-        <posts-grid :resources="articles" />
-      <!-- </div>
+    <!-- All Posts -->
+    <!-- <div> -->
+    <posts-grid :resources="articles" />
+    <!-- </div>
       </template>
       <template v-slot:sidebar>
         Nothing here 
@@ -20,7 +20,7 @@
 // import { mapState } from 'vuex'
 // import { setPageData } from '@/helper'
 // import NewsLetterFormModal from '~/components/NewsLetterFormModal.vue'
-import PostsGrid from '~/components/grids/PostsGrid.vue'
+import PostsGrid from '~/components/grids/PostsGrid.vue';
 
 import { defineComponent } from '@nuxtjs/composition-api';
 
@@ -37,13 +37,13 @@ export default defineComponent({
     return {
       title: 'COPS SDG',
       subtitle: '',
-      featureImage: '/uploads/about-hero.jpg'
-    }
+      featureImage: '/uploads/about-hero.jpg',
+    };
   },
   head() {
     return {
-      title: `Blog`
-    }
+      title: `Blog`,
+    };
   },
   methods: {
     sortByTime(obj) {
@@ -56,7 +56,7 @@ export default defineComponent({
         childObj.subBlogs = this.sortByTime(childObj.subBlogs);
       });
       return obj;
-    }, 
+    },
     blogTree() {
       const hashTable = new Map();
       const posts = this.articles;
@@ -72,7 +72,7 @@ export default defineComponent({
         else dataTree.push(hashTable.get(blog.title));
       });
       this.articles = this.sortByTime(dataTree);
-      console.log(this.articles)
+      console.log(this.articles);
     },
   },
   mounted() {
@@ -85,12 +85,11 @@ export default defineComponent({
   // fetch({ store, params }) {
   //   setPageData(store, { slug: 'home' })
   // }
-})
+});
 </script>
 
 <style>
 .home-page .under-subtitle {
   border-top: none;
 }
-
 </style>

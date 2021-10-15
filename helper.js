@@ -1,16 +1,16 @@
 export const setPageData = (store, { resource, slug }) => {
   if (process.browser) {
     setTimeout(() => {
-      store.dispatch('set', { resource: resource, slug: slug })
-    }, 350)
+      store.dispatch('set', { resource: resource, slug: slug });
+    }, 350);
   } else {
-    store.dispatch('set', { resource: resource, slug: slug })
+    store.dispatch('set', { resource: resource, slug: slug });
   }
-}
+};
 
 export const fullUrl = () => {
-  return `${window.location.protocol}//${window.location.host}/${window.location.pathname}`
-}
+  return `${window.location.protocol}//${window.location.host}/${window.location.pathname}`;
+};
 
 export const getFormattedDate = (date) => {
   const months = [
@@ -25,10 +25,10 @@ export const getFormattedDate = (date) => {
     'September',
     'October',
     'November',
-    'December'
-  ]
-  const dateObj = new Date(date)
+    'December',
+  ];
+  const dateObj = new Date(date);
   return `${
     months[dateObj.getMonth()]
-  } ${dateObj.getDate()}, ${dateObj.getFullYear()}`
-}
+  } ${dateObj.getDate()}, ${dateObj.getFullYear()}`;
+};

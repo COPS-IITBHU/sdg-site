@@ -1,21 +1,22 @@
 ---
 layout: post
-title:  "What’s new in Java 8: Lambdas"
-date:   2018-12-03
+title: 'What’s new in Java 8: Lambdas'
+date: 2018-12-03
 description: "A hands-on introduction to Java 8's most exciting new feature ✨"
-keywords: "Jekyll,gh-pages,website,blog,easy"
+keywords: 'Jekyll,gh-pages,website,blog,easy'
 categories: Blog
-tags: [Java,New feature]
+tags: [Java, New feature]
 
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/JAVA.png
 ---
 
 # What’s new in Java 8: Lambdas :octocat:
+
 ## A hands-on introduction to Java 8's most exciting new feature :sparkles:
 
 > By Yash Raj Bharti | Metallurgical engineering | 2018-12-03
-![lambda](https://upload.wikimedia.org/wikipedia/commons/f/f1/Greek_lc_lamda.png)
+> ![lambda](https://upload.wikimedia.org/wikipedia/commons/f/f1/Greek_lc_lamda.png)
 
 Java 8 is here, and, with it, come lambdas. Although long overdue, lambdas are a remarkable new feature that could make us rethink our programming styles and strategies. In particular, they offer exciting new possibilities for functional programming.
 
@@ -31,7 +32,7 @@ You’d think we’d need a new function type to represent this sort of expressi
 
 Before we go into detail, let’s look at a few examples.
 
-* Example Lambda Expressions
+- Example Lambda Expressions
 
 Here are a few examples of lambda expressions:
 
@@ -51,6 +52,7 @@ Here are a few examples of lambda expressions:
 // Expecting no arguments and invoking another method
 () -> doSomething();
 ```
+
 Have a look at them once again until you familiarize yourself with the syntax. It may seem a bit strange at first. We will discuss the syntax in the next section.
 
 You might wonder what the type is for these expressions. The type of any lambda is a functional interface, which we discuss below.
@@ -75,9 +77,9 @@ Fortunately, there is no new addition to the type system—the designers of Java
 
 A functional interface is a special interface with one and only one abstract method. It is exactly the same as our normal interface, but with two additional characteristics:
 
-* It has one and only one abstract method.
-* It can be decorated with an optional @FunctionalInterface annotation to be used as a lambda expression. (this is strongly suggested)
-Java has numerous single method interfaces. These are all retrofitted, making them functional interfaces. If we want to create our own, all we need to do is to define an interface with one abstract method and stick a @FunctionalInterface annotation on top of it!
+- It has one and only one abstract method.
+- It can be decorated with an optional @FunctionalInterface annotation to be used as a lambda expression. (this is strongly suggested)
+  Java has numerous single method interfaces. These are all retrofitted, making them functional interfaces. If we want to create our own, all we need to do is to define an interface with one abstract method and stick a @FunctionalInterface annotation on top of it!
 
 For example, the following snippet defines an **IAddable** interface. This is a functional interface whose job is to simply add two identical items of type T.
 
@@ -88,6 +90,7 @@ public interface IAddable<T> {
     public T add(T t1, T t2);
 }
 ```
+
 Because this interface has one and only one abstract method and it is annotated with @FunctionalInterface, it can be used as a type for representing lambda functions.
 
 Below are some example representations that use the above IAddable functional interface here:
@@ -107,6 +110,7 @@ IAddable<Trade> tradeAdder = (Trade t1, Trade t2) -> {
   return t1;
 };
 ```
+
 Note that the **IAddable** is a generic type interface, therefore we’re using it to add different types, as in the above example.
 
 To summarize, the lambda expression’s type is the functional interface that we intended to implement via the lambda expression.
@@ -122,6 +126,7 @@ private void addStrings(String s1, String s2) {
   log("Concatenated Result: " + stringAdder.add(s1, s2));
 }
 ```
+
 Before we move on, let’s take a moment to understand what is achieved here. The noticeable thing is that we are now treating the business logic as a function that can be tossed around for execution. We can define numerous variations of the business logic on the fly (kind of!) without having to create and instantiate classes as we used to do before.
 
 Now that we understand a bit about lambda expressions and their types, let’s run through a complete example using lambdas. We’ll also compare and contrast with the pre-Java 8 version to understand the differences.
@@ -145,6 +150,7 @@ public void testPreJava8() {
   };
 }
 ```
+
 Here, we created a concrete class implementing the interface and invoked the add method on the instantiated object. We used an anonymous strategy for creating the code shown above.
 
 Although the actual logic of merging the trades is our core logic, we are forced to do some additional tasks such as implementing the interface with a class identity, overriding the abstract method, creating an instance of it and finally doing something with the instance. This “excess baggage” has always attracted critics and made developers uneasy—it’s a lot of boiler plate code and meaningless implementations and instantiations for a piece of business logic.
@@ -160,6 +166,7 @@ Trade t2 = new Trade(2, "GOOG", 24000, "NEW");
 // using the conventional anonymous class..
 Trade mergedTrade = tradeMerger.add(t1,t2);
 ```
+
 The business logic is intertwined with the technical garbage. The core logic is very much tied to the implementing class. For example, instead of returning a merged trade as in the above case, if I may have to compare and return the big trade, I have to sigh a bit, grab a coffee, sneeze loudly, moan, groan and roll up my sleeves and get ready to rewrite the code logic.
 
 Note also that all our test cases will start failing too once we change the logic!
@@ -197,9 +204,10 @@ public void applyBehaviour(IAddable addable, Trade t1, Trade t2){
   addable.add(t1, t2);
 }
 ```
+
 Note that the method is generic enough that it can apply functionality to any two trades with the given behavior using the given lambda expression (the IAddable interface).
 
-Now, the client has the control of creating the behaviors and pass it on to the remote server for application of them. This way, the client cares about *what* to do, while the server cares about *how* to do it. As long as the interface is designed to accept the lambda expression, the client can create a number of those expressions according to its requirements and invoke the method.
+Now, the client has the control of creating the behaviors and pass it on to the remote server for application of them. This way, the client cares about _what_ to do, while the server cares about _how_ to do it. As long as the interface is designed to accept the lambda expression, the client can create a number of those expressions according to its requirements and invoke the method.
 
 Before we sum up, let’s take an existing Runnable interface, which comes with lambda support, and see how it can be used.
 
@@ -224,6 +232,7 @@ new Thread(new Runnable() {
   }
 }).start();
 ```
+
 As you can see the above way of creating and using the anonymous class is very verbose—and unsightly too. Apart from sendAnEmail() in the run method, everything else is redundant boilerplate code.
 
 The same Runnable can now be re-written to use a lambda expression, as shown below:
@@ -232,6 +241,7 @@ The same Runnable can now be re-written to use a lambda expression, as shown bel
 // The constructor now takes in a lambda
 new Thread( () -> sendAnEmail() ).start();
 ```
+
 The lambda expression () → sendAnEmail() highlighted above is passed to the constructor of the thread. Note that this expression is effectively a piece of code (an instance of Runnable) that carries certain behavior (make sure to always send an email in a new thread).
 
 Looking at the expression, we can deduce the type of the lambda—in this case it is Runnable, as we all know that the thread constructor accepts a Runnable. If you’ve noticed the redefined interface definition, Runnable is now a functional interface and hence tagged with the @FunctionalInterface annotation. Now the lambda expression can be assigned to a class’s variable as Runnable r = () → sendAnEmail() just like how we declare and assign variables.
@@ -247,6 +257,7 @@ public class AsyncManager{
   }
 }
 ```
+
 The client now has the ability to create a plethora of lambda expressions based on his requirements. For example, see the various lambda expressions that can be passed on to the server-side class:
 
 ```java
@@ -259,6 +270,7 @@ The client now has the ability to create a plethora of lambda expressions based 
     sendAnEmail();
   });
 ```
+
 ## Summary :octocat:
 
 In this post, we learned about the biggest change Java has ever seen. Lambdas will certainly steer the direction of Java and make it more appealing to varied sections of the programmer community.

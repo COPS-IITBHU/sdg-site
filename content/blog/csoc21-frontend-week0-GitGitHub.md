@@ -1,10 +1,10 @@
 ---
 title: Git And GitHub - CSOC'21 Dev Frontend Week 0
 date: 2021-05-30T11:51:59.091Z
-description: "Git is a prevalent version control system (VCS) used in Open Source Development. It is a crucial skill to learn while developing in a team."
+description: 'Git is a prevalent version control system (VCS) used in Open Source Development. It is a crucial skill to learn while developing in a team.'
 parentBlog: CSOC'21 Dev Frontend Week 0
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/github.png
 ---
 
 # Git and GitHub
@@ -14,7 +14,7 @@ type: Mandatory
 
 # Introduction
 
-Git is a prevalent version control system (VCS) used in Open Source Development. It is a crucial skill to learn while developing in a team. 
+Git is a prevalent version control system (VCS) used in Open Source Development. It is a crucial skill to learn while developing in a team.
 
 GitHub is a web-based service for version control using Git. It is a social networking site for developers, where you can look at other people's code, identify issues and even propose changes.
 
@@ -30,25 +30,25 @@ GitHub is a web-based service for version control using Git. It is a social netw
 
 - Git Branching Tutorial
 
-    [GIT: Working with Branches](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
+  [GIT: Working with Branches](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
 
 - GitHub Learning Guide
 
-    [Set up Git](https://docs.github.com/en/github/getting-started-with-github/quickstart/set-up-git)
+  [Set up Git](https://docs.github.com/en/github/getting-started-with-github/quickstart/set-up-git)
 
 - GitIgnore Explanation
 
-    [.gitignore file - ignoring files in Git | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
+  [.gitignore file - ignoring files in Git | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
 
 - GitHub Best Practices
 
-    Here are some Github best practices you should keep in mind when working on live project:
+  Here are some Github best practices you should keep in mind when working on live project:
 
-    [Top GitHub best practices for developers](https://www.datree.io/resources/github-best-practices)
+  [Top GitHub best practices for developers](https://www.datree.io/resources/github-best-practices)
 
 - Git Cheatsheet
 
-    [joshnh/Git-Commands](https://github.com/joshnh/Git-Commands/blob/master/README.md)
+  [joshnh/Git-Commands](https://github.com/joshnh/Git-Commands/blob/master/README.md)
 
 ## Using GUI for Version Control
 
@@ -78,7 +78,7 @@ Fork from and Open your pull requests here for the first challenge
 
 ## Second Challenge
 
-In this challenge, you need to implement any one algorithm on your own from the given list of algorithms. Different algorithms carry different points, and your net points accumulated will be calculated. 
+In this challenge, you need to implement any one algorithm on your own from the given list of algorithms. Different algorithms carry different points, and your net points accumulated will be calculated.
 
 As done in the first challenge, you'll fork the repository and submit pull requests from your newly created branch for this challenge here.
 

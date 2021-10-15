@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import CategoryCard from '~/components/cards/CategoryCard'
+import CategoryCard from '~/components/cards/CategoryCard';
 export default {
   name: 'CategoriesGrid',
   components: { CategoryCard },
@@ -24,7 +24,7 @@ export default {
     perRow: { type: Number, default: 3 },
     number: { type: Number, default: 0 },
     order: { type: String, default: 'DESC' },
-    exclude: { type: String, default: '' }
-  }
-}
+    exclude: { type: String, default: '' },
+  },
+};
 </script>

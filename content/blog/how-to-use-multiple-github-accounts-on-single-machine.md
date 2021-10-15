@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "How to use multiple GitHub accounts on single machine?"
-date:   2020-05-27
-description: "A detailed blog about using multiple GitHub accounts on a single machine via HTTPS or SSH"
-keywords: "git, github, version control, vcs, open source"
+title: 'How to use multiple GitHub accounts on single machine?'
+date: 2020-05-27
+description: 'A detailed blog about using multiple GitHub accounts on a single machine via HTTPS or SSH'
+keywords: 'git, github, version control, vcs, open source'
 categories: [Blog]
 tags: [knowledge]
 
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/github.png
 ---
 
 ---
@@ -92,7 +92,7 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/<current user>/.ssh/id_rsa):
 ```
 
-Enter file name `/Users/<current-user>/.ssh/id_rsa_work`. Default will be `id_rsa`. But to differentiate between work and personal, use **_id_rsa_work_**_ and **_id_rsa_personal_**.
+Enter file name `/Users/<current-user>/.ssh/id_rsa_work`. Default will be `id_rsa`. But to differentiate between work and personal, use **_id_rsa_work_**_ and \*\*\_id_rsa_personal_\*\*.
 After entering the key file name, you will be asked for entering passphrase.
 
 ```plain
@@ -251,6 +251,7 @@ Host github.com-personal
 #### Test the rules
 
 To check if everything is working fine, create a new test repository on your personal GitHub account and run commands below in terminal:
+
 ```bash
 mkdir TestRepo
 cd TestRepo
@@ -287,4 +288,4 @@ _(same for work repositories, use github.com-work)_
 
 All set, rest will be taken care by SSH configuration!
 
-Don't forget to share ^_^ You can [find me on Twitter](https://twitter.com/jogendrafx).
+Don't forget to share ^\_^ You can [find me on Twitter](https://twitter.com/jogendrafx).

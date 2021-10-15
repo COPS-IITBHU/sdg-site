@@ -1,12 +1,12 @@
 ---
 title: Django REST Framework- CSOC'21 Dev Backend Week 5
 date: 2020-07-14T11:51:59.091Z
-description: "Consider that after having completed the CSOC Django Assignment, you now built your own web app backed with Django as the backend."
+description: 'Consider that after having completed the CSOC Django Assignment, you now built your own web app backed with Django as the backend.'
 subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 5
-author: Daniel Kelly
-featureImage: /uploads/marc-olivier-jodoin-nqoinj-ttqm-unsplash.jpg
+author: COPS SDG
+featureImage: /uploads/django.jpg
 ---
 
 # Django REST Framework
@@ -36,7 +36,7 @@ And then, you have to replicate 2 times the same code to Add, View, Remove, Upda
 
 That opens the door to many possible mistakes… And that is where DRF shines out.....
 
-In short, as DRF uses URIs for accessing the DataBase, we can provide access to the database to any application that can read from, generate and send a URI. May that be an android app, web app, iOS app etc. 
+In short, as DRF uses URIs for accessing the DataBase, we can provide access to the database to any application that can read from, generate and send a URI. May that be an android app, web app, iOS app etc.
 
 Consider this against using Django without DRF library, where to provide access to Android, iOS in addition to the web; you have to replicate 2 times the same code to Add, View, Remove, Update and Delete data, with different languages.
 
@@ -58,7 +58,7 @@ A DRF API is composed of 3 layers: the serializer, the viewset, and the router.
 
 # Quickstart
 
-After having installed 
+After having installed
 
 [Quickstart](https://www.django-rest-framework.org/tutorial/quickstart/)
 
