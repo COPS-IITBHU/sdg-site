@@ -56,8 +56,6 @@
               tracking-12px
               cursor-pointer
               text-white text-center
-              translate-y-half
-              opacity-0
               py-10px
               my-20px
             "
@@ -71,7 +69,6 @@
     </section>
   </nav>
 </template>
-
 <script>
 export default {
   data() {
@@ -101,7 +98,11 @@ export default {
           height: '100vh',
           stagger: 0.3,
         })
-        .to('.list_item', { duration: 0.4, y: 0, stagger: 0.3, opacity: 1 }, 1);
+        .from(
+          '.list_item',
+          { duration: 0.4, y: 20, stagger: 0.3, opacity: 0 },
+          2
+        );
     },
     async openNavbar() {
       this.isActive = true;
@@ -110,8 +111,8 @@ export default {
     },
     async closeNavbar() {
       this.isActive = false;
-      this.isOpen = false;
       await this.openTimeline.reverse();
+      this.isOpen = false;
     },
   },
 };
@@ -129,7 +130,7 @@ export default {
   transition-property: stroke, stroke-dasharray, stroke-dashoffset;
   transition-timing-function: ease;
   transition-duration: 400ms;
-  stroke: #000;
+  stroke: #fff;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
