@@ -1,11 +1,12 @@
 ---
 title: Flutter - CSOC'21 Dev Frontend Week 1
 date: 2021-06-07T11:51:59.091Z
-description: "Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase."
+description: 'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.'
 parentBlog: CSOC'21 Dev Frontend Week 1
 author: COPS SDG
 featureImage: /uploads/Flutter.jpg
 ---
+
 # Flutter
 
 Due Date: June 13, 2021
@@ -57,7 +58,9 @@ Here is the architecture in short.
 
 Here is a video explaining the same.
 
-[How is Flutter different for app development](https://youtu.be/l-YO9CmaSUM)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/l-YO9CmaSUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## What does flutter consist of?
 
@@ -86,7 +89,7 @@ To develop with Flutter, you will use a programming language called Dart. You ca
 
 Dart focuses on front-end development, and you can use it to create mobile and web applications.
 
-Let's learn a little about it.  (Use below given online IDE)
+Let's learn a little about it. (Use below given online IDE)
 
 [DartPad](https://dartpad.dartlang.org/)
 

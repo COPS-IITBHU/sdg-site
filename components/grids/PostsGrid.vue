@@ -2,7 +2,7 @@
    <resource-grid
     v-bind="$props"
     :resource="resources"
-    :theme="null" 
+    :theme="null"
   > -->
 <template>
   <div>
@@ -20,15 +20,14 @@
     </div>
   </div>
 </template>
-<!-- </resource-grid> 
+<!-- </resource-grid>
 </template>-->
 
 <script>
 import PostCard from '~/components/cards/PostCard';
-import ResourceGrid from '~/components/grids/ResourceGrid.vue';
 export default {
   name: 'PostsGrid',
-  components: { PostCard, ResourceGrid },
+  components: { PostCard },
   props: {
     resources: { type: Array },
     perRow: { type: Number, default: 3 },

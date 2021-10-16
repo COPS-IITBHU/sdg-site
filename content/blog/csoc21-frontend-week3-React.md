@@ -36,7 +36,9 @@ There are two types of components Functional Components and Class Components eac
 
 Here is a video explaining the difference between them
 
-[React Class vs Functional Component | ReactJS tutorial Series Part 3](https://www.youtube.com/watch?v=uGgPINlKqBs)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/uGgPINlKqBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 or you can read the following article
 
@@ -116,11 +118,15 @@ _So much for the conceptual part, let's get started with coding!_
 
 Here's a crash course which will guide you in setting up your first React Project
 
-[React JS Crash Course 2021](https://www.youtube.com/watch?v=w7ejDZ8SWv8)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/w7ejDZ8SWv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 After going through the basics of React you can go through the following beginners tutorial to Next JS
 
-[Next.js Crash Course 2021](https://www.youtube.com/watch?v=mTz0GXj8NN0)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mTz0GXj8NN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 # Bonus Treat
 

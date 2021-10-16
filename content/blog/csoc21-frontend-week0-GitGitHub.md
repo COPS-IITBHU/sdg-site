@@ -26,11 +26,15 @@ GitHub is a web-based service for version control using Git. It is a social netw
 
 # Resources
 
-[https://www.youtube.com/watch?v=SWYqp7iY_Tc](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/SWYqp7iY_Tc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 - Git Branching Tutorial
 
-  [GIT: Working with Branches](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/JTE2Fn_sCZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 - GitHub Learning Guide
 
@@ -58,7 +62,9 @@ Usually, when programmers use Git for version control of their code, they use th
 
 [Working with GitHub in Visual Studio Code](https://code.visualstudio.com/docs/editor/github)
 
-[How to use Git inside of VSCode - 2020](https://www.youtube.com/watch?v=F2DBSH2VoHQ)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/F2DBSH2VoHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 [GitHub Desktop](https://desktop.github.com/)
 
