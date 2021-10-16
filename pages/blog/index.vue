@@ -9,7 +9,7 @@
     <!-- </div>
       </template>
       <template v-slot:sidebar>
-        Nothing here 
+        Nothing here
       </template>
     </main-section> -->
     <!-- <news-letter-form-modal /> -->
@@ -20,15 +20,13 @@
 // import { mapState } from 'vuex'
 // import { setPageData } from '@/helper'
 // import NewsLetterFormModal from '~/components/NewsLetterFormModal.vue'
-import PostsGrid from '~/components/grids/PostsGrid.vue';
-
 import { defineComponent } from '@nuxtjs/composition-api';
+import PostsGrid from '~/components/grids/PostsGrid.vue';
 
 export default defineComponent({
   name: 'HomePage',
   async asyncData({ $content }) {
-    let articles;
-    articles = await $content(`blog`).fetch();
+    const articles = await $content(`blog`).fetch();
     return {
       articles,
     };
@@ -72,7 +70,7 @@ export default defineComponent({
         else dataTree.push(hashTable.get(blog.title));
       });
       this.articles = this.sortByTime(dataTree);
-      console.log(this.articles);
+      // console.log(this.articles);
     },
   },
   mounted() {

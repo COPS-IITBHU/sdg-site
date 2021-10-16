@@ -60,7 +60,9 @@ A little extra knowledge never goes amiss
 
 So this week you are going to get started with using API endpoints. For basic knowledge of APIs, as to what basically is an API and what is it's purpose, take a look at the following video.
 
-[What is an API?](https://www.youtube.com/watch?v=s7wmiS2mSXY)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/s7wmiS2mSXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 For apps of all shapes and sizes (mobile app, web app, IoT, desktop app) they need a well-defined **Application Programming _Interface_ (API)** to abstract away the business logic of backend and to cater to any client supporting only HTTP.
 
@@ -96,7 +98,9 @@ Before starting with the task for the week, you need to be comfortable with the 
 
 The following video will give a general overview of how to send these HTTP requests to an API using Axios
 
-[Axios Crash Course | HTTP Library](https://www.youtube.com/watch?v=6LyagkoRWYA&ab_channel=TraversyMedia)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/6LyagkoRWYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 The complete documentation can be found here in case you wish to dive deep
 

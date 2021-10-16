@@ -32,7 +32,9 @@ Here is a complete tutorial in Express
 
 Alternatively, if you like videos as tutorials.
 
-[Express JS Crash Course](https://youtu.be/L72fhGm1tfE)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/L72fhGm1tfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Using Mongodb Database with express
 
@@ -56,9 +58,13 @@ Creating a backend without user login and authentication is incomplete. A user a
 
 Here you can learn more about it
 
-[JWT Authentication Tutorial - Node.js](https://www.youtube.com/watch?v=mbsmsi7l3r4)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mbsmsi7l3r4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><br><br>
 
-[Add Node.js User Authentication in 10 Minutes!](https://www.youtube.com/watch?v=QQwo4E_B0y8)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/QQwo4E_B0y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 [Authentication and Authorization with JWTs in Express.js](https://stackabuse.com/authentication-and-authorization-with-jwts-in-express-js)
 
@@ -78,7 +84,9 @@ Well anything untested is never reliable. We provide you resources for setting u
 
 [What are GET, POST, PUT, PATCH, DELETE? A walkthrough with JavaScript's Fetch API.](https://medium.com/@9cv9official/what-are-get-post-put-patch-delete-a-walkthrough-with-javascripts-fetch-api-17be31755d28)
 
-[Node.js + Express - Tutorial - GET and POST Requests](https://www.youtube.com/watch?v=Sb8xyCa2p7A)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Sb8xyCa2p7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Challenge and submission
 
