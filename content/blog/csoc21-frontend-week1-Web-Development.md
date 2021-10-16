@@ -66,13 +66,17 @@ Frameworks to the rescue! Frameworks let you focus more on building great sites 
 
 - TailwindCSS 2.1
 
-  [https://www.youtube.com/watch?v=3u_vIdnJYLc](https://www.youtube.com/watch?v=3u_vIdnJYLc)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/3u_vIdnJYLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><br><br>
 
-  [01: Setting Up Tailwind CSS - Tailwind CSS: From Zero to Production](https://www.youtube.com/watch?v=qYgogv4R8zg)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/qYgogv4R8zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><
 
-  [Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.](https://tailwindcss.com/)
+[Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.](https://tailwindcss.com/)
 
-  [Responsive Design - Tailwind CSS](https://tailwindcss.com/docs/responsive-design)
+[Responsive Design - Tailwind CSS](https://tailwindcss.com/docs/responsive-design)
 
 - Bootstrap 5
 

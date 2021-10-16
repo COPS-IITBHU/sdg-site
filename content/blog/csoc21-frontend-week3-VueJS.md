@@ -22,7 +22,9 @@ Despite not being backed by any big company VueJS ecosystem thrives on its open 
 
 Watch this small video to know about why and how VueJS ?
 
-[https://www.youtube.com/watch?v=OrxmtDw4pVI](https://www.youtube.com/watch?v=OrxmtDw4pVI)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/OrxmtDw4pVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## One Stop Solutions
 
@@ -150,7 +152,9 @@ Remember we added `script` tag in head so that we call handle `auth` and `no_aut
 
 Vue3 introduced several new features biggest of which is the composition api. You don't need it but it will certainly make your task and separation of concerns easier.
 
-[https://www.youtube.com/watch?v=8jOVi4fRSKo](https://www.youtube.com/watch?v=8jOVi4fRSKo)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8jOVi4fRSKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### Axios with Vue
 

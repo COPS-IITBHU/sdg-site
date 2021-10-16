@@ -49,9 +49,9 @@ To give users better control over their files and cut down on clutter, apps now 
 
 [Android External Storage with Examples - Tutlane](https://www.tutlane.com/tutorial/android/android-external-storage-with-examples#:~:text=In)
 
-[https://www.youtube.com/watch?v=7CEcevGbIZU](https://www.youtube.com/watch?v=7CEcevGbIZU)
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7CEcevGbIZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/7CEcevGbIZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## SQLite database
 
