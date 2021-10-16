@@ -17,10 +17,10 @@ The frontend track can be ideally completed in 3-4 weeks starting from the very 
 
 ### Weeks
 
-- [Week 0](csoc21-frontend-week0)
-- [Week 1](csoc21-frontend-week1)
-- [Week 2](csoc21-frontend-week2)
-- [Week 3](csoc21-frontend-week3)
+- [Week 0](/blog/csoc21-frontend-week0)
+- [Week 1](/blog/csoc21-frontend-week1)
+- [Week 2](/blog/csoc21-frontend-week2)
+- [Week 3](/blog/csoc21-frontend-week3)
 
 # Things to keep in mind
 

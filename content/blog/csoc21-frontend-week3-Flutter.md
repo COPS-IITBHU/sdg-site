@@ -46,7 +46,9 @@ For a better understanding of why backend and frontend should necessarily be wel
 
 So this week you are going to get started with using API endpoints. For basic knowledge of APIs, as to what basically is an API and what is it's purpose, take a look at the following video.
 
-[What is an API?](https://www.youtube.com/watch?v=s7wmiS2mSXY)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/s7wmiS2mSXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 For apps of all shapes and sizes (mobile app, web app, IoT, desktop app) they need a well-defined **Application Programming _Interface_ (API)** to abstract away the business logic of backend and to cater to any client supporting only HTTP.
 
@@ -78,7 +80,9 @@ So much for the conceptual part, let's get started with the practical knowledge!
 
 [https://www.geeksforgeeks.org/implementing-rest-api-in-flutter/](https://www.geeksforgeeks.org/implementing-rest-api-in-flutter/)
 
-[https://www.youtube.com/watch?v=1rXFKhBZXxY](https://www.youtube.com/watch?v=1rXFKhBZXxY)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/1rXFKhBZXxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 # Assignment
 

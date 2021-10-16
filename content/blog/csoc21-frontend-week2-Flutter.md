@@ -18,7 +18,9 @@ You must have encountered keywords like async, await and Future till now. These 
 
 Get this concept with this video created by Google developers themselves
 
-[Async/Await - Flutter in Focus](https://www.youtube.com/watch?v=SmTCmDMi4BY)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/SmTCmDMi4BY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 # Storing data locally
 
@@ -28,7 +30,9 @@ There are a lot of options for storing data locally. The most basic one is using
 
 Here is a video explaining the [shared_preferences](https://pub.dev/packages/shared_preferences) plugin
 
-[Flutter: Shared Preferences In 5 Minutes | Data Persistence](https://www.youtube.com/watch?v=uyz0HrGUamc)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/uyz0HrGUamc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 or you can read this tutorial
 
@@ -57,7 +61,9 @@ There are a bunch of packages available to store data locally on the device, but
 
 Here is a short video by Flutter team explaining the sqflite package
 
-[sqflite (Flutter Package of the Week)](https://www.youtube.com/watch?v=HefHf5B1YM0)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/HefHf5B1YM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Now, let's read and learn about the sqflite plugin!
 
@@ -65,7 +71,9 @@ Now, let's read and learn about the sqflite plugin!
 
 or if you are more of a video person
 
-[Flutter Tutorial - SQL Database Storage Using Sqlite & Sqflite CRUD | Android & iOS](https://www.youtube.com/watch?v=UpKrhZ0Hppk)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UpKrhZ0Hppk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## The sqflite Alternative
 
@@ -79,7 +87,9 @@ Hive is a key-value (NoSQL) based database that is much faster than sqflite.
 
 A beginners tutorial to Hive
 
-[Hive (Flutter Tutorial) - Lightweight & Fast NoSQL Database in Pure Dart](https://www.youtube.com/watch?v=R1GSrrItqUs&t=1712s)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/R1GSrrItqUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 # Challenge and Submission
 

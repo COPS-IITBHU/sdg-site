@@ -38,7 +38,10 @@ You will be interacting with a Rest API to authenticate your user and also store
 
   This is something which you should try to learn about your self but here is a video to help you understand it
 
-  [What is REST API? | Web Service](https://www.youtube.com/watch?v=qVTAB8Z2VmA)
+  [What is REST API? | Web Service](https://www.youtube.com/watch?v=)
+  <div class="container">
+    <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/qVTAB8Z2VmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
 - How to use Retrofit (Important)
 

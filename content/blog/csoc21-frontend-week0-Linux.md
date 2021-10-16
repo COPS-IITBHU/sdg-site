@@ -41,11 +41,15 @@ Please follow these steps properly and then refer the video
 
 [balenaEtcher - Flash OS images to SD cards & USB drives](https://www.balena.io/etcher/)
 
-[https://www.youtube.com/watch?v=aKKdiqVHNqw](https://www.youtube.com/watch?v=aKKdiqVHNqw)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/aKKdiqVHNqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### Hindi Variant for Dual Boot
 
-[https://www.youtube.com/watch?v=eHBLDIwKMFE](https://www.youtube.com/watch?v=eHBLDIwKMFE)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/eHBLDIwKMFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### More Flavours
 
@@ -65,7 +69,9 @@ Sooner or later you will have to switch to Linux for Software Development purpos
 
 [What is Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about)
 
-[https://www.youtube.com/watch?v=lDH6dvaw1B8](https://www.youtube.com/watch?v=lDH6dvaw1B8)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/lDH6dvaw1B8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 **Note** you won't be shown your password as you type it in for the first time so make sure you don't type in something random as you will need that password.
 
@@ -75,7 +81,9 @@ The command line is a very powerful tool that you must master to be a good devel
 
 Here is a video to start.
 
-[https://www.youtube.com/watch?v=IVquJh3DXUA](https://www.youtube.com/watch?v=IVquJh3DXUA)
+<div class="container">
+  <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/IVquJh3DXUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### Here is a great place to get started
 

@@ -6,6 +6,7 @@
         :src="require(`@/assets${image}`)"
         :lazy="false"
         :srcset="responsiveImage.srcSet"
+        alt="loading image"
       />
       <div class="hero-body">
         <div>
