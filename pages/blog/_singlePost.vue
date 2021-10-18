@@ -9,7 +9,7 @@
         <strong>Author:</strong> {{ post.author }}
       </span>
       <span v-if="post.date" class="date-wrapper">
-        <strong>Published on:</strong> {{ post.date }}
+        <strong>Published on:</strong> {{ this.date }}
       </span>
     </site-hero>
     <main-section :one-column-constrained="true">
@@ -18,9 +18,9 @@
           <nuxt-content class="mt-4 prose max-w-none" :document="post" />
           <!-- <markdown :markdown="post.content" /> -->
           <div class="other-posts">
-            <!-- <h6 class="subtitle is-size-4"> -->
-            <!-- Related Posts -->
-            <!-- </h6> -->
+            <!-- <h6 class="subtitle is-size-4">
+              Related Posts
+            </h6> -->
             <!-- Related Posts -->
             <!-- <posts-grid :number="3" :category="post.category" :exclude="post.slug" /> -->
           </div>
@@ -34,7 +34,6 @@
   </div>
 </template>
 <script>
-// import { mapState } from 'vuex'
 import { defineComponent } from '@nuxtjs/composition-api';
 import { getFormattedDate } from '@/helper';
 import PostSidebar from '~/components/PostSidebar';
@@ -42,9 +41,6 @@ export default defineComponent({
   components: {
     PostSidebar,
   },
-  // data(){
-  //   title, subtitle, featureImage, underSubtitle, author, category, slug, date
-  // },
   async asyncData({ $content, params }) {
     const { singlePost } = params;
     const post = await $content(`blog`, singlePost).fetch();
@@ -56,13 +52,7 @@ export default defineComponent({
     date() {
       return getFormattedDate(this.post.date);
     },
-    url() {
-      return `${process.env.URL}/${this.$route.fullPath}`;
-    },
   },
-  // fetch({ store, params }) {
-  //   setPageData(store, { resource: 'post', slug: params.singlePost })
-  // }
 });
 </script>
 <style scoped lang="scss">
@@ -74,30 +64,14 @@ export default defineComponent({
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  .container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  }
-
-  /* Then style the iframe to fit in the container div with full height and width */
-  .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
 }
 .edit-post {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 750px) {
   .nuxt-content {
-    font-size: 25px;
+    width: 95%;
+    font-size: 15px;
   }
 }
 </style>

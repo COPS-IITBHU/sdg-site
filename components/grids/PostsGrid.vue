@@ -1,15 +1,10 @@
-<!--<template>
-   <resource-grid
-    v-bind="$props"
-    :resource="resources"
-    :theme="null"
-  > -->
 <template>
   <div>
     <div class="cards">
       <post-card
         v-for="(item, i) in resources"
         :key="i"
+        alt="Loading Image"
         :title="item.title"
         :link="`/blog/${item.slug}/`"
         :image="item.featureImage"
@@ -20,8 +15,6 @@
     </div>
   </div>
 </template>
-<!-- </resource-grid>
-</template>-->
 
 <script>
 import PostCard from '~/components/cards/PostCard';

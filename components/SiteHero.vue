@@ -2,11 +2,11 @@
   <section :class="`hero hero-theme-${computedTheme}`">
     <div class="banner">
       <img
+        alt="Loading Image"
         class="hero-bg-img"
         :src="require(`@/assets${image}`)"
         :lazy="false"
         :srcset="responsiveImage.srcSet"
-        alt="loading image"
       />
       <div class="hero-body">
         <div>
@@ -17,6 +17,12 @@
             {{ subtitle }}
           </h2>
           <br />
+          <div
+            v-if="$slots.default"
+            class="under-subtitle animated fadeInDown slower"
+          >
+            <slot />
+          </div>
         </div>
       </div>
     </div>
@@ -34,11 +40,6 @@ export default {
   },
   computed: {
     responsiveImage() {
-      // if (this.image.indexOf('/uploads') === 0) {
-      // console.log(require(`~/assets${this.image}`))
-      // return require(`~/assets${this.image}`)
-      // }
-      // this.image = `@/assets${this.image}`
       return { source: `@/assets${this.image}`, srcSet: '' };
     },
     computedTheme() {
@@ -71,6 +72,7 @@ export default {
 }
 .title {
   font-weight: 400;
+  font-size: 2rem;
   @media (min-width: 768px) {
     font-size: 3.2rem;
   }
