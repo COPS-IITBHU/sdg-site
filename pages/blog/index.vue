@@ -6,15 +6,13 @@
 </template>
 
 <script>
-import PostsGrid from '~/components/grids/PostsGrid.vue';
-
 import { defineComponent } from '@nuxtjs/composition-api';
+import PostsGrid from '~/components/grids/PostsGrid.vue';
 
 export default defineComponent({
   name: 'HomePage',
   async asyncData({ $content }) {
-    let articles;
-    articles = await $content(`blog`).fetch();
+    const articles = await $content(`blog`).fetch();
     return {
       articles,
     };

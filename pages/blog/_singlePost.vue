@@ -18,9 +18,9 @@
           <nuxt-content class="mt-4 prose max-w-none" :document="post" />
           <!-- <markdown :markdown="post.content" /> -->
           <div class="other-posts">
-            <h6 class="subtitle is-size-4">
-              <!-- Related Posts -->
-            </h6>
+            <!-- <h6 class="subtitle is-size-4">
+              Related Posts
+            </h6> -->
             <!-- Related Posts -->
             <!-- <posts-grid :number="3" :category="post.category" :exclude="post.slug" /> -->
           </div>
@@ -34,7 +34,6 @@
   </div>
 </template>
 <script>
-
 import { defineComponent } from '@nuxtjs/composition-api';
 import { getFormattedDate } from '@/helper';
 import PostSidebar from '~/components/PostSidebar';
