@@ -23,5 +23,5 @@ You may choose to compete in any number of tracks.
 
 #### Topics for Week 5
 
-1. [Django](csoc21-backend-week5-Django-REST-Framework)
-2. [Express](csoc21-backend-week5-Express-REST-Framework)
+1. [Django](/blog/csoc21-backend-week5-Django-REST-Framework)
+2. [Express](/blog/csoc21-backend-week5-Express-REST-Framework)

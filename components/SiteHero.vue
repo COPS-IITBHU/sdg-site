@@ -10,7 +10,7 @@
       />
       <div class="hero-body">
         <div>
-          <h1 class="title animated fadeInUp">
+          <h1 class="title animated animatedFadeInUp fadeInUp">
             {{ title }}
           </h1>
           <h2 class="subtitle">
@@ -19,7 +19,7 @@
           <br />
           <div
             v-if="$slots.default"
-            class="under-subtitle animated fadeInDown slower"
+            class="under-subtitle animated animatedFadeInDown fadeInDown"
           >
             <slot />
           </div>
@@ -29,7 +29,8 @@
   </section>
 </template>
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api';
+export default defineComponent({
   name: 'SiteHero',
   props: {
     title: { type: String, default: '' },
@@ -49,7 +50,7 @@ export default {
       return this.theme || 'mist';
     },
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>
@@ -104,10 +105,6 @@ export default {
 .hero {
   .hero-bg-img {
     position: absolute;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -172,5 +169,61 @@ export default {
   .under-subtitle strong {
     text-shadow: 1px 1px 2px white;
   }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+.animatedFadeInUp,.animatedFadeInDown {
+    opacity: 0
+}
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+@keyframes fadeInDown {
+    from {
+        transform: translate3d(0,-40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@-webkit-keyframes fadeInDown {
+    from {
+        transform: translate3d(0,-40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+.fadeInDown {
+    opacity: 0;
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
 }
 </style>

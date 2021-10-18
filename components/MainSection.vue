@@ -31,7 +31,8 @@
   </main>
 </template>
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api';
+export default defineComponent({
   name: 'MainSection',
   props: {
     oneColumnConstrained: { type: Boolean, default: false },
@@ -39,16 +40,10 @@ export default {
   },
   computed: {
     computedTheme() {
-      // if (this.theme) {
-      //   return this.theme
-      // }
-      // if (this.$siteConfig.layout.theme) {
-      //   return this.$siteConfig.layout.theme
-      // }
       return 'one-column';
     },
   },
-};
+});
 </script>
 
 <style lang="scss">

@@ -5,12 +5,13 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api';
+export default defineComponent({
   name: 'LoadingSpinner',
   props: {
     position: { type: String, default: 'relative' },
   },
-};
+});
 </script>
 
 <style scoped lang="scss">

@@ -24,7 +24,9 @@
 <script>
 import GenericCard from './GenericCard';
 import { getFormattedDate } from '~/helper';
-export default {
+import { defineComponent } from '@nuxtjs/composition-api'
+
+export default defineComponent({
   components: { GenericCard },
   props: {
     title: {
@@ -56,7 +58,7 @@ export default {
       return getFormattedDate(this.date);
     },
   },
-};
+});
 </script>
 
 <style scoped>

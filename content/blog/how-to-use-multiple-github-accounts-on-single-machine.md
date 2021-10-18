@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How to use multiple GitHub accounts on single machine?'
+title: 'Using Multiple GitHub Accounts'
 date: 2020-05-27
 description: 'A detailed blog about using multiple GitHub accounts on a single machine via HTTPS or SSH'
 keywords: 'git, github, version control, vcs, open source'
