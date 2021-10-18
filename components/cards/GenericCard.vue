@@ -37,7 +37,7 @@
 </template>
 <script>
 import { OptiImage } from 'opti-image';
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api';
 const imageDimensionDefault = '16x9';
 export default defineComponent({
   components: {

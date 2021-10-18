@@ -172,58 +172,59 @@ export default defineComponent({
 }
 
 @keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 @-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
 }
-.animatedFadeInUp,.animatedFadeInDown {
-    opacity: 0
+.animatedFadeInUp,
+.animatedFadeInDown {
+  opacity: 0;
 }
 .fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }
 @keyframes fadeInDown {
-    from {
-        transform: translate3d(0,-40px,0)
-    }
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  from {
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 @-webkit-keyframes fadeInDown {
-    from {
-        transform: translate3d(0,-40px,0)
-    }
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  from {
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 .fadeInDown {
-    opacity: 0;
-    animation-name: fadeInDown;
-    -webkit-animation-name: fadeInDown;
+  opacity: 0;
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
 }
 </style>
