@@ -22,9 +22,11 @@
 </template>
 
 <script>
+import { defineComponent } from '@nuxtjs/composition-api';
 import GenericCard from './GenericCard';
 import { getFormattedDate } from '~/helper';
-export default {
+
+export default defineComponent({
   components: { GenericCard },
   props: {
     title: {
@@ -49,6 +51,9 @@ export default {
     },
     subBlogs: {
       type: Array,
+      default() {
+        return [];
+      },
     },
   },
   computed: {
@@ -56,7 +61,7 @@ export default {
       return getFormattedDate(this.date);
     },
   },
-};
+});
 </script>
 
 <style scoped>

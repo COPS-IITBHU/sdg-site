@@ -13,11 +13,11 @@ After completing the third task now you would be comfortable with APIs and GET, 
 
 This week you will learn about two most popular backend frameworks **Django** and **Express,** both these framework are known for high customizability. For completing this task you obviously need some knowledge of frontend.
 
-**Pre-requisites:** [Week-1 (Web development)](csoc21-frontend-week1-Web-Development)
+**Pre-requisites:** [Week-1 (Web development)](/blog/csoc21-frontend-week1-Web-Development)
 
 You may choose to compete in any number of tracks.
 
 #### Topics for Week 4
 
-1. [Django](csoc21-backend-week4-Django)
-2. [Express](csoc21-backend-week4-Express)
+1. [Django](/blog/csoc21-backend-week4-Django)
+2. [Express](/blog/csoc21-backend-week4-Express)

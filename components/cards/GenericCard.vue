@@ -12,9 +12,8 @@
             :srcset="responsiveImage.srcSet"
             :width="imageRatio[0]"
             :height="imageRatio[1]"
-            :sizes="`(min-width: 768px) ${100 / 3}vw`"
+            :sizes="`(min-width: 768px) ${100 / 4}vw`"
           />
-          <!-- <loading-spinner position="absolute" /> -->
         </figure>
       </component>
     </div>
@@ -38,8 +37,9 @@
 </template>
 <script>
 import { OptiImage } from 'opti-image';
+import { defineComponent } from '@nuxtjs/composition-api';
 const imageDimensionDefault = '16x9';
-export default {
+export default defineComponent({
   components: {
     OptiImage,
   },
@@ -70,7 +70,7 @@ export default {
       return { src: this.image, srcSet: '' };
     },
   },
-};
+});
 </script>
 <style scoped lang="scss">
 .subtitle {
