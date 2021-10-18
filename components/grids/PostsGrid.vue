@@ -1,9 +1,3 @@
-<!--<template>
-   <resource-grid
-    v-bind="$props"
-    :resource="resources"
-    :theme="null"
-  > -->
 <template>
   <div>
     <div class="cards">
@@ -20,7 +14,6 @@
     </div>
   </div>
 </template>
-<!-- </resource-grid>
 </template>-->
 
 <script>

@@ -3,7 +3,7 @@
     <div class="card-image">
       <component
         :is="link ? 'nuxt-link' : 'span'"
-        :to="{ path: link, params: { subBlogs } }"
+        :to="{ path: link, query: { subBlogs: subBlogs } }"
       >
         <figure :class="`image is-${imageRatioClass}`">
           <opti-image
@@ -48,7 +48,6 @@ export default {
     image: { type: String, default: '' },
     link: { type: String, default: '' },
     imageDimensions: { type: String, default: imageDimensionDefault },
-    // subBlogs: { type: Array, default: [] }
   },
   computed: {
     subBlogs() {
@@ -68,9 +67,6 @@ export default {
         });
     },
     responsiveImage() {
-      // if (this.image.indexOf('/uploads') === 0) {
-      //   return require(`~/assets${this.image}`)
-      // }
       return { src: this.image, srcSet: '' };
     },
   },
