@@ -42,8 +42,6 @@
 export default {
   mounted() {
     const galleryContainer = document.querySelector('.gallery-container');
-    const galleryControlsContainer =
-      document.querySelector('.gallery-controls');
     const galleryControls = ['previous', 'next'];
     const galleryItems = document.querySelectorAll('.gallery-item');
 
@@ -80,26 +78,8 @@ export default {
         this.updateGallery();
       }
 
-      // setControls() {
-      // this.carouselControls.forEach((control) => {
-      //   galleryControlsContainer.appendChild(
-      //     document.createElement('button')
-      //   ).className = `gallery-controls-${control}`;
-      //   document.querySelector(`.gallery-controls-${control}`).innerText =
-      //     control;
-      // });
-      // galleryControlsContainer.appendChild(
-      //   document.createElement('button')
-      // ).className = 'arrow left gallery-controls-previous';
-      // galleryControlsContainer.appendChild(
-      //   document.createElement('button')
-      // ).className = 'arrow right gallery-controls-next';
-      // }
-
       // Add a click event listener to trigger setCurrentState method to rearrange carousel
       useControls() {
-        // const triggers = [...galleryControlsContainer.childNodes];
-
         document.getElementById('prev').addEventListener('click', (e) => {
           e.preventDefault();
           this.setCurrentState(document.getElementById('prev'));
@@ -108,13 +88,6 @@ export default {
           e.preventDefault();
           this.setCurrentState(document.getElementById('next'));
         });
-
-        // triggers.forEach((control) => {
-        //   control.addEventListener('click', (e) => {
-        //     e.preventDefault();
-        //     this.setCurrentState(control);
-        //   });
-        // });
       }
     }
 
@@ -238,12 +211,6 @@ export default {
   transform: rotate(135deg) translateY(-50%);
   transition: left 0.15s ease-in-out;
   left: -10px;
-  /* left: -10px;
-  position: absolute;
-  top: 0;
-  transform: rotate(135deg) translateY(-50%);
-  transition: left 0.15s ease-in-out;
-  width: 4px; */
 }
 
 .gallery-controls-previous:hover::before {
@@ -275,24 +242,6 @@ export default {
 .gallery-controls-next:hover::before {
   right: -18px;
 }
-/* .arrow {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 15px;
-  margin-right: 3vw;
-  margin-left: 3vw;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-} */
 
 .gallery-nav {
   bottom: -15px;
