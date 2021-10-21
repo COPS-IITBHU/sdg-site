@@ -1,5 +1,5 @@
 <template>
-  <main class="text-center bg-dark-300">
+  <main class="text-center bg-dark-400">
     <h2
       class="
         text-white text-4xl
@@ -19,7 +19,8 @@
         hover:text-green-300
         md:text-3xl
         lg:text-4xl
-        my-30
+        pt-5
+        pb-2
       "
     >
       ACHIEVEMENTS

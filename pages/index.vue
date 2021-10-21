@@ -1,5 +1,5 @@
 <template>
-  <main class="text-center">
+  <main>
     <hero />
   </main>
 </template>
