@@ -1,9 +1,20 @@
 <template>
-  <body>
+  <body class="bg-dark-400">
     <div class="gallery">
       <div class="gallery-container">
         <div class="box gallery-item gallery-item-1 bg-gray-200" data-index="1">
-          <h1 class="font-sans"><b>CSAW 2021</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b>CSAW 2021</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             2 teams from IIT(BHU) made it to the finals of the
@@ -18,7 +29,18 @@
         </div>
 
         <div class="box gallery-item gallery-item-2 bg-gray-200" data-index="2">
-          <h1 class="font-sans"><b>LFX Mentorship Program</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b>LFX Mentorship Program</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             Two students from the club got accepted as mentees in
@@ -33,7 +55,18 @@
         </div>
 
         <div class="box gallery-item gallery-item-3 bg-gray-200" data-index="3">
-          <h1 class="font-sans"><b>ACM ICPC 2020</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b>ACM ICPC 2020</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             Team rng(weed) (Jatin Garg, Anshu Garg, Yash Goyal) topped
@@ -45,7 +78,18 @@
         </div>
 
         <div class="box gallery-item gallery-item-4 bg-gray-200" data-index="4">
-          <h1 class="font-sans"><b> Google Summer of Code 2021</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b> Google Summer of Code 2021</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             23 students from the club got accepted in one of the most
@@ -58,7 +102,18 @@
         </div>
 
         <div class="box gallery-item gallery-item-5 bg-gray-200" data-index="5">
-          <h1 class="font-sans"><b>Open Source Fellowships</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b>Open Source Fellowships</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             One student from the club got accepted in
@@ -81,7 +136,18 @@
         </div>
 
         <div class="box gallery-item gallery-item-6 bg-gray-200" data-index="6">
-          <h1 class="font-sans"><b>9th Inter IIT Tech Meet</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b>9th Inter IIT Tech Meet</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             2 teams, of 5 and 7 members respectively, participated and won gold
@@ -92,7 +158,18 @@
         </div>
 
         <div class="box gallery-item gallery-item-7 bg-gray-200" data-index="7">
-          <h1 class="font-sans"><b> Google Summer of Code 2020</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b> Google Summer of Code 2020</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             Ten students from the club successfully completed a project in one
@@ -105,7 +182,18 @@
         </div>
 
         <div class="box gallery-item gallery-item-8 bg-gray-200" data-index="8">
-          <h1 class="font-sans"><b> ICPC 2019-2020</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b> ICPC 2019-2020</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             One team from the club qualified for ICPC World Finals.
@@ -113,7 +201,18 @@
         </div>
 
         <div class="box gallery-item gallery-item-9 bg-gray-200" data-index="9">
-          <h1 class="font-sans"><b> Google Summer of Code 2019</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b> Google Summer of Code 2019</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             Nine students from the club got selected for one of the most
@@ -126,7 +225,16 @@
           class="box gallery-item gallery-item-10 bg-gray-200"
           data-index="10"
         >
-          <h1 class="font-sans">
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
             <b> 7th Inter IIT Tech Meet 2018, IIT Bombay</b>
           </h1>
           <br />
@@ -141,7 +249,18 @@
           class="box gallery-item gallery-item-11 bg-gray-200"
           data-index="11"
         >
-          <h1 class="font-sans"><b> Third at ICPC Regionals</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b> Third at ICPC Regionals</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             TooLazyToPropogate, a team of Pranjal Jain, Himanshu Singh and
@@ -154,7 +273,18 @@
           class="box gallery-item gallery-item-12 bg-gray-200"
           data-index="12"
         >
-          <h1 class="font-sans"><b> Bronze at Inter-IIT</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b> Bronze at Inter-IIT</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             A team of two members, Suyash Shukla and Abhinav Patel, won Bronze
@@ -166,7 +296,18 @@
           class="box gallery-item gallery-item-13 bg-gray-200"
           data-index="13"
         >
-          <h1 class="font-sans"><b> Won GS Quantify 2017</b></h1>
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b> Won GS Quantify 2017</b>
+          </h1>
           <br />
           <h3 class="font-serif">
             A team of three senior members, Bharat Khanna, Ishank Arora and
@@ -221,7 +362,6 @@ export default {
         } else {
           this.carouselArray.push(this.carouselArray.shift());
         }
-
         this.updateGallery();
       }
 
