@@ -1,8 +1,16 @@
 <template>
   <div class="m-0 p-0">
-    <div class="flex justify-center">
+    <div class="flex justify-center h-0">
       <section
-        class="container items-center flex-col flex fixed z-2 top-48 max-w-lg"
+        class="
+          container
+          items-center
+          flex-col flex
+          relative
+          z-2
+          top-48
+          max-w-lg
+        "
       >
         <h1
           data-text="COPS"
@@ -103,9 +111,6 @@ export default {
 };
 </script>
 <style scoped>
-#box {
-  background: #111;
-}
 .row {
   transform: rotate(-30deg);
 }
