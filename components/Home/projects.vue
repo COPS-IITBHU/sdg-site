@@ -12,6 +12,8 @@
       </div>
       <transition name="fade">
         <ul
+          v-show="isListVisible"
+          ref="jsDots"
           class="
             nav-dots
             fixed
@@ -23,14 +25,13 @@
             justify-center
             items-center
           "
-          ref="jsDots"
           @click="scrollToSection"
-          v-show="isListVisible"
+          @keydown.enter="scrollToSection"
         >
           <li
-            class="nav-dot list-none text-center text-2xl"
             v-for="project in projects"
             :key="project.name"
+            class="nav-dot list-none text-center text-2xl"
           >
             {{ project.name }}
           </li>
@@ -40,8 +41,8 @@
         <div
           v-for="project in projects"
           :key="project.name"
-          class="section min-h-screen"
           ref="sections"
+          class="section min-h-screen"
         >
           <HomeProject-card :project="project" />
         </div>
@@ -78,17 +79,17 @@ export default {
     },
     removeDotStyles() {
       const dots = this.$refs.jsDots;
-      const is_active = dots.querySelector('.is-active');
+      const isActive = dots.querySelector('.is-active');
 
-      if (is_active != null) {
-        is_active.classList.remove('is-active');
+      if (isActive != null) {
+        isActive.classList.remove('is-active');
       }
     },
     setDotStatus() {
-      const scroll_position = window.scrollY;
+      const scrollPosition = window.scrollY;
       const dots = Array.from(this.$refs.jsDots.children);
       if (
-        scroll_position > window.innerHeight - 250 &&
+        scrollPosition > window.innerHeight - 250 &&
         window.innerWidth > 1000
       ) {
         this.isListVisible = true;
@@ -97,11 +98,11 @@ export default {
       }
 
       this.$refs.sections.forEach((section, index) => {
-        const half_window = window.innerHeight / 2;
-        const section_top = section.offsetTop;
+        const halfWindow = window.innerHeight / 2;
+        const sectionTop = section.offsetTop;
         if (
-          scroll_position > section_top - half_window &&
-          scroll_position < section_top + half_window
+          scrollPosition > sectionTop - halfWindow &&
+          scrollPosition < sectionTop + halfWindow
         ) {
           this.removeDotStyles();
           dots[index].classList.add('is-active');
@@ -110,11 +111,11 @@ export default {
     },
     scrollToSection(e) {
       const dots = Array.from(this.$refs.jsDots.children);
-      const window_height = window.innerHeight;
+      const windowHeight = window.innerHeight;
       dots.forEach((dot, index) => {
-        if (dot == e.target) {
+        if (dot === e.target) {
           window.scrollTo({
-            top: window_height * index + window_height + 100,
+            top: windowHeight * index + windowHeight + 100,
             behavior: 'smooth',
           });
         }

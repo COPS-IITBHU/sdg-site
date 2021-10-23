@@ -22,7 +22,7 @@
         <div class="info flex flex-col justify-center items-center">
           <h2 class="text-3xl font-bold my-4">{{ project.name }}</h2>
           <p>{{ project.desc }}</p>
-          <span class="contentHeading text-xl mt-4" v-if="project.tech"
+          <span v-if="project.tech" class="contentHeading text-xl mt-4"
             >Technologies Used</span
           >
           <ul class="techList list-none">
