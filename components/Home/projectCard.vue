@@ -2,11 +2,11 @@
   <div class="wrapper relative my-4">
     <div class="box relative w-full min-h-lg flex justify-center items-center">
       <div
-        class="glass absolute top-0 left-0 h-full block pointer-events-none"
+        class="w-half bg-black-500 bg-opacity-10 absolute top-0 left-0 h-full block pointer-events-none"
       ></div>
       <div
         class="
-          content
+          text-white
           flex
           justify-between
           items-center
@@ -15,11 +15,11 @@
         "
       >
         <img
-          class="projectImg max-w-full object-cover sm:h-md lg:h-lg"
+          class="w-half max-w-full min-w-250px min-h-250px object-cover sm:h-md lg:h-lg transition-all duration-400"
           :src="imgAddress"
           alt="ProjectImg"
         />
-        <div class="info flex flex-col justify-center items-center">
+        <div class="info p-1/20 w-half min-w-250px min-h-250px flex flex-col justify-center items-center">
           <h2 class="text-3xl font-bold my-4">{{ project.name }}</h2>
           <p>{{ project.desc }}</p>
           <span v-if="project.tech" class="contentHeading text-xl mt-4"
@@ -29,7 +29,7 @@
             <li v-for="tech in project.tech" :key="tech">{{ tech }}</li>
           </ul>
           <a :href="project.url" target="_blank">
-            <button class="contentBtn p-4 rounded-xl my-4">Open App</button>
+            <button class="contentBtn text-white transition-all ease-in-out duration-150 p-4 rounded-xl my-4">Open App</button>
           </a>
         </div>
       </div>
@@ -89,25 +89,7 @@ export default {
 .box::after {
   background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
 }
-.box .glass {
-  width: 50%;
-  background: rgba(255, 255, 255, 0.1);
-}
-.box .content {
-  color: #fff;
-}
-.projectImg {
-  width: 50%;
-  min-width: 250px;
-  transition: all 0.4s;
-  min-height: 250px;
-}
-.info {
-  width: 50%;
-  padding: 5%;
-  min-width: 250px;
-  min-height: 250px;
-}
+
 .info h2 {
   color: #00bcd4;
 }
@@ -119,9 +101,7 @@ export default {
   margin: 0px 20px 0 0px;
 }
 .contentBtn {
-  color: white;
   box-shadow: 0 0 40px 40px #0946ca inset, 0 0 0 0 #0946ca;
-  transition: all 150ms ease-in-out;
 }
 .contentBtn:hover {
   box-shadow: 0 0 10px 0 #0946ca inset, 0 0 10px 4px #0946ca;
