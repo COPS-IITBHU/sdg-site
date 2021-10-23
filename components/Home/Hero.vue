@@ -30,7 +30,17 @@
       <div
         v-for="index in 27"
         :key="index"
-        class="row transform -rotate-30 relative flex p-0 whitespace-nowrap text-6xl -top-110"
+        class="
+          row
+          transform
+          -rotate-30
+          relative
+          flex
+          p-0
+          whitespace-nowrap
+          text-6xl
+          -top-110
+        "
       >
         <div class="flex">
           <Icon v-for="name in iconRow1" :key="name" :name="name" />
@@ -111,7 +121,6 @@ export default {
 };
 </script>
 <style scoped>
-
 .row div {
   animation: animate1 80s linear infinite;
   animation-delay: -80s;

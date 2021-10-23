@@ -2,7 +2,16 @@
   <div class="wrapper relative my-4">
     <div class="box relative w-full min-h-lg flex justify-center items-center">
       <div
-        class="w-half bg-black-500 bg-opacity-10 absolute top-0 left-0 h-full block pointer-events-none"
+        class="
+          w-half
+          bg-black-500 bg-opacity-10
+          absolute
+          top-0
+          left-0
+          h-full
+          block
+          pointer-events-none
+        "
       ></div>
       <div
         class="
@@ -15,11 +24,33 @@
         "
       >
         <img
-          class="w-half max-w-full min-w-250px min-h-250px object-cover sm:h-md lg:h-lg transition-all duration-400"
+          class="
+            pl-5
+            w-half
+            sm:w-3/5
+            max-w-full
+            min-w-250px
+            max-h-350px
+            object-cover
+            sm:h-md
+            transition-all
+            duration-400
+          "
           :src="imgAddress"
           alt="ProjectImg"
         />
-        <div class="info p-1/20 w-half min-w-250px min-h-250px flex flex-col justify-center items-center">
+        <div
+          class="
+            info
+            p-10
+            w-half
+            sm:w-2/5
+            min-h-250px
+            flex flex-col
+            justify-center
+            items-center
+          "
+        >
           <h2 class="text-3xl font-bold my-4">{{ project.name }}</h2>
           <p>{{ project.desc }}</p>
           <span v-if="project.tech" class="contentHeading text-xl mt-4"
@@ -29,7 +60,20 @@
             <li v-for="tech in project.tech" :key="tech">{{ tech }}</li>
           </ul>
           <a :href="project.url" target="_blank">
-            <button class="contentBtn text-white transition-all ease-in-out duration-150 p-4 rounded-xl my-4">Open App</button>
+            <button
+              class="
+                contentBtn
+                text-white
+                transition-all
+                ease-in-out
+                duration-150
+                p-4
+                rounded-xl
+                my-4
+              "
+            >
+              Open App
+            </button>
           </a>
         </div>
       </div>
