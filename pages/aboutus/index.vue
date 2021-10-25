@@ -4,6 +4,7 @@
       class="
         text-white text-4xl
         hover:text-green-300
+        sm:text-3xl
         md:text-5xl
         lg:text-7xl
         font-mono font-700
@@ -17,7 +18,8 @@
       class="
         text-white text-3xl
         hover:text-green-300
-        md:text-3xl
+        sm:text-xl
+        md:text-2xl
         lg:text-4xl
         pt-5
         pb-2

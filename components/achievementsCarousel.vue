@@ -1,8 +1,12 @@
 <template>
   <body class="bg-dark-400">
-    <div class="gallery">
-      <div class="gallery-container">
-        <div class="box gallery-item gallery-item-1 bg-gray-200" data-index="1">
+    <div class="gallery w-full">
+      <div class="gallery-container sm:max-h-xs max-w-7/10 h-400px">
+        <div
+          class="box gallery-item bg-gray-200"
+          data-index="1"
+          :class="gallery_item_number[0]"
+        >
           <h1
             class="
               font-sans
@@ -28,7 +32,11 @@
           </h3>
         </div>
 
-        <div class="box gallery-item gallery-item-2 bg-gray-200" data-index="2">
+        <div
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[1]"
+          data-index="2"
+        >
           <h1
             class="
               font-sans
@@ -54,7 +62,11 @@
           </h3>
         </div>
 
-        <div class="box gallery-item gallery-item-3 bg-gray-200" data-index="3">
+        <div
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[2]"
+          data-index="3"
+        >
           <h1
             class="
               font-sans
@@ -65,7 +77,7 @@
               bg-clip-text
             "
           >
-            <b>ACM ICPC 2020</b>
+            <b>ACM ICPC 2020-2021</b>
           </h1>
           <br />
           <h3 class="font-serif">
@@ -77,7 +89,11 @@
           </h3>
         </div>
 
-        <div class="box gallery-item gallery-item-4 bg-gray-200" data-index="4">
+        <div
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[3]"
+          data-index="4"
+        >
           <h1
             class="
               font-sans
@@ -101,7 +117,11 @@
           </h3>
         </div>
 
-        <div class="box gallery-item gallery-item-5 bg-gray-200" data-index="5">
+        <div
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[4]"
+          data-index="5"
+        >
           <h1
             class="
               font-sans
@@ -135,7 +155,11 @@
           </h3>
         </div>
 
-        <div class="box gallery-item gallery-item-6 bg-gray-200" data-index="6">
+        <div
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[5]"
+          data-index="6"
+        >
           <h1
             class="
               font-sans
@@ -157,7 +181,11 @@
           </h3>
         </div>
 
-        <div class="box gallery-item gallery-item-7 bg-gray-200" data-index="7">
+        <div
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[6]"
+          data-index="7"
+        >
           <h1
             class="
               font-sans
@@ -181,7 +209,11 @@
           </h3>
         </div>
 
-        <div class="box gallery-item gallery-item-8 bg-gray-200" data-index="8">
+        <div
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[7]"
+          data-index="8"
+        >
           <h1
             class="
               font-sans
@@ -200,7 +232,11 @@
           </h3>
         </div>
 
-        <div class="box gallery-item gallery-item-9 bg-gray-200" data-index="9">
+        <div
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[8]"
+          data-index="9"
+        >
           <h1
             class="
               font-sans
@@ -222,7 +258,8 @@
         </div>
 
         <div
-          class="box gallery-item gallery-item-10 bg-gray-200"
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[9]"
           data-index="10"
         >
           <h1
@@ -246,7 +283,8 @@
         </div>
 
         <div
-          class="box gallery-item gallery-item-11 bg-gray-200"
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[10]"
           data-index="11"
         >
           <h1
@@ -259,7 +297,7 @@
               bg-clip-text
             "
           >
-            <b> Third at ICPC Regionals</b>
+            <b>Third at ICPC Regionals</b>
           </h1>
           <br />
           <h3 class="font-serif">
@@ -270,7 +308,8 @@
         </div>
 
         <div
-          class="box gallery-item gallery-item-12 bg-gray-200"
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[11]"
           data-index="12"
         >
           <h1
@@ -283,7 +322,7 @@
               bg-clip-text
             "
           >
-            <b> Bronze at Inter-IIT</b>
+            <b>Bronze at Inter-IIT</b>
           </h1>
           <br />
           <h3 class="font-serif">
@@ -293,7 +332,8 @@
         </div>
 
         <div
-          class="box gallery-item gallery-item-13 bg-gray-200"
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[12]"
           data-index="13"
         >
           <h1
@@ -306,7 +346,7 @@
               bg-clip-text
             "
           >
-            <b> Won GS Quantify 2017</b>
+            <b>Won GS Quantify 2017</b>
           </h1>
           <br />
           <h3 class="font-serif">
@@ -316,91 +356,93 @@
             Contributors.
           </h3>
         </div>
+
+        <div
+          class="box gallery-item bg-gray-200"
+          :class="gallery_item_number[13]"
+          data-index="14"
+        >
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+            "
+          >
+            <b>Problem of the Week</b>
+          </h1>
+          <br />
+          <h3 class="font-serif">
+            COPS made an amazing study material to start and excel competitve
+            programming. This includes resources to study on each topic and some
+            good problems to practice.
+            <a
+              href="https://www.copsiitbhu.co.in/resources/cp/potw/"
+              target="_blank"
+              class="text-blue-900 hover:text-green-800"
+            >
+              POTW.</a
+            >
+          </h3>
+        </div>
       </div>
-      <button id="prev" class="arrow left gallery-controls-previous"></button>
-      <button id="next" class="arrow right gallery-controls-next"></button>
+      <button
+        id="prev"
+        class="arrow left gallery-controls-previous"
+        @click="goPrevious"
+      ></button>
+      <button
+        id="next"
+        class="arrow right gallery-controls-next"
+        @click="goNext"
+      ></button>
       <div class="gallery-controls"></div>
     </div>
   </body>
 </template>
 
 <script>
-export default {
-  mounted() {
-    const galleryContainer = document.querySelector('.gallery-container');
-    const galleryControls = ['previous', 'next'];
-    const galleryItems = document.querySelectorAll('.gallery-item');
-
-    class Carousel {
-      constructor(container, items, controls) {
-        this.carouselContainer = container;
-        this.carouselControls = controls;
-        this.carouselArray = [...items];
-      }
-
-      // Update css classes for gallery
-      updateGallery() {
-        this.carouselArray.forEach((el) => {
-          el.classList.remove('gallery-item-1');
-          el.classList.remove('gallery-item-2');
-          el.classList.remove('gallery-item-3');
-          el.classList.remove('gallery-item-4');
-          el.classList.remove('gallery-item-5');
-        });
-
-        this.carouselArray[0].classList.add('gallery-item-1');
-        this.carouselArray[1].classList.add('gallery-item-2');
-        this.carouselArray[2].classList.add('gallery-item-3');
-        this.carouselArray.at(-2).classList.add('gallery-item-4');
-        this.carouselArray.at(-1).classList.add('gallery-item-5');
-      }
-
-      // Update the current order of the carouselArray and gallery
-      setCurrentState(direction) {
-        if (direction.className === 'arrow left gallery-controls-previous') {
-          this.carouselArray.unshift(this.carouselArray.pop());
-        } else {
-          this.carouselArray.push(this.carouselArray.shift());
-        }
-        this.updateGallery();
-      }
-
-      // Add a click event listener to trigger setCurrentState method to rearrange carousel
-      useControls() {
-        document.getElementById('prev').addEventListener('click', (e) => {
-          e.preventDefault();
-          this.setCurrentState(document.getElementById('prev'));
-        });
-        document.getElementById('next').addEventListener('click', (e) => {
-          e.preventDefault();
-          this.setCurrentState(document.getElementById('next'));
-        });
-        this.updateGallery();
-      }
-    }
-
-    const exampleCarousel = new Carousel(
-      galleryContainer,
-      galleryItems,
-      galleryControls
-    );
-
-    exampleCarousel.useControls();
+import { defineComponent } from '@nuxtjs/composition-api';
+export default defineComponent({
+  data() {
+    return {
+      gallery_item_number: [
+        'gallery-item-1',
+        'gallery-item-2',
+        'gallery-item-3',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        'gallery-item-4',
+        'gallery-item-5',
+      ],
+    };
   },
-};
+  methods: {
+    goNext() {
+      this.gallery_item_number.unshift(this.gallery_item_number.pop());
+    },
+    goPrevious() {
+      this.gallery_item_number.push(this.gallery_item_number.shift());
+    },
+  },
+});
 </script>
 
 <style scoped>
-.gallery {
-  width: 100%;
-}
-
 .gallery-container {
   align-items: center;
   display: flex;
-  height: 400px;
   margin: 0 auto;
-  max-width: 70%;
   position: relative;
 }
 
@@ -533,10 +575,6 @@ export default {
   left: -10px;
 }
 
-.gallery-controls-previous:hover::before {
-  left: -18px;
-}
-
 .gallery-controls-next {
   border: solid white;
   border-width: 0 3px 3px 0;
@@ -557,10 +595,6 @@ export default {
   margin-left: 3vw;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-}
-
-.gallery-controls-next:hover::before {
-  right: -18px;
 }
 
 .gallery-nav {
