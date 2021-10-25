@@ -4,7 +4,7 @@
       class="
         text-white text-4xl
         hover:text-green-300
-        sm:text-3xl
+        sm:text-4xl
         md:text-5xl
         lg:text-7xl
         font-mono font-700
@@ -18,11 +18,9 @@
       class="
         text-white text-3xl
         hover:text-green-300
-        sm:text-xl
-        md:text-2xl
-        lg:text-4xl
-        pt-5
-        pb-2
+        sm:text-xl sm:pt-1 sm:pb-1
+        md:text-2xl md:pt-3 md:pb-1
+        lg:text-4xl lg:pt-5 lg:pb-5
       "
     >
       ACHIEVEMENTS

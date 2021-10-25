@@ -1,10 +1,20 @@
 <template>
   <body class="bg-dark-400">
     <div class="gallery w-full">
-      <div class="gallery-container sm:max-h-xs max-w-7/10 h-400px">
+      <div
+        class="
+          gallery-container
+          sm:max-h-xs
+          max-w-7/10
+          h-400px
+          relative
+          flex
+          m-auto
+          items-center
+        "
+      >
         <div
           class="box gallery-item bg-gray-200"
-          data-index="1"
           :class="gallery_item_number[0]"
         >
           <h1
@@ -35,7 +45,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[1]"
-          data-index="2"
         >
           <h1
             class="
@@ -65,7 +74,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[2]"
-          data-index="3"
         >
           <h1
             class="
@@ -92,7 +100,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[3]"
-          data-index="4"
         >
           <h1
             class="
@@ -120,7 +127,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[4]"
-          data-index="5"
         >
           <h1
             class="
@@ -158,7 +164,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[5]"
-          data-index="6"
         >
           <h1
             class="
@@ -184,7 +189,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[6]"
-          data-index="7"
         >
           <h1
             class="
@@ -212,7 +216,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[7]"
-          data-index="8"
         >
           <h1
             class="
@@ -235,7 +238,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[8]"
-          data-index="9"
         >
           <h1
             class="
@@ -260,7 +262,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[9]"
-          data-index="10"
         >
           <h1
             class="
@@ -285,7 +286,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[10]"
-          data-index="11"
         >
           <h1
             class="
@@ -310,7 +310,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[11]"
-          data-index="12"
         >
           <h1
             class="
@@ -334,7 +333,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[12]"
-          data-index="13"
         >
           <h1
             class="
@@ -360,7 +358,6 @@
         <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[13]"
-          data-index="14"
         >
           <h1
             class="
@@ -390,16 +387,21 @@
         </div>
       </div>
       <button
-        id="prev"
-        class="arrow left gallery-controls-previous"
+        class="
+          gallery-controls-previous
+          border-solid border-white
+          hover:border-blue-300
+        "
         @click="goPrevious"
       ></button>
       <button
-        id="next"
-        class="arrow right gallery-controls-next"
+        class="
+          gallery-controls-next
+          border-solid border-white
+          hover:border-blue-300
+        "
         @click="goNext"
       ></button>
-      <div class="gallery-controls"></div>
     </div>
   </body>
 </template>
@@ -439,13 +441,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.gallery-container {
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
-  position: relative;
-}
-
 .gallery-item {
   height: 150px;
   opacity: 0;
@@ -539,23 +534,15 @@ export default defineComponent({
   transform: translateX(-50%);
 }
 
-.gallery-controls {
-  color: black;
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
-}
-
 .gallery-controls-previous:focus,
 .gallery-controls-next:focus {
   outline: none;
 }
 
 .gallery-controls-previous {
-  border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 15px;
+  padding: 10px;
   margin-right: 3vw;
   margin-left: 3vw;
   transform: rotate(135deg);
@@ -563,59 +550,108 @@ export default defineComponent({
   position: relative;
 }
 
-.gallery-controls-previous::before {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 15px;
-  margin-right: 3vw;
-  margin-left: 3vw;
-  transform: rotate(135deg) translateY(-50%);
-  transition: left 0.15s ease-in-out;
-  left: -10px;
-}
-
 .gallery-controls-next {
-  border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 15px;
+  padding: 10px;
   margin-right: 3vw;
   margin-left: 3vw;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-.gallery-controls-next::before {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 15px;
-  margin-right: 3vw;
-  margin-left: 3vw;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
+@media only screen and (max-width: 600px) {
+  .gallery-item {
+    height: 75px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 112px;
+    z-index: 0;
+  }
 
-.gallery-nav {
-  bottom: -15px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-}
+  .gallery-item-3,
+  .gallery-item-4 {
+    left: 15%;
+    opacity: 0.4;
+    transform: translateX(-50%);
+  }
 
-.gallery-nav li {
-  background: #ccc;
-  border-radius: 50%;
-  height: 10px;
-  margin: 0 16px;
-  width: 10px;
-}
+  .gallery-item-2,
+  .gallery-item-5 {
+    height: 100px;
+    opacity: 1;
+    width: 150px;
+    z-index: 1;
+  }
 
-.gallery-nav li.gallery-item-selected {
-  background: #555;
+  .gallery-item-5 {
+    left: 30%;
+    transform: translateX(-50%);
+  }
+
+  .gallery-item-1 {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6),
+      0 0 30px rgba(255, 255, 255, 0.45), 0 0 55px rgba(255, 255, 255, 0.25),
+      0 0 50px rgba(255, 255, 255, 0.1);
+    height: 150px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 225px;
+    z-index: 2;
+  }
+
+  .gallery-item-1 h1 {
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery-item-1 h3 {
+    font-size: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery-item-2 h1 {
+    font-size: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery-item-2 h3 {
+    font-size: 6.5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery-item-3 h1 {
+    font-size: 7.5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery-item-3 h3 {
+    font-size: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery-item-4 h1 {
+    font-size: 7.5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery-item-4 h3 {
+    font-size: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery-item-5 h1 {
+    font-size: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  .gallery-item-5 h3 {
+    font-size: 6.5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .gallery-item-2 {
+    left: 70%;
+    transform: translateX(-50%);
+  }
+
+  .gallery-item-3 {
+    left: 85%;
+    opacity: 0.4;
+    transform: translateX(-50%);
+  }
 }
 </style>
