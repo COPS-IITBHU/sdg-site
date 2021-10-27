@@ -19,32 +19,21 @@
           flex
           justify-between
           items-center
-          flex-wrap flex-col
-          sm:flex-row
+          flex-col
+          md:flex-row
         "
       >
         <img
-          class="
-            pl-5
-            w-half
-            sm:w-3/5
-            max-w-full
-            min-w-250px
-            max-h-350px
-            object-cover
-            sm:h-md
-            transition-all
-            duration-400
-          "
+          class="w-full lg:w-half min-w-250px object-cover md:h-lg"
           :src="imgAddress"
           alt="ProjectImg"
         />
         <div
           class="
             info
-            p-10
-            w-half
-            sm:w-2/5
+            px-10
+            w-full
+            lg:w-half
             min-h-250px
             flex flex-col
             justify-center
@@ -150,11 +139,11 @@ export default {
 .contentBtn:hover {
   box-shadow: 0 0 10px 0 #0946ca inset, 0 0 10px 4px #0946ca;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
   .wrapper {
-    left: 20px;
-    right: 10px;
-    width: 85%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
   }
 }
 </style>

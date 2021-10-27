@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="projectList w-full flex flex-col justify-evenly">
-      <div class="info relative my-12 w-xs s:w-xl md:w-4xl">
+      <div class="info relative my-12 w-3/5">
         <h2 class="text-5xl my-4 text-center">Projects</h2>
         <p class="text-lg text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
@@ -165,9 +165,10 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
   .info {
     left: 5%;
+    width: 90%;
   }
 }
 </style>
