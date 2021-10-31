@@ -1,7 +1,6 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify/iconify': ^2.0.1
   '@iconify/json': ^1.1.412
   '@nuxt/content': ^1.9.0
   '@nuxt/image': ^0.6.0
@@ -1304,20 +1303,6 @@ packages:
     resolution: {integrity: sha512-ejk4gWp9STQcivh1h5VKyuLpOOWefrC9WcHUW5YQBXqsT0NBpfqei8X4rCXasnNlbJSiK8IvIJZTfKtQ/56JIw==}
     dependencies:
       cross-fetch: 3.1.4
-    dev: true
-
-  /@iconify/json-tools/1.0.10:
-    resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
-    dev: true
-
-  /@iconify/json/1.1.409:
-    resolution: {integrity: sha512-8ozw0ZjqAYRHzkse/TMe+iGm56XxMj6RtTT8W6pLSybgBln8foUQ3n2KHinM/qyklwqqs/gpH+yelNXSCtF2Rw==}
-    dev: true
-
-  /@iconify/vue/3.0.0:
-    resolution: {integrity: sha512-7heVMHkpB3d7l+/ofAQ+f9k5mETi/FWEnI5dXFQqsDmc/yuO2Nz5D9XkSDvO1b6TRVawf/kleN8JXRaClTM4nQ==}
-    peerDependencies:
-      vue: ^3.0.11
     dev: true
 
   /@iconify/json-tools/1.0.10:
@@ -5644,10 +5629,6 @@ packages:
   /has-flag/4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
-
-  /has-pkg/0.0.1:
-    resolution: {integrity: sha512-UuzsNxcEOdEwRsz4HtaceT7jg71L2gopEq8OMOGKtPLYhHhF4RJZtkcZ4Xn0jmAmBSNhm0xPhrywgZkLu4aMYQ==}
-    dev: true
 
   /has-symbols/1.0.2:
     resolution: {integrity: sha512-chXa79rL/UC2KlX17jo3vRGz0azaWEx5tGqZg5pO3NUyEJVB17dMruQlzCCOfUvElghKcm5194+BCRvi2Rv/Gw==}
