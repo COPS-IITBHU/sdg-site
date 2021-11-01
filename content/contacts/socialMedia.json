@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Facebook",
+    "url": "https: //www.facebook.com/cops.iitbhu",
+    "icon": "fa-brands:facebook-square",
+    "height": 30,
+    "width": 30,
+    "style": {
+      "color": "#4267b2"
+    }
+  },
+  {
+    "name": "Linkedin",
+    "url": "https://www.linkedin.com/company/cops-iitbhu",
+    "icon": "brandico:linkedin-rect",
+    "height": 28,
+    "width": 28,
+    "style": {
+      "color": "#006192"
+    }
+  },
+  {
+    "name": "Github",
+    "url": "https://github.com/COPS-IITBHU",
+    "icon": "ant-design:github-filled",
+    "height": 30,
+    "width": 30,
+    "style": {
+      "color": "#211f1f"
+    }
+  },
+  {
+    "name": "Youtube",
+    "url": "https://www.youtube.com/channel/UC01TZlNfu29QgG4FmUqVsdg",
+    "icon": "logos:youtube-icon",
+    "height": 30,
+    "width": 30,
+    "style": {
+      "color": "#006192"
+    }
+  },
+  {
+    "name": "Google group",
+    "url": "https://groups.google.com/forum/#!forum/copsiitbhu",
+    "icon": "dashicons:groups",
+    "height": 32,
+    "width": 32,
+    "style": {
+      "color": "#32cd32"
+    }
+  },
+  {
+    "name": "Gmail",
+    "url": "mailto:iitbhu.cops@gmail.com",
+    "icon": "logos:google-gmail",
+    "height": 30,
+    "width": 30,
+    "style": {
+      "color": "#006192"
+    }
+  }
+]
