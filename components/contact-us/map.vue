@@ -6,9 +6,7 @@
     height="400px"
     allowfullscreen=""
     loading="lazy"
-    style="
-      filter: invert(90%) hue-rotate(180deg) brightness(80%) saturate(200%);
-    "
+    class="filter invert-90 hue-rotate-180 brightness-95 saturate-200"
   ></iframe>
 </template>
 <script lang="ts"></script>

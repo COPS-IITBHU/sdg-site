@@ -21,7 +21,6 @@
           </div>
         </div>
         <div
-          id="discord"
           class="
             flex flex-row
             justify-center
@@ -30,7 +29,7 @@
             <lg:(w-full)
           "
         >
-          <Online class="<sm:(w-full)" />
+          <Online class="<sm:(w-full)" :serverid="serverid" />
         </div>
       </div>
 
@@ -121,6 +120,7 @@ export default {
   data() {
     return {
       items: [],
+      serverid: '786971759496790046',
     };
   },
   mounted() {
@@ -136,10 +136,6 @@ export default {
 </script>
 
 <style scoped>
-#discord {
-  filter: brightness(90%);
-}
-
 img {
   border-top-left-radius: 70px;
   border-bottom-right-radius: 70px;
