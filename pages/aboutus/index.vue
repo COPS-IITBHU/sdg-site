@@ -1,5 +1,5 @@
 <template>
-  <main class="text-center bg-dark-400">
+  <main class="text-center">
     <h2
       class="
         text-white text-4xl
@@ -31,6 +31,7 @@
 
 <script>
 import AchievementsCarousel from '~/components/achievementsCarousel.vue';
+
 export default {
   components: { AchievementsCarousel },
   data() {

@@ -1,5 +1,5 @@
 <template>
-  <body class="bg-dark-400">
+  <body>
     <div class="gallery w-full">
       <div
         class="
@@ -28,6 +28,7 @@
             ease-in-out
             duration-450
             flex flex-col
+            justify-center
           "
           :class="galleryItemNumber[achievement.index]"
         >
@@ -40,6 +41,7 @@
               text-transparent
               bg-clip-text
               mt-1
+              mb-2
             "
           >
             <b>{{ achievement.title }}</b>
@@ -51,48 +53,29 @@
               align-middle
               justify-center
               items-center
-              flex flex-grow
               px-1
               sm:px-4
             "
           >
             {{ achievement.description }}
           </h3>
-        </div>
-        <!-- <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[0]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
+          <a
+            v-if="achievement.link"
+            :href="achievement.link"
+            target="_blank"
+            class="flex-row self-end mr-4"
           >
-            <b>CSAW 2021</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            2 teams from IIT(BHU) made it to the finals of the
-            <a
-              href="https://ctf.csaw.io/scoreboard"
-              target="_blank"
-              class="text-blue-900 hover:text-green-800"
-            >
-              Cyber Security Awareness Week (CSAW).</a
-            >
-          </h3>
-        </div> -->
+            <span class="iconify" data-icon="akar-icons:link-out"> link</span>
+          </a>
+        </div>
       </div>
+
       <button
         class="
           gallery-controls-previous
           p-2
           mr-3vw
+          mb-4
           transform
           rotate-135
           inline-block
@@ -108,6 +91,7 @@
           gallery-controls-next
           p-2
           ml-3vw
+          mb-4
           transform
           -rotate-45
           inline-block
@@ -123,14 +107,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api';
+import { defineComponent, PropType } from '@nuxtjs/composition-api';
+
+interface achievementsArray {
+  index: number;
+  title: string;
+  description: string;
+  link: string;
+}
 
 export default defineComponent({
   props: {
     achievements: {
-      type: Object,
+      type: Array as PropType<achievementsArray[]>,
       default() {
-        return {};
+        return null;
       },
     },
   },
