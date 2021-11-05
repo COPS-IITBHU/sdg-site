@@ -14,6 +14,52 @@
         "
       >
         <div
+          v-for="achievement in achievements"
+          :key="achievement.index"
+          class="
+            gallery-item
+            bg-gray-200
+            h-30
+            w-45
+            z-0
+            opacity-0
+            absolute
+            transition-all
+            ease-in-out
+            duration-450
+            flex flex-col
+          "
+          :class="galleryItemNumber[achievement.index]"
+        >
+          <h1
+            class="
+              font-sans
+              bg-gradient-to-r
+              from-blue-500
+              to-green-400
+              text-transparent
+              bg-clip-text
+              mt-1
+            "
+          >
+            <b>{{ achievement.title }}</b>
+          </h1>
+          <h3
+            class="
+              font-serif
+              text-center
+              align-middle
+              justify-center
+              items-center
+              flex flex-grow
+              px-1
+              sm:px-4
+            "
+          >
+            {{ achievement.description }}
+          </h3>
+        </div>
+        <!-- <div
           class="box gallery-item bg-gray-200"
           :class="gallery_item_number[0]"
         >
@@ -40,365 +86,35 @@
               Cyber Security Awareness Week (CSAW).</a
             >
           </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[1]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b>LFX Mentorship Program</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            Two students from the club got accepted as mentees in
-            <a
-              href="https://lfx.linuxfoundation.org/tools/mentorship/"
-              target="_blank"
-              class="text-blue-900 hover:text-green-800"
-            >
-              LFX Mentorship.</a
-            >
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[2]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b>ACM ICPC 2020-2021</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            Team rng(weed) (Jatin Garg, Anshu Garg, Yash Goyal) topped
-            Kanpur-Mathura Regionals and have chance to Represent IIT BHU in
-            World Finals.
-            <br />
-            23 Teams from the College qualified for ICPC Amritapuri Regionals.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[3]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b> Google Summer of Code 2021</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            23 students from the club got accepted in one of the most
-            prestigious open-source software development programs - Google
-            Summer of Code.
-            <br />
-            IIT (BHU) is the institute with second highest GSoC selections in
-            the world in 2021.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[4]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b>Open Source Fellowships</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            One student from the club got accepted in
-            <a
-              href="https://www.microsoft.com/en-us/research/academic-program/rl-open-source-fest/"
-              target="_blank"
-              class="text-blue-900 hover:text-green-800"
-            >
-              Microsoft Reinforcement Learning Open Source Fest.</a
-            >
-            Two students got accepted as mentees in
-            <a
-              href="https://lfx.linuxfoundation.org/tools/mentorship/"
-              target="_blank"
-              class="text-blue-900 hover:text-green-800"
-            >
-              LFX Mentorship.</a
-            >
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[5]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b>9th Inter IIT Tech Meet</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            2 teams, of 5 and 7 members respectively, participated and won gold
-            and silver medals in their respective events of Network Security
-            Hackathon and Automatic Headline And Sentiment Generator against the
-            participating 23 IITs.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[6]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b> Google Summer of Code 2020</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            Ten students from the club successfully completed a project in one
-            of the most prestigious open-source software development programs -
-            Google Summer of Code.
-            <br />
-            IIT (BHU) is one of top 10 institutes in the world with most number
-            of GSoC selections in 2020.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[7]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b> ICPC 2019-2020</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            One team from the club qualified for ICPC World Finals.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[8]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b> Google Summer of Code 2019</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            Nine students from the club got selected for one of the most
-            prestigious open-source software development programs - Google
-            Summer of Code.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[9]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b> 7th Inter IIT Tech Meet 2018, IIT Bombay</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            2 teams, of 4 members each, participated and both won bronze medals
-            on their respective events of Coding Hackathon and Star Cluster
-            Identifier against the participating 23 IITs.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[10]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b>Third at ICPC Regionals</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            TooLazyToPropogate, a team of Pranjal Jain, Himanshu Singh and
-            Debrup Roy Choudhary secured third position at ICPC Kanpur Regionals
-            2017.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[11]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b>Bronze at Inter-IIT</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            A team of two members, Suyash Shukla and Abhinav Patel, won Bronze
-            Medal in an Inter IIT Event.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[12]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b>Won GS Quantify 2017</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            A team of three senior members, Bharat Khanna, Ishank Arora and
-            Ayush Kedia, won the GS Quantify contest held by Goldman Sachs.
-            Also, 6 teams from the institute were selected as Significant
-            Contributors.
-          </h3>
-        </div>
-
-        <div
-          class="box gallery-item bg-gray-200"
-          :class="gallery_item_number[13]"
-        >
-          <h1
-            class="
-              font-sans
-              bg-gradient-to-r
-              from-blue-500
-              to-green-400
-              text-transparent
-              bg-clip-text
-            "
-          >
-            <b>Problem of the Week</b>
-          </h1>
-          <br />
-          <h3 class="font-serif">
-            COPS made an amazing study material to start and excel competitve
-            programming. This includes resources to study on each topic and some
-            good problems to practice.
-            <a
-              href="https://www.copsiitbhu.co.in/resources/cp/potw/"
-              target="_blank"
-              class="text-blue-900 hover:text-green-800"
-            >
-              POTW.</a
-            >
-          </h3>
-        </div>
+        </div> -->
       </div>
       <button
         class="
           gallery-controls-previous
-          border-solid border-white
+          p-2
+          mr-3vw
+          transform
+          rotate-135
+          inline-block
+          border-solid border-white border-r-3 border-l-0 border-u-0 border-b-3
           hover:border-blue-300
+          focus:outline-none
+          relative
         "
         @click="goPrevious"
       ></button>
       <button
         class="
           gallery-controls-next
-          border-solid border-white
+          p-2
+          ml-3vw
+          transform
+          -rotate-45
+          inline-block
+          border-solid border-white border-r-3 border-l-0 border-u-0 border-b-3
           hover:border-blue-300
+          focus:outline-none
+          relative
         "
         @click="goNext"
       ></button>
@@ -406,15 +122,28 @@
   </body>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api';
+
 export default defineComponent({
+  props: {
+    achievements: {
+      type: Object,
+      default() {
+        return {};
+      },
+    },
+  },
+
   data() {
     return {
-      gallery_item_number: [
+      galleryItemNumber: [
         'gallery-item-1',
         'gallery-item-2',
         'gallery-item-3',
+        '',
+        '',
+        '',
         '',
         '',
         '',
@@ -429,27 +158,21 @@ export default defineComponent({
       ],
     };
   },
+
   methods: {
     goNext() {
-      this.gallery_item_number.unshift(this.gallery_item_number.pop());
+      const tmp = this.galleryItemNumber.pop();
+      this.galleryItemNumber.unshift(tmp as string);
     },
     goPrevious() {
-      this.gallery_item_number.push(this.gallery_item_number.shift());
+      const tmp = this.galleryItemNumber.shift();
+      this.galleryItemNumber.push(tmp as string);
     },
   },
 });
 </script>
 
 <style scoped>
-.gallery-item {
-  height: 150px;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  width: 225px;
-  z-index: 0;
-}
-
 .gallery-item-3,
 .gallery-item-4 {
   left: 15%;
@@ -534,39 +257,13 @@ export default defineComponent({
   transform: translateX(-50%);
 }
 
-.gallery-controls-previous:focus,
-.gallery-controls-next:focus {
-  outline: none;
-}
-
-.gallery-controls-previous {
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 3vw;
-  margin-left: 3vw;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  position: relative;
-}
-
-.gallery-controls-next {
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 10px;
-  margin-right: 3vw;
-  margin-left: 3vw;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
 @media only screen and (max-width: 600px) {
   .gallery-item {
-    height: 75px;
+    height: 90px;
     opacity: 0;
     position: absolute;
     transition: all 0.3s ease-in-out;
-    width: 112px;
+    width: 134px;
     z-index: 0;
   }
 
@@ -579,35 +276,36 @@ export default defineComponent({
 
   .gallery-item-2,
   .gallery-item-5 {
-    height: 100px;
+    height: 120px;
     opacity: 1;
-    width: 150px;
+    width: 190px;
     z-index: 1;
   }
 
+  .gallery-item-2,
   .gallery-item-5 {
     left: 30%;
     transform: translateX(-50%);
   }
 
   .gallery-item-1 {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6),
-      0 0 30px rgba(255, 255, 255, 0.45), 0 0 55px rgba(255, 255, 255, 0.25),
-      0 0 50px rgba(255, 255, 255, 0.1);
-    height: 150px;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.6),
+      0 0 36px rgba(255, 255, 255, 0.45), 0 0 66px rgba(255, 255, 255, 0.25),
+      0 0 60px rgba(255, 255, 255, 0.1);
+    height: 180px;
     opacity: 1;
     left: 50%;
     transform: translateX(-50%);
-    width: 225px;
+    width: 270px;
     z-index: 2;
   }
 
   .gallery-item-1 h1 {
-    font-size: 15px;
+    font-size: 18px;
     transition: all 0.3s ease-in-out;
   }
   .gallery-item-1 h3 {
-    font-size: 10px;
+    font-size: 13px;
     transition: all 0.3s ease-in-out;
   }
   .gallery-item-2 h1 {

@@ -25,9 +25,28 @@
     >
       ACHIEVEMENTS
     </h3>
-    <achievementsCarousel />
+    <achievementsCarousel :achievements="achievements" />
   </main>
 </template>
 
-<script setup lang="ts"></script>
+<script>
+import AchievementsCarousel from '~/components/achievementsCarousel.vue';
+export default {
+  components: { AchievementsCarousel },
+  data() {
+    return {
+      achievements: [],
+    };
+  },
+  mounted() {
+    this.fetchdata();
+  },
+  methods: {
+    async fetchdata() {
+      const data = await this.$content('achievements').fetch();
+      this.achievements = data;
+    },
+  },
+};
+</script>
 <style scoped></style>
