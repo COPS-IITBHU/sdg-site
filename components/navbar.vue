@@ -82,6 +82,7 @@ export default {
         { name: 'Blogs', url: '/blogs' },
         { name: 'Portfolio', url: '/portfolio' },
         { name: 'About Us', url: '/aboutus' },
+        { name: 'Contact Us', url: '/contact' },
       ],
     };
   },

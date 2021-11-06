@@ -1,8 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify/iconify': ^2.0.1
-  '@iconify/json': ^1.1.412
+  '@iconify/json': ^1.1.418
   '@nuxt/content': ^1.9.0
   '@nuxt/image': ^0.6.0
   '@nuxt/types': ^2.14.6
@@ -35,7 +34,7 @@ specifiers:
   prettier: ^2.1.2
   sass: ^1.35.2
   sass-loader: ^10.1.1
-  unplugin-icons: ^0.12.12
+  unplugin-icons: ^0.12.16
 
 dependencies:
   '@nuxt/content': 1.14.0_fibers@5.0.0+sass@1.39.2
@@ -52,7 +51,7 @@ dependencies:
   particlesjs: 2.2.3
 
 devDependencies:
-  '@iconify/json': 1.1.412
+  '@iconify/json': 1.1.422
   '@nuxt/types': 2.15.8_fibers@5.0.0+sass@1.39.2
   '@nuxt/typescript-build': 2.1.0_@nuxt+types@2.15.8
   '@nuxtjs/eslint-config-typescript': 6.0.1_eslint@7.32.0
@@ -73,7 +72,7 @@ devDependencies:
   prettier: 2.4.0
   sass: 1.39.2
   sass-loader: 10.1.1_fibers@5.0.0+sass@1.39.2
-  unplugin-icons: 0.12.12
+  unplugin-icons: 0.12.17
 
 packages:
 
@@ -1306,34 +1305,16 @@ packages:
       cross-fetch: 3.1.4
     dev: true
 
-  /@iconify/json-tools/1.0.10:
-    resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
-    dev: true
-
-  /@iconify/json/1.1.409:
-    resolution: {integrity: sha512-8ozw0ZjqAYRHzkse/TMe+iGm56XxMj6RtTT8W6pLSybgBln8foUQ3n2KHinM/qyklwqqs/gpH+yelNXSCtF2Rw==}
-    dev: true
-
-  /@iconify/vue/3.0.0:
-    resolution: {integrity: sha512-7heVMHkpB3d7l+/ofAQ+f9k5mETi/FWEnI5dXFQqsDmc/yuO2Nz5D9XkSDvO1b6TRVawf/kleN8JXRaClTM4nQ==}
-    peerDependencies:
-      vue: ^3.0.11
-    dev: true
-
-  /@iconify/json-tools/1.0.10:
-    resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
-    dev: true
-
-  /@iconify/json/1.1.412:
-    resolution: {integrity: sha512-/UM0Xya0bjnG3MDTbL39yz4j2XAS33Vsgt9CfPRDXgCx9325mVicZDzgCG3PWkW7V2VW+X26cfsgmlV/G8KTCQ==}
+  /@iconify/json/1.1.422:
+    resolution: {integrity: sha512-yxIjzblsWIRZfXK+bfBWtm1LDD7+QlBXO/K7xnqU+LiOk6rJXvh+Veks/LgDD2wAi3PYQHVzCZBqp6OGGz6K/Q==}
     dev: true
 
   /@iconify/types/1.0.10:
     resolution: {integrity: sha512-SN3z6einVeUckDQiE8p4POF7X4hk4/y2+a7a4ogJOCxX5XT6z1zXNN8dwS5O1vloXpc6mkHizRZm2qPnhK6NnQ==}
     dev: true
 
-  /@iconify/utils/1.0.14:
-    resolution: {integrity: sha512-r0ac6HAG0mFR7vjh+kfVPNqnVbxLTu7t9fp9lqCJQ+DV1GWYEkC7e5PNEpNTQB+GFldIL9Ar4mrm3eD8rml4Rw==}
+  /@iconify/utils/1.0.18:
+    resolution: {integrity: sha512-uCfJ7FdTxDk1DLKsvynTsYX4LnkGIDw+LCpoY0mRdl+NrNPCjYZ8HHYs4xzmo7cryRe0ZT0yuF2f3oipPIHn8w==}
     dependencies:
       '@iconify/types': 1.0.10
     dev: true
@@ -5645,10 +5626,6 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  /has-pkg/0.0.1:
-    resolution: {integrity: sha512-UuzsNxcEOdEwRsz4HtaceT7jg71L2gopEq8OMOGKtPLYhHhF4RJZtkcZ4Xn0jmAmBSNhm0xPhrywgZkLu4aMYQ==}
-    dev: true
-
   /has-symbols/1.0.2:
     resolution: {integrity: sha512-chXa79rL/UC2KlX17jo3vRGz0azaWEx5tGqZg5pO3NUyEJVB17dMruQlzCCOfUvElghKcm5194+BCRvi2Rv/Gw==}
     engines: {node: '>= 0.4'}
@@ -6720,8 +6697,8 @@ packages:
       emojis-list: 3.0.0
       json5: 2.2.0
 
-  /local-pkg/0.3.0:
-    resolution: {integrity: sha512-JapWObmC38atpkIh2Y8M3223TP+GsdtR4s28Kut7Q98PT6MX7VwvAwPs2/rxpwi+hbDiHM4+dIvRCU67k+qHag==}
+  /local-pkg/0.4.0:
+    resolution: {integrity: sha512-2XBWjO/v63JeR1HPzLJxdTVRQDB84Av2p2KtBA5ahvpyLUPubcAU6iXlAJrONcY7aSqgJhXxElAnKtnYsRolPQ==}
     engines: {node: '>=14'}
     dependencies:
       mlly: 0.2.5
@@ -10629,8 +10606,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /unplugin-icons/0.12.12:
-    resolution: {integrity: sha512-WyV6462k424TC4K1AsPLtGkgORG6fYuyItBNWwsrEy265T9P7LCtUeZkIdPU3PkLgXZturT0GLWWxsRP3yYMVA==}
+  /unplugin-icons/0.12.17:
+    resolution: {integrity: sha512-y6KNKlwcLXlbfpZY48lO0blsH/uwHbvxD2sgCaw1AhgFk9Bjw7hA1kQxhUWPAIRySeobve2YP7HGKLHoIctXPA==}
     peerDependencies:
       '@svgr/core': ^5.5.0
       '@vue/compiler-sfc': ^3.0.2
@@ -10648,12 +10625,11 @@ packages:
     dependencies:
       '@antfu/install-pkg': 0.1.0
       '@antfu/utils': 0.3.0
-      '@iconify/json-tools': 1.0.10
-      '@iconify/utils': 1.0.14
+      '@iconify/utils': 1.0.18
       debug: 4.3.2
       kolorist: 1.5.0
-      local-pkg: 0.3.0
-      unplugin: 0.2.16
+      local-pkg: 0.4.0
+      unplugin: 0.2.19
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -10682,8 +10658,8 @@ packages:
       - webpack
     dev: false
 
-  /unplugin/0.2.16:
-    resolution: {integrity: sha512-KkXatHba0baJszSHW+2e8EQU/5Bz7rYwzYXu8wUeq97tE6K3wvub+7OWSuRv04LttvzNLsJ2jXEyR35gofv74Q==}
+  /unplugin/0.2.19:
+    resolution: {integrity: sha512-r5PDeBBecir99rhLFp1ftqIkp5afD91anweIlWtF5Ca46FJsn2kQczD93FdFJw79R6HSF5waeYo79bFOQ9GVhQ==}
     peerDependencies:
       rollup: ^2.50.0
       vite: ^2.3.0
