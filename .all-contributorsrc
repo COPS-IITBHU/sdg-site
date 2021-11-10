@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "IamEzio",
+      "name": "Anshuman Maurya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89375125?v=4",
+      "profile": "https://github.com/IamEzio",
+      "contributions": [
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "sdg-site",
+  "projectOwner": "COPS-IITBHU",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
