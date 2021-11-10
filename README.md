@@ -1,6 +1,6 @@
 # SDG Site
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 _Under Heavy Development_
@@ -56,6 +56,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://tiger-yash.github.io/"><img src="https://avatars.githubusercontent.com/u/74406801?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yash Raj</b></sub></a><br /><a href="#maintenance-tiger-yash" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/S-kus"><img src="https://avatars.githubusercontent.com/u/86892991?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Saumya Kushwaha</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=S-kus" title="Code">💻</a></td>
   </tr>
 </table>
 
