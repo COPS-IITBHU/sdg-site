@@ -55,7 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/IamEzio"><img src="https://avatars.githubusercontent.com/u/89375125?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anshuman Maurya</b></sub></a><br /><a href="#ideas-IamEzio" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-IamEzio" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/IamEzio"><img src="https://avatars.githubusercontent.com/u/89375125?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anshuman Maurya</b></sub></a><br /><a href="#ideas-IamEzio" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-IamEzio" title="Maintenance">🚧</a> <a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=IamEzio" title="Code">💻</a></td>
   </tr>
 </table>
 
