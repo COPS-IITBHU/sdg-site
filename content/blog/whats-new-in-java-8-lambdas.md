@@ -11,11 +11,11 @@ author: COPS SDG
 featureImage: /uploads/JAVA.png
 ---
 
-# What’s new in Java 8: Lambdas :octocat:
+# What’s new in Java 8: Lambdas 😺
 
-## A hands-on introduction to Java 8's most exciting new feature :sparkles:
+## A hands-on introduction to Java 8's most exciting new feature ✨
 
-> By Yash Raj Bharti | Metallurgical engineering | 2018-12-03
+> By Yash Raj Bharti | Metallurgical engineering | 2018-12-03 
 > ![lambda](https://upload.wikimedia.org/wikipedia/commons/f/f1/Greek_lc_lamda.png)
 
 Java 8 is here, and, with it, come lambdas. Although long overdue, lambdas are a remarkable new feature that could make us rethink our programming styles and strategies. In particular, they offer exciting new possibilities for functional programming.
@@ -24,7 +24,7 @@ While lambdas are the most prominent addition to Java 8, there are many other ne
 
 All of the code examples mentioned in this post can be found in [this github repo](https://github.com/yashrajbharti/-/edit/master/Lambda.md)
 
-## What are lambdas? :octocat:
+## What are lambdas? 😺
 
 Lambdas are succinctly expressed single method classes that represent behaviour. They can either be assigned to a variable or passed around to other methods just like we pass data as arguments.
 
@@ -57,7 +57,7 @@ Have a look at them once again until you familiarize yourself with the syntax. I
 
 You might wonder what the type is for these expressions. The type of any lambda is a functional interface, which we discuss below.
 
-## Lambda Syntax :octocat:
+## Lambda Syntax 😺
 
 There is a special syntax to create and represent a lambda expression. Just like a normal Java method, a lambda expression has input arguments, a body, and an optional return value. This is illustrated here below:
 

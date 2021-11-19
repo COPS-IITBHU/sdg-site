@@ -1,6 +1,6 @@
 <template>
-  <div class="cards_item">
-    <div class="card">
+  <div class="cards_item flex p-4 sm:w-1/2 md:w-1/3">
+    <div class="card flex p-1">
       <generic-card
         :title="title"
         :image="image"
@@ -22,11 +22,9 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
 import GenericCard from './GenericCard';
 import { getFormattedDate } from '~/helper';
-
-export default defineComponent({
+export default {
   components: { GenericCard },
   props: {
     title: {
@@ -51,9 +49,6 @@ export default defineComponent({
     },
     subBlogs: {
       type: Array,
-      default() {
-        return [];
-      },
     },
   },
   computed: {
@@ -61,36 +56,12 @@ export default defineComponent({
       return getFormattedDate(this.date);
     },
   },
-});
+};
 </script>
 
 <style scoped>
-.cards_item {
-  display: flex;
-  padding: 1rem;
-}
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
-}
-
 .card {
-  background-color: white;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
-}
-
-.card-details {
-  padding-top: 0.25rem;
 }
 </style>

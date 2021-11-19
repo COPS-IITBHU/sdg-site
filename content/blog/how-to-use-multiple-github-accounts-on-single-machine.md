@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Using Multiple GitHub Accounts'
+title: 'How to use multiple GitHub accounts on single machine?'
 date: 2020-05-27
 description: 'A detailed blog about using multiple GitHub accounts on a single machine via HTTPS or SSH'
 keywords: 'git, github, version control, vcs, open source'
@@ -11,7 +11,6 @@ author: COPS SDG
 featureImage: /uploads/github.png
 ---
 
----
 
 Most of us have multiple (mostly two) GitHub accounts, personal and work account. You need to have the ability to push and pull to multiple accounts. This post is about how to setup and use them on a single machine using HTTPS or SSH.
 

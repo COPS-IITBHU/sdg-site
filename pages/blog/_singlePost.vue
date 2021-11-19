@@ -9,7 +9,7 @@
         <strong>Author:</strong> {{ post.author }}
       </span>
       <span v-if="post.date" class="date-wrapper">
-        <strong>Published on:</strong> {{ date }}
+        <strong>Published on:</strong> {{ this.date }}
       </span>
     </site-hero>
     <main-section :one-column-constrained="true">
