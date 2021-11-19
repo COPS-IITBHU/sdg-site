@@ -1,0 +1,33 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "tiger-yash",
+      "name": "Yash Raj",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74406801?v=4",
+      "profile": "https://tiger-yash.github.io/",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "S-kus",
+      "name": "Saumya Kushwaha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86892991?v=4",
+      "profile": "https://github.com/S-kus",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "sdg-site",
+  "projectOwner": "COPS-IITBHU",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
