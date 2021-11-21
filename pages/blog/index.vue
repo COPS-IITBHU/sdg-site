@@ -21,7 +21,7 @@ export default defineComponent({
     return {
       title: 'COPS SDG',
       subtitle: '',
-      featureImage: '/uploads/about-hero.jpg',
+      featureImage: '/blog/about-hero.jpg',
     };
   },
   head() {

@@ -1,10 +1,10 @@
 <template>
   <section :class="`hero hero-theme-${computedTheme}`">
     <div class="banner">
-      <img
+      <nuxt-img
         alt="Loading Image"
         class="hero-bg-img"
-        :src="require(`@/assets${image}`)"
+        :src="`${image}`"
         :lazy="false"
         :srcset="responsiveImage.srcSet"
       />

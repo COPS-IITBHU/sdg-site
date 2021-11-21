@@ -8,7 +8,7 @@
         <figure :class="`image is-${imageRatioClass}`">
           <opti-image
             v-if="image"
-            :src="require(`@/assets${image}`)"
+            :src="`${image}`"
             :srcset="responsiveImage.srcSet"
             :width="imageRatio[0]"
             :height="imageRatio[1]"

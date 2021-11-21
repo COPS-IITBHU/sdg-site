@@ -8,7 +8,7 @@ categories: Blog
 tags: [Java, New feature]
 
 author: COPS SDG
-featureImage: /uploads/JAVA.png
+featureImage: /blog/JAVA.png
 ---
 
 # What’s new in Java 8: Lambdas 😺

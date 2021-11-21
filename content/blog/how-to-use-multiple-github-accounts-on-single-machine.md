@@ -8,7 +8,7 @@ categories: [Blog]
 tags: [knowledge]
 
 author: COPS SDG
-featureImage: /uploads/github.png
+featureImage: /blog/github.png
 ---
 
 
