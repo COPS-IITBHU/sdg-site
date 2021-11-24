@@ -1,7 +1,10 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-
+  loading: {
+    color: '#23CFFF',
+    height: '3px',
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - ',
@@ -43,6 +46,13 @@ export default {
     '@nuxtjs/composition-api/module',
     'nuxt-purge-icons-module',
     '@nuxt/image',
+    'nuxt-gsap-module',
+    [
+      'unplugin-icons/nuxt',
+      {
+        /* options */
+      },
+    ],
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -110,6 +120,12 @@ export default {
         // @nuxt/image module
         'nuxt-img': 'img',
       },
+    },
+  },
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true,
     },
   },
 };

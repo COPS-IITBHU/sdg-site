@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify/json': ^1.1.412
+  '@iconify/json': ^1.1.418
   '@nuxt/content': ^1.9.0
   '@nuxt/image': ^0.6.0
   '@nuxt/types': ^2.14.6
@@ -35,7 +35,7 @@ specifiers:
   prettier: ^2.1.2
   sass: ^1.35.2
   sass-loader: ^10.1.1
-  unplugin-icons: ^0.12.12
+  unplugin-icons: ^0.12.16
 
 dependencies:
   '@nuxt/content': 1.14.0_fibers@5.0.0+sass@1.39.2
@@ -46,14 +46,14 @@ dependencies:
   '@nuxtjs/robots': 2.5.0
   '@nuxtjs/sitemap': 2.4.0
   core-js: 3.17.3
-  gsap: 3.8.0
+  gsap: 3.7.1
   nuxt: 2.15.8
   opti-image: 0.10.0
   particles.js: 2.0.0
   particlesjs: 2.2.3
 
 devDependencies:
-  '@iconify/json': 1.1.416
+  '@iconify/json': 1.1.422
   '@nuxt/types': 2.15.8_fibers@5.0.0+sass@1.39.2
   '@nuxt/typescript-build': 2.1.0_@nuxt+types@2.15.8
   '@nuxtjs/eslint-config-typescript': 6.0.1_eslint@7.32.0
@@ -68,13 +68,13 @@ devDependencies:
   fibers: 5.0.0
   husky: 7.0.2
   is-ci: 3.0.0
-  nuxt-gsap-module: 1.5.0
+  nuxt-gsap-module: 1.4.0
   nuxt-purge-icons-module: 0.7.0
   nuxt-windicss: 1.2.3
   prettier: 2.4.0
   sass: 1.39.2
   sass-loader: 10.1.1_fibers@5.0.0+sass@1.39.2
-  unplugin-icons: 0.12.16
+  unplugin-icons: 0.12.17
 
 packages:
 
@@ -1307,8 +1307,8 @@ packages:
       cross-fetch: 3.1.4
     dev: true
 
-  /@iconify/json/1.1.416:
-    resolution: {integrity: sha512-MuVOHTBviQXRArn2IONwgsQX7lloi8fUk69/Mhg7ZV0S0ZvG8s7aKZrNaZYIzf7mIKnEJ90FjS+hyu91fj0vTA==}
+  /@iconify/json/1.1.422:
+    resolution: {integrity: sha512-yxIjzblsWIRZfXK+bfBWtm1LDD7+QlBXO/K7xnqU+LiOk6rJXvh+Veks/LgDD2wAi3PYQHVzCZBqp6OGGz6K/Q==}
     dev: true
 
   /@iconify/types/1.0.10:
@@ -5574,8 +5574,8 @@ packages:
       strip-bom-string: 1.0.0
     dev: false
 
-  /gsap/3.8.0:
-    resolution: {integrity: sha512-cvpzKkWFePDZCycwXwJnDSpTR3j+a4QLQF/t0c+pXqzRESgAYx5hieaoshzZFjbwsARqr0+5c3GKE7wI273w/g==}
+  /gsap/3.7.1:
+    resolution: {integrity: sha512-4qxuaC2yFWRjMRof5tI/7c9/+L4xMsCoqHrZAmuh+IbOokTnZyoeF0VgvcVHq3uo+/VJZCs7PTvjrFasfGl+ww==}
 
   /gzip-size/6.0.0:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
@@ -6703,7 +6703,7 @@ packages:
     resolution: {integrity: sha512-2XBWjO/v63JeR1HPzLJxdTVRQDB84Av2p2KtBA5ahvpyLUPubcAU6iXlAJrONcY7aSqgJhXxElAnKtnYsRolPQ==}
     engines: {node: '>=14'}
     dependencies:
-      mlly: 0.2.8
+      mlly: 0.2.5
     dev: true
 
   /locate-path/2.0.0:
@@ -7285,8 +7285,8 @@ packages:
     hasBin: true
     dev: false
 
-  /mlly/0.2.8:
-    resolution: {integrity: sha512-VMlK1OEdPHEpIRwbJsLvM5Yb+5WpvWghkMacbNFcsexiFKxevn05iu5OzSNjIZJQOEy2zOUK2Om2dV/VDyHFOw==}
+  /mlly/0.2.5:
+    resolution: {integrity: sha512-Zp2qMM0jt+ni5lRX8LiWFQWK3XORYqFCc+xeTS2Ae7lcur/roNMXqK9bcnMyAj81J1qxkaggYcyopt2X6ENl1Q==}
     dependencies:
       import-meta-resolve: 1.1.1
     dev: true
@@ -7578,10 +7578,10 @@ packages:
     dev: false
     optional: true
 
-  /nuxt-gsap-module/1.5.0:
-    resolution: {integrity: sha512-/rtD6XEJ31fSEGEuL7x9Yajznp8WUHJ4GmbxJ+66abj0B8ZB+xa0whmI6N/Ih8ene09WBojHiWuBzXdMPw8FJQ==}
+  /nuxt-gsap-module/1.4.0:
+    resolution: {integrity: sha512-fnAje9u9bmGMUj90BCinNS3zZZeXFHqcD9DwnZ5rJJJ36XF64iUwOM9aWgTCrx88cMTB7HHL9y30k0d6HxvPLg==}
     dependencies:
-      gsap: 3.8.0
+      gsap: 3.7.1
     dev: true
 
   /nuxt-purge-icons-module/0.7.0:
@@ -10616,8 +10616,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /unplugin-icons/0.12.16:
-    resolution: {integrity: sha512-eGxlLrf/aExIgfRTqv9ALFZSyurYUxPHYb7lDFBc1KfhVhnvq7TdLE3d5AUJgiNh7QxcO0ezsBQ8mQNlCH/+Og==}
+  /unplugin-icons/0.12.17:
+    resolution: {integrity: sha512-y6KNKlwcLXlbfpZY48lO0blsH/uwHbvxD2sgCaw1AhgFk9Bjw7hA1kQxhUWPAIRySeobve2YP7HGKLHoIctXPA==}
     peerDependencies:
       '@svgr/core': ^5.5.0
       '@vue/compiler-sfc': ^3.0.2
@@ -10639,7 +10639,7 @@ packages:
       debug: 4.3.2
       kolorist: 1.5.0
       local-pkg: 0.4.0
-      unplugin: 0.2.16
+      unplugin: 0.2.19
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -10668,8 +10668,8 @@ packages:
       - webpack
     dev: false
 
-  /unplugin/0.2.16:
-    resolution: {integrity: sha512-KkXatHba0baJszSHW+2e8EQU/5Bz7rYwzYXu8wUeq97tE6K3wvub+7OWSuRv04LttvzNLsJ2jXEyR35gofv74Q==}
+  /unplugin/0.2.19:
+    resolution: {integrity: sha512-r5PDeBBecir99rhLFp1ftqIkp5afD91anweIlWtF5Ca46FJsn2kQczD93FdFJw79R6HSF5waeYo79bFOQ9GVhQ==}
     peerDependencies:
       rollup: ^2.50.0
       vite: ^2.3.0
