@@ -8,7 +8,8 @@
   {
     "index": 1,
     "title": "LFX Mentorship Program",
-    "description": "Two students from the club got accepted as mentees in LFX Mentorship."
+    "description": "Two students from the club got accepted as mentees in LFX Mentorship.",
+    "link": "https://lfx.linuxfoundation.org/tools/mentorship/"
   },
   {
     "index": 2,
@@ -23,7 +24,8 @@
   {
     "index": 4,
     "title": "Open Source Fellowships",
-    "description": "One student from the club got accepted in Microsoft Reinforcement Learning Open Source Fest. Two students got accepted as mentees in LFX Mentorship."
+    "description": "One student from the club got accepted in Microsoft Reinforcement Learning Open Source Fest. Two students got accepted as mentees in LFX Mentorship.",
+    "link": "https://www.microsoft.com/en-us/research/academic-program/rl-open-source-fest/"
   },
   {
     "index": 5,
@@ -63,7 +65,8 @@
   {
     "index": 12,
     "title": "Microsoft Code.Fun.Do 2018",
-    "description": "COPS organized Microsoft Code Fun Do, a 24 hr onsite hackathon which saw a prticipation of more than 150 teams (teams of 3). Click here to know more."
+    "description": "COPS organized Microsoft Code Fun Do, a 24 hr onsite hackathon which saw a prticipation of more than 150 teams (teams of 3). Click here to know more.",
+    "link": "https://www.facebook.com/cops.iitbhu/posts/761776364028272?__xts__%5B0%5D=68.ARD82Z8zGeCurgx0O3uRJK5Vk8nRqvyHztsX0y47HA8n-R-5oRhhoQM9XmzfF9WOpZAgYc8_U5YoTmgGd5JhP7qkNLmiELYcG-rWKRQy3FAd46KVwGNZNSsSYQEKJoMZ5biQoISROKJvu5m9rlKkqnn-S1zISjHWf657CZbzc8vPjTs96mGQKKjjw4I7q3hVl_BxJY9V6qK0yPf-q7Sq3Q&__tn__=-R"
   },
   {
     "index": 13,
@@ -83,6 +86,7 @@
   {
     "index": 16,
     "title": "Problem of the Week",
-    "description": "COPS made an amazing study material to start and excel competitve programming. This includes resources to study on each topic and some good problems to practice."
+    "description": "COPS made an amazing study material to start and excel competitve programming. This includes resources to study on each topic and some good problems to practice.",
+    "link": "https://www.copsiitbhu.co.in/resources/cp/potw/"
   }
 ]

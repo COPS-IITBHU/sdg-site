@@ -4,9 +4,8 @@
       <div
         class="
           gallery-container
-          sm:max-h-xs
-          max-w-7/10
-          h-400px
+          max-w-3/5
+          h-xs
           relative
           flex
           m-auto
@@ -65,7 +64,12 @@
             target="_blank"
             class="flex-row self-end mr-4"
           >
-            <span class="iconify" data-icon="akar-icons:link-out"> link</span>
+            <span
+              class="iconify text-blue-700 hover:text-blue-900"
+              data-icon="akar-icons:link-out"
+            >
+              link</span
+            >
           </a>
         </div>
       </div>
@@ -128,22 +132,23 @@ export default defineComponent({
 
   data() {
     return {
+      // add a 'gallery-item-none' in the middle if a new achievement is added in achievements.json
       galleryItemNumber: [
         'gallery-item-1',
         'gallery-item-2',
         'gallery-item-3',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
-        '',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
+        'gallery-item-none',
         'gallery-item-4',
         'gallery-item-5',
       ],
@@ -196,6 +201,11 @@ export default defineComponent({
   z-index: 2;
 }
 
+.gallery-item-none h1,
+.gallery-item-none h3,
+.gallery-item-none a {
+  display: none;
+}
 .gallery-item-1 h1 {
   font-size: 30px;
   transition: all 0.3s ease-in-out;
@@ -251,11 +261,7 @@ export default defineComponent({
 @media only screen and (max-width: 600px) {
   .gallery-item {
     height: 90px;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
     width: 134px;
-    z-index: 0;
   }
 
   .gallery-item-3,
@@ -269,7 +275,7 @@ export default defineComponent({
   .gallery-item-5 {
     height: 120px;
     opacity: 1;
-    width: 190px;
+    width: 220px;
     z-index: 1;
   }
 

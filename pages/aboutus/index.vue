@@ -3,7 +3,6 @@
     <h2
       class="
         text-white text-4xl
-        hover:text-green-300
         sm:text-4xl
         md:text-5xl
         lg:text-7xl
@@ -17,7 +16,6 @@
     <h3
       class="
         text-white text-3xl
-        hover:text-green-300
         sm:text-xl sm:pt-1 sm:pb-1
         md:text-2xl md:pt-3 md:pb-1
         lg:text-4xl lg:pt-5 lg:pb-5
