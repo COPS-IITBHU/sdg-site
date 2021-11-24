@@ -27,7 +27,8 @@
             ease-in-out
             duration-450
             flex flex-col
-            justify-center
+            rounded-xl
+            justify-around
           "
           :class="galleryItemNumber[achievement.index]"
         >
@@ -51,9 +52,8 @@
               text-center
               align-middle
               justify-center
+              text-justify
               items-center
-              px-1
-              sm:px-4
             "
           >
             {{ achievement.description }}
@@ -174,6 +174,8 @@ export default defineComponent({
   left: 15%;
   opacity: 0.4;
   transform: translateX(-50%);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .gallery-item-2,
@@ -182,6 +184,8 @@ export default defineComponent({
   opacity: 1;
   width: 300px;
   z-index: 1;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
 .gallery-item-5 {
@@ -199,6 +203,8 @@ export default defineComponent({
   transform: translateX(-50%);
   width: 450px;
   z-index: 2;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .gallery-item-none h1,
@@ -213,6 +219,7 @@ export default defineComponent({
 .gallery-item-1 h3 {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  min-height: 8rem;
 }
 .gallery-item-2 h1 {
   font-size: 20px;
@@ -221,6 +228,7 @@ export default defineComponent({
 .gallery-item-2 h3 {
   font-size: 13.5px;
   transition: all 0.3s ease-in-out;
+  min-height: 5rem;
 }
 .gallery-item-3 h1 {
   font-size: 15px;
@@ -229,6 +237,7 @@ export default defineComponent({
 .gallery-item-3 h3 {
   font-size: 10px;
   transition: all 0.3s ease-in-out;
+  min-height: 3rem;
 }
 .gallery-item-4 h1 {
   font-size: 15px;
@@ -237,6 +246,7 @@ export default defineComponent({
 .gallery-item-4 h3 {
   font-size: 10px;
   transition: all 0.3s ease-in-out;
+  min-height: 3rem;
 }
 .gallery-item-5 h1 {
   font-size: 20px;
@@ -245,6 +255,7 @@ export default defineComponent({
 .gallery-item-5 h3 {
   font-size: 13.5px;
   transition: all 0.3s ease-in-out;
+  min-height: 5rem;
 }
 
 .gallery-item-2 {
@@ -273,7 +284,7 @@ export default defineComponent({
 
   .gallery-item-2,
   .gallery-item-5 {
-    height: 120px;
+    height: 145px;
     opacity: 1;
     width: 220px;
     z-index: 1;
@@ -283,18 +294,22 @@ export default defineComponent({
   .gallery-item-5 {
     left: 30%;
     transform: translateX(-50%);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .gallery-item-1 {
     box-shadow: 0 0 18px rgba(255, 255, 255, 0.6),
       0 0 36px rgba(255, 255, 255, 0.45), 0 0 66px rgba(255, 255, 255, 0.25),
       0 0 60px rgba(255, 255, 255, 0.1);
-    height: 180px;
+    height: 210px;
     opacity: 1;
     left: 50%;
     transform: translateX(-50%);
-    width: 270px;
+    width: 280px;
     z-index: 2;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .gallery-item-1 h1 {
@@ -304,6 +319,7 @@ export default defineComponent({
   .gallery-item-1 h3 {
     font-size: 13px;
     transition: all 0.3s ease-in-out;
+    min-height: 5rem;
   }
   .gallery-item-2 h1 {
     font-size: 10px;
@@ -312,6 +328,7 @@ export default defineComponent({
   .gallery-item-2 h3 {
     font-size: 6.5px;
     transition: all 0.3s ease-in-out;
+    min-height: 3rem;
   }
   .gallery-item-3 h1 {
     font-size: 7.5px;
@@ -320,6 +337,7 @@ export default defineComponent({
   .gallery-item-3 h3 {
     font-size: 5px;
     transition: all 0.3s ease-in-out;
+    min-height: 1.5rem;
   }
   .gallery-item-4 h1 {
     font-size: 7.5px;
@@ -328,6 +346,7 @@ export default defineComponent({
   .gallery-item-4 h3 {
     font-size: 5px;
     transition: all 0.3s ease-in-out;
+    min-height: 1.5rem;
   }
   .gallery-item-5 h1 {
     font-size: 10px;
@@ -336,6 +355,7 @@ export default defineComponent({
   .gallery-item-5 h3 {
     font-size: 6.5px;
     transition: all 0.3s ease-in-out;
+    min-height: 3rem;
   }
 
   .gallery-item-2 {
