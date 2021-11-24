@@ -1,13 +1,20 @@
 <template>
-  <nuxt />
+  <main>
+    <header>
+      <navbar />
+    </header>
+    <Nuxt />
+  </main>
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api';
+
+export default defineComponent({
   data() {
     return {
       title: 'SDG Site',
     };
   },
-};
+});
 </script>
