@@ -29,6 +29,7 @@ specifiers:
   nuxt-gsap-module: ^1.4.0
   nuxt-purge-icons-module: ^0.7.0
   nuxt-windicss: ^1.2.3
+  opti-image: ^0.10.0
   particles.js: ^2.0.0
   particlesjs: ^2.2.3
   prettier: ^2.1.2
@@ -47,6 +48,7 @@ dependencies:
   core-js: 3.17.3
   gsap: 3.7.1
   nuxt: 2.15.8
+  opti-image: 0.10.0
   particles.js: 2.0.0
   particlesjs: 2.2.3
 
@@ -7735,6 +7737,14 @@ packages:
     hasBin: true
     dev: false
 
+  /opti-image/0.10.0:
+    resolution: {integrity: sha512-g0LnoYipn5YcABP3XPR0twcVLJ2uhdWqWzzFO77RWK+lqK2CakYQAI1dLnWYoSrN/UMww5CJ7NIbi93TnqXpTQ==}
+    dependencies:
+      core-js: 2.6.12
+      vue: 2.6.14
+      vue-runtime-helpers: 1.1.2
+    dev: false
+
   /optimize-css-assets-webpack-plugin/5.0.8_webpack@4.46.0:
     resolution: {integrity: sha512-mgFS1JdOtEGzD8l+EuISqL57cKO+We9GcoiQEmdCWRqqck+FGNmYJtx9qfAPzEz+lRrlThWMuGDaRkI/yWNx/Q==}
     peerDependencies:
@@ -10933,6 +10943,10 @@ packages:
 
   /vue-router/3.5.2:
     resolution: {integrity: sha512-807gn82hTnjCYGrnF3eNmIw/dk7/GE4B5h69BlyCK9KHASwSloD1Sjcn06zg9fVG4fYH2DrsNBZkpLtb25WtaQ==}
+    dev: false
+
+  /vue-runtime-helpers/1.1.2:
+    resolution: {integrity: sha512-pZfGp+PW/IXEOyETE09xQHR1CKkR9HfHZdnMD/FVLUNI+HxYTa82evx5WrF6Kz4s82qtqHvMZ8MZpbk2zT2E1Q==}
     dev: false
 
   /vue-server-renderer/2.6.14:

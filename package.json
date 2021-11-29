@@ -24,7 +24,8 @@
     "gsap": "^3.7.1",
     "nuxt": "^2.14.6",
     "particles.js": "^2.0.0",
-    "particlesjs": "^2.2.3"
+    "particlesjs": "^2.2.3",
+    "opti-image": "^0.10.0"
   },
   "devDependencies": {
     "@iconify/json": "^1.1.418",
