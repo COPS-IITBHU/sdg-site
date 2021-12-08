@@ -22,7 +22,6 @@
         <br />
         <ul class="text-xl">
           <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
           <li><a href="/blogs">Blogs</a></li>
           <li><a href="/portfolio">Portfolio</a></li>
           <li><a href="/aboutus">About Us</a></li>
