@@ -17,8 +17,8 @@
           {{ name }}
         </h3>
         <span class="post text-hex-878484 font-500 text-lg"> {{ title }} </span>
-        <ul class="social m-0 p-0">
-          <li class="inline-block">
+        <ul class="social m-0 p-2">
+          <li class="inline-block px-1">
             <a
               aria-label="linkedin"
               :href="socialMediaLink"
@@ -43,10 +43,10 @@
             </a>
           </li>
           <slot>
-            <li class="inline-block">
+            <li class="inline-block px-1">
               <a
                 aria-label="github"
-                href="#"
+                :href="githubLink"
                 class="
                   border-solid border
                   block
@@ -85,6 +85,10 @@ export default {
       default: 'Title',
     },
     socialMediaLink: {
+      type: String,
+      default: '#',
+    },
+    githubLink: {
       type: String,
       default: '#',
     },

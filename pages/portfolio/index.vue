@@ -253,6 +253,8 @@
             v-show="showCard"
             :name="member.name"
             :title="member.title"
+            :socialMediaLink="member.link"
+            :githubLink="member.github"
             class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
           />
         </transition>
