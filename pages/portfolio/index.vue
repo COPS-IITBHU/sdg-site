@@ -247,10 +247,14 @@
       >
         InfoSec Group
       </h2>
-      <div v-for="member in members" id="mem" :key="member" class="m-auto">
+      <div v-for="member in members" id="mem" :key="member.id" class="m-auto">
         <transition appear @before-enter="beforeEnter" @enter="enter">
           <sdgCard
             v-show="showCard"
+            :name="member.name"
+            :title="member.title"
+            :socialMediaLink="member.link"
+            :githubLink="member.github"
             class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
           />
         </transition>
@@ -294,8 +298,13 @@ export default defineComponent({
       this.$nuxt.$loading.start();
       setTimeout(() => this.$nuxt.$loading.finish(), 1000);
     });
+    this.fetchdata();
   },
   methods: {
+    async fetchdata() {
+      const data = await this.$content('members').fetch();
+      this.members = data;
+    },
     showSdg() {
       this.showCard = true;
       this.showCpCard = false;
