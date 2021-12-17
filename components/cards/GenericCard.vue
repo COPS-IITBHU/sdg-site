@@ -7,6 +7,7 @@
       >
         <figure :class="`image is-${imageRatioClass}`">
           <opti-image
+            class="image_flex"
             v-if="image"
             :src="`${image}`"
             :srcset="responsiveImage.srcSet"
@@ -73,6 +74,12 @@ export default defineComponent({
 });
 </script>
 <style scoped lang="scss">
+.image_flex {
+  @media only screen and (max-width: 640px) {
+    max-height: 30vh !important;
+  }
+}
+
 .subtitle {
   opacity: 0.5;
   font-size: 0.8rem;
