@@ -62,15 +62,22 @@ export default defineComponent({
   }
 }
 .prose {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: #bdc1c6;
   }
 }
-li, p,.prose strong{
+li,
+p,
+.prose strong {
   color: #bdc1c6;
 }
-p{
-  code{
+p {
+  code {
     color: #cdd1d9;
     background-color: #6e768166;
   }
@@ -84,7 +91,7 @@ p{
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-  /* Then style the iframe to fit in the container div with full height and width */
+/* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
   position: absolute;
   top: 0;

@@ -114,6 +114,6 @@ export default defineComponent({
   }
 }
 .card-content {
-  color: white; 
+  color: white;
 }
 </style>
