@@ -5,7 +5,7 @@
         :is="link ? 'nuxt-link' : 'span'"
         :to="{ path: link, query: { subBlogs: subBlogs } }"
       >
-        <figure :class="`image is-${imageRatioClass}`">
+        <figure :class="`image is-16x9`">
           <opti-image
             v-if="image"
             :src="`${image}`"
@@ -52,10 +52,6 @@ export default defineComponent({
   computed: {
     subBlogs() {
       return [];
-    },
-    imageRatioClass() {
-      const imageDimensions = this.imageDimensions || imageDimensionDefault;
-      return imageDimensions.toLowerCase().replace('x', 'by');
     },
     imageRatio() {
       const imageDimensions = this.imageDimensions || imageDimensionDefault;
@@ -109,5 +105,8 @@ export default defineComponent({
   &:hover {
     transform: scale(1.02);
   }
+}
+.card-content {
+  color: white; 
 }
 </style>
