@@ -78,7 +78,6 @@ export default {
       isOpen: false,
       pages: [
         { name: 'Home', url: '/' },
-        { name: 'Projects', url: '/projects' },
         { name: 'Blogs', url: '/blogs' },
         { name: 'Portfolio', url: '/portfolio' },
         { name: 'About Us', url: '/aboutus' },
