@@ -21,7 +21,6 @@ specifiers:
   eslint-plugin-prettier: ^4.0.0
   eslint-plugin-vue: ^7.6.0
   eslint-plugin-vuejs-accessibility: ^0.7.1
-  fibers: ^5.0.0
   gsap: ^3.7.1
   husky: ^7.0.2
   is-ci: ^3.0.0
@@ -31,14 +30,13 @@ specifiers:
   nuxt-windicss: ^1.2.3
   opti-image: ^0.10.0
   particles.js: ^2.0.0
-  particlesjs: ^2.2.3
   prettier: ^2.1.2
   sass: ^1.35.2
   sass-loader: ^10.1.1
   unplugin-icons: ^0.12.16
 
 dependencies:
-  '@nuxt/content': 1.14.0_fibers@5.0.0+sass@1.39.2
+  '@nuxt/content': 1.14.0_sass@1.39.2
   '@nuxt/image': 0.6.0
   '@nuxtjs/axios': 5.13.6
   '@nuxtjs/composition-api': 0.29.0_nuxt@2.15.8
@@ -50,11 +48,10 @@ dependencies:
   nuxt: 2.15.8
   opti-image: 0.10.0
   particles.js: 2.0.0
-  particlesjs: 2.2.3
 
 devDependencies:
   '@iconify/json': 1.1.422
-  '@nuxt/types': 2.15.8_fibers@5.0.0+sass@1.39.2
+  '@nuxt/types': 2.15.8_sass@1.39.2
   '@nuxt/typescript-build': 2.1.0_@nuxt+types@2.15.8
   '@nuxtjs/eslint-config-typescript': 6.0.1_eslint@7.32.0
   '@nuxtjs/eslint-module': 3.0.2_eslint@7.32.0
@@ -65,7 +62,6 @@ devDependencies:
   eslint-plugin-prettier: 4.0.0_5559632aa3c77deec3ae5c2ea6ed0f36
   eslint-plugin-vue: 7.17.0_eslint@7.32.0
   eslint-plugin-vuejs-accessibility: 0.7.1_eslint@7.32.0
-  fibers: 5.0.0
   husky: 7.0.2
   is-ci: 3.0.0
   nuxt-gsap-module: 1.4.0
@@ -73,7 +69,7 @@ devDependencies:
   nuxt-windicss: 1.2.3
   prettier: 2.4.0
   sass: 1.39.2
-  sass-loader: 10.1.1_fibers@5.0.0+sass@1.39.2
+  sass-loader: 10.1.1_sass@1.39.2
   unplugin-icons: 0.12.17
 
 packages:
@@ -1473,12 +1469,12 @@ packages:
       ufo: 0.7.9
     dev: false
 
-  /@nuxt/content/1.14.0_fibers@5.0.0+sass@1.39.2:
+  /@nuxt/content/1.14.0_sass@1.39.2:
     resolution: {integrity: sha512-MYx+dTu2ZRUHWGp9EgVtFfXJHFeCKrzazaM4a9785OCipItp6zmm1hTlbfdCYenwa0HgaOXCxYAiN0h6tjyUZw==}
     dependencies:
       '@lokidb/full-text-search': 2.1.0
       '@lokidb/loki': 2.1.0
-      '@nuxt/types': 2.15.8_fibers@5.0.0+sass@1.39.2
+      '@nuxt/types': 2.15.8_sass@1.39.2
       '@types/js-yaml': 4.0.3
       '@types/xml2js': 0.4.9
       change-case: 4.1.2
@@ -1678,7 +1674,7 @@ packages:
       std-env: 2.3.0
     dev: false
 
-  /@nuxt/types/2.15.8_fibers@5.0.0+sass@1.39.2:
+  /@nuxt/types/2.15.8_sass@1.39.2:
     resolution: {integrity: sha512-zBAG5Fy+SIaZIerOVF1vxy1zz16ZK07QSbsuQAjdtEFlvr+vKK+0AqCv8r8DBY5IVqdMIaw5FgNUz5py0xWdPg==}
     dependencies:
       '@types/autoprefixer': 9.7.2
@@ -1699,7 +1695,7 @@ packages:
       '@types/webpack-bundle-analyzer': 3.9.3
       '@types/webpack-dev-middleware': 4.1.2
       '@types/webpack-hot-middleware': 2.25.4
-      sass-loader: 10.1.1_fibers@5.0.0+sass@1.39.2
+      sass-loader: 10.1.1_sass@1.39.2
     transitivePeerDependencies:
       - fibers
       - node-sass
@@ -1711,7 +1707,7 @@ packages:
     peerDependencies:
       '@nuxt/types': '>=2.13.1'
     dependencies:
-      '@nuxt/types': 2.15.8_fibers@5.0.0+sass@1.39.2
+      '@nuxt/types': 2.15.8_sass@1.39.2
       consola: 2.15.3
       fork-ts-checker-webpack-plugin: 6.3.3
       ts-loader: 8.3.0_typescript@4.2.4
@@ -4334,6 +4330,8 @@ packages:
     resolution: {integrity: sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=}
     engines: {node: '>=0.10'}
     hasBin: true
+    dev: false
+    optional: true
 
   /devalue/2.0.1:
     resolution: {integrity: sha512-I2TiqT5iWBEyB8GRfTDP0hiLZ0YeDJZ+upDxjBfOC2lebO5LezQMv7QvIUTzdb64jQyAKLf1AHADtGN+jw6v8Q==}
@@ -5126,14 +5124,6 @@ packages:
     resolution: {integrity: sha512-YpkpUnK8od0o1hmeSc7UUs/eB/vIPWJYjKck2QKIzAf71Vm1AAQ3EbuZB3g2JIy+pg+ERD0vqI79KyZiB2e2Nw==}
     dependencies:
       reusify: 1.0.4
-
-  /fibers/5.0.0:
-    resolution: {integrity: sha512-UpGv/YAZp7mhKHxDvC1tColrroGRX90sSvh8RMZV9leo+e5+EkRVgCEZPlmXeo3BUNQTZxUaVdLskq1Q2FyCPg==}
-    engines: {node: '>=10.0.0'}
-    requiresBuild: true
-    dependencies:
-      detect-libc: 1.0.3
-    dev: true
 
   /figgy-pudding/3.5.2:
     resolution: {integrity: sha512-0btnI/H8f2pavGMN8w40mlSKOfTK2SVJmBfBeVIj3kNw0swwgzyRq0d5TJVOwodFmtvpPeWPN/MCcfuWF0Ezbw==}
@@ -7979,10 +7969,6 @@ packages:
     resolution: {integrity: sha1-IThsQyjWx/lngKIB6W7t/AnHNvY=}
     dev: false
 
-  /particlesjs/2.2.3:
-    resolution: {integrity: sha512-f0rL80Agqdsrnv/uhlLewv+LMdiXHu9MYPzMv0ZLPM06nLx3zmAXMH882fxqO6Uzb91csli8WlWaYd2XPN0d/Q==}
-    dev: false
-
   /pascal-case/3.1.2:
     resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
     dependencies:
@@ -9416,7 +9402,7 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: false
 
-  /sass-loader/10.1.1_fibers@5.0.0+sass@1.39.2:
+  /sass-loader/10.1.1_sass@1.39.2:
     resolution: {integrity: sha512-W6gVDXAd5hR/WHsPicvZdjAWHBcEJ44UahgxcIE196fW2ong0ZHMPO1kZuI5q0VlvMQZh32gpv69PLWQm70qrw==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -9432,7 +9418,6 @@ packages:
       sass:
         optional: true
     dependencies:
-      fibers: 5.0.0
       klona: 2.0.4
       loader-utils: 2.0.0
       neo-async: 2.6.2

@@ -47,12 +47,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-.page-main-section {
-  margin-top: 52px;
-}
-.hero + .page-main-section {
-  margin-top: initial;
-}
 .is-one-quarter {
   padding: 0 20px;
   &.right-sidebar {

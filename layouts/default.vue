@@ -4,6 +4,7 @@
       <navbar />
     </header>
     <Nuxt />
+    <Footer />
   </main>
 </template>
 

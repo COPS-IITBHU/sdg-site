@@ -1,5 +1,5 @@
 <template>
-  <section :class="`hero hero-theme-${computedTheme}`">
+  <div :class="`hero hero-theme-dark`">
     <div class="banner">
       <nuxt-img
         alt="Loading Image"
@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
@@ -55,7 +55,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .hero {
-  margin-top: 52px;
   background-size: cover !important;
   background-position: center;
   text-align: center;
