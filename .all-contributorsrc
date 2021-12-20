@@ -6,6 +6,17 @@
   "commit": false,
   "contributors": [
     {
+      "login": "IamEzio",
+      "name": "Anshuman Maurya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89375125?v=4",
+      "profile": "https://github.com/IamEzio",
+      "contributions": [
+        "ideas",
+        "maintenance",
+        "code"
+      ]
+    },
+    {
       "login": "tiger-yash",
       "name": "Yash Raj",
       "avatar_url": "https://avatars.githubusercontent.com/u/74406801?v=4",
