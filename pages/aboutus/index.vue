@@ -1,51 +1,39 @@
 <template>
-  <main class="text-center">
-    <h2
-      class="
-        text-white text-4xl
-        sm:text-4xl
-        md:text-5xl
-        lg:text-7xl
-        font-mono font-700
-        text-center
-        p-10
-      "
-    >
-      About Us
-    </h2>
-    <h3
-      class="
-        text-white text-3xl
-        sm:text-xl sm:pt-1 sm:pb-1
-        md:text-2xl md:pt-3 md:pb-1
-        lg:text-4xl lg:pt-5 lg:pb-5
-      "
-    >
-      ACHIEVEMENTS
-    </h3>
-    <achievementsCarousel :achievements="achievements" />
-  </main>
+  <div>
+    <aboutuslogo />
+    <h1 class="text-4xl my-40px mx-auto text-center quote <lg:(text-3xl)">
+      "Nulla rhoncus convallis risus sit amet posuere, <br />
+      Integer at porttitor elit."
+    </h1>
+    <aboutuscard />
+    <div class="w-7/10 mx-auto my-140px">
+      <youtube />
+    </div>
+    <achievementslogo />
+    <!-- <achievementsCarousel/> -->
+  </div>
 </template>
 
-<script>
-import AchievementsCarousel from '~/components/achievementsCarousel.vue';
+<script lang="ts">
+import Vue from 'vue';
+import aboutuscard from '~/components/about-us/aboutuscard.vue';
+import aboutuslogo from '~/components/about-us/aboutuslogo.vue';
+import achievementslogo from '~/components/about-us/achievementslogo.vue';
+import youtube from '~/components/about-us/youtube.vue';
 
-export default {
-  components: { AchievementsCarousel },
-  data() {
-    return {
-      achievements: [],
-    };
+export default Vue.extend({
+  components: {
+    aboutuscard,
+    aboutuslogo,
+    youtube,
+    achievementslogo,
   },
-  mounted() {
-    this.fetchdata();
-  },
-  methods: {
-    async fetchdata() {
-      const data = await this.$content('achievements').fetch();
-      this.achievements = data;
-    },
-  },
-};
+});
 </script>
-<style scoped></style>
+
+<style scoped>
+.quote {
+  color: rgb(202, 200, 200);
+  font-family: 'Times New Roman', Times, serif;
+}
+</style>
