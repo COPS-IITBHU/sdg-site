@@ -94,7 +94,7 @@ export default {
       if (
         scrollPosition > window.innerHeight - 250 &&
         window.innerWidth > 1000 &&
-        scrollPosition < window.innerHeight + 4600
+        scrollPosition < window.innerHeight * this.projects.length
       ) {
         this.isListVisible = true;
       } else {
