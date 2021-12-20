@@ -81,6 +81,15 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "lelouch-of-the-code",
+      "name": "Anii",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79158719?v=4",
+      "profile": "https://github.com/lelouch-of-the-code",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
