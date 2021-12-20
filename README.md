@@ -1,6 +1,6 @@
 # SDG Site
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 _Under Heavy Development_
@@ -62,6 +62,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://shubhangi013.netlify.app/"><img src="https://avatars.githubusercontent.com/u/78342516?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Shubhangi Choudhary</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=shubhangi013" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/somesh202"><img src="https://avatars.githubusercontent.com/u/77766761?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Somesh Ranjan</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=somesh202" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/yash2002109"><img src="https://avatars.githubusercontent.com/u/77677278?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yash Prakash</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=yash2002109" title="Code">💻</a> <a href="https://github.com/COPS-IITBHU/sdg-site/issues?q=author%3Ayash2002109" title="Bug reports">🐛</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/devansh12b2"><img src="https://avatars.githubusercontent.com/u/79010144?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Devansh Mishra</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=devansh12b2" title="Code">💻</a> <a href="https://github.com/COPS-IITBHU/sdg-site/issues?q=author%3Adevansh12b2" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
