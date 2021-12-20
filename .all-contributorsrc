@@ -15,6 +15,52 @@
         "maintenance",
         "code"
       ]
+    },
+    {
+      "login": "tiger-yash",
+      "name": "Yash Raj",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74406801?v=4",
+      "profile": "https://tiger-yash.github.io/",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "S-kus",
+      "name": "Saumya Kushwaha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86892991?v=4",
+      "profile": "https://github.com/S-kus",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Tarun-Arora",
+      "name": "Tarun Arora",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78356489?v=4",
+      "profile": "https://github.com/Tarun-Arora",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "shubhangi013",
+      "name": "Shubhangi Choudhary",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78342516?v=4",
+      "profile": "https://shubhangi013.netlify.app/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "somesh202",
+      "name": "Somesh Ranjan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77766761?v=4",
+      "profile": "https://github.com/somesh202",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
