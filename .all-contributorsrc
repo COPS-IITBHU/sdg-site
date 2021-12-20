@@ -61,6 +61,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "yash2002109",
+      "name": "Yash Prakash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77677278?v=4",
+      "profile": "https://github.com/yash2002109",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
