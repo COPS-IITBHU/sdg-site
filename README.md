@@ -57,7 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://tiger-yash.github.io/"><img src="https://avatars.githubusercontent.com/u/74406801?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yash Raj</b></sub></a><br /><a href="#maintenance-tiger-yash" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/S-kus"><img src="https://avatars.githubusercontent.com/u/86892991?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Saumya Kushwaha</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=S-kus" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Tarun-Arora"><img src="https://avatars.githubusercontent.com/u/78356489?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tarun Arora</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=Tarun-Arora" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Tarun-Arora"><img src="https://avatars.githubusercontent.com/u/78356489?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tarun Arora</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=Tarun-Arora" title="Code">💻</a> <a href="https://github.com/COPS-IITBHU/sdg-site/issues?q=author%3ATarun-Arora" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
