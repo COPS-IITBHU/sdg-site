@@ -16,7 +16,6 @@ featureImage: /blog/JAVA.png
 ## A hands-on introduction to Java 8's most exciting new feature ✨
 
 > By Yash Raj Bharti | Metallurgical engineering | 2018-12-03 
-> ![lambda](https://upload.wikimedia.org/wikipedia/commons/f/f1/Greek_lc_lamda.png)
 
 Java 8 is here, and, with it, come lambdas. Although long overdue, lambdas are a remarkable new feature that could make us rethink our programming styles and strategies. In particular, they offer exciting new possibilities for functional programming.
 
