@@ -15,8 +15,8 @@
       id="card_1"
     >
       <div class="text <lg:(w-3/4 mt-5 h-1/3 text-center) w-1/2">
-        <h1 class="mb-5px font-medium text-2xl">WHAT IS SDG?</h1>
-        <p>
+        <h1 class="mb-5px font-medium text-2xl text-gray-50">WHAT IS SDG?</h1>
+        <p class="text-gray-300">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tortor
           eros, consequat sit amet euismod rutrum, ultricies ut dui. Donec et
           dui non lorem tincidunt scelerisque ut eu lacus. Nullam a nunc in nisi
@@ -39,18 +39,18 @@
           w-2/5
         "
       >
-        <img
+        <nuxt-img
           src="/aboutus/1.jpeg"
           class="<lg:(w-1/2 h-1/2) w-full h-full"
-          alt=""
+          alt="WHAT IS SDG?"
         />
       </div>
     </div>
 
-    <img
+    <nuxt-img
       src="/aboutus/4.png"
       class="arrow <lg:(hidden) w-3/5 mx-auto my-0"
-      alt=""
+      alt="arrow"
     />
 
     <div
@@ -79,15 +79,15 @@
           w-2/5
         "
       >
-        <img
+        <nuxt-img
           src="/aboutus/2.jpeg"
           class="<lg:(w-1/2 h-1/2) w-full h-full"
-          alt=""
+          alt="WHAT WE DO?"
         />
       </div>
       <div class="text <lg:(w-3/4 mt-5 h-1/3 text-center) w-1/2">
-        <h1 class="mb-5px font-medium text-2xl">WHAT WE DO?</h1>
-        <p>
+        <h1 class="mb-5px font-medium text-2xl text-gray-50">WHAT WE DO?</h1>
+        <p class="text-gray-300">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tortor
           eros, consequat sit amet euismod rutrum, ultricies ut dui. Donec et
           dui non lorem tincidunt scelerisque ut eu lacus. Nullam a nunc in nisi
@@ -100,10 +100,10 @@
       </div>
     </div>
 
-    <img
+    <nuxt-img
       src="/aboutus/4_2.png"
       class="arrow <lg:(hidden) w-3/5 mx-auto my-0"
-      alt=""
+      alt="arrow"
     />
 
     <div
@@ -121,8 +121,10 @@
       id="card_2"
     >
       <div class="text <lg:(w-3/4 mt-5 h-1/3 text-center) w-1/2">
-        <h1 class="mb-5px font-medium text-2xl">OUR AREAS OF INTEREST</h1>
-        <p>
+        <h1 class="mb-5px font-medium text-2xl text-gray-50">
+          OUR AREAS OF INTEREST
+        </h1>
+        <p class="text-gray-300">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tortor
           eros, consequat sit amet euismod rutrum, ultricies ut dui. Donec et
           dui non lorem tincidunt scelerisque ut eu lacus. Nullam a nunc in nisi
@@ -145,10 +147,10 @@
           w-2/5
         "
       >
-        <img
+        <nuxt-img
           src="/aboutus/3.jpeg"
           class="<lg:(w-1/2 h-1/2) w-full h-full"
-          alt=""
+          alt="OUR AREAS OF INTEREST"
         />
       </div>
     </div>
@@ -164,11 +166,5 @@ export default defineComponent({});
 <style scoped>
 img {
   border-radius: 25vh;
-}
-.text p {
-  color: lightgray;
-}
-.text h1 {
-  color: white;
 }
 </style>

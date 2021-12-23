@@ -1,7 +1,17 @@
 <template>
   <div>
     <aboutuslogo />
-    <h1 class="text-4xl my-40px mx-auto text-center quote <lg:(text-3xl)">
+    <h1
+      class="
+        text-4xl
+        my-40px
+        mx-auto
+        text-center
+        quote
+        <lg:(text-3xl)
+        text-gray-200
+      "
+    >
       "Nulla rhoncus convallis risus sit amet posuere, <br />
       Integer at porttitor elit."
     </h1>
@@ -10,7 +20,7 @@
       <youtube />
     </div>
     <achievementslogo />
-    <!-- <achievementsCarousel/> -->
+    <!-- <achievementsCarousel :achievements="achievements"/> -->
   </div>
 </template>
 
@@ -19,6 +29,7 @@ import Vue from 'vue';
 import aboutuscard from '~/components/about-us/aboutuscard.vue';
 import aboutuslogo from '~/components/about-us/aboutuslogo.vue';
 import achievementslogo from '~/components/about-us/achievementslogo.vue';
+// import achievementsCarousel from '~/components/about-us/achievementsCarousel.vue';
 import youtube from '~/components/about-us/youtube.vue';
 
 export default Vue.extend({
@@ -27,13 +38,27 @@ export default Vue.extend({
     aboutuslogo,
     youtube,
     achievementslogo,
+    // achievementsCarousel,
   },
+  //  data() {
+  //   return {
+  //     achievements: [],
+  //   };
+  // },
+  // mounted() {
+  //   this.fetchdata();
+  // },
+  // methods: {
+  //   async fetchdata() {
+  //     const data = await this.$content('achievements').fetch();
+  //     this.achievements = data;
+  //   },
+  // },
 });
 </script>
 
 <style scoped>
 .quote {
-  color: rgb(202, 200, 200);
   font-family: 'Times New Roman', Times, serif;
 }
 </style>

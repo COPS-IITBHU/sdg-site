@@ -1,11 +1,11 @@
 <template>
   <div class="header">
-    <div class="flex flex-row justify-center items-center w-full main">
+    <div class="flex flex-row justify-center items-center w-full main py-100px">
       <h1 class="aboutus">About Us</h1>
     </div>
     <div>
       <svg
-        class="waves w-full min-h-100px max-h-150px"
+        class="waves h-15/100 w-full min-h-100px max-h-150px"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"
@@ -23,20 +23,10 @@
             xlink:href="#gentle-wave"
             x="48"
             y="0"
-            fill="rgba(255,255,255,0.7)"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="7"
-            fill="rgba(255,255,255,0.5)"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="14"
             fill="rgba(255,255,255,0.3)"
           />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#277680" />
+          <use xlink:href="#gentle-wave" x="48" y="14" fill="#82dfeb" />
           <use xlink:href="#gentle-wave" x="48" y="7" fill="#111111" />
         </g>
       </svg>
@@ -58,14 +48,11 @@ h1 {
 }
 
 .header {
-  background: linear-gradient(to right, #b3ffab, #12fff7);
-}
-
-.main {
-  height: 60vh;
-}
-.waves {
-  height: 15vh;
+  background: linear-gradient(
+    55deg,
+    rgba(26, 25, 24, 1) 0%,
+    rgba(125, 240, 254, 0.8939950980392157) 52%
+  );
 }
 
 /* Animation */
