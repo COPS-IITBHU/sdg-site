@@ -93,7 +93,8 @@ export default {
       const dots = Array.from(this.$refs.jsDots.children);
       if (
         scrollPosition > window.innerHeight - 250 &&
-        window.innerWidth > 1000
+        window.innerWidth > 1000 &&
+        scrollPosition < window.innerHeight * this.projects.length
       ) {
         this.isListVisible = true;
       } else {

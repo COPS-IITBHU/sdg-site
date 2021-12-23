@@ -16,7 +16,7 @@
             </h2>
             <p class="m-3px p-2px text-light-50">
               With over 1700 members, the Discord server is a haven for
-              programming enthusaists! <br />
+              programming enthusiasts! <br />
               We have separate channels dedicated to the 4 verticals,
               competitions as well as some random bakar.<br />
               Hop onto the server.<br />
@@ -91,7 +91,7 @@
                   <h2 class="text-3xl font-bold text-light-50">VISIT US</h2>
                   <p class="text-light-50">
                     A Malaiyo date discussing some bugs sounds cool, right?
-                    visit us in our Natural Banarasi Habitat and let us treat
+                    Visit us in our Natural Banarasi Habitat and let us treat
                     you to something!
                   </p>
                 </div>
