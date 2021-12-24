@@ -90,6 +90,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "debarati-06",
+      "name": "Debarati Bandopadhyay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85282947?v=4",
+      "profile": "https://github.com/debarati-06",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
