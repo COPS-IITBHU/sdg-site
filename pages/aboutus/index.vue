@@ -1,51 +1,64 @@
 <template>
-  <main class="text-center">
-    <h2
+  <div>
+    <aboutuslogo />
+    <h1
       class="
-        text-white text-4xl
-        sm:text-4xl
-        md:text-5xl
-        lg:text-7xl
-        font-mono font-700
+        text-4xl
+        my-40px
+        mx-auto
         text-center
-        p-10
+        quote
+        <lg:(text-3xl)
+        text-gray-200
       "
     >
-      About Us
-    </h2>
-    <h3
-      class="
-        text-white text-3xl
-        sm:text-xl sm:pt-1 sm:pb-1
-        md:text-2xl md:pt-3 md:pb-1
-        lg:text-4xl lg:pt-5 lg:pb-5
-      "
-    >
-      ACHIEVEMENTS
-    </h3>
-    <achievementsCarousel :achievements="achievements" />
-  </main>
+      "Nulla rhoncus convallis risus sit amet posuere, <br />
+      Integer at porttitor elit."
+    </h1>
+    <aboutuscard />
+    <div class="w-7/10 mx-auto my-140px">
+      <youtube />
+    </div>
+    <achievementslogo />
+    <!-- <achievementsCarousel :achievements="achievements"/> -->
+  </div>
 </template>
 
-<script>
-import AchievementsCarousel from '~/components/achievementsCarousel.vue';
+<script lang="ts">
+import Vue from 'vue';
+import aboutuscard from '~/components/about-us/aboutuscard.vue';
+import aboutuslogo from '~/components/about-us/aboutuslogo.vue';
+import achievementslogo from '~/components/about-us/achievementslogo.vue';
+// import achievementsCarousel from '~/components/about-us/achievementsCarousel.vue';
+import youtube from '~/components/about-us/youtube.vue';
 
-export default {
-  components: { AchievementsCarousel },
-  data() {
-    return {
-      achievements: [],
-    };
+export default Vue.extend({
+  components: {
+    aboutuscard,
+    aboutuslogo,
+    youtube,
+    achievementslogo,
+    // achievementsCarousel,
   },
-  mounted() {
-    this.fetchdata();
-  },
-  methods: {
-    async fetchdata() {
-      const data = await this.$content('achievements').fetch();
-      this.achievements = data;
-    },
-  },
-};
+  //  data() {
+  //   return {
+  //     achievements: [],
+  //   };
+  // },
+  // mounted() {
+  //   this.fetchdata();
+  // },
+  // methods: {
+  //   async fetchdata() {
+  //     const data = await this.$content('achievements').fetch();
+  //     this.achievements = data;
+  //   },
+  // },
+});
 </script>
-<style scoped></style>
+
+<style scoped>
+.quote {
+  font-family: 'Times New Roman', Times, serif;
+}
+</style>
