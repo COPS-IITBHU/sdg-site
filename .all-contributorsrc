@@ -110,6 +110,15 @@
         "code",
         "review"
       ]
+    },
+    {
+      "login": "jyshdewangan",
+      "name": "Jayesh Dewangan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76793133?v=4",
+      "profile": "https://github.com/jyshdewangan",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
