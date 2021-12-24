@@ -1,6 +1,6 @@
 # SDG Site
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 _Under Heavy Development_
@@ -69,6 +69,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/debarati-06"><img src="https://avatars.githubusercontent.com/u/85282947?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Debarati Bandopadhyay</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=debarati-06" title="Code">💻</a> <a href="https://github.com/COPS-IITBHU/sdg-site/issues?q=author%3Adebarati-06" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/Manan-Rathi"><img src="https://avatars.githubusercontent.com/u/76519771?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Manan Rathi</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=Manan-Rathi" title="Code">💻</a> <a href="https://github.com/COPS-IITBHU/sdg-site/pulls?q=is%3Apr+reviewed-by%3AManan-Rathi" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/jyshdewangan"><img src="https://avatars.githubusercontent.com/u/76793133?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jayesh Dewangan</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=jyshdewangan" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Arvind0302"><img src="https://avatars.githubusercontent.com/u/82073257?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Arvind Yadav.</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=Arvind0302" title="Code">💻</a></td>
   </tr>
 </table>
 
