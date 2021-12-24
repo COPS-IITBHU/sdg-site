@@ -90,6 +90,53 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "debarati-06",
+      "name": "Debarati Bandopadhyay",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85282947?v=4",
+      "profile": "https://github.com/debarati-06",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "Manan-Rathi",
+      "name": "Manan Rathi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76519771?v=4",
+      "profile": "https://github.com/Manan-Rathi",
+      "contributions": [
+        "code",
+        "review"
+      ]
+    },
+    {
+      "login": "jyshdewangan",
+      "name": "Jayesh Dewangan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76793133?v=4",
+      "profile": "https://github.com/jyshdewangan",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Arvind0302",
+      "name": "Arvind Yadav.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82073257?v=4",
+      "profile": "https://github.com/Arvind0302",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "MohitSharma-21",
+      "name": "Mohit Sharma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82596483?v=4",
+      "profile": "https://github.com/MohitSharma-21",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
