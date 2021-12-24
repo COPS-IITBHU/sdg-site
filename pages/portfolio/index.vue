@@ -104,91 +104,6 @@
             shadow-xl
             m-auto
             mx-10
-            md:float-right
-            lg:float-right
-            p-10
-            text-stroke-blue-gray-800 text-xl text-center
-            rounded-3xl
-          "
-        >
-          <nuxt-img
-            src="/binary-code.png"
-            alt="cp"
-            class="float-left w-12 h-12"
-          />
-          <h2 class="text-md m-auto">Competitive Programming</h2>
-          <a
-            href="#mem"
-            class="
-              bg-hex-8c4d79
-              hover:bg-hex-5a003f
-              text-white text-center
-              py-2
-              px-2
-              text-sm
-              font-500
-              mb-10
-              rounded
-            "
-            @click="showCP()"
-          >
-            View Team
-          </a>
-        </div>
-        <nuxt-img
-          src="/octocat.png"
-          alt="octacat"
-          class="m-auto w-40 md:w-60 lg:w-70 mt-20 mx-25 md:mx-75"
-        />
-        <div
-          class="
-            w-80vw
-            md:w-65
-            lg:w-85
-            m-auto
-            mx-10
-            md:float-right
-            lg:float-right
-            shadow-xl
-            p-10
-            text-stroke-blue-gray-800 text-xl text-center
-            rounded-3xl
-          "
-        >
-          <nuxt-img
-            src="/machine-learning.png"
-            alt="sdg"
-            class="float-left w-15 h-15"
-          />
-          <h2 class="text-lg m-auto">Machine Learning</h2>
-          <a
-            href="#mem"
-            class="
-              bg-hex-8c4d79
-              hover:bg-hex-5a003f
-              text-white text-center
-              py-2
-              px-2
-              text-sm
-              font-500
-              mb-10
-              rounded
-            "
-            @click="showML()"
-          >
-            View Team
-          </a>
-        </div>
-
-        <div
-          class="
-            overflow-hidden
-            w-80vw
-            md:w-65
-            lg:w-85
-            shadow-xl
-            m-auto
-            mx-10
             md:float-left
             lg:float-left
             p-10
@@ -196,26 +111,21 @@
             rounded-3xl
           "
         >
-          <nuxt-img
-            src="/cyber-security.png"
-            alt="sdg"
-            class="float-left w-15 h-15"
-          />
-          <h2 class="text-lg m-auto">Infosec</h2>
+          <nuxt-img src="/coding.png" alt="sdg" class="float-left w-12 h-12" />
+          <h2 class="block text-right text-lg m-auto">Alums</h2>
           <a
             href="#mem"
             class="
               bg-hex-8c4d79
               hover:bg-hex-5a003f
-              text-white text-center
-              py-2
+              text-white text-center text-sm
               px-2
-              text-sm
+              py-2
               font-500
               mb-10
               rounded
             "
-            @click="showInfosec"
+            @click="showAlums()"
           >
             View Team
           </a>
@@ -227,52 +137,36 @@
         v-if="showCard"
         class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
       >
-        Software Development Group
+        Our Team
       </h2>
-      <h2
-        v-if="showCpCard"
-        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
-      >
-        Competitive Programming Group
-      </h2>
-      <h2
-        v-if="showMlCard"
-        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
-      >
-        Machine Learning Group
-      </h2>
-      <h2
-        v-if="showInfosecCard"
-        class="text-center text-2xl md:text-4xl lg:text-6xl mt-50"
-      >
-        InfoSec Group
-      </h2>
-      <div v-for="member in members" id="mem" :key="member.id" class="m-auto">
+      <div v-for="member in members" id="mem" :key="member" class="m-auto">
         <transition appear @before-enter="beforeEnter" @enter="enter">
           <sdgCard
             v-show="showCard"
             :name="member.name"
             :title="member.title"
-            :socialMediaLink="member.link"
-            :githubLink="member.github"
+            :social-media-link="member.link"
+            :github-link="member.github"
+            :image-url="`${member.github}.png`"
             class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
           />
         </transition>
+      </div>
+      <h2
+        v-if="showAlum"
+        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
+      >
+        Alum
+      </h2>
+      <div v-for="alum in alums" id="mem" :key="alum" class="m-auto">
         <transition appear @before-enter="beforeEnter" @enter="enter">
-          <cpCard
-            v-show="showCpCard"
-            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
-          />
-        </transition>
-        <transition appear @before-enter="beforeEnter" @enter="enter">
-          <mlCard
-            v-show="showMlCard"
-            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
-          />
-        </transition>
-        <transition appear @before-enter="beforeEnter" @enter="enter">
-          <infosecCard
-            v-show="showInfosecCard"
+          <sdgCard
+            v-show="showAlum"
+            :name="alum.name"
+            :title="alum.title"
+            :social-media-link="alum.link"
+            :github-link="alum.github"
+            :image-url="`${alum.github}.png`"
             class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
           />
         </transition>
@@ -287,10 +181,9 @@ export default defineComponent({
   data() {
     return {
       members: 8,
+      alums: 8,
       showCard: false,
-      showCpCard: false,
-      showMlCard: false,
-      showInfosecCard: false,
+      showAlum: false,
     };
   },
   mounted() {
@@ -298,35 +191,24 @@ export default defineComponent({
       this.$nuxt.$loading.start();
       setTimeout(() => this.$nuxt.$loading.finish(), 1000);
     });
-    this.fetchdata();
+    this.fetchMembers();
+    this.fetchAlums();
   },
   methods: {
-    async fetchdata() {
+    async fetchMembers() {
       const data = await this.$content('members').fetch();
       this.members = data;
     },
+    async fetchAlums() {
+      const data = await this.$content('alums').fetch();
+      this.alums = data;
+    },
     showSdg() {
       this.showCard = true;
-      this.showCpCard = false;
-      this.showInfosecCard = false;
-      this.showMlCard = false;
+      this.showAlum = false;
     },
-    showCP() {
-      this.showCpCard = true;
-      this.showCard = false;
-      this.showInfosecCard = false;
-      this.showMlCard = false;
-    },
-    showML() {
-      this.showMlCard = true;
-      this.showCard = false;
-      this.showCpCard = false;
-      this.showInfosecCard = false;
-    },
-    showInfosec() {
-      this.showInfosecCard = true;
-      this.showCpCard = false;
-      this.showMlCard = false;
+    showAlums() {
+      this.showAlum = true;
       this.showCard = false;
     },
     beforeEnter(el) {

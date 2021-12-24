@@ -10,7 +10,7 @@
           hover:border-hex-8f2d56 hover:transition-colors
         "
       >
-        <nuxt-img src="/822711_user_512x512.png" alt="profile" class="w-100%" />
+        <img :src="imageUrl" alt="profile" class="w-100%" />
       </div>
       <div class="team-content m-auto">
         <h3 class="title text-xl font-600 text-hex-8f2d56 pt-10 uppercase">
@@ -95,6 +95,10 @@ export default {
     icon: {
       type: String,
       default: 'uim:github-alt',
+    },
+    imageUrl: {
+      type: String,
+      default: 'xd',
     },
   },
   data() {
