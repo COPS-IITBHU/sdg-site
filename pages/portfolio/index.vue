@@ -1,6 +1,6 @@
 <template>
   <section class="overflow-hidden">
-    <div class="h-50vh relative z-1 bg-hex-1f2124 lg:text-xl w-100%">
+    <div class="h-35vh relative z-1 bg-hex-1f2124 lg:text-xl w-100%">
       <transition appear @before-enter="beforeEnter" @enter="enter">
         <h2
           class="
@@ -38,9 +38,9 @@
       </transition>
       <client-only>
         <Particles
-          class="z-0 absolute w-100% inset-0 h-40vh"
+          class="z-0 absolute w-100% inset-0 h-35vh"
           color="#ccc"
-          :particles-number="70"
+          :particles-number="100"
           shape-type="circle"
           :particle-size="4"
           movement-direction="top-left"
@@ -53,8 +53,8 @@
     <transition appear @before-enter="beforeEnter" @enter="enter">
       <div
         class="
-          m-auto
-          w-150
+          -mt-14
+          w-screen
           md:w-200
           lg:w-350 lg:p-20
           drop-shadow-sm
@@ -62,82 +62,31 @@
           relative
         "
       >
-        <div
-          class="
-            w-80vw
-            md:w-65
-            lg:w-95
-            shadow-xl
-            m-auto
-            mx-10
-            md:float-left
-            lg:float-left
-            p-10
-            text-stroke-blue-gray-800 text-xl text-center
-            rounded-3xl
-          "
-        >
-          <nuxt-img src="/coding.png" alt="sdg" class="float-left w-12 h-12" />
-          <h2 class="block text-right text-lg m-auto">Software Development</h2>
-          <a
-            href="#mem"
-            class="
-              bg-hex-8c4d79
-              hover:bg-hex-5a003f
-              text-white text-center text-sm
-              px-2
-              py-2
-              font-500
-              mb-10
-              rounded
-            "
-            @click="showSdg()"
-          >
-            View Team
+        <div class="nav flex">
+          <a href="#mem" class="nav-elements w-1/2" @click="showAll()">
+            All Team
           </a>
-        </div>
-        <div
-          class="
-            w-80vw
-            md:w-65
-            lg:w-95
-            shadow-xl
-            m-auto
-            mx-10
-            md:float-left
-            lg:float-left
-            p-10
-            text-stroke-blue-gray-800 text-xl text-center
-            rounded-3xl
-          "
-        >
-          <nuxt-img src="/coding.png" alt="sdg" class="float-left w-12 h-12" />
-          <h2 class="block text-right text-lg m-auto">Alums</h2>
-          <a
-            href="#mem"
-            class="
-              bg-hex-8c4d79
-              hover:bg-hex-5a003f
-              text-white text-center text-sm
-              px-2
-              py-2
-              font-500
-              mb-10
-              rounded
-            "
-            @click="showAlums()"
-          >
-            View Team
+          <a href="#mem" class="nav-elements w-1/2" @click="showSdg()">
+            Developers
+          </a>
+          <a href="#mem" class="nav-elements w-1/2" @click="showAlums()">
+            Alums
           </a>
         </div>
       </div>
     </transition>
-    <div class="text-center mt-20">
+    <div class="text-center">
       <h2
-        v-if="showCard"
-        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
+        v-if="showCard && showAlum"
+        class="text-white text-center text-3xl md:text-4xl lg:text-6xl"
       >
-        Our Team
+        ALL TEAM
+      </h2>
+      <h2
+        v-if="showCard && !showAlum"
+        class="text-white text-center text-3xl md:text-4xl lg:text-6xl"
+      >
+        DEVELOPER TEAM
       </h2>
       <div v-for="member in members" id="mem" :key="member" class="m-auto">
         <transition appear @before-enter="beforeEnter" @enter="enter">
@@ -153,10 +102,10 @@
         </transition>
       </div>
       <h2
-        v-if="showAlum"
-        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
+        v-if="showAlum && !showCard"
+        class="text-white text-center text-3xl md:text-4xl lg:text-6xl"
       >
-        Alum
+        ALUMNI
       </h2>
       <div v-for="alum in alums" id="mem" :key="alum" class="m-auto">
         <transition appear @before-enter="beforeEnter" @enter="enter">
@@ -193,6 +142,7 @@ export default defineComponent({
     });
     this.fetchMembers();
     this.fetchAlums();
+    this.showAll();
   },
   methods: {
     async fetchMembers() {
@@ -202,6 +152,10 @@ export default defineComponent({
     async fetchAlums() {
       const data = await this.$content('alums').fetch();
       this.alums = data;
+    },
+    showAll() {
+      this.showCard = true;
+      this.showAlum = true;
     },
     showSdg() {
       this.showCard = true;
@@ -227,6 +181,20 @@ export default defineComponent({
 });
 </script>
 <style>
+.nav {
+  margin-top: 5px;
+  margin-inline: auto;
+  /* width: 150px; */
+}
+.nav-elements {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Roboto', monospace;
+  letter-spacing: 2px;
+  /* border-bottom: 2px solid rgb(130, 247, 247);
+  transition: 0.3s; */
+  color: rgb(130, 247, 247);
+}
 body {
   scroll-behavior: smooth;
 }
