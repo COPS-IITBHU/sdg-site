@@ -158,7 +158,8 @@ export default {
 /* NAVBAR STYLING */
 .navBg {
   width: 25%;
-  background-color: #2c2525;
+  background-color: #111;
+  border-bottom : 5px solid #56eefd;
 }
 
 .list_item {
@@ -174,7 +175,7 @@ export default {
   top: -2px;
   width: 0;
   height: 100%;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #56eefd;
   transition: 0.3s;
 }
 
@@ -191,9 +192,12 @@ export default {
   width: 0;
   top: -2px;
   height: 100%;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #56eefd;
   transition: 0.3s;
   letter-spacing: 15px;
+}
+.list_item:hover{
+  color : #56eefd; 
 }
 
 .list_item:hover:after {

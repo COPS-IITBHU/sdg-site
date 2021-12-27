@@ -19,10 +19,10 @@
           COPS
         </h1>
         <p class="antialiased text-shadow-md text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo
-          ipsa rerum molestiae, hic nobis nulla quae iusto. In dolorum cumque
-          magnam nobis illo, eum odio consequuntur excepturi praesentium
-          delectus?
+          <span class="font-bold text-lg">Club Of ProgrammerS IIT (BHU), Varanasi</span>
+          <br> We at SDG Club are a bunch of designers and developers who aim to
+          encourage the development of technology and innovation in IIT BHU campus
+          (and beyond) by learning, sharing knowledge and solving problems.
         </p>
       </section>
     </div>
