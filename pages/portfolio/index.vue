@@ -146,7 +146,7 @@
           v-for="member in members"
           id="mem"
           :key="member"
-          class="m-auto mt-20 -mx-35 md:-mx-20 lg:mx-auto"
+          class="m-auto mt-20 -mx-20 md:m-auto lg:mx-auto"
         >
           <transition appear @before-enter="beforeEnter" @enter="enter">
             <sdgCard
@@ -156,15 +156,7 @@
               :social-media-link="member.link"
               :github-link="member.github"
               :image-url="`${member.github}.png`"
-              class="
-                w-100
-                md:w-220
-                lg:w-320 lg:m-auto
-                flex
-                md:block
-                lg:block
-                mt-20
-              "
+              class="w-90vw m-auto flex md:block lg:block mt-20"
             />
           </transition>
         </div>
@@ -178,7 +170,7 @@
           v-for="alum in alums"
           id="mem"
           :key="alum"
-          class="m-auto mt-20 -mx-35 md:-mx-20 lg:mx-auto"
+          class="m-auto mt-20 -mx-20 md:m-auto lg:mx-auto"
         >
           <transition appear @before-enter="beforeEnter" @enter="enter">
             <sdgCard
@@ -188,16 +180,7 @@
               :social-media-link="alum.link"
               :github-link="alum.github"
               :image-url="`${alum.github}.png`"
-              class="
-                w-100
-                md:w-220
-                lg:w-300
-                m-auto
-                flex
-                md:block
-                lg:block
-                mt-20
-              "
+              class="w-90vw m-auto flex md:block lg:block mt-20"
             />
           </transition>
         </div>
@@ -208,7 +191,6 @@
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
 import lottie from 'vue-lottie/src/lottie.vue';
-import ScrollTrigger from 'gsap';
 import * as devAnimationData from '~/assets/55885-developer.json';
 import * as alumniAnimationData from '~/assets/30304-back-to-school.json';
 export default defineComponent({
