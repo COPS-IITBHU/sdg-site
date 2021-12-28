@@ -159,7 +159,7 @@ export default {
 .navBg {
   width: 25%;
   background-color: #111;
-  border-bottom : 5px solid #56eefd;
+  border-bottom: 5px solid #56eefd;
 }
 
 .list_item {
@@ -196,8 +196,8 @@ export default {
   transition: 0.3s;
   letter-spacing: 15px;
 }
-.list_item:hover{
-  color : #56eefd; 
+.list_item:hover {
+  color: #56eefd;
 }
 
 .list_item:hover:after {
