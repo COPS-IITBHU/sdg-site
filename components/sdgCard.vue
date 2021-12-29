@@ -11,22 +11,13 @@
         overflow-hidden
       "
     >
-      <img :src="imageUrl" alt="profile" class="w-100% h-auto" />
-      <div
-        class="
-          team-content
-          m-auto
-          w-100%
-          h-100%
-          bg-hex-640087
-          absolute
-          text-white
-        "
-      >
+      <img :src="imageUrl" alt="profile" class="w-full h-auto" />
+      <div class="team-content">
         <h3 class="title text-lg font-700">
           {{ name }}
         </h3>
         <span class="post block text-md opacity-0 mb-5"> {{ title }} </span>
+        <span class="post block text-md opacity-0"> {{ company }} </span>
         <ul class="icon">
           <li class="inline-block">
             <a
@@ -90,6 +81,10 @@ export default {
       type: String,
       default: 'Title',
     },
+    company: {
+      type: String,
+      default: '',
+    },
     socialMediaLink: {
       type: String,
       default: '#',
@@ -129,7 +124,7 @@ export default {
   width: 100%;
   height: 100%;
   background: #640087;
-
+  position: absolute;
   padding-top: 35%;
   color: #fff;
   opacity: 0;

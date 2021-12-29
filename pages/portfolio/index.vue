@@ -3,8 +3,8 @@
     <div
       class="
         h-auto
-        md:h-60vh
-        lg:h-50vh
+        md:h-65vh
+        lg:h-55vh
         relative
         z-1
         bg-hex-050505
@@ -20,7 +20,7 @@
             lg:text-7xl
             font-mono font-700
             text-center
-            p-10
+            p-20
           "
         >
           Meet the Team
@@ -34,10 +34,10 @@
             text-gray-300
             font-400
             text-lg
-            mt-10
             md:text-xl
             sm:text-md
             text-center
+            -mt-10
           "
         >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sit
@@ -129,9 +129,8 @@
           </a>
         </div>
       </div>
-      <div class="text-center p-20">
+      <div v-if="showCard && !showAlum" class="text-center p-20">
         <h2
-          v-if="showCard && !showAlum"
           class="
             text-white text-center text-4xl
             md:text-4xl
@@ -140,31 +139,73 @@
             -mx-20
           "
         >
-          Our Team
+          Third Yearites
+          <div class="line"></div>
         </h2>
+
         <div
-          v-for="member in members"
+          v-for="thirdYearite in thirdYearites"
           id="mem"
-          :key="member"
-          class="m-auto mt-20 -mx-20 md:m-auto lg:mx-auto"
+          :key="thirdYearite"
+          class="m-auto mt-20 -mx-25 md:m-auto lg:m-auto"
         >
           <transition appear @before-enter="beforeEnter" @enter="enter">
             <sdgCard
               v-show="showCard"
-              :name="member.name"
-              :title="member.title"
-              :social-media-link="member.link"
-              :github-link="member.github"
-              :image-url="`${member.github}.png`"
+              :name="thirdYearite.name"
+              :title="thirdYearite.title"
+              :social-media-link="thirdYearite.link"
+              :github-link="thirdYearite.github"
+              :image-url="`${thirdYearite.github}.png`"
               class="w-90vw m-auto flex md:block lg:block mt-20"
             />
           </transition>
         </div>
+      </div>
+
+      <div v-if="showCard && !showAlum" class="text-center p-20">
+        <hr class="-mx-20 md:-mx-10 lg:-mx-0 m-auto w-80vw mt-30" />
+        <h2
+          class="
+            text-white text-center text-4xl
+            md:text-4xl
+            lg:text-6xl
+            m-auto
+            -mx-20
+            mt-20
+          "
+        >
+          Second Yearites
+          <div class="line"></div>
+        </h2>
+
+        <div
+          v-for="secondYearite in secondYearites"
+          id="mem"
+          :key="secondYearite"
+          class="m-auto mt-20 -mx-25 md:m-auto lg:m-auto"
+        >
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <sdgCard
+              v-show="showCard"
+              :name="secondYearite.name"
+              :title="secondYearite.title"
+              :social-media-link="secondYearite.link"
+              :github-link="secondYearite.github"
+              :image-url="`${secondYearite.github}.png`"
+              class="w-90vw m-auto flex md:block lg:block mt-20"
+            />
+          </transition>
+        </div>
+      </div>
+      <div class="text-center p-20">
         <h2
           v-if="showAlum && !showCard"
           class="text-white text-center text-3xl md:text-4xl lg:text-6xl"
         >
           ALUMNI
+
+          <div class="line"></div>
         </h2>
         <div
           v-for="alum in alums"
@@ -176,7 +217,8 @@
             <sdgCard
               v-show="showAlum"
               :name="alum.name"
-              :title="alum.title"
+              :title="alum.designation"
+              :company="alum.company"
               :social-media-link="alum.link"
               :github-link="alum.github"
               :image-url="`${alum.github}.png`"
@@ -199,8 +241,9 @@ export default defineComponent({
   },
   data() {
     return {
-      members: 8,
-      alums: 8,
+      alums: [],
+      thirdYearites: [],
+      secondYearites: [],
       showCard: false,
       showAlum: false,
       anim: {
@@ -213,23 +256,26 @@ export default defineComponent({
       },
     };
   },
+  async fetch() {
+    try {
+      this.thirdYearites = await this.$content('members')
+        .where({ year: 3 })
+        .fetch();
+      this.secondYearites = await this.$content('members')
+        .where({ year: 2 })
+        .fetch();
+      this.alums = await this.$content('alums').fetch();
+    } catch (e) {
+      throw new Error('Failed to fetch data');
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
       setTimeout(() => this.$nuxt.$loading.finish(), 1000);
     });
-    this.fetchMembers();
-    this.fetchAlums();
   },
   methods: {
-    async fetchMembers() {
-      const data = await this.$content('members').fetch();
-      this.members = data;
-    },
-    async fetchAlums() {
-      const data = await this.$content('alums').fetch();
-      this.alums = data;
-    },
     showSdg() {
       this.showCard = true;
       this.showAlum = false;
@@ -287,7 +333,68 @@ export default defineComponent({
   position: relative;
   margin-right: 30px;
 }
+.line {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 
+  &:before {
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #eee;
+    position: relative;
+    transform: rotate(45deg) translateX(-50%);
+    left: 50%;
+    top: 10px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw;
+    max-width: 780px;
+    height: 3px;
+    background: #eeeeee;
+  }
+}
+.divider {
+  position: relative;
+  margin-top: 300px;
+  height: 1px;
+}
+
+.div-transparent:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(48, 49, 51),
+    transparent
+  );
+}
+.div-dot:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -9px;
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 18px;
+  background-color: goldenrod;
+  border: 1px solid rgb(48, 49, 51);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
+}
 body {
   scroll-behavior: smooth;
   background: #050505;
