@@ -4,6 +4,8 @@
       <navbar />
     </header>
     <Nuxt keep-alive />
+    <Footer />
+
   </main>
 </template>
 

@@ -5,8 +5,9 @@
         :is="link ? 'nuxt-link' : 'span'"
         :to="{ path: link, query: { subBlogs: subBlogs } }"
       >
-        <figure :class="`image is-${imageRatioClass}`">
+        <figure :class="`image is-16x9`">
           <opti-image
+            class="image_flex"
             v-if="image"
             :src="`${image}`"
             :srcset="responsiveImage.srcSet"
@@ -53,10 +54,6 @@ export default defineComponent({
     subBlogs() {
       return [];
     },
-    imageRatioClass() {
-      const imageDimensions = this.imageDimensions || imageDimensionDefault;
-      return imageDimensions.toLowerCase().replace('x', 'by');
-    },
     imageRatio() {
       const imageDimensions = this.imageDimensions || imageDimensionDefault;
       return imageDimensions
@@ -73,6 +70,12 @@ export default defineComponent({
 });
 </script>
 <style scoped lang="scss">
+.image_flex {
+  @media only screen and (max-width: 640px) {
+    max-height: 30vh !important;
+  }
+}
+
 .subtitle {
   opacity: 0.5;
   font-size: 0.8rem;
@@ -109,5 +112,8 @@ export default defineComponent({
   &:hover {
     transform: scale(1.02);
   }
+}
+.card-content {
+  color: white;
 }
 </style>
