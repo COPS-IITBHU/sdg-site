@@ -42,8 +42,8 @@
         >
           <h2 class="text-3xl font-bold my-4">{{ project.name }}</h2>
           <p>{{ project.desc }}</p>
-          <span v-if="project.tech" class="contentHeading text-xl mt-4"
-            >Technologies Used</span
+          <span v-if="project.tech" class="contentHeading text-xl mt-4">
+            Technologies Used</span
           >
           <ul class="techList list-none">
             <li v-for="tech in project.tech" :key="tech">{{ tech }}</li>

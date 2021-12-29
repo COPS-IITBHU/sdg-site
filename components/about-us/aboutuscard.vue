@@ -1,6 +1,7 @@
 <template>
   <section class="w-9/10 mx-auto my-0px">
     <div
+      id="card_1"
       class="
         cards
         <lg:(flex-col-reverse
@@ -12,7 +13,6 @@
         py-20px
         px-30px
       "
-      id="card_1"
     >
       <div class="text <lg:(w-3/4 mt-5 h-1/3 text-center) w-1/2">
         <h1 class="mb-5px font-medium text-2xl text-gray-50">WHAT IS SDG?</h1>
@@ -54,6 +54,7 @@
     />
 
     <div
+      id="card_2"
       class="
         cards
         <lg:(flex-col
@@ -65,7 +66,6 @@
         py-20px
         px-30px
       "
-      id="card_2"
     >
       <div
         class="
@@ -107,6 +107,7 @@
     />
 
     <div
+      id="card_2"
       class="
         cards
         <lg:(flex-col-reverse
@@ -118,7 +119,6 @@
         py-20px
         px-30px
       "
-      id="card_2"
     >
       <div class="text <lg:(w-3/4 mt-5 h-1/3 text-center) w-1/2">
         <h1 class="mb-5px font-medium text-2xl text-gray-50">

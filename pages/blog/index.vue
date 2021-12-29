@@ -11,6 +11,9 @@ import PostsGrid from '~/components/grids/PostsGrid.vue';
 
 export default defineComponent({
   name: 'HomePage',
+  components: {
+    PostsGrid,
+  },
   async asyncData({ $content }) {
     const articles = await $content(`blog`).fetch();
     return {
@@ -28,6 +31,9 @@ export default defineComponent({
     return {
       title: `Blog`,
     };
+  },
+  mounted() {
+    this.blogTree();
   },
   methods: {
     sortByTime(obj) {
@@ -57,12 +63,6 @@ export default defineComponent({
       });
       this.articles = this.sortByTime(dataTree);
     },
-  },
-  mounted() {
-    this.blogTree();
-  },
-  components: {
-    PostsGrid,
   },
 });
 </script>

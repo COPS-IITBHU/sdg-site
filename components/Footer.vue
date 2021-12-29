@@ -13,8 +13,9 @@
             aria-label="Code of Conduct"
             href="https://github.com/COPS-IITBHU/Code-Of-Conduct/blob/master/README.md"
             style="text-decoration-line: none"
-            >Code of Conduct</a
           >
+            Code of Conduct
+          </a>
         </div>
       </div>
       <div class="flex flex-col justify-center pl-6">

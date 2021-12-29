@@ -18,15 +18,17 @@
             justify-center
           "
           target="_blank"
-          ><span
+        >
+          <span
             class="iconify"
             :data-icon="item.icon"
             :style="item.style"
             :data-height="item.height"
             :data-width="item.width"
-            >{{ item.name }}</span
-          ></a
-        >
+          >
+            {{ item.name }}
+          </span>
+        </a>
       </li>
     </ul>
   </div>
@@ -50,6 +52,9 @@ export default {
   props: {
     items: {
       type: Object as PropType<itemsObject>,
+      default() {
+        return { object: 'items' };
+      },
     },
   },
 };
