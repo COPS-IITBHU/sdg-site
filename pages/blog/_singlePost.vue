@@ -9,11 +9,11 @@
         <strong>Author:</strong> {{ post.author }}
       </span>
       <span v-if="post.date" class="date-wrapper">
-        <strong>Published on:</strong> {{ this.date }}
+        <strong>Published on:</strong> {{ date }}
       </span>
     </site-hero>
     <main-section :one-column-constrained="true">
-      <template v-slot:default>
+      <template #default>
         <div class="post-wrapper">
           <nuxt-content class="mt-4 prose max-w-none" :document="post" />
           <div class="other-posts">

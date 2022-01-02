@@ -1,6 +1,17 @@
 <template>
   <section class="overflow-hidden">
-    <div class="h-50vh relative z-1 bg-hex-1f2124 lg:text-xl w-100%">
+    <div
+      class="
+        h-auto
+        md:h-65vh
+        lg:h-55vh
+        relative
+        z-1
+        bg-hex-050505
+        lg:text-xl
+        w-100%
+      "
+    >
       <transition appear @before-enter="beforeEnter" @enter="enter">
         <h2
           class="
@@ -9,7 +20,7 @@
             lg:text-7xl
             font-mono font-700
             text-center
-            p-10
+            p-20
           "
         >
           Meet the Team
@@ -18,9 +29,7 @@
       <transition appear @before-enter="beforeEnter" @enter="enter">
         <p
           class="
-            w-80
-            md:w-200
-            lg:w-300
+            w-80vw
             m-auto
             text-gray-300
             font-400
@@ -28,6 +37,7 @@
             md:text-xl
             sm:text-md
             text-center
+            -mt-10
           "
         >
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sit
@@ -38,7 +48,7 @@
       </transition>
       <client-only>
         <Particles
-          class="z-0 absolute w-100% inset-0 h-40vh"
+          class="z-0 absolute w-100% inset-0 h-50vh"
           color="#ccc"
           :particles-number="70"
           shape-type="circle"
@@ -50,244 +60,214 @@
         />
       </client-only>
     </div>
-    <transition appear @before-enter="beforeEnter" @enter="enter">
-      <div
-        class="
-          m-auto
-          w-150
-          md:w-200
-          lg:w-350 lg:p-20
-          drop-shadow-sm
-          z-1
-          relative
-        "
-      >
-        <div
-          class="
-            w-80vw
-            md:w-65
-            lg:w-95
-            shadow-xl
-            m-auto
-            mx-10
-            md:float-left
-            lg:float-left
-            p-10
-            text-stroke-blue-gray-800 text-xl text-center
-            rounded-3xl
-          "
-        >
-          <nuxt-img src="/coding.png" alt="sdg" class="float-left w-12 h-12" />
-          <h2 class="block text-right text-lg m-auto">Software Development</h2>
-          <a
-            href="#mem"
-            class="
-              bg-hex-8c4d79
-              hover:bg-hex-5a003f
-              text-white text-center text-sm
-              px-2
-              py-2
-              font-500
-              mb-10
-              rounded
-            "
-            @click="showSdg()"
-          >
-            View Team
-          </a>
-        </div>
-        <div
-          class="
-            w-80vw
-            md:w-65
-            lg:w-95
-            shadow-xl
-            m-auto
-            mx-10
-            md:float-right
-            lg:float-right
-            p-10
-            text-stroke-blue-gray-800 text-xl text-center
-            rounded-3xl
-          "
-        >
-          <nuxt-img
-            src="/binary-code.png"
-            alt="cp"
-            class="float-left w-12 h-12"
+    <main
+      class="w-100% lg:h-55vh bg-hex-101010 drop-shadow-sm z-1 relative p-10"
+    >
+      <div class="nav flex p-10">
+        <div class="nav-elements w-1/2 p-8 drop-shadow-3xl">
+          <lottie
+            :width="250"
+            :height="250"
+            :options="lottieOptions.first"
+            class="lottie"
+            @animCreated="handleAnimation($event, 'firstAnim')"
           />
-          <h2 class="text-md m-auto">Competitive Programming</h2>
-          <a
-            href="#mem"
-            class="
-              bg-hex-8c4d79
-              hover:bg-hex-5a003f
-              text-white text-center
-              py-2
-              px-2
-              text-sm
-              font-500
-              mb-10
-              rounded
-            "
-            @click="showCP()"
-          >
-            View Team
+          <span class="text-3xl mt-10 py-10">Developers</span>
+          <p class="text-sm mt-10">
+            lorem ipsum dolor sit amet, consectetur adipis, lorem ipsum dolor
+            sit.
+          </p>
+          <a href="#mem">
+            <button
+              class="
+                btn
+                w-30
+                p-2
+                mt-10
+                border
+                rounded-lg
+                hover:bg-hex-fff hover:text-black
+              "
+              @click="showSdg()"
+            >
+              View Team
+            </button>
           </a>
         </div>
-        <nuxt-img
-          src="/octocat.png"
-          alt="octacat"
-          class="m-auto w-40 md:w-60 lg:w-70 mt-20 mx-25 md:mx-75"
-        />
-        <div
+        <div class="nav-elements w-50vw p-8 -mt-20">
+          <lottie
+            :width="250"
+            :height="250"
+            :options="lottieOptions.second"
+            class="lottie"
+            @mouseover="play"
+            @focus="play"
+            @animCreated="handleAnimation($event, 'secondAnim')"
+          />
+          <span class="text-3xl mt-10 py-10">Alums</span>
+          <p class="text-sm mt-10">
+            lorem ipsum dolor sit amet, consectetur adipis, lorem ipsum dolor
+            sit.
+          </p>
+          <a href="#mem">
+            <button
+              href="#mem"
+              class="
+                btn
+                w-30
+                p-2
+                mt-10
+                border
+                font-400
+                rounded-lg
+                hover:bg-hex-fff hover:text-black
+              "
+              @click="showAlums()"
+            >
+              View Team
+            </button>
+          </a>
+        </div>
+      </div>
+      <div v-if="showCard && !showAlum" class="text-center p-20">
+        <h2
           class="
-            w-80vw
-            md:w-65
-            lg:w-85
+            text-white text-center text-4xl
+            md:text-4xl
+            lg:text-6xl
             m-auto
-            mx-10
-            md:float-right
-            lg:float-right
-            shadow-xl
-            p-10
-            text-stroke-blue-gray-800 text-xl text-center
-            rounded-3xl
+            -mx-20
           "
         >
-          <nuxt-img
-            src="/machine-learning.png"
-            alt="sdg"
-            class="float-left w-15 h-15"
-          />
-          <h2 class="text-lg m-auto">Machine Learning</h2>
-          <a
-            href="#mem"
-            class="
-              bg-hex-8c4d79
-              hover:bg-hex-5a003f
-              text-white text-center
-              py-2
-              px-2
-              text-sm
-              font-500
-              mb-10
-              rounded
-            "
-            @click="showML()"
-          >
-            View Team
-          </a>
-        </div>
+          Third Yearites
+          <div class="line"></div>
+        </h2>
 
         <div
-          class="
-            overflow-hidden
-            w-80vw
-            md:w-65
-            lg:w-85
-            shadow-xl
-            m-auto
-            mx-10
-            md:float-left
-            lg:float-left
-            p-10
-            text-stroke-blue-gray-800 text-xl text-center
-            rounded-3xl
-          "
+          v-for="thirdYearite in thirdYearites"
+          id="mem"
+          :key="thirdYearite"
+          class="m-auto mt-20 -mx-25 md:m-auto lg:m-auto"
         >
-          <nuxt-img
-            src="/cyber-security.png"
-            alt="sdg"
-            class="float-left w-15 h-15"
-          />
-          <h2 class="text-lg m-auto">Infosec</h2>
-          <a
-            href="#mem"
-            class="
-              bg-hex-8c4d79
-              hover:bg-hex-5a003f
-              text-white text-center
-              py-2
-              px-2
-              text-sm
-              font-500
-              mb-10
-              rounded
-            "
-            @click="showInfosec"
-          >
-            View Team
-          </a>
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <sdgCard
+              v-show="showCard"
+              :name="thirdYearite.name"
+              :title="thirdYearite.title"
+              :social-media-link="thirdYearite.link"
+              :github-link="thirdYearite.github"
+              :image-url="`${thirdYearite.github}.png`"
+              class="w-90vw m-auto flex md:block lg:block mt-20"
+            />
+          </transition>
         </div>
       </div>
-    </transition>
-    <div class="text-center mt-20">
-      <h2
-        v-if="showCard"
-        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
-      >
-        Software Development Group
-      </h2>
-      <h2
-        v-if="showCpCard"
-        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
-      >
-        Competitive Programming Group
-      </h2>
-      <h2
-        v-if="showMlCard"
-        class="text-center text-3xl md:text-4xl lg:text-6xl mt-50"
-      >
-        Machine Learning Group
-      </h2>
-      <h2
-        v-if="showInfosecCard"
-        class="text-center text-2xl md:text-4xl lg:text-6xl mt-50"
-      >
-        InfoSec Group
-      </h2>
-      <div v-for="member in members" id="mem" :key="member" class="m-auto">
-        <transition appear @before-enter="beforeEnter" @enter="enter">
-          <sdgCard
-            v-show="showCard"
-            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
-          />
-        </transition>
-        <transition appear @before-enter="beforeEnter" @enter="enter">
-          <cpCard
-            v-show="showCpCard"
-            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
-          />
-        </transition>
-        <transition appear @before-enter="beforeEnter" @enter="enter">
-          <mlCard
-            v-show="showMlCard"
-            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
-          />
-        </transition>
-        <transition appear @before-enter="beforeEnter" @enter="enter">
-          <infosecCard
-            v-show="showInfosecCard"
-            class="w-120 md:w-220 lg:w-320 m-auto px-10 flex md:block lg:block"
-          />
-        </transition>
+
+      <div v-if="showCard && !showAlum" class="text-center p-20">
+        <hr class="-mx-20 md:-mx-10 lg:-mx-0 m-auto w-80vw mt-30" />
+        <h2
+          class="
+            text-white text-center text-4xl
+            md:text-4xl
+            lg:text-6xl
+            m-auto
+            -mx-20
+            mt-20
+          "
+        >
+          Second Yearites
+          <div class="line"></div>
+        </h2>
+
+        <div
+          v-for="secondYearite in secondYearites"
+          id="mem"
+          :key="secondYearite"
+          class="m-auto mt-20 -mx-25 md:m-auto lg:m-auto"
+        >
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <sdgCard
+              v-show="showCard"
+              :name="secondYearite.name"
+              :title="secondYearite.title"
+              :social-media-link="secondYearite.link"
+              :github-link="secondYearite.github"
+              :image-url="`${secondYearite.github}.png`"
+              class="w-90vw m-auto flex md:block lg:block mt-20"
+            />
+          </transition>
+        </div>
       </div>
-    </div>
+      <div class="text-center p-20">
+        <h2
+          v-if="showAlum && !showCard"
+          class="text-white text-center text-3xl md:text-4xl lg:text-6xl"
+        >
+          ALUMNI
+
+          <div class="line"></div>
+        </h2>
+        <div
+          v-for="alum in alums"
+          id="mem"
+          :key="alum"
+          class="m-auto mt-20 -mx-20 md:m-auto lg:mx-auto"
+        >
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <sdgCard
+              v-show="showAlum"
+              :name="alum.name"
+              :title="alum.designation"
+              :company="alum.company"
+              :social-media-link="alum.link"
+              :github-link="alum.github"
+              :image-url="`${alum.github}.png`"
+              class="w-90vw m-auto flex md:block lg:block mt-20"
+            />
+          </transition>
+        </div>
+      </div>
+    </main>
   </section>
 </template>
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
+import lottie from 'vue-lottie/src/lottie.vue';
+import * as devAnimationData from '~/assets/55885-developer.json';
+import * as alumniAnimationData from '~/assets/30304-back-to-school.json';
 export default defineComponent({
-  components: {},
+  components: {
+    lottie,
+  },
   data() {
     return {
-      members: 8,
+      alums: [],
+      thirdYearites: [],
+      secondYearites: [],
       showCard: false,
-      showCpCard: false,
-      showMlCard: false,
-      showInfosecCard: false,
+      showAlum: false,
+      anim: {
+        firstAnim: null,
+        secondAnim: null,
+      },
+      lottieOptions: {
+        first: { animationData: devAnimationData.default },
+        second: { animationData: alumniAnimationData.default },
+      },
     };
+  },
+  async fetch() {
+    try {
+      this.thirdYearites = await this.$content('members')
+        .where({ year: 3 })
+        .fetch();
+      this.secondYearites = await this.$content('members')
+        .where({ year: 2 })
+        .fetch();
+      this.alums = await this.$content('alums').fetch();
+    } catch (e) {
+      throw new Error('Failed to fetch data');
+    }
   },
   mounted() {
     this.$nextTick(() => {
@@ -298,26 +278,10 @@ export default defineComponent({
   methods: {
     showSdg() {
       this.showCard = true;
-      this.showCpCard = false;
-      this.showInfosecCard = false;
-      this.showMlCard = false;
+      this.showAlum = false;
     },
-    showCP() {
-      this.showCpCard = true;
-      this.showCard = false;
-      this.showInfosecCard = false;
-      this.showMlCard = false;
-    },
-    showML() {
-      this.showMlCard = true;
-      this.showCard = false;
-      this.showCpCard = false;
-      this.showInfosecCard = false;
-    },
-    showInfosec() {
-      this.showInfosecCard = true;
-      this.showCpCard = false;
-      this.showMlCard = false;
+    showAlums() {
+      this.showAlum = true;
       this.showCard = false;
     },
     beforeEnter(el) {
@@ -332,11 +296,107 @@ export default defineComponent({
         ease: 'bounce.out',
       });
     },
+    handleAnimation(anim, type) {
+      this.anim[type] = anim;
+    },
+    play(type) {
+      this.anim[type].play();
+    },
   },
 });
 </script>
 <style>
+.nav {
+  margin-top: 5px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav-elements {
+  margin: 0 auto;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: #fff;
+  // display: flex;
+  width: 500px;
+}
+.nav-elements:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.nav-elements .lottie {
+  float: left;
+  position: relative;
+  margin-right: 30px;
+}
+.line {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #eee;
+    position: relative;
+    transform: rotate(45deg) translateX(-50%);
+    left: 50%;
+    top: 10px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw;
+    max-width: 780px;
+    height: 3px;
+    background: #eeeeee;
+  }
+}
+.divider {
+  position: relative;
+  margin-top: 300px;
+  height: 1px;
+}
+
+.div-transparent:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(48, 49, 51),
+    transparent
+  );
+}
+.div-dot:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -9px;
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 18px;
+  background-color: goldenrod;
+  border: 1px solid rgb(48, 49, 51);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
+}
 body {
   scroll-behavior: smooth;
+  background: #050505;
 }
 </style>

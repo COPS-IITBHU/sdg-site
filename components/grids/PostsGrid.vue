@@ -10,7 +10,7 @@
         :image="item.featureImage"
         :author="item.author"
         :date="item.date"
-        :subBlogs="item.subBlogs"
+        :sub-blogs="item.subBlogs"
       />
     </div>
   </div>

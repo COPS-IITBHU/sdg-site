@@ -6,7 +6,7 @@
         :image="image"
         :link="link"
         :image-dimensions="null"
-        :subBlogs="subBlogs"
+        :sub-blogs="subBlogs"
       >
         <div class="card-details">
           <span v-if="author" class="author-wrapper">
@@ -49,6 +49,9 @@ export default {
     },
     subBlogs: {
       type: Array,
+      default() {
+        return [];
+      },
     },
   },
   computed: {

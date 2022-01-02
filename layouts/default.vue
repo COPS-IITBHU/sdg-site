@@ -3,7 +3,7 @@
     <header>
       <navbar />
     </header>
-    <Nuxt />
+    <Nuxt keep-alive />
     <Footer />
   </main>
 </template>

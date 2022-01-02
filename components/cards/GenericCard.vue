@@ -7,8 +7,8 @@
       >
         <figure :class="`image is-16x9`">
           <opti-image
-            class="image_flex"
             v-if="image"
+            class="image_flex"
             :src="`${image}`"
             :srcset="responsiveImage.srcSet"
             :width="imageRatio[0]"
