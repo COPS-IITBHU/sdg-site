@@ -20,6 +20,9 @@
       <youtube />
     </div>
     <achievementslogo />
+    <carousel3d>
+      <slide v-for="(slide, i) in slides" :key="i" :index="i"> </slide>
+    </carousel3d>
     <!-- <achievementsCarousel :achievements="achievements"/> -->
   </div>
 </template>
@@ -31,6 +34,8 @@ import aboutuslogo from '~/components/about-us/aboutuslogo.vue';
 import achievementslogo from '~/components/about-us/achievementslogo.vue';
 // import achievementsCarousel from '~/components/about-us/achievementsCarousel.vue';
 import youtube from '~/components/about-us/youtube.vue';
+import carousel3d from '~/components/about-us/carousel-3d.vue';
+import slide from '~/components/about-us/slide.vue';
 
 export default Vue.extend({
   components: {
@@ -38,6 +43,8 @@ export default Vue.extend({
     aboutuslogo,
     youtube,
     achievementslogo,
+    carousel3d,
+    slide,
     // achievementsCarousel,
   },
   //  data() {
@@ -54,6 +61,62 @@ export default Vue.extend({
   //     this.achievements = data;
   //   },
   // },
+  data() {
+    return {
+      slides: [
+        {
+          title: 'Slide 1',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.',
+          src: 'https://placehold.it/360x270',
+        },
+        {
+          title: 'Slide 2',
+          desc: 'Lorem ipsum dolor sit amet ',
+          src: 'https://placehold.it/360x270',
+        },
+        {
+          title: 'Slide 3',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
+          src: 'https://placehold.it/360x270',
+        },
+        {
+          title: 'Slide 4',
+          desc: 'Lorem ipsum dolor sit amet,  Enim, maxime.',
+          src: 'https://placehold.it/360x270',
+        },
+        {
+          title: 'Slide 5',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.',
+          src: 'https://placehold.it/360x270',
+        },
+        {
+          title: 'Slide 6',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.',
+          src: 'https://placehold.it/360x270',
+        },
+        {
+          title: 'Slide 7',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.',
+          src: 'https://placehold.it/360x270',
+        },
+        {
+          title: 'Slide 8',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.',
+          src: 'https://placehold.it/360x270',
+        },
+        {
+          title: 'Slide 9',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.',
+          src: 'https://placehold.it/360x270',
+        },
+        {
+          title: 'Slide 10',
+          desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.',
+          src: 'https://placehold.it/360x270',
+        },
+      ],
+    };
+  },
 });
 </script>
 
