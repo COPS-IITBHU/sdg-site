@@ -21,7 +21,10 @@
     </div>
     <achievementslogo />
     <carousel3d>
-      <slide v-for="(slide, i) in slides" :key="i" :index="i"> </slide>
+      <slide v-for="(slide, i) in slides" :key="i" :index="i">
+        <h1>{{ slide.title }}</h1>
+        <p>{{ slide.desc }}</p>
+      </slide>
     </carousel3d>
     <!-- <achievementsCarousel :achievements="achievements"/> -->
   </div>
@@ -34,8 +37,8 @@ import aboutuslogo from '~/components/about-us/aboutuslogo.vue';
 import achievementslogo from '~/components/about-us/achievementslogo.vue';
 // import achievementsCarousel from '~/components/about-us/achievementsCarousel.vue';
 import youtube from '~/components/about-us/youtube.vue';
-import carousel3d from '~/components/about-us/carousel-3d.vue';
-import slide from '~/components/about-us/slide.vue';
+import carousel3d from '~/components/about-us/carousel/carousel-3d.vue';
+import slide from '~/components/about-us/carousel/carousel-slide.vue';
 
 export default Vue.extend({
   components: {
