@@ -94,9 +94,9 @@
           Along the lines of development, we enjoy discussions and
           collaborations too. Regular DevTalks for discussions and doubts about
           new tech and associating over Open Source provides us with great
-          opportunities of expanding our colossal network. DevOps with GitLab,
-          API with Postman, GSOC 101, and Android Study Jam are some of our
-          sought-after workshops.
+          opportunities of expanding our colossal network. Multiverse of
+          Languages, API with Postman, GSOC 101, and Android Study Jam are some
+          of our sought-after workshops.
         </p>
       </div>
     </div>
