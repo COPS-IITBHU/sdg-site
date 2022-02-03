@@ -1,103 +1,50 @@
 <template>
-  <footer class="p-4 container mx-auto bg-white">
-    <div class="flex box-border justify-evenly h-70">
-      <div class="flex flex-col justify-center pr-6">
-        <img
-          class="mx-auto object-contain p-4 h-50 w-50"
-          :src="logo"
-          alt="Club of Programmers IIT BHU"
-        />
-        <div class="ml-10 text-base">
-          <a
-            target="_blank"
-            aria-label="Code of Conduct"
-            href="https://github.com/COPS-IITBHU/Code-Of-Conduct/blob/master/README.md"
-            style="text-decoration-line: none"
-          >
-            Code of Conduct
-          </a>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center pl-6">
-        <p class="text-2xl font-semibold">Quick Links</p>
-        <br />
-        <ul class="text-xl">
-          <li><a href="/">Home</a></li>
-          <li><a href="/blogs">Blogs</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/aboutus">About Us</a></li>
-        </ul>
-      </div>
-      <div class="flex">
-        <div class="flex flex-col">
-          <div class="flex text-2xl font-semibold mt-38 ml-1">Reach Us</div>
-          <div class="flex">
-            <div v-for="icon in SocialMedia" :key="icon.url">
-              <a
-                :href="icon.url"
-                target="_blank"
-                rel="noreferrer"
-                :aria-label="icon.content"
-              >
-                <span
-                  class="
-                    iconify
-                    icon
-                    w-10
-                    h-10
-                    hover:scale-120
-                    transform
-                    select-none
-                    cursor-pointer
-                  "
-                  :data-icon="icon.icon"
-                ></span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="border-t-2 border-grey">
-      <div class="flex flex-row justify-end">
-        Copyright &copy; {{ new Date().getFullYear() }}
-        <a href="/">COPS</a>
-      </div>
+  <footer class="p-4 bg-white rounded-lg shadow md:px-8 container mx-auto">
+    <hr class="my-2 border-gray-200 sm:mx-auto  lg:my-4">
+    <div class="flex flex-col md:flex-row items-center md:justify-around">
+      <a href="https://copsiitbhu.co.in" target="_blank" class="flex items-center mb-4 sm:mb-0 order-1">
+        <nuxt-img src="/COPS-Logo.jpeg" width="80" height="80" alt="COPS Logo">
+          COPS Logo
+        </nuxt-img>
+      </a>
+      <span class="block text-sm text-gray-500 text-center order-3 md:order-2 mt-4 md:mt-0">© {{ new Date().getFullYear() }} <a href="https://copsiitbhu.co.in" target="_blank" class="hover:underline">COPS</a> SDG™. All Rights Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center order-2 md:order-3">
+        <li v-for="x in quicklinks" :key="x.url">
+          <a :href="x.url" class="px-2 text-gray-500 hover:underline-transparent hover:text-black md:mr-6 ">{{ x.content }}</a>
+        </li>
+      </ul>
     </div>
   </footer>
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from '@nuxtjs/composition-api'
+export default defineComponent({
   name: 'Footer',
-  data() {
+  data  () {
     return {
-      logo: require('../assets/Images/COPS-Logo.jpeg'),
-      SocialMedia: [
+      quicklinks: [
         {
-          icon: 'mdi:github',
-          url: 'https://github.com/COPS-IITBHU',
-          content: 'Github Org',
+          url: '/portfolio',
+          content: 'Team'
         },
         {
-          icon: 'mdi:facebook',
-          url: 'https://www.facebook.com/cops.iitbhu',
-          content: 'Facebook Page',
+          url: '/aboutus',
+          content: 'About'
         },
         {
-          icon: 'mdi:google',
-          url: 'https://groups.google.com/g/copsiitbhu',
-          content: 'Google Group',
+          url: '/blog',
+          content: 'Blog'
         },
         {
-          icon: 'mdi:email',
-          url: 'mailto:copsiitbu@gmail.com',
-          content: 'Support Email ID',
-        },
-      ],
-    };
-  },
-};
+          url: '/contact',
+          content: 'Contact'
+        }
+      ]
+    }
+  }
+})
 </script>
 
 <style scoped>
