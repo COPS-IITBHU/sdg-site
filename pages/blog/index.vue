@@ -27,10 +27,8 @@ export default defineComponent({
       featureImage: '/blog/about-hero.jpg',
     };
   },
-  head() {
-    return {
-      title: `Blog`,
-    };
+  head: {
+    title: 'Blogs',
   },
   mounted() {
     this.blogTree();

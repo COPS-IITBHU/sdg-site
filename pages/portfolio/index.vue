@@ -233,8 +233,8 @@
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
 import lottie from 'vue-lottie/src/lottie.vue';
-import * as devAnimationData from '~/assets/55885-developer.json';
 import * as alumniAnimationData from '~/assets/30304-back-to-school.json';
+import * as devAnimationData from '~/assets/55885-developer.json';
 export default defineComponent({
   components: {
     lottie,
@@ -268,6 +268,9 @@ export default defineComponent({
     } catch (e) {
       throw new Error('Failed to fetch data');
     }
+  },
+  head: {
+    title: 'Team',
   },
   mounted() {
     this.$nextTick(() => {

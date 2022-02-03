@@ -55,12 +55,17 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api';
+
+export default defineComponent({
   data() {
     return {
       isListVisible: false,
       projects: null,
     };
+  },
+  head: {
+    title: 'Landing',
   },
   mounted() {
     window.addEventListener('scroll', this.setDotStatus);
@@ -126,7 +131,7 @@ export default {
       });
     },
   },
-};
+});
 </script>
 
 <style>

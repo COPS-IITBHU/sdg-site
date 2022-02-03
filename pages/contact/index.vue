@@ -127,6 +127,9 @@ export default {
       serverid: '786971759496790046',
     };
   },
+  head: {
+    title: 'Contact',
+  },
   mounted() {
     this.fetchdata();
   },
