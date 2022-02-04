@@ -8,8 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate -m",
     "lint": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
-    "lint:fix": "pnpm lint --fix",
-    "format": "prettier --write ./**/*.{js,vue,ts,json} --ignore-path ./.gitignore",
+    "format": "eslint --ext .js,.vue,.ts --ignore-path .gitignore . --fix",
     "postinstall": "is-ci || husky install"
   },
   "dependencies": {
