@@ -111,7 +111,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from '@nuxtjs/composition-api';
+import { defineComponent, PropType } from '@nuxtjs/composition-api'
 
 interface achievementsArray {
   index: number;
@@ -124,13 +124,13 @@ export default defineComponent({
   props: {
     achievements: {
       type: Array as PropType<achievementsArray[]>,
-      default() {
-        return null;
-      },
-    },
+      default () {
+        return null
+      }
+    }
   },
 
-  data() {
+  data () {
     return {
       // add a 'gallery-item-none' in the middle if a new achievement is added in achievements.json
       galleryItemNumber: [
@@ -150,22 +150,22 @@ export default defineComponent({
         'gallery-item-none',
         'gallery-item-none',
         'gallery-item-4',
-        'gallery-item-5',
-      ],
-    };
+        'gallery-item-5'
+      ]
+    }
   },
 
   methods: {
-    goNext() {
-      const tmp = this.galleryItemNumber.pop();
-      this.galleryItemNumber.unshift(tmp as string);
+    goNext () {
+      const tmp = this.galleryItemNumber.pop()
+      this.galleryItemNumber.unshift(tmp as string)
     },
-    goPrevious() {
-      const tmp = this.galleryItemNumber.shift();
-      this.galleryItemNumber.push(tmp as string);
-    },
-  },
-});
+    goPrevious () {
+      const tmp = this.galleryItemNumber.shift()
+      this.galleryItemNumber.push(tmp as string)
+    }
+  }
+})
 </script>
 
 <style scoped>

@@ -75,18 +75,18 @@ export default {
   props: {
     project: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
-    imgAddress() {
+    imgAddress () {
       if (this.project.img) {
-        return 'home/' + this.project.img;
+        return 'home/' + this.project.img
       }
-      return 'home/hackalog.png';
-    },
-  },
-};
+      return 'home/hackalog.png'
+    }
+  }
+}
 </script>
 
 <style scoped>

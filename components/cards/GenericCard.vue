@@ -37,37 +37,37 @@
   </div>
 </template>
 <script>
-import { OptiImage } from 'opti-image';
-import { defineComponent } from '@nuxtjs/composition-api';
-const imageDimensionDefault = '16x9';
+import { OptiImage } from 'opti-image'
+import { defineComponent } from '@nuxtjs/composition-api'
+const imageDimensionDefault = '16x9'
 export default defineComponent({
   components: {
-    OptiImage,
+    OptiImage
   },
   props: {
     title: { type: String, default: '' },
     image: { type: String, default: '' },
     link: { type: String, default: '' },
-    imageDimensions: { type: String, default: imageDimensionDefault },
+    imageDimensions: { type: String, default: imageDimensionDefault }
   },
   computed: {
-    subBlogs() {
-      return [];
+    subBlogs () {
+      return []
     },
-    imageRatio() {
-      const imageDimensions = this.imageDimensions || imageDimensionDefault;
+    imageRatio () {
+      const imageDimensions = this.imageDimensions || imageDimensionDefault
       return imageDimensions
         .toLowerCase()
         .split('x')
         .map((size) => {
-          return size * 2000;
-        });
+          return size * 2000
+        })
     },
-    responsiveImage() {
-      return { src: this.image, srcSet: '' };
-    },
-  },
-});
+    responsiveImage () {
+      return { src: this.image, srcSet: '' }
+    }
+  }
+})
 </script>
 <style scoped lang="scss">
 .image_flex {

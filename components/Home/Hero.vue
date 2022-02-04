@@ -58,7 +58,7 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
       iconRow1: [
         'bi:github',
@@ -88,7 +88,7 @@ export default {
         'ci:facebook',
         'fluent:people-team-16-regular',
         'fa-solid:quidditch',
-        'fluent:food-pizza-20-filled',
+        'fluent:food-pizza-20-filled'
       ],
       iconRow2: [
         'akar-icons:clock',
@@ -118,11 +118,11 @@ export default {
         'bx:bxs-star',
         'bx:bxl-telegram',
         'ant-design:html5-filled',
-        'majesticons:ghost',
-      ],
-    };
-  },
-};
+        'majesticons:ghost'
+      ]
+    }
+  }
+}
 </script>
 <style scoped>
 .row div {

@@ -31,19 +31,19 @@
   </main>
 </template>
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
+import { defineComponent } from '@nuxtjs/composition-api'
 export default defineComponent({
   name: 'MainSection',
   props: {
     oneColumnConstrained: { type: Boolean, default: false },
-    theme: { type: String, default: '' },
+    theme: { type: String, default: '' }
   },
   computed: {
-    computedTheme() {
-      return 'one-column';
-    },
-  },
-});
+    computedTheme () {
+      return 'one-column'
+    }
+  }
+})
 </script>
 
 <style lang="scss">

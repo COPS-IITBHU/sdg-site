@@ -25,21 +25,21 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import aboutuscard from '~/components/about-us/aboutuscard.vue';
-import aboutuslogo from '~/components/about-us/aboutuslogo.vue';
-import achievementslogo from '~/components/about-us/achievementslogo.vue';
+import Vue from 'vue'
+import aboutuscard from '~/components/about-us/aboutuscard.vue'
+import aboutuslogo from '~/components/about-us/aboutuslogo.vue'
+import achievementslogo from '~/components/about-us/achievementslogo.vue'
 // import achievementsCarousel from '~/components/about-us/achievementsCarousel.vue';
-import youtube from '~/components/about-us/youtube.vue';
+import youtube from '~/components/about-us/youtube.vue'
 
 export default Vue.extend({
   components: {
     aboutuscard,
     aboutuslogo,
     youtube,
-    achievementslogo,
+    achievementslogo
     // achievementsCarousel,
-  },
+  }
   //  data() {
   //   return {
   //     achievements: [],
@@ -54,7 +54,7 @@ export default Vue.extend({
   //     this.achievements = data;
   //   },
   // },
-});
+})
 </script>
 
 <style scoped>

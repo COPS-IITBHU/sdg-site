@@ -22,44 +22,44 @@
 </template>
 
 <script>
-import GenericCard from './GenericCard';
-import { getFormattedDate } from '~/helper';
+import GenericCard from './GenericCard'
+import { getFormattedDate } from '~/helper'
 export default {
   components: { GenericCard },
   props: {
     title: {
       type: String,
-      default: '',
+      default: ''
     },
     image: {
       type: String,
-      default: '',
+      default: ''
     },
     link: {
       type: String,
-      default: '',
+      default: ''
     },
     date: {
       type: String,
-      default: '',
+      default: ''
     },
     author: {
       type: String,
-      default: '',
+      default: ''
     },
     subBlogs: {
       type: Array,
-      default() {
-        return [];
-      },
-    },
+      default () {
+        return []
+      }
+    }
   },
   computed: {
-    datePretty() {
-      return getFormattedDate(this.date);
-    },
-  },
-};
+    datePretty () {
+      return getFormattedDate(this.date)
+    }
+  }
+}
 </script>
 
 <style scoped>

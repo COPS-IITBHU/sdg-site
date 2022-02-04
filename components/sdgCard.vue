@@ -75,37 +75,37 @@ export default {
   props: {
     name: {
       type: String,
-      default: 'Name',
+      default: 'Name'
     },
     title: {
       type: String,
-      default: 'Title',
+      default: 'Title'
     },
     company: {
       type: String,
-      default: '',
+      default: ''
     },
     socialMediaLink: {
       type: String,
-      default: '#',
+      default: '#'
     },
     githubLink: {
       type: String,
-      default: '#',
+      default: '#'
     },
     icon: {
       type: String,
-      default: 'uim:github-alt',
+      default: 'uim:github-alt'
     },
     imageUrl: {
       type: String,
-      default: 'xd',
-    },
+      default: 'xd'
+    }
   },
-  data() {
-    return {};
-  },
-};
+  data () {
+    return {}
+  }
+}
 </script>
 
 <style>

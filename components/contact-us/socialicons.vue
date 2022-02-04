@@ -36,7 +36,7 @@
 
 <script lang="ts">
 // eslint-disable-next-line import/named
-import { PropType } from 'vue';
+import { PropType } from 'vue'
 
 interface itemsObject {
   name: string;
@@ -52,12 +52,12 @@ export default {
   props: {
     items: {
       type: Object as PropType<itemsObject>,
-      default() {
-        return { object: 'items' };
-      },
-    },
-  },
-};
+      default () {
+        return { object: 'items' }
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>

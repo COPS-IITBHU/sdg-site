@@ -55,83 +55,83 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
+import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  data() {
+  data () {
     return {
       isListVisible: false,
-      projects: null,
-    };
+      projects: null
+    }
   },
   head: {
-    title: 'Landing',
+    title: 'Landing'
   },
-  mounted() {
-    window.addEventListener('scroll', this.setDotStatus);
-    window.addEventListener('resize', this.displayList);
-    this.fetchProjects();
+  mounted () {
+    window.addEventListener('scroll', this.setDotStatus)
+    window.addEventListener('resize', this.displayList)
+    this.fetchProjects()
   },
-  unmounted() {
-    window.removeEventListener('scroll', this.setDotStatus);
+  unmounted () {
+    window.removeEventListener('scroll', this.setDotStatus)
   },
   methods: {
-    async fetchProjects() {
-      const fetchedData = await this.$content('index/projectData').fetch();
-      this.projects = fetchedData.projects;
+    async fetchProjects () {
+      const fetchedData = await this.$content('index/projectData').fetch()
+      this.projects = fetchedData.projects
     },
-    displayList() {
+    displayList () {
       if (window.innerWidth < 1000) {
-        this.isListVisible = false;
+        this.isListVisible = false
       }
     },
-    removeDotStyles() {
-      const dots = this.$refs.jsDots;
-      const isActive = dots.querySelector('.is-active');
+    removeDotStyles () {
+      const dots = this.$refs.jsDots
+      const isActive = dots.querySelector('.is-active')
 
       if (isActive != null) {
-        isActive.classList.remove('is-active');
+        isActive.classList.remove('is-active')
       }
     },
-    setDotStatus() {
-      const scrollPosition = window.scrollY;
-      const dots = Array.from(this.$refs.jsDots.children);
+    setDotStatus () {
+      const scrollPosition = window.scrollY
+      const dots = Array.from(this.$refs.jsDots.children)
       if (
         scrollPosition > window.innerHeight - 250 &&
         window.innerWidth > 1000 &&
         scrollPosition < window.innerHeight * this.projects.length
       ) {
-        this.isListVisible = true;
+        this.isListVisible = true
       } else {
-        this.isListVisible = false;
+        this.isListVisible = false
       }
 
       this.$refs.sections.forEach((section, index) => {
-        const halfWindow = window.innerHeight / 2;
-        const sectionTop = section.offsetTop;
+        const halfWindow = window.innerHeight / 2
+        const sectionTop = section.offsetTop
         if (
           scrollPosition > sectionTop - halfWindow &&
           scrollPosition < sectionTop + halfWindow
         ) {
-          this.removeDotStyles();
-          dots[index].classList.add('is-active');
+          this.removeDotStyles()
+          dots[index].classList.add('is-active')
         }
-      });
+      })
     },
-    scrollToSection(e) {
-      const dots = Array.from(this.$refs.jsDots.children);
-      const windowHeight = window.innerHeight;
+    scrollToSection (e) {
+      const dots = Array.from(this.$refs.jsDots.children)
+      const windowHeight = window.innerHeight
       dots.forEach((dot, index) => {
         if (dot === e.target) {
           window.scrollTo({
             top: windowHeight * index + windowHeight + 100,
-            behavior: 'smooth',
-          });
+            behavior: 'smooth'
+          })
         }
-      });
-    },
-  },
-});
+      })
+    }
+  }
+})
 </script>
 
 <style>

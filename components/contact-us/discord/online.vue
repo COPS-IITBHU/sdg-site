@@ -12,6 +12,6 @@
 <script lang="ts">
 export default {
   // eslint-disable-next-line vue/require-prop-types
-  props: ['serverid'],
-};
+  props: ['serverid']
+}
 </script>

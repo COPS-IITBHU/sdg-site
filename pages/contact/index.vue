@@ -115,31 +115,31 @@
 </template>
 
 <script>
-import Online from '~/components/contact-us/discord/online.vue';
-import Map from '~/components/contact-us/map.vue';
-import Socialicons from '~/components/contact-us/socialicons.vue';
+import Online from '~/components/contact-us/discord/online.vue'
+import Map from '~/components/contact-us/map.vue'
+import Socialicons from '~/components/contact-us/socialicons.vue'
 
 export default {
   components: { Map, Online, Socialicons },
-  data() {
+  data () {
     return {
       items: [],
-      serverid: '786971759496790046',
-    };
+      serverid: '786971759496790046'
+    }
   },
   head: {
-    title: 'Contact',
+    title: 'Contact'
   },
-  mounted() {
-    this.fetchdata();
+  mounted () {
+    this.fetchdata()
   },
   methods: {
-    async fetchdata() {
-      const data = await this.$content('contacts').fetch();
-      this.items = data;
-    },
-  },
-};
+    async fetchdata () {
+      const data = await this.$content('contacts').fetch()
+      this.items = data
+    }
+  }
+}
 </script>
 
 <style scoped>

@@ -231,15 +231,15 @@
   </section>
 </template>
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
-import lottie from 'vue-lottie/src/lottie.vue';
-import * as alumniAnimationData from '~/assets/30304-back-to-school.json';
-import * as devAnimationData from '~/assets/55885-developer.json';
+import { defineComponent } from '@nuxtjs/composition-api'
+import lottie from 'vue-lottie/src/lottie.vue'
+import * as alumniAnimationData from '~/assets/30304-back-to-school.json'
+import * as devAnimationData from '~/assets/55885-developer.json'
 export default defineComponent({
   components: {
-    lottie,
+    lottie
   },
-  data() {
+  data () {
     return {
       alums: [],
       thirdYearites: [],
@@ -248,65 +248,65 @@ export default defineComponent({
       showAlum: false,
       anim: {
         firstAnim: null,
-        secondAnim: null,
+        secondAnim: null
       },
       lottieOptions: {
         first: { animationData: devAnimationData.default },
-        second: { animationData: alumniAnimationData.default },
-      },
-    };
+        second: { animationData: alumniAnimationData.default }
+      }
+    }
   },
-  async fetch() {
+  async fetch () {
     try {
       this.thirdYearites = await this.$content('members')
         .where({ year: 3 })
-        .fetch();
+        .fetch()
       this.secondYearites = await this.$content('members')
         .where({ year: 2 })
-        .fetch();
-      this.alums = await this.$content('alums').fetch();
+        .fetch()
+      this.alums = await this.$content('alums').fetch()
     } catch (e) {
-      throw new Error('Failed to fetch data');
+      throw new Error('Failed to fetch data')
     }
   },
   head: {
-    title: 'Team',
+    title: 'Team'
   },
-  mounted() {
+  mounted () {
     this.$nextTick(() => {
-      this.$nuxt.$loading.start();
-      setTimeout(() => this.$nuxt.$loading.finish(), 1000);
-    });
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 1000)
+    })
   },
   methods: {
-    showSdg() {
-      this.showCard = true;
-      this.showAlum = false;
+    showSdg () {
+      this.showCard = true
+      this.showAlum = false
     },
-    showAlums() {
-      this.showAlum = true;
-      this.showCard = false;
+    showAlums () {
+      this.showAlum = true
+      this.showCard = false
     },
-    beforeEnter(el) {
-      el.style.opacity = 0;
-      el.style.transform = 'translateY(-60px)';
+    beforeEnter (el) {
+      el.style.opacity = 0
+      el.style.transform = 'translateY(-60px)'
     },
-    enter(el) {
+    enter (el) {
       this.$gsap.to(el, {
         opacity: 1,
         y: 0,
         duration: 1,
-        ease: 'bounce.out',
-      });
+        ease: 'bounce.out'
+      })
     },
-    handleAnimation(anim, type) {
-      this.anim[type] = anim;
+    handleAnimation (anim, type) {
+      this.anim[type] = anim
     },
-    play(type) {
-      this.anim[type].play();
-    },
-  },
-});
+    play (type) {
+      this.anim[type].play()
+    }
+  }
+})
 </script>
 <style>
 .nav {

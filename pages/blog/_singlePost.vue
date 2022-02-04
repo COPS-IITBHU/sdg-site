@@ -28,23 +28,23 @@
   </div>
 </template>
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
-import { getFormattedDate } from '@/helper';
+import { defineComponent } from '@nuxtjs/composition-api'
+import { getFormattedDate } from '@/helper'
 
 export default defineComponent({
-  async asyncData({ $content, params }) {
-    const { singlePost } = params;
-    const post = await $content(`blog`, singlePost).fetch();
+  async asyncData ({ $content, params }) {
+    const { singlePost } = params
+    const post = await $content('blog', singlePost).fetch()
     return {
-      post,
-    };
+      post
+    }
   },
   computed: {
-    date() {
-      return getFormattedDate(this.post.date);
-    },
-  },
-});
+    date () {
+      return getFormattedDate(this.post.date)
+    }
+  }
+})
 </script>
 <style scoped lang="scss">
 .nuxt-content {

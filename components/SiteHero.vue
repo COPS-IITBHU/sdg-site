@@ -29,7 +29,7 @@
   </div>
 </template>
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
+import { defineComponent } from '@nuxtjs/composition-api'
 export default defineComponent({
   name: 'SiteHero',
   props: {
@@ -37,20 +37,20 @@ export default defineComponent({
     subtitle: { type: String, default: '' },
     image: { type: String, default: '' },
     color: { type: String, default: '#469af0' },
-    theme: { type: String, default: '' },
+    theme: { type: String, default: '' }
   },
   computed: {
-    responsiveImage() {
-      return { source: `@/assets${this.image}`, srcSet: '' };
+    responsiveImage () {
+      return { source: `@/assets${this.image}`, srcSet: '' }
     },
-    computedTheme() {
+    computedTheme () {
       if (this.theme === '') {
-        return 'dark';
+        return 'dark'
       }
-      return this.theme || 'mist';
-    },
-  },
-});
+      return this.theme || 'mist'
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

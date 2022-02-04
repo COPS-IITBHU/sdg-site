@@ -1,4 +1,4 @@
-import typo from 'windicss/plugin/typography';
+import typo from 'windicss/plugin/typography'
 
 export default {
   darkMode: 'class',
@@ -12,8 +12,8 @@ export default {
         '1/10': '10%',
         '2/5': '40%',
         '3/5': '60%',
-        '4/5': '80%',
-      },
-    },
-  },
-};
+        '4/5': '80%'
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ export default {
   target: 'static',
   loading: {
     color: '#23CFFF',
-    height: '3px',
+    height: '3px'
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -15,8 +15,8 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.',
-      },
+          'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
@@ -25,9 +25,9 @@ export default {
       {
         rel: 'apple-touch-icon',
         size: '180x180',
-        href: '/apple-touch-icon.png',
-      },
-    ],
+        href: '/apple-touch-icon.png'
+      }
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -52,8 +52,8 @@ export default {
       'unplugin-icons/nuxt',
       {
         /* options */
-      },
-    ],
+      }
+    ]
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -65,7 +65,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
+    '@nuxtjs/robots'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -73,7 +73,7 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
-    liveEdit: false,
+    liveEdit: false
   },
 
   /*
@@ -82,7 +82,7 @@ export default {
    */
   build: {
     extractCSS: {
-      ignoreOrder: true,
+      ignoreOrder: true
     },
     optimization: {
       splitChunks: {
@@ -91,42 +91,42 @@ export default {
             name: 'styles',
             test: /\.(css|vue|scss)$/,
             chunks: 'all',
-            enforce: true,
-          },
-        },
-      },
-    },
+            enforce: true
+          }
+        }
+      }
+    }
   },
   sitemap: {
-    hostname: 'https://sdg.copsiitbhu.co.in',
+    hostname: 'https://sdg.copsiitbhu.co.in'
   },
   generate: {
     crawler: true,
     fallback: true,
-    interval: 2000,
+    interval: 2000
   },
   robots: {
     UserAgent: '*',
-    Allow: '*',
+    Allow: '*'
   },
   windicss: {
     scan: {
       dirs: ['./'],
-      exclude: ['node_modules', 'dist', '.git', '.github', '.nuxt'],
+      exclude: ['node_modules', 'dist', '.git', '.github', '.nuxt']
     },
     preflight: {
       alias: {
         // add nuxt aliases
         'nuxt-link': 'a',
         // @nuxt/image module
-        'nuxt-img': 'img',
-      },
-    },
+        'nuxt-img': 'img'
+      }
+    }
   },
   gsap: {
     extraPlugins: {
       scrollTo: true,
-      scrollTrigger: true,
-    },
-  },
-};
+      scrollTrigger: true
+    }
+  }
+}
