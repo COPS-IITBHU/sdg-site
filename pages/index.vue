@@ -17,6 +17,8 @@
         <ul
           v-show="isListVisible"
           ref="jsDots"
+          name="fade"
+          tag="ul"
           class="
             nav-dots
             fixed
@@ -40,16 +42,18 @@
           </li>
         </ul>
       </transition>
-      <section class="projectCards flex flex-col justify-evenly items-center">
-        <div
-          v-for="project in projects"
-          :key="project.name"
-          ref="sections"
-          class="section min-h-screen"
-        >
-          <HomeProject-card :project="project" />
-        </div>
-      </section>
+      <transition name="fade">
+        <section v-if="!$fetchState.pending" class="projectCards flex flex-col justify-evenly items-center">
+          <div
+            v-for="project in projects"
+            :key="project.name"
+            ref="sections"
+            class="section min-h-screen"
+          >
+            <HomeProject-card :project="project" />
+          </div>
+        </section>
+      </transition>
     </section>
   </div>
 </template>
@@ -64,22 +68,21 @@ export default defineComponent({
       projects: null
     }
   },
+  async fetch () {
+    const fetchedData = await this.$content('index/projectData').fetch()
+    this.projects = fetchedData.projects
+  },
   head: {
     title: 'Landing'
   },
   mounted () {
     window.addEventListener('scroll', this.setDotStatus)
     window.addEventListener('resize', this.displayList)
-    this.fetchProjects()
   },
   unmounted () {
     window.removeEventListener('scroll', this.setDotStatus)
   },
   methods: {
-    async fetchProjects () {
-      const fetchedData = await this.$content('index/projectData').fetch()
-      this.projects = fetchedData.projects
-    },
     displayList () {
       if (window.innerWidth < 1000) {
         this.isListVisible = false
