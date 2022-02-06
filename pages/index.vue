@@ -6,17 +6,13 @@
     <section id="projectList w-full flex flex-col justify-evenly">
       <div class="info relative my-12 w-3/5">
         <h2 class="text-5xl my-4 text-center">Projects</h2>
-        <p class="text-lg text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          facere suscipit repellat eum facilis beatae quia odit commodi
-          laudantium impedit? Dolores dolorem, saepe quibusdam assumenda
-          perspiciatis ipsam ullam a repellat!
-        </p>
       </div>
       <transition name="fade">
         <ul
           v-show="isListVisible"
           ref="jsDots"
+          name="fade"
+          tag="ul"
           class="
             nav-dots
             fixed
@@ -40,16 +36,18 @@
           </li>
         </ul>
       </transition>
-      <section class="projectCards flex flex-col justify-evenly items-center">
-        <div
-          v-for="project in projects"
-          :key="project.name"
-          ref="sections"
-          class="section min-h-screen"
-        >
-          <HomeProject-card :project="project" />
-        </div>
-      </section>
+      <transition name="fade">
+        <section v-if="!$fetchState.pending" class="projectCards flex flex-col justify-evenly items-center">
+          <div
+            v-for="project in projects"
+            :key="project.name"
+            ref="sections"
+            class="section min-h-screen"
+          >
+            <HomeProject-card :project="project" />
+          </div>
+        </section>
+      </transition>
     </section>
   </div>
 </template>
@@ -64,22 +62,21 @@ export default defineComponent({
       projects: null
     }
   },
+  async fetch () {
+    const fetchedData = await this.$content('index/projectData').fetch()
+    this.projects = fetchedData.projects
+  },
   head: {
     title: 'Landing'
   },
   mounted () {
     window.addEventListener('scroll', this.setDotStatus)
     window.addEventListener('resize', this.displayList)
-    this.fetchProjects()
   },
   unmounted () {
     window.removeEventListener('scroll', this.setDotStatus)
   },
   methods: {
-    async fetchProjects () {
-      const fetchedData = await this.$content('index/projectData').fetch()
-      this.projects = fetchedData.projects
-    },
     displayList () {
       if (window.innerWidth < 1000) {
         this.isListVisible = false

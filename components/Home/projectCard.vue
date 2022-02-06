@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper relative my-4">
-    <div class="box relative w-full min-h-lg flex justify-center items-center">
+  <div class="wrapper relative my-4 rounded-xl">
+    <div class="box relative w-full min-h-lg flex justify-center items-center rounded-3xl">
       <div
         class="
           w-half
@@ -23,10 +23,11 @@
           md:flex-row
         "
       >
-        <img
-          class="w-full lg:w-half min-w-250px object-cover md:h-lg"
+        <nuxt-img
+          class="w-full lg:w-half min-w-250px object-cover md:h-lg rounded-t-3xl md:rounded-t-none md:rounded-l-3xl"
           :src="imgAddress"
           alt="ProjectImg"
+          loading="lazy"
         />
         <div
           class="
@@ -120,6 +121,7 @@ export default {
 }
 .box::before,
 .box::after {
+  border-radius: 1.5rem;
   background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
 }
 
