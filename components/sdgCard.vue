@@ -11,7 +11,7 @@
         overflow-hidden
       "
     >
-      <img :src="imageUrl" alt="profile" class="w-full h-auto" />
+      <nuxt-img :src="imageUrl" alt="profile" class="w-full h-auto" loading="lazy" />
       <div class="team-content">
         <h3 class="title text-lg font-700">
           {{ name }}

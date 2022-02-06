@@ -6,12 +6,6 @@
     <section id="projectList w-full flex flex-col justify-evenly">
       <div class="info relative my-12 w-3/5">
         <h2 class="text-5xl my-4 text-center">Projects</h2>
-        <p class="text-lg text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          facere suscipit repellat eum facilis beatae quia odit commodi
-          laudantium impedit? Dolores dolorem, saepe quibusdam assumenda
-          perspiciatis ipsam ullam a repellat!
-        </p>
       </div>
       <transition name="fade">
         <ul
