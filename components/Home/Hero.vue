@@ -24,7 +24,7 @@
             Club Of ProgrammerS IIT (BHU), Varanasi</span
           >
           We at Software Development Group are a bunch of designers and developers who aim to
-          encourage the development of technology and innovation in IIT BHU
+          encourage the development of technology and innovation in IIT (BHU)
           campus (and beyond) by learning, sharing knowledge and solving
           problems.
         </p>
