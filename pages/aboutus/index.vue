@@ -21,7 +21,22 @@
       <youtube />
     </div>
     <achievementslogo />
-    <!-- <achievementsCarousel :achievements="achievements"/> -->
+    <carousel3d v-if="!$fetchState.pending">
+      <slide v-for="(slide, i) in slides" :key="i" :index="i">
+        <h1>
+          <b>{{ slide.title }}</b>
+        </h1>
+        <p class="p-10">
+          {{ slide.description }}
+          <br /><a
+            v-if="slide.showlink"
+            style="color: blue"
+            :href="slide.link"
+          >{{ slide.linkdes }}</a
+          >
+        </p>
+      </slide>
+    </carousel3d>
   </div>
 </template>
 
@@ -30,31 +45,28 @@ import Vue from 'vue'
 import aboutuscard from '~/components/about-us/aboutuscard.vue'
 import aboutuslogo from '~/components/about-us/aboutuslogo.vue'
 import achievementslogo from '~/components/about-us/achievementslogo.vue'
-// import achievementsCarousel from '~/components/about-us/achievementsCarousel.vue';
 import youtube from '~/components/about-us/youtube.vue'
+import carousel3d from '~/components/about-us/carousel/carousel-3d.vue'
+import slide from '~/components/about-us/carousel/carousel-slide.vue'
 
 export default Vue.extend({
   components: {
     aboutuscard,
     aboutuslogo,
     youtube,
-    achievementslogo
-    // achievementsCarousel,
+    achievementslogo,
+    carousel3d,
+    slide
+  },
+  data () {
+    return {
+      slides: [] as any
+    }
+  },
+  async fetch () {
+    const fetchedData = await this.$content('achievements').fetch()
+    this.slides = fetchedData
   }
-  //  data() {
-  //   return {
-  //     achievements: [],
-  //   };
-  // },
-  // mounted() {
-  //   this.fetchdata();
-  // },
-  // methods: {
-  //   async fetchdata() {
-  //     const data = await this.$content('achievements').fetch();
-  //     this.achievements = data;
-  //   },
-  // },
 })
 </script>
 
