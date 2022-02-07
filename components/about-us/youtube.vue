@@ -1,10 +1,10 @@
 <template>
-  <section class="container mx-auto my-4">
+  <section class="lg:container mx-auto my-20">
     <div class="video-background">
       <iframe
         :src="videoURL"
         class="wow zoomIn"
-        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/b9pBQMns4lw><img src=https://img.youtube.com/vi/b9pBQMns4lw/maxresdefault.jpg alt='Trailer Club Of ProgrammerS IIT BHU'><span>▶</span></a>"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/xnkg1tSivRU><img src=https://img.youtube.com/vi/xnkg1tSivRU/maxresdefault.jpg alt='Trailer Club Of ProgrammerS IIT BHU'><span>▶</span></a>"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
@@ -19,7 +19,7 @@ import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   setup () {
-    const videoURL = 'https://www.youtube-nocookie.com/embed/b9pBQMns4lw'
+    const videoURL = 'https://www.youtube-nocookie.com/embed/xnkg1tSivRU'
     return {
       videoURL
     }
