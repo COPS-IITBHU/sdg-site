@@ -175,7 +175,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .carousel-3d-slide {
   position: absolute;
   opacity: 0;
@@ -187,7 +187,7 @@ export default {
   border-color: rgba(0, 0, 0, 0.4);
   border-style: solid;
   background-size: cover;
-  background-color: #ccc;
+  @apply bg-gray-100
   display: block;
   margin: 0;
   box-sizing: border-box;

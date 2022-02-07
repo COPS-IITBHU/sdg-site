@@ -71,7 +71,7 @@ export default {
   font-size: 60px;
   height: 60px;
   line-height: 60px;
-  color: #333;
+  color: #fff;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

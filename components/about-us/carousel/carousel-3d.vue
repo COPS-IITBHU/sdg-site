@@ -1,6 +1,6 @@
 <template>
   <div
-    class="carousel-3d-container"
+    class="carousel-3d-container my-10 mx-auto"
     :style="{ height: slideHeight + 'px' }"
   >
     <div
@@ -426,7 +426,6 @@ export default {
   position: relative;
   z-index: 0;
   overflow: hidden;
-  margin: 20px auto;
   box-sizing: border-box;
 }
 
