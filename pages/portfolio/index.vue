@@ -40,10 +40,7 @@
             -mt-10
           "
         >
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus sit
-          vitae pariatur, debitis maiores quisquam deleniti impedit quae dolores
-          voluptatum repellendus explicabo natus, tenetur nostrum
-          exercitationem. Voluptates cupiditate quo reiciendis.
+          Since the inception of COPS in 2015, we have continuously developed the incredible. From kingpins who drive the group to reach greater heights to comrades who constantly pursue, we are a bunch that assimilates knowledge, applies resources, and achieves goals.
         </p>
       </transition>
       <client-only>
@@ -74,8 +71,7 @@
           />
           <span class="text-3xl mt-10 py-10">Developers</span>
           <p class="text-sm mt-10">
-            lorem ipsum dolor sit amet, consectetur adipis, lorem ipsum dolor
-            sit.
+            A team of zealous coders improvising the world as you complete reading this sentence.
           </p>
           <a href="#mem">
             <button
@@ -106,8 +102,7 @@
           />
           <span class="text-3xl mt-10 py-10">Alums</span>
           <p class="text-sm mt-10">
-            lorem ipsum dolor sit amet, consectetur adipis, lorem ipsum dolor
-            sit.
+            They are the building blocks, our mentors, and the very soul of this team.
           </p>
           <a href="#mem">
             <button

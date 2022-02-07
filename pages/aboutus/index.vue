@@ -12,8 +12,9 @@
         text-gray-200
       "
     >
-      "Nulla rhoncus convallis risus sit amet posuere, <br />
-      Integer at porttitor elit."
+      “Any fool can write code that a computer can understand. <br />
+      Good programmers write code that humans can understand.” <br />
+      - Martin Fowler
     </h1>
     <aboutuscard />
     <div class="w-7/10 mx-auto my-140px">
