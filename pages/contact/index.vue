@@ -109,34 +109,78 @@
         Follow us on the following social media handles and stay apprised about
         the latest events and workshops!
       </p>
-      <socialicons :items="items" />
+      <div class="m-10px mt-20px">
+        <ul class="flex flex-row flex-wrap justify-center items-center">
+          <li
+            v-for="item in items"
+            :key="item.name"
+            class="list-none my-0 mx-15px mb-20px"
+          >
+            <a
+              :href="item.url"
+              class="
+            p-13px
+            w-60px
+            h-60px
+            rounded-full
+            flex
+            items-center
+            justify-center
+          "
+              target="_blank"
+            >
+              <span
+                class="iconify"
+                :data-icon="item.icon"
+                :style="item.style"
+                :data-height="item.height"
+                :data-width="item.width"
+              >
+                {{ item.name }}
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
 </template>
 
-<script>
-import Online from '~/components/contact-us/discord/online.vue';
-import Map from '~/components/contact-us/map.vue';
-import Socialicons from '~/components/contact-us/socialicons.vue';
+<script lang="ts">
+import { defineComponent } from '@nuxtjs/composition-api'
+import Online from '~/components/contact-us/discord/online.vue'
+import Map from '~/components/contact-us/map.vue'
 
-export default {
-  components: { Map, Online, Socialicons },
-  data() {
+interface itemsObject {
+  name: string
+  url: string
+  icon: string
+  height: Number
+  width: Number
+  style: {
+    color: string
+  }
+}
+
+export default defineComponent({
+  components: { Map, Online },
+  data () {
     return {
       items: [],
-      serverid: '786971759496790046',
-    };
+      serverid: '786971759496790046'
+    } as {
+      items: itemsObject[],
+      serverid: string
+    }
   },
-  mounted() {
-    this.fetchdata();
+  async fetch () {
+    const data = await this.$content('contacts').fetch()
+    this.items = (data as unknown) as itemsObject[]
   },
-  methods: {
-    async fetchdata() {
-      const data = await this.$content('contacts').fetch();
-      this.items = data;
-    },
-  },
-};
+  head: {
+    title: 'Contact'
+  }
+})
 </script>
 
 <style scoped>
@@ -151,5 +195,15 @@ img {
 }
 #content:hover img {
   transform: scale(1.1);
+}
+
+ul li a {
+  background-color: rgba(255, 255, 255, 0.911);
+  transition: 0.4s;
+}
+ul li a:hover {
+  transform: translate(0, -5px) scale(1.05);
+  background-color: rgba(255, 255, 255, 0.979);
+  box-shadow: 0px 0px 18px rgba(116, 227, 235, 0.959);
 }
 </style>

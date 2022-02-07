@@ -6,65 +6,63 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
-import PostsGrid from '~/components/grids/PostsGrid.vue';
+import { defineComponent } from '@nuxtjs/composition-api'
+import PostsGrid from '~/components/grids/PostsGrid.vue'
 
 export default defineComponent({
   name: 'HomePage',
-  async asyncData({ $content }) {
-    const articles = await $content(`blog`).fetch();
-    return {
-      articles,
-    };
+  components: {
+    PostsGrid
   },
-  data() {
+  async asyncData ({ $content }) {
+    const articles = await $content('blog').fetch()
+    return {
+      articles
+    }
+  },
+  data () {
     return {
       title: 'COPS SDG',
       subtitle: '',
-      featureImage: '/blog/about-hero.jpg',
-    };
+      featureImage: '/blog/about-hero.jpg'
+    }
   },
-  head() {
-    return {
-      title: `Blog`,
-    };
+  head: {
+    title: 'Blogs'
+  },
+  mounted () {
+    this.blogTree()
   },
   methods: {
-    sortByTime(obj) {
+    sortByTime (obj) {
       obj.sort((childObj1, childObj2) => {
-        if (childObj1.date < childObj2.date) return 1;
-        if (childObj1.date > childObj2.date) return -1;
-        return 0;
-      });
+        if (childObj1.date < childObj2.date) { return 1 }
+        if (childObj1.date > childObj2.date) { return -1 }
+        return 0
+      })
       obj.forEach((childObj) => {
-        childObj.subBlogs = this.sortByTime(childObj.subBlogs);
-      });
-      return obj;
+        childObj.subBlogs = this.sortByTime(childObj.subBlogs)
+      })
+      return obj
     },
-    blogTree() {
-      const hashTable = new Map();
-      const posts = this.articles;
-      posts.forEach((blog) =>
+    blogTree () {
+      const hashTable = new Map()
+      const posts = this.articles
+      posts.forEach(blog =>
         hashTable.set(blog.title, { ...blog, subBlogs: [] })
-      );
-      const dataTree = [];
+      )
+      const dataTree = []
       posts.forEach((blog) => {
-        if (blog.parentBlog)
+        if (blog.parentBlog) {
           hashTable
             .get(blog.parentBlog)
-            .subBlogs.push(hashTable.get(blog.title));
-        else dataTree.push(hashTable.get(blog.title));
-      });
-      this.articles = this.sortByTime(dataTree);
-    },
-  },
-  mounted() {
-    this.blogTree();
-  },
-  components: {
-    PostsGrid,
-  },
-});
+            .subBlogs.push(hashTable.get(blog.title))
+        } else { dataTree.push(hashTable.get(blog.title)) }
+      })
+      this.articles = this.sortByTime(dataTree)
+    }
+  }
+})
 </script>
 
 <style>

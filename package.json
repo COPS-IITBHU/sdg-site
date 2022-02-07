@@ -8,8 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate -m",
     "lint": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
-    "lint:fix": "pnpm lint --fix",
-    "format": "prettier --write ./**/*.{js,vue,ts,json} --ignore-path ./.gitignore",
+    "format": "eslint --ext .js,.vue,.ts --ignore-path .gitignore . --fix",
     "postinstall": "is-ci || husky install"
   },
   "dependencies": {
@@ -24,7 +23,8 @@
     "gsap": "^3.7.1",
     "nuxt": "^2.14.6",
     "opti-image": "^0.10.0",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "vue-lottie": "^0.2.1"
   },
   "devDependencies": {
     "@iconify/json": "^1.1.418",

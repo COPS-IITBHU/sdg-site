@@ -34,6 +34,7 @@ specifiers:
   sass: ^1.35.2
   sass-loader: ^10.1.1
   unplugin-icons: ^0.12.16
+  vue-lottie: ^0.2.1
 
 dependencies:
   '@nuxt/content': 1.14.0_sass@1.39.2
@@ -48,6 +49,7 @@ dependencies:
   nuxt: 2.15.8
   opti-image: 0.10.0
   particles.js: 2.0.0
+  vue-lottie: 0.2.1
 
 devDependencies:
   '@iconify/json': 1.1.422
@@ -6781,6 +6783,10 @@ packages:
     resolution: {integrity: sha512-vM6rUVCVUJJt33bnmHiZEvr7wPT78ztX7rojL+LW51bHtLh6HTjx84LA5W4+oa6aKEJA7jJu5LR6vQRBpA5DVg==}
     dev: false
 
+  /lottie-web/5.8.1:
+    resolution: {integrity: sha512-9gIizWADlaHC2GCt+D+yNpk5l2clZQFqnVWWIVdY0LnxC/uLa39dYltAe3fcmC/hrZ2IUQ8dLlY0O934Npjs7Q==}
+    dev: false
+
   /lower-case/1.1.4:
     resolution: {integrity: sha1-miyr0bno4K6ZOkv31YdcOcQujqw=}
     dev: false
@@ -10914,6 +10920,14 @@ packages:
       vue-style-loader: 4.1.3
       vue-template-compiler: 2.6.14
       webpack: 4.46.0
+    dev: false
+
+  /vue-lottie/0.2.1:
+    resolution: {integrity: sha512-zInUX69Ij8MhVR3XArpu4PqqBoufwKxS5UMutWCPm59VUaB5H6GtnaIzf9M+l6aYU+Kr8gF/W9dzWLgRuU6V+Q==}
+    peerDependencies:
+      vue: ^2.5.16
+    dependencies:
+      lottie-web: 5.8.1
     dev: false
 
   /vue-meta/2.4.0:

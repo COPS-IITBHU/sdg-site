@@ -1,5 +1,5 @@
 <template>
-  <div class="m-0 p-0">
+  <div>
     <div class="flex justify-center h-0">
       <section
         class="
@@ -10,19 +10,23 @@
           z-2
           top-48
           max-w-lg
+          md:max-w-2xl
         "
       >
         <h1
-          data-text="COPS"
-          class="text-6xl sm:text-7xl md:text-9xl antialiased py-4 text-center"
+          data-text="SDG"
+          class="text-6xl sm:text-7xl md:text-9xl xl:text-11xl antialiased py-4 text-center"
         >
-          COPS
+          SDG
         </h1>
-        <p class="antialiased text-shadow-md text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo
-          ipsa rerum molestiae, hic nobis nulla quae iusto. In dolorum cumque
-          magnam nobis illo, eum odio consequuntur excepturi praesentium
-          delectus?
+        <p class="antialiased text-shadow-md text-center px-4 text-lg lg:text-xl">
+          <span class="font-bold text-xl md:text-3xl mb-8 block">
+            Club Of ProgrammerS IIT (BHU), Varanasi</span
+          >
+          We at Software Development Group are a bunch of designers and developers who aim to
+          encourage the development of technology and innovation in IIT BHU
+          campus (and beyond) by learning, sharing knowledge and solving
+          problems.
         </p>
       </section>
     </div>
@@ -54,7 +58,7 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
       iconRow1: [
         'bi:github',
@@ -84,7 +88,7 @@ export default {
         'ci:facebook',
         'fluent:people-team-16-regular',
         'fa-solid:quidditch',
-        'fluent:food-pizza-20-filled',
+        'fluent:food-pizza-20-filled'
       ],
       iconRow2: [
         'akar-icons:clock',
@@ -114,11 +118,11 @@ export default {
         'bx:bxs-star',
         'bx:bxl-telegram',
         'ant-design:html5-filled',
-        'majesticons:ghost',
-      ],
-    };
-  },
-};
+        'majesticons:ghost'
+      ]
+    }
+  }
+}
 </script>
 <style scoped>
 .row div {

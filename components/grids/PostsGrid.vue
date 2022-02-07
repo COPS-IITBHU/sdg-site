@@ -10,36 +10,36 @@
         :image="item.featureImage"
         :author="item.author"
         :date="item.date"
-        :subBlogs="item.subBlogs"
+        :sub-blogs="item.subBlogs"
       />
     </div>
   </div>
 </template>
 
 <script>
-import PostCard from '~/components/cards/PostCard';
+import PostCard from '~/components/cards/PostCard'
 export default {
   name: 'PostsGrid',
   components: { PostCard },
   props: {
     resources: {
       type: Array,
-      default() {
-        return [];
-      },
+      default () {
+        return []
+      }
     },
     perRow: { type: Number, default: 3 },
     number: { type: Number, default: 0 },
     order: { type: String, default: 'DESC' },
     category: {
       type: Array,
-      default() {
-        return [];
-      },
+      default () {
+        return []
+      }
     },
-    exclude: { type: String, default: '' },
-  },
-};
+    exclude: { type: String, default: '' }
+  }
+}
 </script>
 
 <style scoped>

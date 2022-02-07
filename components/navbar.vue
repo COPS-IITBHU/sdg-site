@@ -71,7 +71,7 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
       openTimeline: null,
       isActive: false,
@@ -81,41 +81,41 @@ export default {
         { name: 'Blogs', url: '/blog' },
         { name: 'Portfolio', url: '/portfolio' },
         { name: 'About Us', url: '/aboutus' },
-        { name: 'Contact Us', url: '/contact' },
-      ],
-    };
+        { name: 'Contact Us', url: '/contact' }
+      ]
+    }
   },
-  mounted() {
-    this.configNavbar();
+  mounted () {
+    this.configNavbar()
   },
   methods: {
-    configNavbar() {
+    configNavbar () {
       this.openTimeline = this.$gsap
         .timeline({ paused: true })
         .to('.line', { duration: 0.7, stroke: '#ece9e9', stagger: 0.1 })
         .to('.navBg', {
           duration: 0.8,
           height: '100vh',
-          stagger: 0.3,
+          stagger: 0.3
         })
         .from(
           '.list_item',
           { duration: 0.4, y: 20, stagger: 0.3, opacity: 0 },
           2
-        );
+        )
     },
-    async openNavbar() {
-      this.isActive = true;
-      this.isOpen = true;
-      await this.openTimeline.play();
+    async openNavbar () {
+      this.isActive = true
+      this.isOpen = true
+      await this.openTimeline.play()
     },
-    async closeNavbar() {
-      this.isActive = false;
-      await this.openTimeline.reverse();
-      this.isOpen = false;
-    },
-  },
-};
+    async closeNavbar () {
+      this.isActive = false
+      await this.openTimeline.reverse()
+      this.isOpen = false
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -158,7 +158,8 @@ export default {
 /* NAVBAR STYLING */
 .navBg {
   width: 25%;
-  background-color: #2c2525;
+  background-color: #111;
+  border-bottom: 5px solid #56eefd;
 }
 
 .list_item {
@@ -174,7 +175,7 @@ export default {
   top: -2px;
   width: 0;
   height: 100%;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #56eefd;
   transition: 0.3s;
 }
 
@@ -191,9 +192,12 @@ export default {
   width: 0;
   top: -2px;
   height: 100%;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #56eefd;
   transition: 0.3s;
   letter-spacing: 15px;
+}
+.list_item:hover {
+  color: #56eefd;
 }
 
 .list_item:hover:after {

@@ -9,11 +9,11 @@
         <strong>Author:</strong> {{ post.author }}
       </span>
       <span v-if="post.date" class="date-wrapper">
-        <strong>Published on:</strong> {{ this.date }}
+        <strong>Published on:</strong> {{ date }}
       </span>
     </site-hero>
     <main-section :one-column-constrained="true">
-      <template v-slot:default>
+      <template #default>
         <div class="post-wrapper">
           <nuxt-content class="mt-4 prose max-w-none" :document="post" />
           <div class="other-posts">
@@ -28,23 +28,23 @@
   </div>
 </template>
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
-import { getFormattedDate } from '@/helper';
+import { defineComponent } from '@nuxtjs/composition-api'
+import { getFormattedDate } from '@/helper'
 
 export default defineComponent({
-  async asyncData({ $content, params }) {
-    const { singlePost } = params;
-    const post = await $content(`blog`, singlePost).fetch();
+  async asyncData ({ $content, params }) {
+    const { singlePost } = params
+    const post = await $content('blog', singlePost).fetch()
     return {
-      post,
-    };
+      post
+    }
   },
   computed: {
-    date() {
-      return getFormattedDate(this.post.date);
-    },
-  },
-});
+    date () {
+      return getFormattedDate(this.post.date)
+    }
+  }
+})
 </script>
 <style scoped lang="scss">
 .nuxt-content {

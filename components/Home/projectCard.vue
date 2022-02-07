@@ -1,6 +1,6 @@
 <template>
-  <div class="wrapper relative my-4">
-    <div class="box relative w-full min-h-lg flex justify-center items-center">
+  <div class="wrapper relative my-4 rounded-xl">
+    <div class="box relative w-full min-h-lg flex justify-center items-center rounded-3xl">
       <div
         class="
           w-half
@@ -23,10 +23,11 @@
           md:flex-row
         "
       >
-        <img
-          class="w-full lg:w-half min-w-250px object-cover md:h-lg"
+        <nuxt-img
+          class="w-full lg:w-half min-w-250px object-cover md:h-lg rounded-t-3xl md:rounded-t-none md:rounded-l-3xl"
           :src="imgAddress"
           alt="ProjectImg"
+          loading="lazy"
         />
         <div
           class="
@@ -42,8 +43,8 @@
         >
           <h2 class="text-3xl font-bold my-4">{{ project.name }}</h2>
           <p>{{ project.desc }}</p>
-          <span v-if="project.tech" class="contentHeading text-xl mt-4"
-            >Technologies Used</span
+          <span v-if="project.tech" class="contentHeading text-xl mt-4">
+            Technologies Used</span
           >
           <ul class="techList list-none">
             <li v-for="tech in project.tech" :key="tech">{{ tech }}</li>
@@ -75,18 +76,18 @@ export default {
   props: {
     project: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
-    imgAddress() {
+    imgAddress () {
       if (this.project.img) {
-        return 'home/' + this.project.img;
+        return 'home/' + this.project.img
       }
-      return 'home/hackalog.png';
-    },
-  },
-};
+      return 'home/hackalog.png'
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -120,6 +121,7 @@ export default {
 }
 .box::before,
 .box::after {
+  border-radius: 1.5rem;
   background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
 }
 

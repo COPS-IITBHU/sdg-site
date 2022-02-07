@@ -15,16 +15,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api';
+import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  setup() {
-    const videoURL = 'https://www.youtube-nocookie.com/embed/b9pBQMns4lw';
+  setup () {
+    const videoURL = 'https://www.youtube-nocookie.com/embed/b9pBQMns4lw'
     return {
-      videoURL,
-    };
-  },
-});
+      videoURL
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>
