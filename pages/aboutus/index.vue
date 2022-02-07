@@ -31,7 +31,7 @@
             v-if="slide.showlink"
             style="color: blue"
             :href="slide.link"
-            >{{ slide.linkdes }}</a
+          >{{ slide.linkdes }}</a
           >
         </p>
       </slide>
@@ -40,13 +40,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import aboutuscard from '~/components/about-us/aboutuscard.vue';
-import aboutuslogo from '~/components/about-us/aboutuslogo.vue';
-import achievementslogo from '~/components/about-us/achievementslogo.vue';
-import youtube from '~/components/about-us/youtube.vue';
-import carousel3d from '~/components/about-us/carousel/carousel-3d.vue';
-import slide from '~/components/about-us/carousel/carousel-slide.vue';
+import Vue from 'vue'
+import aboutuscard from '~/components/about-us/aboutuscard.vue'
+import aboutuslogo from '~/components/about-us/aboutuslogo.vue'
+import achievementslogo from '~/components/about-us/achievementslogo.vue'
+import youtube from '~/components/about-us/youtube.vue'
+import carousel3d from '~/components/about-us/carousel/carousel-3d.vue'
+import slide from '~/components/about-us/carousel/carousel-slide.vue'
 
 export default Vue.extend({
   components: {
@@ -55,18 +55,18 @@ export default Vue.extend({
     youtube,
     achievementslogo,
     carousel3d,
-    slide,
+    slide
   },
-  data() {
+  data () {
     return {
-      slides: [] as any,
-    };
+      slides: [] as any
+    }
   },
-  async fetch() {
-    const fetchedData = await this.$content('achievements').fetch();
-    this.slides = fetchedData;
-  },
-});
+  async fetch () {
+    const fetchedData = await this.$content('achievements').fetch()
+    this.slides = fetchedData
+  }
+})
 </script>
 
 <style scoped>
