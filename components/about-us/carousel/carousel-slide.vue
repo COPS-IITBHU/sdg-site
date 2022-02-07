@@ -182,7 +182,7 @@ export default {
   visibility: hidden;
   overflow: hidden;
   top: 0;
-  border-radius: 1px;
+  border-radius: 0.75rem;
   border-color: #000;
   border-color: rgba(0, 0, 0, 0.4);
   border-style: solid;
