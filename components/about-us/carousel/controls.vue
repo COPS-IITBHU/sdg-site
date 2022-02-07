@@ -3,20 +3,20 @@
     <a
       href="#"
       class="prev"
-      @click.prevent="parent.goPrev()"
       :class="{ disabled: !parent.isPrevPossible }"
       :style="`width: ${width}px; height: ${height}px; line-height: ${height}px;`"
       aria-label="Previous slide"
+      @click.prevent="parent.goPrev()"
     >
       <span v-html="prevHtml"></span>
     </a>
     <a
       href="#"
       class="next"
-      @click.prevent="parent.goNext()"
       :class="{ disabled: !parent.isNextPossible }"
       :style="`width: ${width}px; height: ${height}px; line-height: ${height}px;`"
       aria-label="Next slide"
+      @click.prevent="parent.goNext()"
     >
       <span v-html="nextHtml"></span>
     </a>
@@ -25,31 +25,31 @@
 
 <script>
 export default {
-  name: 'controls',
+  name: 'Controls',
   props: {
     width: {
       type: [String, Number],
-      default: 50,
+      default: 50
     },
     height: {
       type: [String, Number],
-      default: 60,
+      default: 60
     },
     prevHtml: {
       type: String,
-      default: '&lsaquo;',
+      default: '&lsaquo;'
     },
     nextHtml: {
       type: String,
-      default: '&rsaquo;',
-    },
+      default: '&rsaquo;'
+    }
   },
-  data() {
+  data () {
     return {
-      parent: this.$parent,
-    };
-  },
-};
+      parent: this.$parent
+    }
+  }
+}
 </script>
 
 <style scoped>

@@ -22,12 +22,17 @@
     <achievementslogo />
     <carousel3d v-if="!$fetchState.pending">
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
-        <h1><b>{{ slide.title }}</b></h1>
+        <h1>
+          <b>{{ slide.title }}</b>
+        </h1>
         <p class="p-10">
           {{ slide.description }}
-          <br /><a style="color:blue" v-if="slide.showlink" :href="slide.link">{{
-            slide.linkdes
-          }}</a>
+          <br /><a
+            v-if="slide.showlink"
+            style="color: blue"
+            :href="slide.link"
+            >{{ slide.linkdes }}</a
+          >
         </p>
       </slide>
     </carousel3d>
@@ -57,9 +62,9 @@ export default Vue.extend({
       slides: [] as any,
     };
   },
-  async fetch () {
-    const fetchedData = await this.$content('achievements').fetch()
-    this.slides = fetchedData
+  async fetch() {
+    const fetchedData = await this.$content('achievements').fetch();
+    this.slides = fetchedData;
   },
 });
 </script>
