@@ -10,6 +10,7 @@
         quote
         md:text-2xl
         text-gray-200
+        px-2
         italic
       "
     >
@@ -39,10 +40,8 @@
     <achievementslogo />
     <carousel3d v-if="!$fetchState.pending">
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
-        <h1>
-          <b>{{ slide.title }}</b>
-        </h1>
-        <p class="p-10">
+        <h3 class="text-xl font-semibold">{{ slide.title }}</h3>
+        <p class="px-6 my-2">
           {{ slide.description }}
           <br /><a
             v-if="slide.showlink"

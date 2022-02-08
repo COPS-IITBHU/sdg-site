@@ -187,7 +187,7 @@ export default {
   border-color: rgba(0, 0, 0, 0.4);
   border-style: solid;
   background-size: cover;
-  @apply bg-gray-100
+  @apply bg-gray-50
   display: block;
   margin: 0;
   box-sizing: border-box;
