@@ -1,11 +1,11 @@
 <template>
   <div class="header">
-    <div class="flex flex-row justify-center items-center w-full main py-100px">
+    <div class="flex flex-row justify-center items-center w-full main py-24">
       <h1 class="aboutus">About Us</h1>
     </div>
     <div>
       <svg
-        class="waves h-15/100 w-full min-h-100px max-h-150px"
+        class="waves h-15/100 w-full min-h-100 max-h-36"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"
