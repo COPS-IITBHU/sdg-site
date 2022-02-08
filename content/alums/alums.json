@@ -1,74 +1,16 @@
 [
   {
-    "index": 0,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Shivansh Saini",
+    "designation": "DevOps Engineer",
+    "company": "CoinDCX",
+    "link": "https://www.linkedin.com/in/shivanshs9/",
+    "github": "https://github.com/shivanshs9"
   },
   {
-    "index": 1,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
-  },
-  {
-    "index": 2,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
-  },
-  {
-    "index": 3,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
-  },
-  {
-    "index": 4,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
-  },
-  {
-    "index": 5,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
-  },
-  {
-    "index": 6,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
-  },
-  {
-    "index": 7,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
-  },
-  {
-    "index": 8,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Akshay Sharma",
+    "designation": "MS",
+    "company": "Columbia University",
+    "link": "https://www.linkedin.com/in/akshay326/",
+    "github": "https://github.com/akshay326"
   }
 ]

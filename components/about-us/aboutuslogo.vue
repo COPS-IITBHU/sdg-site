@@ -1,11 +1,11 @@
 <template>
   <div class="header">
-    <div class="flex flex-row justify-center items-center w-full main py-100px">
+    <div class="flex flex-row justify-center items-center w-full main py-12">
       <h1 class="aboutus">About Us</h1>
     </div>
     <div>
       <svg
-        class="waves h-15/100 w-full min-h-100px max-h-150px"
+        class="waves w-full min-h-20 max-h-32"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28"
@@ -96,7 +96,7 @@ h1 {
 }
 
 .aboutus {
-  font-size: 15vw;
+  @apply lg:text-12xl text-6xl;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 900;
   background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);

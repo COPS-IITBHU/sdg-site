@@ -56,8 +56,7 @@
               tracking-12px
               cursor-pointer
               text-white text-center
-              py-10px
-              my-20px
+              my-10
             "
             @click="closeNavbar"
             @keydown="closeNavbar"
