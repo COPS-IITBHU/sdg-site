@@ -1,5 +1,5 @@
 <template>
-  <section class="overflow-hidden">
+  <section>
     <div
       class="
         h-auto
@@ -58,7 +58,7 @@
       </client-only>
     </div>
     <main
-      class="w-100% lg:h-55vh bg-hex-101010 drop-shadow-sm z-1 relative p-10"
+      class="w-100% bg-hex-101010 z-1 p-10"
     >
       <div class="nav flex p-10">
         <div class="nav-elements w-1/2 p-8 drop-shadow-3xl">
@@ -73,155 +73,112 @@
           <p class="text-sm mt-10">
             A team of zealous coders improvising the world as you complete reading this sentence.
           </p>
-          <a href="#mem">
-            <button
-              class="
-                btn
-                w-30
-                p-2
-                mt-10
-                border
-                rounded-lg
-                hover:bg-hex-fff hover:text-black
-              "
-              @click="showSdg()"
-            >
-              View Team
-            </button>
-          </a>
+          <button
+            class="
+              btn
+              w-30
+              p-2
+              mt-10
+              border
+              rounded-lg
+              hover:bg-hex-fff hover:text-black
+            "
+            @click="showSdg()"
+          >
+            View Team
+          </button>
         </div>
         <div class="nav-elements w-50vw p-8 -mt-20">
           <lottie
             :width="250"
             :height="250"
-            :options="lottieOptions.second"
+            :options="lottieOptions.sophies"
             class="lottie"
             @mouseover="play"
             @focus="play"
-            @animCreated="handleAnimation($event, 'secondAnim')"
+            @animCreated="handleAnimation($event, 'sophiesAnim')"
           />
           <span class="text-3xl mt-10 py-10">Alums</span>
           <p class="text-sm mt-10">
             They are the building blocks, our mentors, and the very soul of this team.
           </p>
-          <a href="#mem">
-            <button
-              href="#mem"
-              class="
-                btn
-                w-30
-                p-2
-                mt-10
-                border
-                font-400
-                rounded-lg
-                hover:bg-hex-fff hover:text-black
-              "
-              @click="showAlums()"
+          <button
+            class="
+              btn
+              w-30
+              p-2
+              mt-10
+              border
+              font-400
+              rounded-lg
+              hover:bg-hex-fff hover:text-black
+            "
+            @click="showAlums()"
+          >
+            View Team
+          </button>
+        </div>
+      </div>
+      <section v-if="showCard && !showAlum">
+        <div v-for="(value, header) in members" :key="header" class="text-center px-4 mx-auto my-4">
+          <h2
+            class="
+              text-white text-center text-4xl
+              md:text-4xl
+              lg:text-6xl
+            "
+          >
+            {{ header }}
+          </h2>
+          <div class="line"></div>
+          <ul class="flex flex-row flex-wrap mx-auto list-none justify-center">
+            <li
+              v-for="person in value"
+              :key="person.github"
             >
-              View Team
-            </button>
-          </a>
-        </div>
-      </div>
-      <div v-if="showCard && !showAlum" class="text-center p-20">
-        <h2
-          class="
-            text-white text-center text-4xl
-            md:text-4xl
-            lg:text-6xl
-            m-auto
-            -mx-20
-          "
-        >
-          Third Yearites
-          <div class="line"></div>
-        </h2>
+              <transition appear @before-enter="beforeEnter" @enter="enter">
+                <sdgCard
+                  v-show="showCard"
+                  :name="person.name"
 
-        <div
-          v-for="thirdYearite in thirdYearites"
-          id="mem"
-          :key="thirdYearite"
-          class="m-auto mt-20 -mx-25 md:m-auto lg:m-auto"
-        >
-          <transition appear @before-enter="beforeEnter" @enter="enter">
-            <sdgCard
-              v-show="showCard"
-              :name="thirdYearite.name"
-              :title="thirdYearite.title"
-              :social-media-link="thirdYearite.link"
-              :github-link="thirdYearite.github"
-              :image-url="`${thirdYearite.github}.png`"
-              class="w-90vw m-auto flex md:block lg:block mt-20"
-            />
-          </transition>
+                  :title="person.title"
+                  :social-media-link="person.link"
+                  :github-link="person.github"
+                  :image-url="`${person.github}.png`"
+                />
+              </transition>
+            </li>
+          </ul>
         </div>
-      </div>
+      </section>
 
-      <div v-if="showCard && !showAlum" class="text-center p-20">
-        <hr class="-mx-20 md:-mx-10 lg:-mx-0 m-auto w-80vw mt-30" />
+      <!-- Alums -->
+      <section v-if="showAlum && !showCard" class="text-center p-20">
         <h2
-          class="
-            text-white text-center text-4xl
-            md:text-4xl
-            lg:text-6xl
-            m-auto
-            -mx-20
-            mt-20
-          "
-        >
-          Second Yearites
-          <div class="line"></div>
-        </h2>
-
-        <div
-          v-for="secondYearite in secondYearites"
-          id="mem"
-          :key="secondYearite"
-          class="m-auto mt-20 -mx-25 md:m-auto lg:m-auto"
-        >
-          <transition appear @before-enter="beforeEnter" @enter="enter">
-            <sdgCard
-              v-show="showCard"
-              :name="secondYearite.name"
-              :title="secondYearite.title"
-              :social-media-link="secondYearite.link"
-              :github-link="secondYearite.github"
-              :image-url="`${secondYearite.github}.png`"
-              class="w-90vw m-auto flex md:block lg:block mt-20"
-            />
-          </transition>
-        </div>
-      </div>
-      <div class="text-center p-20">
-        <h2
-          v-if="showAlum && !showCard"
           class="text-white text-center text-3xl md:text-4xl lg:text-6xl"
         >
           ALUMNI
-
-          <div class="line"></div>
         </h2>
-        <div
-          v-for="alum in alums"
-          id="mem"
-          :key="alum"
-          class="m-auto mt-20 -mx-20 md:m-auto lg:mx-auto"
-        >
-          <transition appear @before-enter="beforeEnter" @enter="enter">
-            <sdgCard
-              v-show="showAlum"
-              :name="alum.name"
-              :title="alum.designation"
-              :company="alum.company"
-              :social-media-link="alum.link"
-              :github-link="alum.github"
-              :image-url="`${alum.github}.png`"
-              class="w-90vw m-auto flex md:block lg:block mt-20"
-            />
-          </transition>
-        </div>
-      </div>
+        <div class="line"></div>
+        <ul class="flex flex-row flex-wrap mx-auto list-none justify-center">
+          <li
+            v-for="person in alums"
+            :key="person.name"
+          >
+            <transition appear @before-enter="beforeEnter" @enter="enter">
+              <sdgCard
+                v-show="showAlum"
+                :name="person.name"
+                :company="person.company"
+                :title="person.designation"
+                :social-media-link="person.link"
+                :github-link="person.github"
+                :image-url="`${person.github}.png`"
+              />
+            </transition>
+          </li>
+        </ul>
+      </section>
     </main>
   </section>
 </template>
@@ -237,29 +194,43 @@ export default defineComponent({
   data () {
     return {
       alums: [],
-      thirdYearites: [],
-      secondYearites: [],
+      members: {
+        Juniors: [],
+        Sophomores: [],
+        Seniors: []
+      },
       showCard: false,
       showAlum: false,
       anim: {
         firstAnim: null,
-        secondAnim: null
+        sophiesAnim: null
       },
       lottieOptions: {
         first: { animationData: devAnimationData.default },
-        second: { animationData: alumniAnimationData.default }
+        sophies: { animationData: alumniAnimationData.default }
       }
     }
   },
   async fetch () {
+    let currentYear = new Date().getFullYear()
+    const currentMonth = new Date().getMonth()
+
+    if (currentMonth < 7) {
+      currentYear -= 1
+    }
+
     try {
-      this.thirdYearites = await this.$content('members')
-        .where({ year: 3 })
-        .fetch()
-      this.secondYearites = await this.$content('members')
-        .where({ year: 2 })
-        .fetch()
-      this.alums = await this.$content('alums').fetch()
+      const [seniors, juniors, sophies, alums] = await Promise.all([
+        this.$content('members').where({ year: { $lte: currentYear - 3 } }).fetch(),
+        this.$content('members').where({ year: currentYear - 2 }).fetch(),
+        this.$content('members').where({ year: currentYear - 1 }).fetch(),
+        this.$content('alums').fetch()
+      ])
+
+      this.members.Seniors = seniors
+      this.members.Juniors = juniors
+      this.members.Sophomores = sophies
+      this.alums = alums
     } catch (e) {
       throw new Error('Failed to fetch data')
     }
