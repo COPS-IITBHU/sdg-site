@@ -4,7 +4,7 @@ date: 2021-06-15T11:51:59.091Z
 description: 'The second week moves onto some advanced topics development continuing with our previous tracks.'
 parentBlog: CSOC'21 Dev Frontend
 author: COPS SDG
-featureImage: /blog/FRONTEND.png
+featureImage: /blog/FRONTEND.webp
 ---
 
 # Week 2

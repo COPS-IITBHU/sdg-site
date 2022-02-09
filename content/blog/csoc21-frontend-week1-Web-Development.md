@@ -4,7 +4,7 @@ date: 2021-06-07T11:51:59.091Z
 description: 'Web development is a basic skill that is often said as a good start to the development field.'
 parentBlog: CSOC'21 Dev Frontend Week 1
 author: COPS SDG
-featureImage: /blog/WEB.png
+featureImage: /blog/WEB.webp
 ---
 
 # Web Development

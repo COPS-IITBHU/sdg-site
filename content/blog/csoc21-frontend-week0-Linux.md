@@ -4,7 +4,7 @@ date: 2021-05-30T11:51:59.091Z
 description: 'Linux has become the de facto OS of programmers worldwide, and so you all must get comfortable with it.'
 parentBlog: CSOC'21 Dev Frontend Week 0
 author: COPS SDG
-featureImage: /blog/linux-logo.jpg
+featureImage: /blog/linux-logo.webp
 ---
 
 # Linux

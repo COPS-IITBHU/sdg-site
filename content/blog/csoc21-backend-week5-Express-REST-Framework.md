@@ -6,7 +6,7 @@ subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 5
 author: COPS SDG
-featureImage: /blog/Nodejs.jpg
+featureImage: /blog/Nodejs.webp
 ---
 
 # Express

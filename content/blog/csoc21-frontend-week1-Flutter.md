@@ -4,7 +4,7 @@ date: 2021-06-07T11:51:59.091Z
 description: 'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.'
 parentBlog: CSOC'21 Dev Frontend Week 1
 author: COPS SDG
-featureImage: /blog/Flutter.jpg
+featureImage: /blog/Flutter.webp
 ---
 
 # Flutter

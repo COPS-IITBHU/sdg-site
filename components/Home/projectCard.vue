@@ -84,7 +84,7 @@ export default {
       if (this.project.img) {
         return 'home/' + this.project.img
       }
-      return 'home/hackalog.png'
+      return 'home/hackalog.webp'
     }
   }
 }
