@@ -23,14 +23,18 @@
         <about-us-card :index="idx" :heading="con.heading" :image="con.image" :text="con.text" />
         <nuxt-img
           v-if="!(idx & 1) && (idx != content.length - 1)"
-          src="/aboutus/4.png"
+          src="/aboutus/4.webp"
+          height="495"
+          width="1263"
           class="<lg:(hidden) w-3/5 mx-auto my-0"
           alt="arrow"
         />
 
         <nuxt-img
           v-if="(idx & 1) && (idx != content.length - 1)"
-          src="/aboutus/4_2.png"
+          src="/aboutus/4_2.webp"
+          height="495"
+          width="1263"
           class="<lg:(hidden) w-3/5 mx-auto my-0"
           alt="arrow"
         />
@@ -79,7 +83,7 @@ export default defineComponent({
       content: [
         {
           heading: 'WHAT IS SDG?',
-          image: '/aboutus/1.jpeg',
+          image: '/aboutus/1.webp',
           text: `One of the prominent pillars of COPS, IITBHU is SDG. With the
           increasing percentage of the world's population possessing an
           innovative and feature phone, the software has influenced many lives,
@@ -92,7 +96,7 @@ export default defineComponent({
         },
         {
           heading: 'WHAT WE DO?',
-          image: '/aboutus/2.jpeg',
+          image: '/aboutus/2.webp',
           text: `Whether Mobile Development, Desktop Development, Web Development, Game
           Development, or Cloud Development, we manufacture all units here!
           Along the lines of development, we enjoy discussions and
@@ -104,7 +108,7 @@ export default defineComponent({
         },
         {
           heading: 'OUR AREAS OF INTEREST',
-          image: '/aboutus/3.jpeg',
+          image: '/aboutus/3.webp',
           text: `Our motto is constantly learning and revamping. Hackalog, our very own
           portal for maintaining logs of our Hackathon, helps us archive
           hackathon details and leaderboards. Lite Hai, our institute's app, is
