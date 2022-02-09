@@ -28,6 +28,7 @@
           width="1263"
           class="<lg:(hidden) w-3/5 mx-auto my-0"
           alt="arrow"
+          loading="lazy"
         />
 
         <nuxt-img
@@ -37,6 +38,7 @@
           width="1263"
           class="<lg:(hidden) w-3/5 mx-auto my-0"
           alt="arrow"
+          loading="lazy"
         />
       </figure>
     </section>
@@ -51,6 +53,7 @@
             v-if="slide.showlink"
             style="color: blue"
             :href="slide.link"
+            target="_blank"
           >{{ slide.linkdes }}</a
           >
         </p>

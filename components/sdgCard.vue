@@ -19,6 +19,7 @@
         <li class="inline-block">
           <a
             aria-label="linkedin"
+            target="_blank"
             :href="socialMediaLink"
             class="
               iconify
@@ -41,6 +42,7 @@
         </li>
         <li class="inline-block">
           <a
+            target="_blank"
             aria-label="github"
             :href="githubLink"
             class="
