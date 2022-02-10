@@ -38,8 +38,8 @@
       <ul
         v-show="isOpen"
         class="
-          routeList
           transform
+          w-max
           -translate-y-half -translate-x-half
           fixed
           z-10
@@ -167,44 +167,33 @@ export default {
 }
 
 .list_item {
-  font-size: 35px;
+  @apply text-2xl md:text-3xl lg:text-4xl;
   font-family: 'Montserrat', sans-serif;
 }
 
-.list_item:before {
+.list_item:before, .list_item::after {
   content: ' ';
   display: block;
   position: absolute;
-  right: 0;
-  top: -2px;
   width: 0;
+  top: 2px;
   height: 100%;
   border-bottom: 2px solid #56eefd;
   transition: 0.3s;
 }
-
-.list_item:hover:before {
-  width: 50%;
+.list_item:before {
+  right: 0;
 }
 
 .list_item:after {
-  content: ' ';
-  display: block;
-  position: absolute;
   bottom: 0;
-  left: 0;
-  width: 0;
-  top: -2px;
-  height: 100%;
-  border-bottom: 2px solid #56eefd;
-  transition: 0.3s;
-  letter-spacing: 15px;
 }
 .list_item:hover {
   color: #56eefd;
 }
 
-.list_item:hover:after {
+.list_item:hover:before, .list_item:hover:after {
   width: 50%;
 }
+
 </style>
