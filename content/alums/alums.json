@@ -12,5 +12,61 @@
     "company": "Columbia University",
     "link": "https://www.linkedin.com/in/akshay326/",
     "github": "https://github.com/akshay326"
+  },
+  {
+    "name": "Jogendra Kumar",
+    "designation": "iOS/Backend Engineer",
+    "company": "Fynch Smart Mobility",
+    "link": "https://www.linkedin.com/in/jogendrasingh24/",
+    "github": "https://github.com/jogendra"
+  },
+  {
+    "name": "Yash Jipkate",
+    "designation": "Technologist",
+    "company": "LG Ads",
+    "github": "https://github.com/YashJipkate",
+    "link": "https://www.linkedin.com/in/yashjipkate/"
+  },
+  {
+    "name": "Vaibhav Dixit",
+    "company": "Julia Computing",
+    "designation": "Software Engineer",
+    "github": "https://github.com/Vaibhavdixit02",
+    "link": "https://www.linkedin.com/in/vaibhav-dixit-0a9739156/"
+  },
+  {
+    "name": "Harsh Rangwani",
+    "company": "IISc",
+    "designation": "Ph.D. Student",
+    "github": "https://github.com/rangwani-harsh",
+    "link": "https://www.linkedin.com/in/harsh-rangwani/"
+  },
+  {
+    "name": "Abhinav Singh",
+    "company": "Harness",
+    "designation": "Senior Software Engineer",
+    "github": "https://github.com/abhinavcode",
+    "link": "https://www.linkedin.com/in/abhinavsingh996/"
+  },
+  {
+    "name": "Amritansh Singhal",
+    "company": "Cohesity",
+    "designation": "Research Engineer",
+    "github": "https://github.com/Eerie16",
+    "link": "https://www.linkedin.com/in/amritansh-singhal-f138/"
+  },
+  {
+    "name": "Dipesh Kumar",
+    "company": "Microsoft",
+    "designation": "Software Engineer",
+    "github": "https://github.com/pegasus-lynx",
+    "link": "https://www.linkedin.com/in/dipeshkr/"
+  },
+  {
+    "name": "Tawrun Vankineeni",
+    "company": "Cisco",
+    "designation": "Software Engineer",
+    "github": "https://github.com/VANKINEENITAWRUN",
+    "link": "https://www.linkedin.com/in/vankineenitawrun/"
   }
 ]
