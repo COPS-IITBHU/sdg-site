@@ -19,6 +19,7 @@
         <li class="inline-block">
           <a
             aria-label="linkedin"
+            target="_blank"
             :href="socialMediaLink"
             class="
               iconify
@@ -32,6 +33,7 @@
               rounded-full
               hover:bg-hex-006192 hover:border-hex-006192
             "
+            rel="noreferrer"
           >
             <span
               class="iconify m-auto text-xl mt-1"
@@ -41,6 +43,7 @@
         </li>
         <li class="inline-block">
           <a
+            target="_blank"
             aria-label="github"
             :href="githubLink"
             class="
@@ -55,6 +58,7 @@
               rounded-full
               hover:bg-gray-900 hover:border-gray-900
             "
+            rel="noreferrer"
           >
             <span
               class="iconify m-auto text-xl mt-1"

@@ -13,6 +13,8 @@
     >
       <nuxt-img
         :src="image"
+        height="851"
+        width="1280"
         class="rounded-full border-light-100 border-8 object-cover"
         :alt="heading"
         loading="lazy"

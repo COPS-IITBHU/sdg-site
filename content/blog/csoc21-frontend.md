@@ -4,7 +4,7 @@ date: 2021-05-30T11:51:59.091Z
 description: "Welcome to CSoC'21 Frontend Development! Here's all the resources and tasks you need to know, complete, and focus on for every week."
 display: True
 author: COPS SDG
-featureImage: /blog/FRONTEND.png
+featureImage: /blog/FRONTEND.webp
 ---
 
 Welcome to CSoC'21 Dev! Here's all the resources and tasks you need to know, complete, and focus on for every week.

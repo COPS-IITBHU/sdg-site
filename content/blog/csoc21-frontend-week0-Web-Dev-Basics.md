@@ -4,7 +4,7 @@ date: 2021-05-30T11:51:59.091Z
 description: 'In this task you have to create a static portfolio page, using basic web development tools(HTML, CSS & Javascript).'
 parentBlog: CSOC'21 Dev Frontend Week 0
 author: COPS SDG
-featureImage: /blog/web dev basic.png
+featureImage: /blog/web dev basic.webp
 ---
 
 # Web Dev Basics

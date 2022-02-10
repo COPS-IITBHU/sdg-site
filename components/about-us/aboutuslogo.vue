@@ -34,12 +34,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
-
-export default defineComponent({})
-</script>
-
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
 
@@ -99,7 +93,7 @@ h1 {
   @apply lg:text-12xl text-6xl;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 900;
-  background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+  background: url('/aboutus/victim-collage.webp');
   background-size: 40%;
   background-position: 50% 50%;
   -webkit-background-clip: text;

@@ -83,6 +83,7 @@
               rounded-lg
               hover:bg-hex-fff hover:text-black
             "
+            aria-label="view-team"
             @click="showSdg()"
           >
             View Team
@@ -113,6 +114,7 @@
               rounded-lg
               hover:bg-hex-fff hover:text-black
             "
+            aria-label="view-alums"
             @click="showAlums()"
           >
             View Team
@@ -298,7 +300,6 @@ export default defineComponent({
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   color: #fff;
-  // display: flex;
   width: 500px;
 }
 .nav-elements:hover {
@@ -314,29 +315,6 @@ export default defineComponent({
   position: relative;
   margin-bottom: 2rem;
   margin-top: 2rem;
-
-  &:before {
-    display: block;
-    content: '';
-    width: 12px;
-    height: 12px;
-    background-color: #eee;
-    position: relative;
-    transform: rotate(45deg) translateX(-50%);
-    left: 50%;
-    top: 10px;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20vw;
-    max-width: 780px;
-    height: 3px;
-    background: #eeeeee;
-  }
 }
 .divider {
   position: relative;
