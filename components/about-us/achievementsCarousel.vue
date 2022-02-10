@@ -62,6 +62,7 @@
             v-if="achievement.link"
             :href="achievement.link"
             target="_blank"
+            rel="noreferrer"
             class="flex-row self-end mr-4"
           >
             <span

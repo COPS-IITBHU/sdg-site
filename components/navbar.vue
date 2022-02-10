@@ -2,6 +2,7 @@
   <nav>
     <button
       id="toggle"
+      aria-label="navbar-toggle"
       class="
         navbar-toggle
         bg-transparent

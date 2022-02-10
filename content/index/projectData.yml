@@ -4,7 +4,7 @@
     gh_user: COPS-IITBHU
     repo: cops-website
     url: https://www.copsiitbhu.co.in/
-    img: cops-website.png
+    img: cops-website.webp
     desc: Official website of Club of Programmers, IIT (BHU) Varanasi.
     tech: 
       - Ruby
@@ -36,7 +36,7 @@
     gh_user: COPS-IITBHU
     repo: hackalog-frontend
     url: https://hackalog.copsiitbhu.co.in/
-    img: hackalog.png
+    img: hackalog.webp
     desc: The home for hackathons organised under COPS IIT(BHU).
     tech: 
       - React
@@ -52,7 +52,7 @@
   - name: IIT BHU Study Portal
     i18n: cpython
     url: https://play.google.com/store/apps/details?id=com.shoom.iitbhuapp
-    img: studyportal.png
+    img: studyportal.webp
     desc: IIT BHU Study Portal aims to act as knowledge hub of IIT BHU, where anyone can share files, study materials, question papers and many more.
     tech:
       - Flutter

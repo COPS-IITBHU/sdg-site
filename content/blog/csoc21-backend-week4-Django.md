@@ -6,7 +6,7 @@ subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 4
 author: COPS SDG
-featureImage: /blog/django.jpg
+featureImage: /blog/django.webp
 ---
 
 # Django

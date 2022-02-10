@@ -4,7 +4,7 @@ date: 2021-06-15T11:51:59.091Z
 subtitle: "Android uses a file system that's similar to disk-based file systems on other platforms."
 parentBlog: CSOC'21 Dev Frontend Week 2
 author: COPS SDG
-featureImage: /blog/android.png
+featureImage: /blog/android.webp
 ---
 
 # Native Android

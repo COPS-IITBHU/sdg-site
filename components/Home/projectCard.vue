@@ -24,6 +24,7 @@
         "
       >
         <nuxt-img
+          height="500"
           class="w-full lg:w-half min-w-250px object-cover md:h-lg rounded-t-3xl md:rounded-t-none md:rounded-l-3xl"
           :src="imgAddress"
           alt="ProjectImg"
@@ -49,7 +50,7 @@
           <ul class="techList list-none">
             <li v-for="tech in project.tech" :key="tech">{{ tech }}</li>
           </ul>
-          <a :href="project.url" target="_blank">
+          <a :href="project.url" target="_blank" rel="noreferrer">
             <button
               class="
                 contentBtn
@@ -84,7 +85,7 @@ export default {
       if (this.project.img) {
         return 'home/' + this.project.img
       }
-      return 'home/hackalog.png'
+      return 'home/hackalog.webp'
     }
   }
 }

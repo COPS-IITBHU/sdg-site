@@ -56,7 +56,9 @@
           "
         >
           <nuxt-img
-            src="contact/iit-varanasi.jpg"
+            src="contact/iit-varanasi.webp"
+            height="600"
+            width="800"
             alt="Institute Image"
             class="w-full h-400px object-cover select-none filter brightness-60"
             loading="lazy"
@@ -129,6 +131,7 @@
             justify-center
           "
               target="_blank"
+              rel="noreferrer"
             >
               <span
                 class="iconify"

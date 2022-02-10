@@ -6,7 +6,7 @@ subblogs: []
 display: False
 parentBlog: CSOC'21 Dev Backend Week 5
 author: COPS SDG
-featureImage: /blog/django.jpg
+featureImage: /blog/django.webp
 ---
 
 # Django REST Framework
