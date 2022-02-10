@@ -67,7 +67,15 @@ export default defineComponent({
     this.projects = fetchedData.projects
   },
   head: {
-    title: 'Landing'
+    title: 'Landing',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'We at Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in the IIT (BHU) campus (and beyond) by learning, sharing knowledge, and solving problems.'
+      }
+    ]
   },
   mounted () {
     window.addEventListener('scroll', this.setDotStatus)
