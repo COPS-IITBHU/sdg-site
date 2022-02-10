@@ -131,6 +131,7 @@
             justify-center
           "
               target="_blank"
+              rel="noreferrer"
             >
               <span
                 class="iconify"

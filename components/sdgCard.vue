@@ -33,6 +33,7 @@
               rounded-full
               hover:bg-hex-006192 hover:border-hex-006192
             "
+            rel="noreferrer"
           >
             <span
               class="iconify m-auto text-xl mt-1"
@@ -57,6 +58,7 @@
               rounded-full
               hover:bg-gray-900 hover:border-gray-900
             "
+            rel="noreferrer"
           >
             <span
               class="iconify m-auto text-xl mt-1"

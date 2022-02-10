@@ -34,12 +34,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
-
-export default defineComponent({})
-</script>
-
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
 

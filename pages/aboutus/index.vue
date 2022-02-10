@@ -54,6 +54,7 @@
             style="color: blue"
             :href="slide.link"
             target="_blank"
+            rel="noreferrer"
           >{{ slide.linkdes }}</a
           >
         </p>
