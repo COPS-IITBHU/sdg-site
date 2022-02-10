@@ -49,7 +49,11 @@
           left-1/2
         "
       >
-        <nuxt-link v-for="(page, index) in pages" :key="index" :to="page.url">
+        <nuxt-link
+          v-for="(page, index) in pages"
+          :key="index"
+          :to="page.url"
+          :prefetch="page.prefetch">
           <li
             class="
               list_item
@@ -57,7 +61,7 @@
               tracking-12px
               cursor-pointer
               text-white text-center
-              my-10
+              my-8
             "
             @click="closeNavbar"
             @keydown="closeNavbar"
@@ -77,11 +81,11 @@ export default {
       isActive: false,
       isOpen: false,
       pages: [
-        { name: 'Home', url: '/' },
-        { name: 'Blogs', url: '/blog' },
-        { name: 'Portfolio', url: '/portfolio' },
-        { name: 'About Us', url: '/aboutus' },
-        { name: 'Contact Us', url: '/contact' }
+        { name: 'Home', url: '/', prefect: false },
+        { name: 'Blogs', url: '/blog', prefetch: false },
+        { name: 'Team', url: '/portfolio', prefetch: false },
+        { name: 'About Us', url: '/aboutus', prefetch: true },
+        { name: 'Contact Us', url: '/contact', prefetch: true }
       ]
     }
   },
