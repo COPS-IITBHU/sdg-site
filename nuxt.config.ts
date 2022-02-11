@@ -31,7 +31,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://media.discordapp.net/attachments/937985097779519531/941616659720966144/COPS-Logo.webp'
+        content: 'https://cdn.discordapp.com/attachments/937985097779519531/941616659720966144/COPS-Logo.webp'
       },
       {
         hid: 'twitter:title',
@@ -46,7 +46,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://media.discordapp.net/attachments/937985097779519531/941616659720966144/COPS-Logo.webp'
+        content: 'https://cdn.discordapp.com/attachments/937985097779519531/941616659720966144/COPS-Logo.webp'
       }
     ],
     link: [
