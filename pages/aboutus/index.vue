@@ -146,6 +146,6 @@ export default defineComponent({
 
 <style scoped>
 .quote {
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
 }
 </style>

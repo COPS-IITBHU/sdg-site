@@ -164,7 +164,8 @@ export default {
 
 .list_item {
   font-size: 35px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Fira-code-bold";
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 .list_item:before {

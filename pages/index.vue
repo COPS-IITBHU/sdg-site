@@ -142,6 +142,7 @@ export default defineComponent({
 <style>
 body {
   background: #111;
+  font-family: "Fira-code-medium";
 }
 .info {
   left: 30%;
