@@ -1,74 +1,72 @@
 [
   {
-    "index": 0,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Shivansh Saini",
+    "designation": "DevOps Engineer",
+    "company": "CoinDCX",
+    "link": "https://www.linkedin.com/in/shivanshs9/",
+    "github": "https://github.com/shivanshs9"
   },
   {
-    "index": 1,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Akshay Sharma",
+    "designation": "MS",
+    "company": "Columbia University",
+    "link": "https://www.linkedin.com/in/akshay326/",
+    "github": "https://github.com/akshay326"
   },
   {
-    "index": 2,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Jogendra Kumar",
+    "designation": "iOS/Backend Engineer",
+    "company": "Fynch Smart Mobility",
+    "link": "https://www.linkedin.com/in/jogendrasingh24/",
+    "github": "https://github.com/jogendra"
   },
   {
-    "index": 3,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Yash Jipkate",
+    "designation": "Technologist",
+    "company": "LG Ads",
+    "github": "https://github.com/YashJipkate",
+    "link": "https://www.linkedin.com/in/yashjipkate/"
   },
   {
-    "index": 4,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Vaibhav Dixit",
+    "company": "Julia Computing",
+    "designation": "Software Engineer",
+    "github": "https://github.com/Vaibhavdixit02",
+    "link": "https://www.linkedin.com/in/vaibhav-dixit-0a9739156/"
   },
   {
-    "index": 5,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Harsh Rangwani",
+    "company": "IISc",
+    "designation": "Ph.D. Student",
+    "github": "https://github.com/rangwani-harsh",
+    "link": "https://www.linkedin.com/in/harsh-rangwani/"
   },
   {
-    "index": 6,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Abhinav Singh",
+    "company": "Harness",
+    "designation": "Senior Software Engineer",
+    "github": "https://github.com/abhinavcode",
+    "link": "https://www.linkedin.com/in/abhinavsingh996/"
   },
   {
-    "index": 7,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Amritansh Singhal",
+    "company": "Cohesity",
+    "designation": "Research Engineer",
+    "github": "https://github.com/Eerie16",
+    "link": "https://www.linkedin.com/in/amritansh-singhal-f138/"
   },
   {
-    "index": 8,
-    "name": "Manan Rathi",
-    "designation": "Web Developer",
-    "company": "",
-    "link": "https://in.linkedin.com/",
-    "github": "https://github.com/Manan-Rathi"
+    "name": "Dipesh Kumar",
+    "company": "Microsoft",
+    "designation": "Software Engineer",
+    "github": "https://github.com/pegasus-lynx",
+    "link": "https://www.linkedin.com/in/dipeshkr/"
+  },
+  {
+    "name": "Tawrun Vankineeni",
+    "company": "Cisco",
+    "designation": "Software Engineer",
+    "github": "https://github.com/VANKINEENITAWRUN",
+    "link": "https://www.linkedin.com/in/vankineenitawrun/"
   }
 ]

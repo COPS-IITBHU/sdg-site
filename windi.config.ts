@@ -1,8 +1,9 @@
+import lineClamp from 'windicss/plugin/line-clamp'
 import typo from 'windicss/plugin/typography'
 
 export default {
   darkMode: 'class',
-  plugins: [typo()],
+  plugins: [typo(), lineClamp],
   safelist: 'prose prose-sm m-auto text-left',
   theme: {
     extend: {

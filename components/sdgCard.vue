@@ -1,74 +1,74 @@
 <template>
-  <section class="">
-    <div
-      class="
-        our-team
-        w-60
-        float-left
-        m-auto
-        text-center
-        relative
-        overflow-hidden
-      "
-    >
-      <nuxt-img :src="imageUrl" alt="profile" class="w-full h-auto" loading="lazy" />
-      <div class="team-content">
-        <h3 class="title text-lg font-700">
-          {{ name }}
-        </h3>
-        <span class="post block text-md opacity-0 mb-5"> {{ title }} </span>
-        <span class="post block text-md opacity-0"> {{ company }} </span>
-        <ul class="icon">
-          <li class="inline-block">
-            <a
-              aria-label="linkedin"
-              :href="socialMediaLink"
-              class="
-                iconify
-                border-solid border
-                block
-                h-8
-                text-base
-                leading-9
-                text-center
-                w-8
-                rounded-full
-                hover:bg-hex-006192 hover:border-hex-006192
-              "
-            >
-              <span
-                class="iconify m-auto text-xl mt-1"
-                data-icon="uim:linkedin-alt"
-              ></span>
-            </a>
-          </li>
-          <li class="inline-block">
-            <a
-              aria-label="github"
-              :href="githubLink"
-              class="
-                iconify
-                border-solid border
-                block
-                h-8
-                text-base
-                leading-9
-                text-center
-                w-8
-                rounded-full
-                hover:bg-gray-900 hover:border-gray-900
-              "
-            >
-              <span
-                class="iconify m-auto text-xl mt-1"
-                :data-icon="icon"
-              ></span>
-            </a>
-          </li>
-        </ul>
-      </div>
+  <div
+    class="
+      our-team
+      w-60
+      text-center
+      relative
+      overflow-hidden
+    "
+  >
+    <img :src="imageUrl" alt="profile" class="object-cover" loading="lazy" />
+    <div class="team-content">
+      <h3 class="title text-lg font-700">
+        {{ name }}
+      </h3>
+      <span class="post block text-md opacity-0 mb-1"> {{ title }} </span>
+      <span class="post block text-md opacity-0 mb-4"> {{ company }} </span>
+      <ul class="icon">
+        <li class="inline-block">
+          <a
+            aria-label="linkedin"
+            target="_blank"
+            :href="socialMediaLink"
+            class="
+              iconify
+              border-solid border
+              block
+              h-8
+              text-base
+              leading-9
+              text-center
+              w-8
+              rounded-full
+              hover:bg-hex-006192 hover:border-hex-006192
+            "
+            rel="noreferrer"
+          >
+            <span
+              class="iconify m-auto text-xl mt-1"
+              data-icon="uim:linkedin-alt"
+            ></span>
+          </a>
+        </li>
+        <li class="inline-block">
+          <a
+            target="_blank"
+            aria-label="github"
+            :href="githubLink"
+            class="
+              iconify
+              border-solid border
+              block
+              h-8
+              text-base
+              leading-9
+              text-center
+              w-8
+              rounded-full
+              hover:bg-gray-900 hover:border-gray-900
+            "
+            rel="noreferrer"
+          >
+            <span
+              class="iconify m-auto text-xl mt-1"
+              :data-icon="icon"
+            ></span>
+          </a>
+        </li>
+      </ul>
     </div>
-  </section>
+  </div>
 </template>
 <script>
 export default {
@@ -99,7 +99,8 @@ export default {
     },
     imageUrl: {
       type: String,
-      default: 'xd'
+      default: 'xd',
+      required: true
     }
   },
   data () {
@@ -123,7 +124,7 @@ export default {
 .our-team .team-content {
   width: 100%;
   height: 100%;
-  background: #640087;
+  background: #06508b;
   position: absolute;
   padding-top: 35%;
   color: #fff;

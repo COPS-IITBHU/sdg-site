@@ -4,7 +4,7 @@ date: 2021-06-07T11:51:59.091Z
 description: 'The first week into development, that familiarizes you with basics of development'
 parentBlog: CSOC'21 Dev Frontend
 author: COPS SDG
-featureImage: /blog/FRONTEND.png
+featureImage: /blog/FRONTEND.webp
 ---
 
 # Week 1

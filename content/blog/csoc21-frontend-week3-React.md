@@ -4,7 +4,7 @@ date: 2021-06-22T11:51:59.091Z
 description: 'React is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications by dividing the UI into composable elements.'
 parentBlog: CSOC'21 Dev Frontend Week 3
 author: COPS SDG
-featureImage: /blog/React.png
+featureImage: /blog/React.webp
 ---
 
 # Javascript Library React

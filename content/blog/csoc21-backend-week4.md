@@ -4,7 +4,7 @@ date: 2020-06-22T11:51:59.091Z
 description: "Welcome to CSoC'21 Dev! Here's all the resources and tasks you need to know, complete, and focus on for every week."
 parentBlog: CSOC'21 Dev Backend
 author: COPS SDG
-featureImage: /blog/backend.png
+featureImage: /blog/backend.webp
 ---
 
 # Week 4

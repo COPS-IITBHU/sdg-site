@@ -1,7 +1,7 @@
 <template>
   <section class="flex justify-center items-center h-3/10 mb-20">
     <h1 class="text-center text-8xl <lg:(text-5xl)">
-      <span class="mr-20px">OUR</span> ACHIEVEMENTS
+      <span class="mr-6">OUR</span> ACHIEVEMENTS
     </h1>
   </section>
 </template>

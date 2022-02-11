@@ -4,7 +4,7 @@ date: 2021-05-30T11:51:59.091Z
 description: 'Consider this week as "revision of the fundamentals" since most have already cleared some or all of the topics of this week.'
 parentBlog: CSOC'21 Dev Frontend
 author: COPS SDG
-featureImage: /blog/FRONTEND.png
+featureImage: /blog/FRONTEND.webp
 ---
 
 # Week 0

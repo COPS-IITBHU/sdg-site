@@ -1,92 +1,121 @@
 [
   {
-    "index": 0,
     "title": "CSAW 2021",
     "description": "2 teams from IIT(BHU) made it to the finals of the Cyber Security Awareness Week (CSAW).",
-    "link": "https://ctf.csaw.io/scoreboard"
+    "link": "https://ctf.csaw.io/scoreboard",
+    "linkdes": "Cyber Security Awareness Week (CSAW).",
+    "showlink": true
   },
   {
-    "index": 1,
     "title": "LFX Mentorship Program",
     "description": "Two students from the club got accepted as mentees in LFX Mentorship.",
-    "link": "https://lfx.linuxfoundation.org/tools/mentorship/"
+    "link": "https://lfx.linuxfoundation.org/tools/mentorship/",
+    "linkdes": "LFX Mentorship.",
+    "showlink": true
   },
   {
-    "index": 2,
     "title": "ACM ICPC 2020",
-    "description": "Team rng(weed) (Jatin Garg, Anshu Garg, Yash Goyal) topped Kanpur-Mathura Regionals and have chance to Represent IIT BHU in World Finals. 23 Teams from the College qualified for ICPC Amritapuri Regionals."
+    "description": "Team rng(weed) topped Kanpur-Mathura Regionals and have chance to Represent IIT BHU in World Finals. 23 Teams from the College qualified for ICPC Amritapuri Regionals.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 3,
     "title": "Google Summer of Code 2021",
-    "description": "23 students from the club got accepted in one of the most prestigious open-source software development programs - Google Summer of Code. IIT (BHU) is the institute with second highest GSoC selections in the world in 2021."
+    "description": "23 students from the club got accepted in one of the most prestigious open-source software development programs - Google Summer of Code.IIT (BHU) is the institute with second highest GSoC selections in the world in 2021.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 4,
     "title": "Open Source Fellowships",
     "description": "One student from the club got accepted in Microsoft Reinforcement Learning Open Source Fest. Two students got accepted as mentees in LFX Mentorship.",
-    "link": "https://www.microsoft.com/en-us/research/academic-program/rl-open-source-fest/"
+    "link": "https://www.microsoft.com/en-us/research/academic-program/rl-open-source-fest/",
+    "linkdes": " Microsoft Reinforcement Learning Open Source Fest.",
+    "showlink": true
   },
   {
-    "index": 5,
     "title": "9th Inter IIT Tech Meet",
-    "description": "2 teams, of 5 and 7 members respectively, participated and won gold and silver medals in their respective events of Network Security Hackathon and Automatic Headline And Sentiment Generator against the participating 23 IITs."
+    "description": "2 teams, of 5 and 7 members respectively, participated and won gold and silver medals in their respective events of Network Security Hackathon and Automatic Headline And Sentiment Generator against the participating 23 IITs.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 6,
     "title": "Google Summer of Code 2020",
-    "description": "Ten students from the club successfully completed a project in one of the most prestigious open-source software development programs - Google Summer of Code. IIT (BHU) is one of top 10 institutes in the world with most number of GSoC selections in 2020."
+    "description": "Ten students from the club successfully completed a project in one of the most prestigious open-source software development programs - Google Summer of Code. IIT (BHU) is one of top 10 institutes in the world with most number of GSoC selections in 2020.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 7,
     "title": "ICPC 2019-2020",
-    "description": "One team from the club qualified for ICPC World Finals."
+    "description": "One team from the club qualified for ICPC World Finals.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 8,
     "title": "Google Summer of Code 2019",
-    "description": "Nine students from the club got selected for one of the most prestigious open-source software development programs - Google Summer of Code."
+    "description": "Nine students from the club got selected for one of the most prestigious open-source software development programs - Google Summer of Code.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 9,
     "title": "7th Inter IIT Tech Meet 2018, IIT Bombay",
-    "description": "2 teams, of 4 members each, participated and both won bronze medals on their respective events of Coding Hackathon and Star Cluster Identifier against the participating 23 IITs."
+    "description": "2 teams, of 4 members each, participated and both won bronze medals on their respective events of Coding Hackathon and Star Cluster Identifier against the participating 23 IITs.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 10,
     "title": "Google Summer of Code 2018",
-    "description": "Seven students from the club got selected for one of the most prestigious open-source software development programs - Google Summer of Code."
+    "description": "Seven students from the club got selected for one of the most prestigious open-source software development programs - Google Summer of Code.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 11,
     "title": "COPS Summer Camp 2018",
-    "description": "COPS organized a two months long Summer Camp online. More than 500 students across the country participated. The camp covered all the three major domains of Computer Science, namely Algorithms and Data Structures (Competitive Programming), Machine Learning and Development (Android and Web)."
+    "description": "COPS organized a two months long Summer Camp online. More than 500 students across the country participated. The camp covered all the three major domains of Computer Science, namely Competitive Programming, Machine Learning and Development (Android and Web).",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 12,
     "title": "Microsoft Code.Fun.Do 2018",
-    "description": "COPS organized Microsoft Code Fun Do, a 24 hr onsite hackathon which saw a prticipation of more than 150 teams (teams of 3). Click here to know more.",
-    "link": "https://www.facebook.com/cops.iitbhu/posts/761776364028272?__xts__%5B0%5D=68.ARD82Z8zGeCurgx0O3uRJK5Vk8nRqvyHztsX0y47HA8n-R-5oRhhoQM9XmzfF9WOpZAgYc8_U5YoTmgGd5JhP7qkNLmiELYcG-rWKRQy3FAd46KVwGNZNSsSYQEKJoMZ5biQoISROKJvu5m9rlKkqnn-S1zISjHWf657CZbzc8vPjTs96mGQKKjjw4I7q3hVl_BxJY9V6qK0yPf-q7Sq3Q&__tn__=-R"
+    "description": "COPS organized Microsoft Code Fun Do, a 24 hr onsite hackathon which saw a prticipation of more than 150 teams (teams of 3).",
+    "link": "https://www.facebook.com/cops.iitbhu/posts/761776364028272?__xts__%5B0%5D=68.ARD82Z8zGeCurgx0O3uRJK5Vk8nRqvyHztsX0y47HA8n-R-5oRhhoQM9XmzfF9WOpZAgYc8_U5YoTmgGd5JhP7qkNLmiELYcG-rWKRQy3FAd46KVwGNZNSsSYQEKJoMZ5biQoISROKJvu5m9rlKkqnn-S1zISjHWf657CZbzc8vPjTs96mGQKKjjw4I7q3hVl_BxJY9V6qK0yPf-q7Sq3Q&__tn__=-R",
+    "linkdes": "Here.",
+    "showlink": true
   },
   {
-    "index": 13,
     "title": "Third at ICPC Regionals",
-    "description": "TooLazyToPropogate, a team of Pranjal Jain, Himanshu Singh and Debrup Roy Choudhary secured third position at ICPC Kanpur Regionals 2017."
+    "description": "TooLazyToPropogate, a team of Pranjal Jain, Himanshu Singh and Debrup Roy Choudhary secured third position at ICPC Kanpur Regionals 2017.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 14,
     "title": "Bronze at Inter-IIT",
-    "description": "A team of two members, Suyash Shukla and Abhinav Patel, won Bronze Medal in an Inter IIT Event."
+    "description": "A team of two members, Suyash Shukla and Abhinav Patel, won Bronze Medal in an Inter IIT Event.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 15,
     "title": "Won GS Quantify 2017",
-    "description": "A team of three senior members, Bharat Khanna, Ishank Arora and Ayush Kedia, won the GS Quantify contest held by Goldman Sachs. Also, 6 teams from the institute were selected as Significant Contributors."
+    "description": "A team of three senior members, Bharat Khanna, Ishank Arora and Ayush Kedia, won the GS Quantify contest held by Goldman Sachs. Also, 6 teams from the institute were selected as Significant Contributors.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
-    "index": 16,
     "title": "Problem of the Week",
     "description": "COPS made an amazing study material to start and excel competitve programming. This includes resources to study on each topic and some good problems to practice.",
-    "link": "https://www.copsiitbhu.co.in/resources/cp/potw/"
+    "link": "https://www.copsiitbhu.co.in/resources/cp/potw/",
+    "linkdes": "Here.",
+    "showlink": true
   }
 ]

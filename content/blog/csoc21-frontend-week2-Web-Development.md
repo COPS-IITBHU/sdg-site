@@ -4,7 +4,7 @@ date: 2021-06-15T11:51:59.091Z
 description: 'Last week you learned about creating static websites. The next step before moving on to creating Web Applications is to know about what is the difference between the two.'
 parentBlog: CSOC'21 Dev Frontend Week 2
 author: COPS SDG
-featureImage: /blog/WEB.png
+featureImage: /blog/WEB.webp
 ---
 
 # Web Development

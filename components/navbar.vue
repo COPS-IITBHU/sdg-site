@@ -2,6 +2,7 @@
   <nav>
     <button
       id="toggle"
+      aria-label="navbar-toggle"
       class="
         navbar-toggle
         bg-transparent
@@ -56,8 +57,7 @@
               tracking-12px
               cursor-pointer
               text-white text-center
-              py-10px
-              my-20px
+              my-10
             "
             @click="closeNavbar"
             @keydown="closeNavbar"

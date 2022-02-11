@@ -4,7 +4,7 @@ date: 2021-05-30T11:51:59.091Z
 description: 'Git is a prevalent version control system (VCS) used in Open Source Development. It is a crucial skill to learn while developing in a team.'
 parentBlog: CSOC'21 Dev Frontend Week 0
 author: COPS SDG
-featureImage: /blog/github.jpg
+featureImage: /blog/github.webp
 ---
 
 # Git and GitHub

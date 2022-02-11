@@ -2,19 +2,19 @@
   <main class="text-center text-light-50">
     <div id="head-map" class="flex justify-center items-center">
       <Map class="w-full" />
-      <span class="absolute text-light-50 text-8xl font-bold">Contact us</span>
+      <span class="absolute text-light-50 text-6xl xl:text-8xl font-bold">Contact Us</span>
     </div>
 
     <div
-      class="flex flex-row justify-around m-20px mt-50px <lg:(flex-col m-20px)"
+      class="flex flex-row justify-around m-6 mt-12 <lg:flex-col"
     >
       <div class="flex flex-col">
-        <div class="text-left mx-auto mb-20px <lg:(w-full)">
+        <div class="text-left mx-auto mb-4 <lg:(w-full)">
           <div>
-            <h2 class="m-3px p-2px text-cyan-400 text-4xl font-bold">
+            <h2 class="py-2 text-cyan-400 text-4xl font-bold">
               LET'S TALK
             </h2>
-            <p class="m-3px p-2px text-light-50">
+            <p class="text-light-50 text-justify">
               With over 1700 members, the Discord server is a haven for
               programming enthusiasts! <br />
               We have separate channels dedicated to the 4 verticals,
@@ -33,11 +33,11 @@
             <lg:(w-full)
           "
         >
-          <Online class="<sm:(w-full)" :serverid="serverid" />
+          <Online class="w-full md:w-3/4 md:mr-auto" :serverid="serverid" />
         </div>
       </div>
 
-      <div id="clg_img" class="ml-100px <lg:(w-full mt-30px ml-0px)">
+      <div id="clg_img" class="ml-12 <lg:(w-full ml-0 my-4)">
         <div
           id="content"
           class="
@@ -56,9 +56,12 @@
           "
         >
           <nuxt-img
-            src="contact/iit-varanasi.jpg"
+            src="contact/iit-varanasi.webp"
+            height="600"
+            width="800"
             alt="Institute Image"
             class="w-full h-400px object-cover select-none filter brightness-60"
+            loading="lazy"
           />
           <div
             class="
@@ -77,7 +80,7 @@
           >
             <div class="w-3/5 flex flex-col justify-center items-center">
               <div class="box">
-                <div class="m-5px flex justify-center items-center">
+                <div class="m-1 flex justify-center items-center">
                   <span
                     class="iconify"
                     data-icon="gis:poi-map"
@@ -101,33 +104,34 @@
         </div>
       </div>
     </div>
-    <div class="mt-70px">
-      <h3 class="m-3px p-2px text-cyan-400 text-3xl font-bold">
+    <div class="my-4 px-2">
+      <h3 class="py-2 text-cyan-400 text-3xl font-bold">
         WE'RE ALSO THERE
       </h3>
-      <p class="m-3px p-2px text-light-50">
+      <p class="text-light-50">
         Follow us on the following social media handles and stay apprised about
         the latest events and workshops!
       </p>
-      <div class="m-10px mt-20px">
+      <div class="mx-4 my-8">
         <ul class="flex flex-row flex-wrap justify-center items-center">
           <li
             v-for="item in items"
             :key="item.name"
-            class="list-none my-0 mx-15px mb-20px"
+            class="list-none mx-4 py-2"
           >
             <a
               :href="item.url"
               class="
-            p-13px
-            w-60px
-            h-60px
+            p-3
+            w-16
+            h-16
             rounded-full
             flex
             items-center
             justify-center
           "
               target="_blank"
+              rel="noreferrer"
             >
               <span
                 class="iconify"
