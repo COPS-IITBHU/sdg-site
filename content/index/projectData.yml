@@ -58,4 +58,23 @@
       - Flutter
       - Django
       - Firebase
+
+  - name: Previewer
+    i18n: cpython
+    repo: Previewer
+    url: https://github.com/COPS-IITBHU/Previewer/releases/tag/v1.0.0
+    img: previewer.webp
+    desc: Android SDK/Library for generating a preview for PDF/MP4 files present locally in the device or from YouTube URLs.
+    tech:
+      - Kotlin
+      - Android
   
+  - name: Discord Bot
+    i18n: cpython
+    repo: discord-bot
+    url: https://github.com/COPS-IITBHU/discord-bot
+    img: discordbot.webp
+    desc: A Discord Bot built upon slash commands provided by Discord Beta. It works on the principle of webhooks by awaiting commands and can be deployed on serverless architecture like Vercel.
+    tech:
+      - Javascript
+      - Typescript
