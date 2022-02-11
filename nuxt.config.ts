@@ -21,33 +21,33 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'COPS SDG',
+        content: 'COPS SDG'
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.',
+        content: 'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.'
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'static/COPS-Logo.webp',
+        content: 'static/COPS-Logo.webp'
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'COPS SDG',
+        content: 'COPS SDG'
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.',
+        content: 'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.'
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'static/COPS-Logo.webp',
-      },
+        content: 'static/COPS-Logo.webp'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: 'static/COPS-Logo.webp' },
