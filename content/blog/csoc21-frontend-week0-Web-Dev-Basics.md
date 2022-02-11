@@ -1,8 +1,8 @@
 ---
-title: Bonus Task - CSOC'21 Dev Frontend Week 0
+title: Basics Of Web Development
 date: 2021-05-30T11:51:59.091Z
 description: 'In this task you have to create a static portfolio page, using basic web development tools(HTML, CSS & Javascript).'
-parentBlog: CSOC'21 Dev Frontend Week 0
+parentBlog: Web Development Basics
 author: COPS SDG
 featureImage: /blog/web dev basic.webp
 ---
@@ -12,7 +12,7 @@ featureImage: /blog/web dev basic.webp
 Due Date: June 6, 2021
 type: bonus task
 
-Alright! Let's get to Web Development! HTML, CSS, JavaScript are the fundamentals of web development, so it is important that you get comfortable with them before moving on to some really cool stuff for the next weeks!
+In this task you have to create a static portfolio page, using basic web development tools(HTML, CSS & Javascript).
 
 ## Resources
 

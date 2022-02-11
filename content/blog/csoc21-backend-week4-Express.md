@@ -1,22 +1,15 @@
 ---
-title: Express - CSOC'21 Dev Backend Week 4
+title: Basics of ExpressJS
 date: 2020-06-22T11:51:59.091Z
 description: 'So After Frontend, we are left with Web Backend to gain a good command over web dev. That is why we bring you here, to Express!'
-subblogs: []
-display: False
-parentBlog: CSOC'21 Dev Backend Week 4
+parentBlog: ExpressJS
 author: COPS SDG
 featureImage: /blog/Nodejs.webp
 ---
 
 # Express
 
-Due Date: July 24, 2021
-type: Mandatory
-
 # Introduction
-
-So After Frontend, we are left with Web Backend to gain a good command over web dev. That is why we bring you here, to Express!
 
 Express is a Javascript Framework. This lets developers to develop their application without caring much for language difference in backend and frontend part of applications.
 
@@ -93,6 +86,10 @@ Here you can learn more about it:
 _We are sure by now you've realized that world of web development is dominated by javascript._
 
 ## Challenge and submission
+
+This Blog is a part of [CSoC'21 Dev Backend](csoc21-backend).
+
+Remember, deadline for this task is **July 24th, 2021 23:59.**
 
 **So much for learning, here is your next Assignment!**
 

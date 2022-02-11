@@ -1,24 +1,15 @@
 ---
-title: Express REST Framework - CSOC'21 Dev Backend Week 5
+title: Express REST Framework
 date: 2020-07-14T11:51:59.091Z
-description: 'Express provides support for using both Relational and NoSQL databases.Creating a backend without user login and authentication is incomplete. '
-subblogs: []
-display: False
-parentBlog: CSOC'21 Dev Backend Week 5
+description: 'Express provides support for using both Relational and NoSQL databases.Creating a backend without user login and authentication is incomplete.'
+parentBlog: ExpressJS
 author: COPS SDG
 featureImage: /blog/Nodejs.webp
 ---
 
-# Express
+# ExpressJS
 
-Due Date: August 7, 2021
-type: Mandatory
-
-# Introduction
-
-# Resources
-
-## Basic
+## Introduction - Basic Resources
 
 Here is a complete tutorial in Express
 
@@ -89,6 +80,10 @@ Well anything untested is never reliable. We provide you resources for setting u
 </div>
 
 ## Challenge and submission
+
+This Blog is a part of [CSoC'21 Dev Backend](csoc21-backend).
+
+Remember, deadline for this task is **August 7th, 2021 23:59.**
 
 **So much for learning, here is your next Assignment!**
 

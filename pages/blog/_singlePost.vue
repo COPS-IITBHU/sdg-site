@@ -76,7 +76,7 @@ p,
 .prose strong {
   color: #bdc1c6;
 }
-p {
+p, li {
   code {
     color: #cdd1d9;
     background-color: #6e768166;

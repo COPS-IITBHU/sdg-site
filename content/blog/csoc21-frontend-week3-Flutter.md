@@ -1,16 +1,13 @@
 ---
-title: Flutter - CSOC'21 Dev Frontend Week 3
+title: Flutter (Network Calls)
 date: 2020-06-22T11:51:59.091Z
 description: 'What happens when you log out of your Social Media account from one device and open it again on a different device? You see that all your chat messages, profile picture, groups etc. are preserved. It feels like you never changed your device at all. But how did this happen?'
-parentBlog: CSOC'21 Dev Frontend Week 3
+parentBlog: Flutter
 author: COPS SDG
 featureImage: /blog/Flutter.webp
 ---
 
-# Flutter ( Network Calls )
-
-Due Date: July 2, 2021
-type: Mandatory
+# Flutter (Network Calls)
 
 # Introduction
 
@@ -91,6 +88,10 @@ In the previous week, you guys got to learn about how to store data locally on y
 Enable your previously made (or you can start from scratch) TODO maker App to store and retrieve data to/from provided REST APIs. This means you will have the ability to have the same data on different devices on which your app is installed.
 
 # Challenge and Submission
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
+
+Remember, deadline for this task is **July 2nd, 2021 23:59.**
 
 So much for learning, here is your next Assignment
 

@@ -1,8 +1,8 @@
 ---
-title: Web Development - CSOC'21 Dev Frontend Week 1
+title: Diving Deeper into Web Development
 date: 2021-06-07T11:51:59.091Z
 description: 'Web development is a basic skill that is often said as a good start to the development field.'
-parentBlog: CSOC'21 Dev Frontend Week 1
+parentBlog: Web Development Basics
 author: COPS SDG
 featureImage: /blog/WEB.webp
 ---
