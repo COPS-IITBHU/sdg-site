@@ -182,7 +182,15 @@ export default defineComponent({
     this.items = (data as unknown) as itemsObject[]
   },
   head: {
-    title: 'Contact'
+    title: 'Contact',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Contact us via any of the mentioned mediums. We’d highly appreciate you reaching out to us!'
+      }
+    ]
   }
 })
 </script>

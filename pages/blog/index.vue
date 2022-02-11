@@ -28,7 +28,15 @@ export default defineComponent({
     }
   },
   head: {
-    title: 'Blogs'
+    title: 'Blogs',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'We aim at spreading the love for code to the masses and to facilitate this, our members jot down all the knowledge they have in the form of blogs. SDG Blogs is a storehouse of knowledge-packed, beginner-friendly and structured resources to help you delve into the colossal world of development.'
+      }
+    ]
   },
   mounted () {
     this.blogTree()

@@ -88,12 +88,12 @@ export default defineComponent({
         {
           heading: 'WHAT IS SDG?',
           image: '/aboutus/1.webp',
-          text: `One of the prominent pillars of COPS, IITBHU is SDG. With the
+          text: `One of the prominent pillars of COPS, IIT (BHU) is SDG. With the
           increasing percentage of the world's population possessing an
           innovative and feature phone, the software has influenced many lives,
           but ever considered how this software or the websites you surf day and
           night or any gaming application you die for are developed? No worries,
-          we at Software Developing Group are here to unravel all these
+          we at Software Development Group are here to unravel all these
           mysteries for you to perceive, prepare and produce. We got you taken
           care of, from displaying Hello World on your Local Host to developing
           a fully functional mobile application.`
@@ -131,7 +131,15 @@ export default defineComponent({
     this.slides = fetchedData
   },
   head: {
-    title: 'About Us'
+    title: 'About Us',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'One of the most prominent pillars of COPS, IIT (BHU) is SDG. We at Software Development Group are here to unravel all these mysteries for you to perceive, prepare and produce. We got you taken care of, from displaying Hello World on your Local Host to developing a fully functional mobile application. Whether Mobile Development, Desktop Development, Web Development, Game Development, or Cloud Development, we manufacture all units here.'
+      }
+    ]
   }
 })
 </script>

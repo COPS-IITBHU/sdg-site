@@ -238,7 +238,15 @@ export default defineComponent({
     }
   },
   head: {
-    title: 'Team'
+    title: 'Team',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'We have been working as an extraordinary team since the inception of COPS in 2015. We assimilate knowledge, employ resources, and achieve goals. From kingpins who lead the group to greater heights to comrades who relentlessly seek knowledge, we aim to reach greater heights.'
+      }
+    ]
   },
   mounted () {
     this.$nextTick(() => {
