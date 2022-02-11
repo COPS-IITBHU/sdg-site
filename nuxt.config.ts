@@ -24,6 +24,11 @@ export default {
         content: 'COPS SDG'
       },
       {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://sdg.copsiitbhu.ac.in/'
+      },
+      {
         hid: 'og:description',
         property: 'og:description',
         content: 'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.'
@@ -32,6 +37,12 @@ export default {
         hid: 'og:image',
         property: 'og:image',
         content: 'https://cdn.discordapp.com/attachments/937985097779519531/941616659720966144/COPS-Logo.webp'
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://sdg.copsiitbhu.ac.in/'
       },
       {
         hid: 'twitter:title',
