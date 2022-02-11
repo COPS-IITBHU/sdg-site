@@ -14,6 +14,7 @@
   - name: Internship Portal
     i18n: google
     url: https://iit-intern-portal.herokuapp.com/
+    img: internportal.webp
     desc: Intern Portal is a django-web application that helps the students of IIT BHU to land an internship in upcoming startups.
     tech:
       - JQuery
@@ -25,6 +26,7 @@
     gh_user: IIT-BHU-InstiApp
     repo: IIT-BHU-app
     url: https://play.google.com/store/apps/details?id=com.iitbhu.litehai
+    img: litehai.webp
     desc: Lite Hai! is a mobile app that acts as a guide for all the gymkhana happenings at IIT BHU.
     tech:
       - Flutter
@@ -45,6 +47,7 @@
   - name: Telegram Bot
     i18n: ...
     url: https://github.com/COPS-IITBHU/telegram-bots
+    img: telegrambot.webp
     desc: The telegram bots developed and used by the COPS Dev Group.
     tech:
       - Kotlin
