@@ -27,7 +27,7 @@
     repo: IIT-BHU-app
     url: https://play.google.com/store/apps/details?id=com.iitbhu.litehai
     img: litehai.webp
-    desc: Lite Hai! is a mobile app that acts as a guide for all the gymkhana happenings at IIT BHU.
+    desc: Lite Hai! is a mobile app that acts as a comprehensive guide to all the Gymkhana happenings at IIT BHU! Whether you're worried about any workshop, fest or club. Fear not - 'Lite Hai' is here to make it lite again!
     tech:
       - Flutter
       - Django
@@ -48,9 +48,10 @@
     i18n: ...
     url: https://github.com/COPS-IITBHU/telegram-bots
     img: telegrambot.webp
-    desc: The telegram bots developed and used by the COPS Dev Group.
+    desc: The telegram bots developed and used by the COPS SDG Group.
     tech:
-      - Kotlin
+      - Typescript
+      - Vercel
 
   - name: IIT BHU Study Portal
     i18n: cpython
