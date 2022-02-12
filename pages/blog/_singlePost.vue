@@ -36,8 +36,11 @@ export default defineComponent({
     const { singlePost } = params
     const post = await $content('blog', singlePost).fetch()
     return {
-      post
+      post, title: post.title
     }
+  },
+  head () {
+    return { title: this.title }
   },
   computed: {
     date () {
