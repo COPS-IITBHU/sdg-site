@@ -14,6 +14,7 @@
   - name: Internship Portal
     i18n: google
     url: https://iit-intern-portal.herokuapp.com/
+    img: tpcportal.webp
     desc: Intern Portal is a django-web application that helps the students of IIT BHU to land an internship in upcoming startups.
     tech:
       - JQuery
@@ -25,7 +26,8 @@
     gh_user: IIT-BHU-InstiApp
     repo: IIT-BHU-app
     url: https://play.google.com/store/apps/details?id=com.iitbhu.litehai
-    desc: Lite Hai! is a mobile app that acts as a guide for all the gymkhana happenings at IIT BHU.
+    img: litehai.webp
+    desc: Lite Hai! is a mobile app that acts as a comprehensive guide to all the Gymkhana happenings at IIT BHU! Whether you're worried about any workshop, fest or club. Fear not - 'Lite Hai' is here to make it lite again!
     tech:
       - Flutter
       - Django
@@ -45,9 +47,11 @@
   - name: Telegram Bot
     i18n: ...
     url: https://github.com/COPS-IITBHU/telegram-bots
-    desc: The telegram bots developed and used by the COPS Dev Group.
+    img: telegrambot.webp
+    desc: The telegram bots developed and used by the COPS SDG Group.
     tech:
-      - Kotlin
+      - Typescript
+      - Vercel
 
   - name: IIT BHU Study Portal
     i18n: cpython
@@ -58,4 +62,23 @@
       - Flutter
       - Django
       - Firebase
+
+  - name: Previewer
+    i18n: cpython
+    repo: Previewer
+    url: https://github.com/COPS-IITBHU/Previewer/releases/tag/v1.0.0
+    img: previewer.webp
+    desc: Android SDK/Library for generating a preview for PDF/MP4 files present locally in the device or from YouTube URLs.
+    tech:
+      - Kotlin
+      - Android
   
+  - name: Discord Bot
+    i18n: cpython
+    repo: discord-bot
+    url: https://github.com/COPS-IITBHU/discord-bot
+    img: discordbot.webp
+    desc: A Discord Bot built upon slash commands provided by Discord Beta. It works on the principle of webhooks by awaiting commands and can be deployed on serverless architecture like Vercel.
+    tech:
+      - Javascript
+      - Typescript
