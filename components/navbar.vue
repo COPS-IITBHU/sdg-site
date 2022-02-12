@@ -164,7 +164,7 @@ export default {
 
 .list_item {
   font-size: 35px;
-  font-family: "Fira-code-bold";
+  /* font-family: "Fira-code-bold"; */
   /* font-family: 'Montserrat', sans-serif; */
 }
 

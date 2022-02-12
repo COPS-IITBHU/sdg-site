@@ -142,7 +142,10 @@ export default defineComponent({
 <style>
 body {
   background: #111;
-  font-family: "Fira-code-medium";
+  font-family: 'Crimson Pro';
+}
+h1, h2, h3 {
+  font-family: 'Noto Serif KR';
 }
 .info {
   left: 30%;

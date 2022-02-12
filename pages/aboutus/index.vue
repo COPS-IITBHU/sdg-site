@@ -143,9 +143,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style scoped>
-.quote {
-  /* font-family: 'Times New Roman', Times, serif; */
-}
-</style>
