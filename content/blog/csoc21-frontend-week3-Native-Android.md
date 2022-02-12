@@ -1,24 +1,13 @@
 ---
-title: Native Android - CSOC'21 Dev Frontend Week 3
+title: Android (Network Calls)
 date: 2020-06-22T11:51:59.091Z
 description: 'What happens when you log out of your Social Media account from one device and open it again on a different device? You see that all your chat messages, profile picture, groups etc. are preserved. It feels like you never changed your device at all. But how did this happen?'
-parentBlog: CSOC'21 Dev Frontend Week 3
+parentBlog: Native Android
 author: COPS SDG
 featureImage: /blog/android.webp
 ---
 
 # Android (Network Calls)
-
-Due Date: July 2, 2021
-type: Mandatory
-
-[Introduction]()
-
-[How to make Network Calls]()
-
-[Assignment]()
-
-[Submission]()
 
 # Introduction
 
@@ -64,6 +53,10 @@ The Rest API for your tasks will be → [https://todo-app-csoc.herokuapp.com/](h
 It will have some specific endpoints which are going to be used for authentication, creating data, deleting data, etc. You can see more details about them here ([https://github.com/COPS-IITBHU/csoc-2021-task-2-web#end-points](https://github.com/COPS-IITBHU/csoc-2021-task-2-web#end-points))
 
 # **Submission**
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
+
+Remember, deadline for this task is **July 02nd, 2021 23:59.**
 
 Submission has to be done by sharing your github repo link and the .apk file of your android app
 

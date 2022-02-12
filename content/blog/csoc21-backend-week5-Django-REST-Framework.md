@@ -1,18 +1,13 @@
 ---
-title: Django REST Framework- CSOC'21 Dev Backend Week 5
+title: Django REST Framework
 date: 2020-07-14T11:51:59.091Z
 description: 'Consider that after having completed the CSOC Django Assignment, you now built your own web app backed with Django as the backend.'
-subblogs: []
-display: False
-parentBlog: CSOC'21 Dev Backend Week 5
+parentBlog: Django
 author: COPS SDG
 featureImage: /blog/django.webp
 ---
 
 # Django REST Framework
-
-Due Date: August 7, 2021
-type: Mandatory
 
 # Introduction
 
@@ -118,6 +113,10 @@ Python naming guidelines
 [PEP 8 -- Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
 
 # Task and Submission
+
+This Blog is a part of [CSoC'21 Dev Backend](csoc21-backend).
+
+Remember, deadline for this task is **August 7th, 2021 23:59.**
 
 **So much for learning, here is your next Assignment!**
 

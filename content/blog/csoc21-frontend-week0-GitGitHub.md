@@ -1,16 +1,12 @@
 ---
-title: Git And GitHub - CSOC'21 Dev Frontend Week 0
+title: Git And GitHub
 date: 2021-05-30T11:51:59.091Z
 description: 'Git is a prevalent version control system (VCS) used in Open Source Development. It is a crucial skill to learn while developing in a team.'
-parentBlog: CSOC'21 Dev Frontend Week 0
 author: COPS SDG
-featureImage: /blog/github.webp
+featureImage: /blog/git-github.webp
 ---
 
 # Git and GitHub
-
-Due Date: June 6, 2021
-type: Mandatory
 
 # Introduction
 
@@ -71,6 +67,8 @@ Usually, when programmers use Git for version control of their code, they use th
 # Practice and Tasks
 
 Now that you are comfortable with the version control systems, we want you to try out some challenges to check you're on the right track.
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
 
 Remember, deadline for both the tasks is **June 6th, 2021 23:59.**
 

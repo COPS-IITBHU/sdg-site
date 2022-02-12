@@ -1,16 +1,13 @@
 ---
-title: Flutter - CSOC'21 Dev Frontend Week 2
+title: Flutter & Data Storage
 date: 2021-06-15T11:51:59.091Z
 description: 'You must have encountered keywords like async, await and Future till now. These are very important blocks that one should comprehend.'
-parentBlog: CSOC'21 Dev Frontend Week 2
+parentBlog: Flutter
 author: COPS SDG
 featureImage: /blog/Flutter.webp
 ---
 
 # Flutter
-
-Due Date: June 21, 2021
-type: Mandatory
 
 # Asynchronous code in Dart & Flutter
 
@@ -92,6 +89,10 @@ A beginners tutorial to Hive
 </div>
 
 # Challenge and Submission
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
+
+Remember, deadline for this task is **June 21st, 2021 23:59.**
 
 So much for learning, here is your next Assignment
 
