@@ -1,16 +1,12 @@
 ---
-title: Linux - CSOC'21 Dev Frontend Week 0
+title: Linux
 date: 2021-05-30T11:51:59.091Z
 description: 'Linux has become the de facto OS of programmers worldwide, and so you all must get comfortable with it.'
-parentBlog: CSOC'21 Dev Frontend Week 0
 author: COPS SDG
 featureImage: /blog/linux-logo.webp
 ---
 
 # Linux
-
-Due Date: June 6, 2021
-type: Mandatory
 
 # Introduction
 
@@ -106,6 +102,10 @@ You have a whole week so complete at least 15 levels and finally, store all the 
 [Bandit](http://overthewire.org/wargames/bandit/)
 
 # Submission
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
+
+Remember, deadline for this task is **June 6th, 2021 23:59.**
 
 You are required to store the list of passwords and commands you used to get the password of a level in another file - use; to separate each command of a particular level. Once done, submit both the files via this form:
 

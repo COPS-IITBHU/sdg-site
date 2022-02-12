@@ -1,16 +1,13 @@
 ---
-title: Native Android - CSOC'21 Dev Frontend Week 2
+title: Android Development & Storage
 date: 2021-06-15T11:51:59.091Z
 subtitle: "Android uses a file system that's similar to disk-based file systems on other platforms."
-parentBlog: CSOC'21 Dev Frontend Week 2
+parentBlog: Native Android
 author: COPS SDG
 featureImage: /blog/android.webp
 ---
 
-# Native Android
-
-Due Date: June 21, 2021
-type: Mandatory
+# Native Android & Storage
 
 # Introduction
 
@@ -80,6 +77,10 @@ Because of these considerations, we highly recommend that you use Room instead o
 Don't forget to give permissions to your app for accessing your device local storage .
 
 # Challenge and submission
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
+
+Remember, deadline for this task is **June 21st, 2021 23:59.**
 
 Let's dig in to the challenges of this week .
 

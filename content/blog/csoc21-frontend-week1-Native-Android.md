@@ -1,24 +1,17 @@
 ---
-title: Native Android - CSOC'21 Dev Frontend Week 1
+title: Basics of Android Development
 date: 2021-06-07T11:51:59.091Z
 description: 'The aptest definition for android is - "Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets."'
-parentBlog: CSOC'21 Dev Frontend Week 1
+parentBlog: Native Android
 author: COPS SDG
 featureImage: /blog/android.webp
 ---
 
 # Native Android
 
-Due Date: June 13, 2021
-type: Mandatory
-
 # Introduction
 
-The aptest definition for android is - "Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets."
-
 In short, we can say that it is an Operating system for touchscreen devices, and any device that runs on this Operating System is known as an Android Device. Now for every operating system, some applications can run on it to perform specific tasks. Similarly, for Android Devices, we have Android Apps that can run on them to perform specific tasks.
-
-Evident enough that the software engineering field for developing such apps is known as Android App Development.
 
 The official language for Android development is Kotlin, but Java is still used in many famous courses and many projects, so you are free to use any of them.
 
@@ -109,6 +102,10 @@ Remember, the deadline for this week's task is **June 13th, 2021, 23:59**.
 [Generating and solving Sudoku puzzles with Python](https://lvngd.com/blog/generating-and-solving-sudoku-puzzles-python/)
 
 # Submission
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
+
+Remember, deadline for this task is **June 13th, 2021 23:59.**
 
 As done in the previous week, you'll fork the repository, add your repo and deployed site link into the list of submissions in the `Androd.md` file . Submit pull requests from your newly created branch for this challenge.
 

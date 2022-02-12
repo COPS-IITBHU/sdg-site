@@ -1,16 +1,12 @@
 ---
-title: Javascript Framework React - CSOC'21 Dev Frontend Week 3
+title: Javascript Framework React
 date: 2021-06-22T11:51:59.091Z
 description: 'React is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications by dividing the UI into composable elements.'
-parentBlog: CSOC'21 Dev Frontend Week 3
 author: COPS SDG
 featureImage: /blog/React.webp
 ---
 
 # Javascript Library React
-
-Due Date: July 2, 2021
-type: Mandatory
 
 # React JS
 
@@ -128,9 +124,9 @@ After going through the basics of React you can go through the following beginne
   <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mTz0GXj8NN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-# Bonus Treat
-
 ---
+
+# Bonus Treat
 
 The complete documentation of Reacts JS and Next JS can be found here in case you wish to dive deep
 
@@ -145,6 +141,10 @@ Here is the article comprising of all the fundamentals of React JS discussed abo
 # Challenge and Submission
 
 **So much for learning, here is your next Assignment!**
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
+
+Remember, deadline for this task is **July 2nd, 2021 23:59.**
 
 [COPS-IITBHU/csoc-2021-task-3-reactjs](https://github.com/COPS-IITBHU/csoc-2021-task-3-reactjs)
 

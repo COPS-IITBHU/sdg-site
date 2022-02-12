@@ -1,16 +1,13 @@
 ---
-title: Javascript Framework VueJS - CSOC'21 Dev Frontend Week 3
+title: Javascript Framework VueJS
 date: 2021-06-22T11:51:59.091Z
 description: 'VueJS is a Progressive Javascript Framework which was born as a cumulation of the best parts from older frameworks like React and Angular.'
-parentBlog: CSOC'21 Dev Frontend Week 3
 author: COPS SDG
 featureImage: /blog/VUE.webp
 ---
 
 # Javascript Framework VueJS
 
-Due Date: July 2, 2021
-type: Mandatory
 
 # Introduction
 
@@ -187,6 +184,10 @@ These extension will help you debug your code better and also format your code t
 Remember to ask for help wherever required!
 
 ### Submission Guidelines
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
+
+Remember, deadline for this task is **July 2nd, 2021 23:59.**
 
 [COPS-IITBHU/csoc-2021-task-3-vue](https://github.com/COPS-IITBHU/csoc-2021-task-3-vue)
 

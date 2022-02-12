@@ -38,8 +38,8 @@
       <ul
         v-show="isOpen"
         class="
-          routeList
           transform
+          w-max
           -translate-y-half -translate-x-half
           fixed
           z-10
@@ -49,7 +49,11 @@
           left-1/2
         "
       >
-        <nuxt-link v-for="(page, index) in pages" :key="index" :to="page.url">
+        <nuxt-link
+          v-for="(page, index) in pages"
+          :key="index"
+          :to="page.url"
+          :prefetch="page.prefetch">
           <li
             class="
               list_item
@@ -57,7 +61,7 @@
               tracking-12px
               cursor-pointer
               text-white text-center
-              my-10
+              my-8
             "
             @click="closeNavbar"
             @keydown="closeNavbar"
@@ -77,11 +81,11 @@ export default {
       isActive: false,
       isOpen: false,
       pages: [
-        { name: 'Home', url: '/' },
-        { name: 'Blogs', url: '/blog' },
-        { name: 'Portfolio', url: '/portfolio' },
-        { name: 'About Us', url: '/aboutus' },
-        { name: 'Contact Us', url: '/contact' }
+        { name: 'Home', url: '/', prefect: false },
+        { name: 'Blogs', url: '/blog', prefetch: false },
+        { name: 'Team', url: '/portfolio', prefetch: false },
+        { name: 'About Us', url: '/aboutus', prefetch: true },
+        { name: 'Contact Us', url: '/contact', prefetch: true }
       ]
     }
   },
@@ -164,42 +168,32 @@ export default {
 
 .list_item {
   font-size: 35px;
+  @apply text-2xl md:text-3xl lg:text-4xl;
 }
 
-.list_item:before {
+.list_item:before, .list_item::after {
   content: ' ';
   display: block;
   position: absolute;
-  right: 0;
-  top: -2px;
   width: 0;
+  top: 2px;
   height: 100%;
   border-bottom: 2px solid #56eefd;
   transition: 0.3s;
 }
-
-.list_item:hover:before {
-  width: 50%;
+.list_item:before {
+  right: 0;
 }
 
 .list_item:after {
-  content: ' ';
-  display: block;
-  position: absolute;
   bottom: 0;
-  left: 0;
-  width: 0;
-  top: -2px;
-  height: 100%;
-  border-bottom: 2px solid #56eefd;
-  transition: 0.3s;
-  letter-spacing: 15px;
 }
 .list_item:hover {
   color: #56eefd;
 }
 
-.list_item:hover:after {
+.list_item:hover:before, .list_item:hover:after {
   width: 50%;
 }
+
 </style>

@@ -197,9 +197,9 @@ export default defineComponent({
     return {
       alums: [],
       members: {
+        Seniors: [],
         Juniors: [],
-        Sophomores: [],
-        Seniors: []
+        Sophomores: []
       },
       showCard: false,
       showAlum: false,
