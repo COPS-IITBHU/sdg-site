@@ -78,6 +78,9 @@ export default {
   user-select: none;
   text-decoration: none;
   top: 0;
+  @media (max-width: 1470px) {
+    color: #333;
+  }
 }
 
 .next:hover,
