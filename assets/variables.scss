@@ -3,9 +3,20 @@
 // The variables you want to modify
 // $font-size-root: 20px0;
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap');
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('../assets/NotoSerifKR-SemiBold.otf');
+}
 
 $body-font-family: Roboto !important;
 

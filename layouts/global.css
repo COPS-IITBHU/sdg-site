@@ -1,22 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-@font-face {
-    font-family: "Fira-code-bold";
-    /* font-weight: 900; */
-    src: local("Fira-code-bold"),
-     url(~assets\Fira_Code\static\FiraCode-Bold.ttf) format("truetype");
+/* @font-face {
+    font-family: "Lato-Regular";
+    src: local("Lato-Regular"),
+     url('../assets/Lato-Regular.ttf') format("truetype");
 }
 
 @font-face {
-    font-family: "Fira-code-regular";
-    /* font-weight: 400; */
-    src: local("Fira-code-regular"),
-     url(~assets\Fira_Code\static\FiraCode-Regular.ttf) format("truetype");
+    font-family: "Open Sans";
+    src: local("Open Sans"),
+     url(~assets\OpenSans-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Fira-code-medium";
-    /* font-weight: 600; */
-    src: local("Fira-code-medium"),
-     url(~assets\Fira_Code\FiraCode-VariableFont_wght.ttf) format("truetype");
-}
+    font-family: "Noto Serif KR";
+    src: local("Noto Serif KR"),
+     url(~assets\NotoSerifKR-SemiBold.ttf) format("truetype");
+} */
