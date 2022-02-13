@@ -20,7 +20,7 @@
           SDG
         </h1>
         <p class="antialiased text-shadow-md text-center px-4 text-lg lg:text-xl">
-          <span class="font-bold text-xl md:text-3xl mb-8 block" style="font-family: Lato">
+          <span class="font-bold text-xl md:text-3xl mb-8 font-display block">
             Club Of ProgrammerS IIT (BHU), Varanasi</span
           >
           We at Software Development Group are a bunch of designers and developers who aim to

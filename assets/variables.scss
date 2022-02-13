@@ -3,26 +3,36 @@
 // The variables you want to modify
 // $font-size-root: 20px0;
 
-@font-face {
-  font-family: 'Lato';
-  src: url('../assets/Lato-Regular.ttf');
-}
+@layer base {
+  @font-face {
+    font-family: 'Lato';
+    src: url('~/assets/Lato-Regular.ttf');
+  }
 
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../assets/OpenSans-Regular.ttf');
-}
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('~/assets/OpenSans-Regular.ttf');
+  }
 
-@font-face {
-  font-family: 'Noto Serif KR';
-  src: url('../assets/NotoSerifKR-SemiBold.otf');
+  @font-face {
+    font-family: 'Noto Serif KR';
+    src: url('~/assets/NotoSerifKR-SemiBold.otf');
+  }
 }
-
-$body-font-family: Roboto !important;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   margin-block: 0;
+}
+
+body {
+  background-color: #050505;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans';
+}
+
+h1, h2, h3 {
+  font-family: 'Noto Serif KR';
 }

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="carousel-3d-slide"
+    class="carousel-3d-slide absolute opacity-0 overflow-hidden top-0 m-0 text-center bg-gray-50"
     :style="slideStyle"
     :class="computedClasses"
     @click="goTo()"
@@ -175,26 +175,14 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 .carousel-3d-slide {
-  position: absolute;
-  opacity: 0;
   visibility: hidden;
-  overflow: hidden;
-  top: 0;
   border-radius: 0.75rem;
   border-color: #000;
   border-color: rgba(0, 0, 0, 0.4);
   border-style: solid;
   background-size: cover;
-  @apply bg-gray-50
-  display: block;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.carousel-3d-slide {
-  text-align: center;
 }
 
 .carousel-3d-slide img {

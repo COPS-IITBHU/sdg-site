@@ -140,13 +140,6 @@ export default defineComponent({
 </script>
 
 <style>
-body {
-  background: #111;
-  font-family: 'Open Sans';
-}
-h1, h2, h3 {
-  font-family: 'Noto Serif KR';
-}
 .info {
   left: 30%;
   color: white;

@@ -4,6 +4,10 @@ import typo from 'windicss/plugin/typography'
 export default {
   darkMode: 'class',
   plugins: [typo(), lineClamp],
+  scan: {
+    dirs: ['./'],
+    exclude: ['node_modules', 'dist', '.git', '.github', '.nuxt']
+  },
   safelist: 'prose prose-sm m-auto text-left',
   theme: {
     extend: {
@@ -15,6 +19,11 @@ export default {
         '3/5': '60%',
         '4/5': '80%'
       }
+    },
+    fontFamily: {
+      display: ['Lato'],
+      heading: ['"Noto Serif KR"'],
+      body: ['"Open Sans"']
     }
   }
 }
