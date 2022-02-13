@@ -62,8 +62,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: 'static/COPS-Logo.webp' },
-      { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
       {
         rel: 'apple-touch-icon',
