@@ -1,8 +1,23 @@
 // Ref: https://github.com/nuxt-community/vuetify-module#customvariables
 //
 // The variables you want to modify
-// $font-size-root: 20px;
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+// $font-size-root: 20px0;
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Serif KR';
+  src: url('../assets/NotoSerifKR-SemiBold.otf');
+}
+
 $body-font-family: Roboto !important;
 
 * {

@@ -168,7 +168,6 @@ export default {
 
 .list_item {
   @apply text-2xl md:text-3xl lg:text-4xl;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .list_item:before, .list_item::after {
