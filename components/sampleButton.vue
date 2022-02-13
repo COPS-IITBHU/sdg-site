@@ -8,18 +8,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api';
+import { defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   props: {
     innerText: {
       type: String,
-      default: '',
+      default: ''
     },
     clickFunction: {
       type: Function,
-      default: () => {},
-    },
-  },
-});
+      default: () => {}
+    }
+  }
+})
 </script>

@@ -3,30 +3,74 @@ export default {
   target: 'static',
   loading: {
     color: '#23CFFF',
-    height: '3px',
+    height: '3px'
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - ',
+    titleTemplate: 'SDG Site - %s',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Add It',
+        content:
+          'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.'
       },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'COPS SDG'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://sdg.copsiitbhu.ac.in/'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://cdn.discordapp.com/attachments/937985097779519531/941616659720966144/COPS-Logo.webp'
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://sdg.copsiitbhu.ac.in/'
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'COPS SDG'
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'We at Club of Programmers Software Development Group are a bunch of designers and developers who aim to encourage the development of technology and innovation in IIT BHU campus (and beyond) by learning, sharing knowledge and solving problems.'
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://cdn.discordapp.com/attachments/937985097779519531/941616659720966144/COPS-Logo.webp'
+      }
     ],
     link: [
+      { rel: 'icon', type: 'image/png', href: 'static/COPS-Logo.webp' },
       { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' },
       { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
       {
         rel: 'apple-touch-icon',
         size: '180x180',
-        href: '/apple-touch-icon.png',
-      },
-    ],
+        href: '/apple-touch-icon.png'
+      }
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -51,8 +95,8 @@ export default {
       'unplugin-icons/nuxt',
       {
         /* options */
-      },
-    ],
+      }
+    ]
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -64,14 +108,16 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots',
+    '@nuxtjs/robots'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    liveEdit: false
+  },
 
   /*
    ** Build configuration
@@ -79,7 +125,7 @@ export default {
    */
   build: {
     extractCSS: {
-      ignoreOrder: true,
+      ignoreOrder: true
     },
     optimization: {
       splitChunks: {
@@ -88,42 +134,42 @@ export default {
             name: 'styles',
             test: /\.(css|vue|scss)$/,
             chunks: 'all',
-            enforce: true,
-          },
-        },
-      },
-    },
+            enforce: true
+          }
+        }
+      }
+    }
   },
   sitemap: {
-    hostname: 'https://sdg.copsiitbhu.co.in',
+    hostname: 'https://sdg.copsiitbhu.co.in'
   },
   generate: {
     crawler: true,
     fallback: true,
-    interval: 2000,
+    interval: 2000
   },
   robots: {
     UserAgent: '*',
-    Allow: '*',
+    Allow: '*'
   },
   windicss: {
     scan: {
       dirs: ['./'],
-      exclude: ['node_modules', 'dist', '.git', '.github', '.nuxt'],
+      exclude: ['node_modules', 'dist', '.git', '.github', '.nuxt']
     },
     preflight: {
       alias: {
         // add nuxt aliases
         'nuxt-link': 'a',
         // @nuxt/image module
-        'nuxt-img': 'img',
-      },
-    },
+        'nuxt-img': 'img'
+      }
+    }
   },
   gsap: {
     extraPlugins: {
       scrollTo: true,
-      scrollTrigger: true,
-    },
-  },
-};
+      scrollTrigger: true
+    }
+  }
+}

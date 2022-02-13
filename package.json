@@ -8,8 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate -m",
     "lint": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
-    "lint:fix": "pnpm lint --fix",
-    "format": "prettier --write ./**/*.{js,vue,ts,json} --ignore-path ./.gitignore",
+    "format": "eslint --ext .js,.vue,.ts --ignore-path .gitignore . --fix",
     "postinstall": "is-ci || husky install"
   },
   "dependencies": {
@@ -23,11 +22,12 @@
     "core-js": "^3.6.5",
     "gsap": "^3.7.1",
     "nuxt": "^2.14.6",
+    "opti-image": "^0.10.0",
     "particles.js": "^2.0.0",
-    "particlesjs": "^2.2.3"
+    "vue-lottie": "^0.2.1"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.412",
+    "@iconify/json": "^1.1.418",
     "@nuxt/types": "^2.14.6",
     "@nuxt/typescript-build": "^2.0.3",
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
@@ -39,7 +39,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^7.6.0",
     "eslint-plugin-vuejs-accessibility": "^0.7.1",
-    "fibers": "^5.0.0",
     "husky": "^7.0.2",
     "is-ci": "^3.0.0",
     "nuxt-gsap-module": "^1.4.0",
@@ -48,7 +47,7 @@
     "prettier": "^2.1.2",
     "sass": "^1.35.2",
     "sass-loader": "^10.1.1",
-    "unplugin-icons": "^0.12.12"
+    "unplugin-icons": "^0.12.16"
   },
   "engines": {
     "node": ">=14",
