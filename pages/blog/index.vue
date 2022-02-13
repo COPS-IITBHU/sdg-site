@@ -22,8 +22,8 @@ export default defineComponent({
   },
   data () {
     return {
-      title: 'COPS SDG',
-      subtitle: '',
+      title: 'Software Development Blog',
+      subtitle: 'Club of Programmers',
       featureImage: '/blog/about-hero.webp'
     }
   },
