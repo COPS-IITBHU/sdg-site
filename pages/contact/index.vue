@@ -2,7 +2,7 @@
   <main class="text-center text-light-50">
     <div id="head-map" class="flex justify-center items-center">
       <Map class="w-full" />
-      <span class="absolute text-light-50 text-6xl xl:text-8xl font-bold">Contact Us</span>
+      <span class="absolute text-light-50 text-6xl xl:text-8xl font-bold" style="font-family: Lato">Contact Us</span>
     </div>
 
     <div
@@ -106,7 +106,7 @@
     </div>
     <div class="my-4 px-2">
       <h3 class="py-2 text-cyan-400 text-3xl font-bold">
-        WE'RE ALSO THERE
+        WE'RE ALSO HERE
       </h3>
       <p class="text-light-50">
         Follow us on the following social media handles and stay apprised about

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="flex flex-row justify-center items-center w-full main py-12">
-      <h1 class="aboutus">About Us</h1>
+      <h1 class="aboutus font-display">About Us</h1>
     </div>
     <div>
       <svg
@@ -35,12 +35,6 @@
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
-
-h1 {
-  font-family: 'Lato', sans-serif;
-}
-
 .header {
   background: linear-gradient(
     55deg,
@@ -91,7 +85,6 @@ h1 {
 
 .aboutus {
   @apply lg:text-12xl text-6xl;
-  font-family: 'Red Hat Display', sans-serif;
   font-weight: 900;
   background: url('/aboutus/victim-collage.webp');
   background-size: 40%;

@@ -197,9 +197,9 @@ export default defineComponent({
     return {
       alums: [],
       members: {
+        Seniors: [],
         Juniors: [],
-        Sophomores: [],
-        Seniors: []
+        Sophomores: []
       },
       showCard: false,
       showAlum: false,
@@ -349,9 +349,5 @@ export default defineComponent({
   border: 1px solid rgb(48, 49, 51);
   border-radius: 50%;
   box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
-}
-body {
-  scroll-behavior: smooth;
-  background: #050505;
 }
 </style>

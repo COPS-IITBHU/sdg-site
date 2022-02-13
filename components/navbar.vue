@@ -32,14 +32,13 @@
         />
       </svg>
     </button>
-    <section class="navbar top-0 left-0 w-screen z-10 fixed flex">
-      <aside v-for="div in 4" :key="div" class="navBg h-0"></aside>
-
+    <section class="navbar top-0 left-0 w-screen fixed flex -z-5">
+      <aside v-for="div in 4" :key="div" class="navBg"></aside>
       <ul
         v-show="isOpen"
         class="
-          routeList
           transform
+          w-max
           -translate-y-half -translate-x-half
           fixed
           z-10
@@ -49,7 +48,11 @@
           left-1/2
         "
       >
-        <nuxt-link v-for="(page, index) in pages" :key="index" :to="page.url">
+        <nuxt-link
+          v-for="(page, index) in pages"
+          :key="index"
+          :to="page.url"
+          :prefetch="page.prefetch">
           <li
             class="
               list_item
@@ -57,7 +60,7 @@
               tracking-12px
               cursor-pointer
               text-white text-center
-              my-10
+              my-8
             "
             @click="closeNavbar"
             @keydown="closeNavbar"
@@ -77,11 +80,11 @@ export default {
       isActive: false,
       isOpen: false,
       pages: [
-        { name: 'Home', url: '/' },
-        { name: 'Blogs', url: '/blog' },
-        { name: 'Portfolio', url: '/portfolio' },
-        { name: 'About Us', url: '/aboutus' },
-        { name: 'Contact Us', url: '/contact' }
+        { name: 'Home', url: '/', prefect: false },
+        { name: 'Blogs', url: '/blog', prefetch: false },
+        { name: 'Team', url: '/portfolio', prefetch: false },
+        { name: 'About Us', url: '/aboutus', prefetch: true },
+        { name: 'Contact Us', url: '/contact', prefetch: true }
       ]
     }
   },
@@ -92,17 +95,11 @@ export default {
     configNavbar () {
       this.openTimeline = this.$gsap
         .timeline({ paused: true })
-        .to('.line', { duration: 0.7, stroke: '#ece9e9', stagger: 0.1 })
-        .to('.navBg', {
-          duration: 0.8,
-          height: '100vh',
-          stagger: 0.3
-        })
-        .from(
-          '.list_item',
-          { duration: 0.4, y: 20, stagger: 0.3, opacity: 0 },
-          2
-        )
+        .to('.navbar', { zIndex: 10 })
+        .to('.line', { duration: 0.2, stroke: '#ece9e9', stagger: 0.05 })
+        .to('.navBg', { duration: 0.8 })
+        .from('.navBg', { scaleY: 0, stagger: 0.3 }, 0.2)
+        .from('.list_item', { duration: 0.4, y: 20, stagger: 0.3, autoAlpha: 0 })
     },
     async openNavbar () {
       this.isActive = true
@@ -160,47 +157,37 @@ export default {
   width: 25%;
   background-color: #111;
   border-bottom: 5px solid #56eefd;
+  height: 100vh;
+  transform-origin: top left;
 }
 
 .list_item {
-  font-size: 35px;
-  font-family: 'Montserrat', sans-serif;
+  @apply text-2xl md:text-3xl lg:text-4xl;
 }
 
-.list_item:before {
+.list_item:before, .list_item::after {
   content: ' ';
   display: block;
   position: absolute;
-  right: 0;
-  top: -2px;
   width: 0;
+  top: 2px;
   height: 100%;
   border-bottom: 2px solid #56eefd;
   transition: 0.3s;
 }
-
-.list_item:hover:before {
-  width: 50%;
+.list_item:before {
+  right: 0;
 }
 
 .list_item:after {
-  content: ' ';
-  display: block;
-  position: absolute;
   bottom: 0;
-  left: 0;
-  width: 0;
-  top: -2px;
-  height: 100%;
-  border-bottom: 2px solid #56eefd;
-  transition: 0.3s;
-  letter-spacing: 15px;
 }
 .list_item:hover {
   color: #56eefd;
 }
 
-.list_item:hover:after {
+.list_item:hover:before, .list_item:hover:after {
   width: 50%;
 }
+
 </style>

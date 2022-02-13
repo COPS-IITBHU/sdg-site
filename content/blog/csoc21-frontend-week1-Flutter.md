@@ -1,16 +1,13 @@
 ---
-title: Flutter - CSOC'21 Dev Frontend Week 1
+title: Basics of Flutter
 date: 2021-06-07T11:51:59.091Z
 description: 'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.'
-parentBlog: CSOC'21 Dev Frontend Week 1
+parentBlog: Flutter
 author: COPS SDG
 featureImage: /blog/Flutter.webp
 ---
 
 # Flutter
-
-Due Date: June 13, 2021
-type: Mandatory
 
 # Introduction
 
@@ -37,14 +34,6 @@ These disadvantages are not the issue in flutter. To know why, see [Flutter Arch
 ## Codebase
 
 The source code. By single codebase it means that you can create web, mobile and desktop applications by writing code only for one and allow access to all through this. The Programming language flutter uses is Dart.
-
-# Why Flutter?
-
-For a start, have a look at companies that use flutter
-
-![Flutter%206f40b83ab85e4deea146ed1c8877db97/flut.png](Flutter%206f40b83ab85e4deea146ed1c8877db97/flut.png)
-
-Flutter provides the advantage of native applications providing performance, greater control over the hardware as well as ease of use for developers.
 
 # Flutter Architecture
 
@@ -184,6 +173,10 @@ Remember, the deadline for this week's task is **June 13th, 2021, 23:59**.
 [Generating and solving Sudoku puzzles with Python](https://lvngd.com/blog/generating-and-solving-sudoku-puzzles-python/)
 
 # Submission
+
+This Blog is a part of [CSoC'21 Dev Frontend](/blog/csoc21-frontend).
+
+Remember, deadline for this task is **June 13th, 2021 23:59.**
 
 As done in the previous week, you'll fork the repository, add your repo and apk link into the list of submissions in the `Flutter.md` file . Submit pull requests from your newly created branch for this challenge.
 

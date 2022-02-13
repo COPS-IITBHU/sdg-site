@@ -36,8 +36,11 @@ export default defineComponent({
     const { singlePost } = params
     const post = await $content('blog', singlePost).fetch()
     return {
-      post
+      post, title: post.title
     }
+  },
+  head () {
+    return { title: this.title }
   },
   computed: {
     date () {
@@ -76,7 +79,7 @@ p,
 .prose strong {
   color: #bdc1c6;
 }
-p {
+p, li {
   code {
     color: #cdd1d9;
     background-color: #6e768166;

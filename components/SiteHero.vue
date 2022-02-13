@@ -11,7 +11,7 @@
       />
       <div class="hero-body">
         <div>
-          <h1 class="title animated animatedFadeInUp fadeInUp">
+          <h1 class="title animated animatedFadeInUp fadeInUp font-display">
             {{ title }}
           </h1>
           <h2 class="subtitle">

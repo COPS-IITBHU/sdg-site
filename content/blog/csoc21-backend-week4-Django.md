@@ -1,22 +1,15 @@
 ---
-title: Django - CSOC'21 Dev Backend Week 4
-date: 2020-06-22T11:51:59.091Z
+title: Basics of Django
+date: 2021-06-22T11:51:59.091Z
 description: 'So After Frontend, we are left with Web Backend to gain a good command over web dev. That is why we bring you here, to Django!'
-subblogs: []
-display: False
-parentBlog: CSOC'21 Dev Backend Week 4
+parentBlog: Django
 author: COPS SDG
 featureImage: /blog/django.webp
 ---
 
 # Django
 
-Due Date: July 24, 2021
-type: Mandatory
-
 # Introduction
-
-So After Frontend, we are left with Web Backend to gain a good command over web dev. That is why we bring you here, to Django!
 
 Django is a Loosely Coupled Framework, that uses MVC (Model-View-Controller) core architecture. What is MVC, well that's not important for now.
 
@@ -102,6 +95,10 @@ For Custom Login UI, try out this:
 [](https://www.fir3net.com/Web-Development/Django/django.html)
 
 # Challenge and Submission
+
+This Blog is a part of [CSoC'21 Dev Backend](csoc21-backend).
+
+Remember, deadline for this task is **July 24th, 2021 23:59.**
 
 **So much for learning, here is your next Assignment!**
 
