@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper relative my-4 rounded-xl">
-    <div class="box relative w-full min-h-3xl md:min-h-lg flex justify-center items-center rounded-3xl">
+    <div class="box relative w-full min-h-lg flex justify-center items-center rounded-3xl">
       <div
         class="
           w-half

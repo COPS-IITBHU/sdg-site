@@ -42,7 +42,7 @@
             v-for="project in projects"
             :key="project.name"
             ref="sections"
-            class="section min-h-screen"
+            class="section md:min-h-screen"
           >
             <HomeProject-card :project="project" />
           </div>
