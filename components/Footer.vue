@@ -46,15 +46,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style scoped>
-.icon {
-  color: rgba(0, 0, 0, 0.5);
-  transition: 1s ease-in-out;
-}
-.icon:hover {
-  transition: 0s ease-in-out;
-  color: #0f0;
-  text-shadow: 0 0 120px #0f0;
-}
-</style>
