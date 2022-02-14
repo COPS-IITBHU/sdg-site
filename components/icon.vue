@@ -17,12 +17,12 @@ export default {
 
 <style scoped>
 .icon {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.05);
   transition: 1s ease-in-out;
 }
 .icon:hover {
   transition: 0s ease-in-out;
-  color: #0f0;
-  text-shadow: 0 0 120px #0f0;
+  color: #1ad3a9;
+  text-shadow: 0 0 120px #1ad3a9;
 }
 </style>
