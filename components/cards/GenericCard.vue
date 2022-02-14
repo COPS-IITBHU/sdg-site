@@ -39,7 +39,6 @@
 <script>
 import { OptiImage } from 'opti-image'
 import { defineComponent } from '@nuxtjs/composition-api'
-const imageDimensionDefault = '16x9'
 export default defineComponent({
   components: {
     OptiImage
@@ -48,24 +47,24 @@ export default defineComponent({
     title: { type: String, default: '' },
     image: { type: String, default: '' },
     link: { type: String, default: '' },
-    imageDimensions: { type: String, default: imageDimensionDefault }
+    imageDimensions: { type: String, default: '16x9' }
+  },
+  data () {
+    return { screenWidth: 2000 }
   },
   computed: {
     subBlogs () {
       return []
     },
     imageRatio () {
-      const imageDimensions = this.imageDimensions || imageDimensionDefault
-      return imageDimensions
-        .toLowerCase()
-        .split('x')
-        .map((size) => {
-          return size * 2000
-        })
+      return [this.screenWidth, (9 / 16) * this.screenWidth]
     },
     responsiveImage () {
       return { src: this.image, srcSet: '' }
     }
+  },
+  mounted () {
+    this.screenWidth = (window.screen.width) * 0.90
   }
 })
 </script>
@@ -115,5 +114,9 @@ export default defineComponent({
 }
 .card-content {
   color: white;
+}
+
+.opti-image-before-load {
+  display: none;
 }
 </style>
