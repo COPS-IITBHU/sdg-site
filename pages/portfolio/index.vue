@@ -58,69 +58,75 @@
       </client-only>
     </div>
     <main
-      class="w-100% bg-hex-101010 z-1 p-10"
+      class="w-full bg-hex-101010 z-1 p-4"
     >
-      <div class="nav flex p-10">
-        <div class="nav-elements w-1/2 p-8 drop-shadow-3xl">
-          <lottie
-            :width="250"
-            :height="250"
-            :options="lottieOptions.first"
-            class="lottie"
-            @animCreated="handleAnimation($event, 'firstAnim')"
-          />
-          <span class="text-3xl mt-10 py-10">Developers</span>
-          <p class="text-sm mt-10">
-            A team of zealous coders improvising the world as you complete reading this sentence.
-          </p>
-          <button
-            class="
-              btn
-              w-30
-              p-2
-              mt-10
-              border
-              rounded-lg
-              hover:bg-hex-fff hover:text-black
-            "
-            aria-label="view-team"
-            @click="showSdg()"
-          >
-            View Team
-          </button>
-        </div>
-        <div class="nav-elements w-50vw p-8 -mt-20">
-          <lottie
-            :width="250"
-            :height="250"
-            :options="lottieOptions.sophies"
-            class="lottie"
-            @mouseover="play"
-            @focus="play"
-            @animCreated="handleAnimation($event, 'sophiesAnim')"
-          />
-          <span class="text-3xl mt-10 py-10">Alums</span>
-          <p class="text-sm mt-10">
-            They are the building blocks, our mentors, and the very soul of this team.
-          </p>
-          <button
-            class="
-              btn
-              w-30
-              p-2
-              mt-10
-              border
-              font-400
-              rounded-lg
-              hover:bg-hex-fff hover:text-black
-            "
-            aria-label="view-alums"
-            @click="showAlums()"
-          >
-            View Team
-          </button>
-        </div>
-      </div>
+      <section class="flex-col lg:flex-row flex p-4 justify-evenly text-white items-center">
+        <figure class="nav-elements p-4 md:px-8 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
+          <div>
+            <lottie
+              width="250"
+              :options="lottieOptions.first"
+              class="mr-8"
+              @animCreated="handleAnimation($event, 'firstAnim')"
+            />
+          </div>
+          <figcaption class="py-4">
+            <span class="text-3xl py-10 font-heading">Developers</span>
+            <p class="text-sm mt-2 text-justify">
+              A team of zealous coders improvising the world as you complete reading this sentence.
+            </p>
+            <button
+              class="
+                btn
+                w-30
+                p-2
+                mt-8
+                border
+                rounded-lg
+                hover:bg-hex-fff hover:text-black
+              "
+              aria-label="view-team"
+              @click="showSdg()"
+            >
+              View Team
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="nav-elements px-8 py-4 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
+          <div>
+            <lottie
+              width="250"
+              :options="lottieOptions.sophies"
+              class="lottie"
+              @mouseover="play"
+              @focus="play"
+              @animCreated="handleAnimation($event, 'sophiesAnim')"
+            />
+          </div>
+          <figcaption class="py-4">
+            <span class="text-3xl py-10 font-heading">Alums</span>
+            <p class="text-sm mt-2 text-justify">
+              They are the building blocks, our mentors, and the very soul of this team.
+            </p>
+            <button
+              class="
+                btn
+                w-30
+                p-2
+                mt-8
+                border
+                font-400
+                rounded-lg
+                hover:bg-hex-fff hover:text-black
+              "
+              aria-label="view-alums"
+              @click="showAlums()"
+            >
+              View Alums
+            </button>
+          </figcaption>
+        </figure>
+      </section>
       <section v-if="showCard && !showAlum">
         <div v-for="(value, header) in members" :key="header" class="text-center px-4 mx-auto my-4">
           <h2
@@ -285,32 +291,16 @@ export default defineComponent({
 })
 </script>
 <style>
-.nav {
-  margin-top: 5px;
-  margin-inline: auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 .nav-elements {
-  margin: 0 auto;
-  letter-spacing: 2px;
-  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  color: #fff;
-  width: 500px;
 }
 .nav-elements:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.nav-elements .lottie {
-  float: left;
-  position: relative;
-  margin-right: 30px;
-}
+
 .line {
   position: relative;
   margin-bottom: 2rem;
