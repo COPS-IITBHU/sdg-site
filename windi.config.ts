@@ -22,7 +22,7 @@ export default {
     },
     fontFamily: {
       display: ['Raleway'],
-      heading: ['"Libre Baskerville"']
+      heading: ["'Libre Baskerville'", 'Arial', 'Helvetica', 'sans-serif']
     }
   }
 }

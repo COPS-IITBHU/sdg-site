@@ -6,17 +6,26 @@
 @layer base {
   @font-face {
     font-family: 'Open Sans';
-    src: url('~/assets/OpenSans-Regular.ttf');
+    src: local('Open Sans'), local('OpenSans-Regular'), url('~/assets/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: optional;
   }
 
   @font-face {
     font-family: 'Libre Baskerville';
-    src: url('~/assets/LibreBaskerville-Regular.ttf');
+    src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url('~/assets/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: optional;
   }
 
   @font-face {
     font-family: 'Raleway';
-    src: url('~/assets/Raleway-VariableFont_wght.ttf');
+    src: local('Raleway'), local('Raleway-VariableFont'), url('~/assets/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: optional;
   }
 }
 
@@ -25,14 +34,15 @@
   padding: 0;
   box-sizing: border-box;
   margin-block: 0;
+  margin-inline: 0;
 }
 
 body {
   background-color: #050505;
   scroll-behavior: smooth;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: 'Libre Baskerville';
+  font-family: 'Libre Baskerville', Arial, Helvetica, sans-serif;
 }
