@@ -21,9 +21,8 @@ export default {
       }
     },
     fontFamily: {
-      display: ['Lato'],
-      heading: ['"Noto Serif KR"'],
-      body: ['"Open Sans"']
+      display: ['Raleway'],
+      heading: ['"Libre Baskerville"']
     }
   }
 }

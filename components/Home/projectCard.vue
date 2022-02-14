@@ -40,14 +40,15 @@
             flex flex-col
             justify-center
             items-center
+            text-center
           "
         >
-          <h2 class="text-3xl font-bold my-4">{{ project.name }}</h2>
-          <p>{{ project.desc }}</p>
+          <h2 class="text-3xl font-semibold my-4">{{ project.name }}</h2>
+          <p class="text-lg font-light md:leading-relaxed lg:leading-loose">{{ project.desc }}</p>
           <span v-if="project.tech" class="contentHeading text-xl mt-4">
             Technologies Used</span
           >
-          <ul class="techList list-none">
+          <ul class="techList list-none text-left">
             <li v-for="tech in project.tech" :key="tech">{{ tech }}</li>
           </ul>
           <a :href="project.url" target="_blank" rel="noreferrer">
@@ -58,12 +59,16 @@
                 transition-all
                 ease-in-out
                 duration-150
-                p-4
-                rounded-xl
-                my-4
+                px-6
+                py-4
+                rounded-full
+                md:mt-8
+                mt-4
+                mb-2
+                font-heading
               "
             >
-              Open App
+              Explore
             </button>
           </a>
         </div>
@@ -134,7 +139,7 @@ export default {
 }
 .techList li::before {
   content: '🎯';
-  margin: 0px 20px 0 0px;
+  margin: 0px 16px 0 0px;
 }
 .contentBtn {
   box-shadow: 0 0 40px 40px #0946ca inset, 0 0 0 0 #0946ca;
