@@ -5,18 +5,18 @@
 
 @layer base {
   @font-face {
-    font-family: 'Lato';
-    src: url('~/assets/Lato-Regular.ttf');
-  }
-
-  @font-face {
     font-family: 'Open Sans';
     src: url('~/assets/OpenSans-Regular.ttf');
   }
 
   @font-face {
-    font-family: 'Noto Serif KR';
-    src: url('~/assets/NotoSerifKR-SemiBold.otf');
+    font-family: 'Libre Baskerville';
+    src: url('~/assets/LibreBaskerville-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Raleway';
+    src: url('~/assets/Raleway-VariableFont_wght.ttf');
   }
 }
 
@@ -34,5 +34,5 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Noto Serif KR';
+  font-family: 'Libre Baskerville';
 }
