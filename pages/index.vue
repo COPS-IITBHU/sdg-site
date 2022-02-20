@@ -44,7 +44,7 @@
             ref="sections"
             class="section md:min-h-screen"
           >
-            <HomeProject-card :project="project" />
+            <async-card :project="project" />
           </div>
         </section>
       </transition>
@@ -53,9 +53,12 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineAsyncComponent, defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
+  components: {
+    asyncCard: defineAsyncComponent(() => import('@/components/Home/projectCard.vue'))
+  },
   data () {
     return {
       isListVisible: false,
