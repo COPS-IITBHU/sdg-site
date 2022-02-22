@@ -17,12 +17,6 @@ export default defineComponent({
     PostsGrid,
     LoadingSpinner
   },
-  async asyncData ({ $content }) {
-    const articles = await $content('blog').fetch()
-    return {
-      articles
-    }
-  },
   data () {
     return {
       title: 'Software Development Blog',
