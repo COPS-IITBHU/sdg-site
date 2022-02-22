@@ -37,7 +37,7 @@ jobs:
           run_install: true
 
       - name: Build project 👨🏻‍💻
-        run: pnpm run generate
+        run: pnpm build
 
       - name: Run linter 👀
-        run: pnpm run lint
+        run: pnpm lint
