@@ -37,7 +37,8 @@
         </ul>
       </transition>
       <transition name="fade">
-        <section v-if="!$fetchState.pending" class="projectCards flex flex-col justify-evenly items-center">
+        <loading-spinner v-if="$fetchState.pending" />
+        <section v-else class="projectCards flex flex-col justify-evenly items-center">
           <div
             v-for="project in projects"
             :key="project.name"

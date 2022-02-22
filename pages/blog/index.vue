@@ -1,18 +1,21 @@
 <template>
   <div id="home-page" class="page-wrapper home-page">
     <site-hero :title="title" :subtitle="subtitle" :image="featureImage" />
-    <posts-grid :resources="articles" />
+    <loading-spinner v-if="$fetchState.pending" />
+    <posts-grid v-else :resources="articles" />
   </div>
 </template>
 
 <script>
 import { defineComponent } from '@nuxtjs/composition-api'
 import PostsGrid from '~/components/grids/PostsGrid.vue'
+import LoadingSpinner from '~/components/LoadingSpinner.vue'
 
 export default defineComponent({
   name: 'HomePage',
   components: {
-    PostsGrid
+    PostsGrid,
+    LoadingSpinner
   },
   async asyncData ({ $content }) {
     const articles = await $content('blog').fetch()
@@ -24,8 +27,13 @@ export default defineComponent({
     return {
       title: 'Software Development Blog',
       subtitle: 'Club of Programmers',
-      featureImage: '/blog/about-hero.webp'
+      featureImage: '/blog/about-hero.webp',
+      articles: null
     }
+  },
+  async fetch () {
+    this.articles = await this.$content('blog').fetch()
+    this.blogTree()
   },
   head: {
     title: 'Blogs',
@@ -37,9 +45,6 @@ export default defineComponent({
           'We aim at spreading the love for code to the masses and to facilitate this, our members jot down all the knowledge they have in the form of blogs. SDG Blogs is a storehouse of knowledge-packed, beginner-friendly and structured resources to help you delve into the colossal world of development.'
       }
     ]
-  },
-  mounted () {
-    this.blogTree()
   },
   methods: {
     sortByTime (obj) {

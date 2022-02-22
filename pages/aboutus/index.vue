@@ -44,7 +44,8 @@
     </section>
     <youtube />
     <achievementslogo />
-    <carousel3d v-if="!$fetchState.pending">
+    <loading-spinner v-if="$fetchState.pending" />
+    <carousel3d v-else>
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
         <h3 class="text-xl font-semibold">{{ slide.title }}</h3>
         <p class="px-6 my-2">
@@ -71,6 +72,7 @@ import achievementslogo from '~/components/about-us/achievementslogo.vue'
 import carousel3d from '~/components/about-us/carousel/carousel-3d.vue'
 import slide from '~/components/about-us/carousel/carousel-slide.vue'
 import youtube from '~/components/about-us/youtube.vue'
+import LoadingSpinner from '~/components/LoadingSpinner.vue'
 
 export default defineComponent({
   components: {
@@ -79,7 +81,8 @@ export default defineComponent({
     achievementslogo,
     carousel3d,
     slide,
-    AboutUsCard
+    AboutUsCard,
+    LoadingSpinner
   },
   data () {
     return {
