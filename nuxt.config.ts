@@ -163,7 +163,8 @@ export default {
         // @nuxt/image module
         'nuxt-img': 'img'
       }
-    }
+    },
+    analyze: true
   },
   gsap: {
     extraPlugins: {

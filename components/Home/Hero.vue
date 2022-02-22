@@ -30,7 +30,7 @@
         </p>
       </section>
     </div>
-    <section id="box" class="flex flex-col overflow-hidden 2-full h-screen">
+    <section id="box" class="flex flex-col overflow-hidden w-full h-screen">
       <div
         v-for="index in 27"
         :key="index"
@@ -56,34 +56,28 @@
     </section>
   </div>
 </template>
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from '@nuxtjs/composition-api'
+
+export default defineComponent({
   data () {
     return {
       iconRow1: [
         'bi:github',
-        'fa-solid:graduation-cap',
         'bx:bxl-apple',
         'entypo:code',
-        'fluent:clipboard-task-list-rtl-24-regular',
         'ion:logo-angular',
         'dashicons:database',
         'cib:octopus-deploy',
-        'icons8:idea',
         'fluent:branch-fork-24-filled',
         'ion:logo-linkedin',
         'akar-icons:react-fill',
         'fa-brands:js-square',
         'whh:ironman',
-        'ci:cookie',
-        'bx:bx-heart',
-        'fluent:meet-now-48-filled',
         'la:node-js',
         'fa-solid:robot',
-        'fa-solid:bolt',
         'bx:bx-coffee-togo',
         'bi:headset',
-        'akar-icons:google-fill',
         'teenyicons:npm-outline',
         'ci:facebook',
         'fluent:people-team-16-regular',
@@ -93,24 +87,17 @@ export default {
       iconRow2: [
         'akar-icons:clock',
         'ic:baseline-cloud-download',
-        'fluent:brain-circuit-20-filled',
         'bi:camera-fill',
         'uis:calender',
-        'fa-regular:copy',
         'la:reddit',
         'bx:bxs-book-bookmark',
-        'ic:baseline-copyright',
         'ion:logo-python',
         'la:github-alt',
-        'ph:chalkboard-fill',
         'fluent:bluetooth-24-filled',
         'fa-solid:user-secret',
-        'bx:bxs-share-alt',
         'akar-icons:discord-fill',
         'ic:outline-android',
         'grommet-icons:technology',
-        'bi:hourglass-split',
-        'bx:bxs-like',
         'cib:google-chrome',
         'bx:bxl-vuejs',
         'bx:bxs-trash',
@@ -122,7 +109,7 @@ export default {
       ]
     }
   }
-}
+})
 </script>
 <style scoped>
 

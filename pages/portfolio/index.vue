@@ -64,7 +64,7 @@
         <figure class="nav-elements p-4 md:px-8 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
           <div>
             <lottie
-              width="250"
+              :width="250"
               :options="lottieOptions.first"
               class="mr-8"
               @animCreated="handleAnimation($event, 'firstAnim')"
@@ -95,7 +95,7 @@
         <figure class="nav-elements px-8 py-4 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
           <div>
             <lottie
-              width="250"
+              :width="200"
               :options="lottieOptions.sophies"
               class="lottie"
               @mouseover="play"

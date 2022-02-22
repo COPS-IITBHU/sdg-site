@@ -6,9 +6,9 @@ module.exports = {
   },
   extends: [
     'plugin:vuejs-accessibility/recommended',
-    '@nuxtjs',
     'plugin:nuxt/recommended',
-    'eslint:recommended'
+    'eslint:recommended',
+    '@nuxtjs/eslint-config-typescript'
   ],
   plugins: ['vuejs-accessibility', 'prettier'],
   // add your custom rules here

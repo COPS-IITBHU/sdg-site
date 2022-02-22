@@ -7,7 +7,6 @@
         :src="`${image}`"
         :lazy="false"
         :srcset="responsiveImage.srcSet"
-        loading="lazy"
       />
       <div class="hero-body">
         <div>

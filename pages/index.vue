@@ -37,14 +37,15 @@
         </ul>
       </transition>
       <transition name="fade">
-        <section v-if="!$fetchState.pending" class="projectCards flex flex-col justify-evenly items-center">
+        <loading-spinner v-if="$fetchState.pending" />
+        <section v-else class="projectCards flex flex-col justify-evenly items-center">
           <div
             v-for="project in projects"
             :key="project.name"
             ref="sections"
             class="section md:min-h-screen"
           >
-            <HomeProject-card :project="project" />
+            <async-card :project="project" />
           </div>
         </section>
       </transition>
@@ -53,9 +54,12 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineAsyncComponent, defineComponent } from '@nuxtjs/composition-api'
 
 export default defineComponent({
+  components: {
+    asyncCard: defineAsyncComponent(() => import('@/components/Home/projectCard.vue'))
+  },
   data () {
     return {
       isListVisible: false,

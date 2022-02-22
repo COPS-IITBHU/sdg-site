@@ -13,10 +13,11 @@
     >
       <nuxt-img
         :src="image"
-        height="851"
-        width="1280"
+        height="500"
+        width="500"
         class="rounded-full border-light-100 border-8 object-cover"
         :alt="heading"
+        :srcset="`${imgName}.webp 1300w, ${imgName}_md.webp 800w, ${imgName}_sm.webp 400w`"
         loading="lazy"
       />
     </div>
@@ -35,6 +36,11 @@ export default defineComponent({
     heading: String,
     image: String,
     text: String
+  },
+  data () {
+    return {
+      imgName: (this.image || '').split('.')[0]
+    }
   }
 })
 </script>
