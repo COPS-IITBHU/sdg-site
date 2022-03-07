@@ -32,8 +32,7 @@
         />
       </svg>
     </button>
-    <section class="navbar top-0 left-0 w-screen fixed flex -z-5">
-      <aside v-for="div in 4" :key="div" class="navBg"></aside>
+    <section class="navbar top-0 w-screen fixed flex z-10">
       <ul
         v-show="isOpen"
         class="
@@ -95,10 +94,7 @@ export default {
     configNavbar () {
       this.openTimeline = this.$gsap
         .timeline({ paused: true })
-        .to('.navbar', { zIndex: 10 })
-        .to('.line', { duration: 0.2, stroke: '#ece9e9', stagger: 0.05 })
-        .to('.navBg', { duration: 0.8 })
-        .from('.navBg', { scaleY: 0, stagger: 0.3 }, 0.2)
+        .to('.navbar', { left: 0, duration: 0.8 })
         .from('.list_item', { duration: 0.4, y: 20, stagger: 0.3, autoAlpha: 0 })
     },
     async openNavbar () {
@@ -153,12 +149,11 @@ export default {
   stroke-dashoffset: 0px;
 }
 /* NAVBAR STYLING */
-.navBg {
-  width: 25%;
+.navbar {
   background-color: #111;
-  border-bottom: 5px solid #56eefd;
+  border-left: 5px solid #56eefd;
   height: 100vh;
-  transform-origin: top left;
+  left: 100vw;
 }
 
 .list_item {
