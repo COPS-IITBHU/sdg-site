@@ -5,7 +5,7 @@
         :is="link ? 'nuxt-link' : 'span'"
         :to="{ path: link, query: { subBlogs: subBlogs } }"
       >
-        <figure :class="`image is-16x9`">
+        <figure class="overflow-hidden">
           <opti-image
             v-if="image"
             class="image_flex"
@@ -37,8 +37,8 @@
   </div>
 </template>
 <script>
-import { OptiImage } from 'opti-image'
 import { defineComponent } from '@nuxtjs/composition-api'
+import { OptiImage } from 'opti-image'
 export default defineComponent({
   components: {
     OptiImage
@@ -73,6 +73,16 @@ export default defineComponent({
   @media only screen and (max-width: 640px) {
     max-height: 30vh !important;
   }
+
+  transition: transform 0.8s ease-in-out 0s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.opti-image-before-load {
+  transform: scaleY(0);
+  transform-origin: center center;
 }
 
 .subtitle {
@@ -100,23 +110,6 @@ export default defineComponent({
 }
 .card-content {
   padding: 1rem;
-}
-</style>
-<style lang="scss">
-.opti-image-loaded + .spinner-wrapper {
-  display: none;
-}
-.card img {
-  transition: 0.8s ease-in-out all;
-  &:hover {
-    transform: scale(1.02);
-  }
-}
-.card-content {
   color: white;
-}
-
-.opti-image-before-load {
-  display: none;
 }
 </style>
