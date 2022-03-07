@@ -1,6 +1,6 @@
 <template>
   <main class="section page-main-section">
-    <div class="container">
+    <div class="container mx-auto">
       <div class="columns">
         <aside
           v-if="computedTheme === 'sidebar-left'"

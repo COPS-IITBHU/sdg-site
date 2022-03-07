@@ -18,7 +18,7 @@
             text-white text-4xl
             md:text-5xl
             lg:text-7xl
-            font-mono font-700
+            font-display font-700
             text-center
             p-20
           "
@@ -95,7 +95,7 @@
         <figure class="nav-elements px-8 py-4 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
           <div>
             <lottie
-              :width="200"
+              :width="250"
               :options="lottieOptions.sophies"
               class="lottie"
               @mouseover="play"
