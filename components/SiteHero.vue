@@ -92,13 +92,6 @@ export default defineComponent({
   border-top: 2px solid black;
   padding-top: 5px;
 }
-.opti-image {
-  opacity: 0;
-}
-.opti-image-loaded {
-  opacity: 0.12;
-  animation: blurIn 4.5s ease;
-}
 </style>
 <style lang="scss">
 .hero {
@@ -118,20 +111,10 @@ export default defineComponent({
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .opti-image {
-    opacity: 0;
-  }
-  .opti-image-loaded {
-    opacity: 1;
-  }
 }
 .hero-theme-mist {
   .hero-bg-img {
     filter: grayscale(1);
-  }
-  .opti-image-loaded {
-    opacity: 0.12;
-    animation: blurInGrayscale 4.5s ease;
   }
 }
 .hero-theme-dark,
