@@ -94,8 +94,8 @@ export default {
     configNavbar () {
       this.openTimeline = this.$gsap
         .timeline({ paused: true })
-        .to('.navbar', { left: 0, duration: 0.8 })
-        .from('.list_item', { duration: 0.4, y: 20, stagger: 0.3, autoAlpha: 0 })
+        .to('.navbar', { left: 0, duration: 0.7 })
+        .from('.list_item', { duration: 0.4, y: 20, stagger: 0.1, autoAlpha: 0 }, 0.5)
     },
     async openNavbar () {
       this.isActive = true
