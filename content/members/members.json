@@ -84,6 +84,13 @@
     "year": 2019
   },
   {
+    "name": "Navya Dahiya",
+    "title": "Web Developer",
+    "github": "https://github.com/dahiya-code",
+    "link": "https://www.linkedin.com/in/navyadahiya/",
+    "year": 2019
+  },
+  {
     "name": "Shubhanshu Saxena",
     "title": "Web Developer",
     "github": "https://github.com/shubhanshu02",
@@ -95,6 +102,55 @@
     "title": "Web Developer",
     "github": "https://github.com/atpug22",
     "link": "https://www.linkedin.com/in/ryaman/",
+    "year": 2019
+  },
+  {
+    "name": "Arjun Gupta",
+    "title": "App Dev",
+    "github": "https://github.com/ARJUPTA",
+    "link": "https://www.linkedin.com/in/arjupta/",
+    "year": 2019
+  },
+  {
+    "name": "Subodh Verma",
+    "title": "Web Developer",
+    "github": "https://github.com/subodhk01",
+    "link": "https://www.linkedin.com/in/verma-subodh/",
+    "year": 2019
+  },
+  {
+    "name": "Aishwary Saxena",
+    "title": "Web Developer",
+    "github": "https://github.com/aishwary023",
+    "link": "https://www.linkedin.com/in/aishwary-saxena/",
+    "year": 2019
+  },
+  {
+    "name": "Purushottam Tiwari",
+    "title": "Web Developer",
+    "github": "https://github.com/m-e-l-u-h-a-n",
+    "link": "https://www.linkedin.com/in/purushottam-tiwari-5853b0190/",
+    "year": 2019
+  },
+  {
+    "name": "Sanyu Daver",
+    "title": "App Dev",
+    "github": "https://github.com/sanyud24",
+    "link": "https://www.linkedin.com/in/sanyu-daver-227009179/",
+    "year": 2019
+  },
+  {
+    "name": "David Garg",
+    "title": "Backend Dev",
+    "github": "https://github.com/davidgarg20",
+    "link": "https://www.linkedin.com/in/davidgarg20/",
+    "year": 2019
+  },
+  {
+    "name": "Yash Garg",
+    "title": "Cyber Security",
+    "github": "https://github.com/numberbee7070",
+    "link": "https://www.linkedin.com/in/yash-garg-447a53199/",
     "year": 2019
   },
   {
@@ -294,13 +350,6 @@
     "year": 2020
   },
   {
-    "name": "Ayush Gangwani",
-    "title": "Web developer",
-    "github": "https://github.com/AG-7219",
-    "link": "https://www.linkedin.com/in/ayush-gangwani-1a277720b",
-    "year": 2020
-  },
-  {
     "name": "Somesh Ranjan",
     "title": "Web developer",
     "github": "https://github.com/somesh202",
@@ -329,25 +378,11 @@
     "year": 2020
   },
   {
-    "name": "Chirayu Mittal",
-    "title": "Web Developer",
-    "github": "https://github.com/chirayumit001",
-    "link": "https://www.linkedin.com/in/chirayu-mittal-b6279a201/",
-    "year": 2020
-  },
-  {
     "name": "Apoorve shukla",
     "title": "Web Developer",
     "github": "https://github.com/shukapurv",
     "link": "https://www.linkedin.com/in/apoorve-shukla-792b761ba",
     "year": 2020
-  },
-  {
-    "name": "Navya Dahiya",
-    "title": "Web Developer",
-    "github": "https://github.com/dahiya-code",
-    "link": "https://www.linkedin.com/in/navyadahiya/",
-    "year": 2019
   },
   {
     "name": "Sriraj",
@@ -357,17 +392,17 @@
     "year": 2020
   },
   {
-    "name": "Subodh Verma",
-    "title": "Web Developer",
-    "github": "https://github.com/subodhk01",
-    "link": "https://www.linkedin.com/in/verma-subodh/",
-    "year": 2019
-  },
-  {
     "name": "Puranjay Khanijo",
     "title": "Android Developer",
     "github": "https://github.com/puranjayK",
     "link": "https://www.linkedin.com/in/puranjay-khanijo-408716217/",
+    "year": 2020
+  },
+  {
+    "name": "Aditya Kumar Singh",
+    "title": "Flutter/Web developer",
+    "github": "https://github.com/ItsAdityaKSingh",
+    "link": "https://www.linkedin.com/in/itsadityaksingh/",
     "year": 2020
   }
 ]
