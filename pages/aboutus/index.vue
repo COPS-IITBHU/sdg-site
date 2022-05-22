@@ -20,7 +20,7 @@
     </h1>
     <section class="w-9/10 mx-auto">
       <figure v-for="(con, idx) in content" :key="con.heading">
-        <about-us-card :index="idx" :heading="con.heading" :image="con.image" :text="con.text" />
+        <about-us-card :class="con.class" :index="idx" :heading="con.heading" :image="con.image" :text="con.text" />
         <nuxt-img
           v-if="!(idx & 1) && (idx != content.length - 1)"
           src="/aboutus/4.webp"
@@ -66,6 +66,7 @@
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
+import { gsap } from 'gsap'
 import AboutUsCard from '~/components/about-us/aboutuscard.vue'
 import aboutuslogo from '~/components/about-us/aboutuslogo.vue'
 import achievementslogo from '~/components/about-us/achievementslogo.vue'
@@ -73,7 +74,6 @@ import carousel3d from '~/components/about-us/carousel/carousel-3d.vue'
 import slide from '~/components/about-us/carousel/carousel-slide.vue'
 import youtube from '~/components/about-us/youtube.vue'
 import LoadingSpinner from '~/components/LoadingSpinner.vue'
-
 export default defineComponent({
   components: {
     aboutuslogo,
@@ -89,6 +89,7 @@ export default defineComponent({
       slides: [] as any,
       content: [
         {
+          class: 'text1',
           heading: 'WHAT IS SDG?',
           image: '/aboutus/1.webp',
           text: `One of the prominent pillars of COPS, IIT (BHU) is SDG. With the
@@ -102,6 +103,7 @@ export default defineComponent({
           a fully functional mobile application.`
         },
         {
+          class: 'text2',
           heading: 'WHAT WE DO?',
           image: '/aboutus/2.webp',
           text: `Whether Mobile Development, Desktop Development, Web Development, Game
@@ -114,6 +116,7 @@ export default defineComponent({
           of our sought-after workshops.`
         },
         {
+          class: 'text3',
           heading: 'OUR AREAS OF INTEREST',
           image: '/aboutus/3.webp',
           text: `Our motto is constantly learning and revamping. Hackalog, our very own
@@ -143,6 +146,26 @@ export default defineComponent({
           'One of the most prominent pillars of COPS, IIT (BHU) is SDG. We at Software Development Group are here to unravel all these mysteries for you to perceive, prepare and produce. We got you taken care of, from displaying Hello World on your Local Host to developing a fully functional mobile application. Whether Mobile Development, Desktop Development, Web Development, Game Development, or Cloud Development, we manufacture all units here.'
       }
     ]
+  },
+  mounted () {
+    this.content.forEach((idx) => {
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: '.' + idx.class,
+          start: 'center center',
+          end: 'bottom top',
+          scrub: true,
+          pin: true
+        }
+      })
+        .from('.' + idx.class, {
+          opacity: 0,
+          y: 50
+        })
+        .to('.' + idx.class, {
+          opacity: 1
+        })
+    })
   }
 })
 </script>
