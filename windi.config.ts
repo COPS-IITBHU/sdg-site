@@ -3,7 +3,7 @@ import typo from 'windicss/plugin/typography'
 
 export default {
   darkMode: 'class',
-  plugins: [typo(), lineClamp],
+  plugins: [typo, lineClamp],
   scan: {
     dirs: ['./'],
     exclude: ['node_modules', 'dist', '.git', '.github', '.nuxt']
