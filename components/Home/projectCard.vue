@@ -15,7 +15,6 @@
       ></div>
       <div
         class="
-          text-white
           flex
           justify-between
           items-center
@@ -55,7 +54,6 @@
             <button
               class="
                 contentBtn
-                text-white
                 transition-all
                 ease-in-out
                 duration-150
