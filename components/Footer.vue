@@ -1,5 +1,5 @@
 <template>
-  <footer class="p-4 bg-white rounded-lg shadow md:px-8 container mx-auto">
+  <footer class="p-4 bg-white rounded-lg shadow md:px-8 container mx-auto mt-auto">
     <hr class="my-2 border-gray-200 sm:mx-auto  lg:my-4">
     <div class="flex flex-col md:flex-row items-center md:justify-around">
       <a href="https://copsiitbhu.co.in" target="_blank" rel="noreferrer" class="flex items-center mb-4 sm:mb-0 order-1">
