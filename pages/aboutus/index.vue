@@ -47,8 +47,8 @@
     <loading-spinner v-if="$fetchState.pending" />
     <carousel3d v-else>
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
-        <h3 class="text-xl font-semibold">{{ slide.title }}</h3>
-        <p class="px-6 my-2">
+        <h3 class="text-xl font-semibold text-dark-50">{{ slide.title }}</h3>
+        <p class="px-6 my-2 text-gray-500">
           {{ slide.description }}
           <br /><a
             v-if="slide.showlink"
