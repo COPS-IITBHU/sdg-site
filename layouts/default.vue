@@ -1,5 +1,5 @@
 <template>
-  <main class="text-gray-50">
+  <main class="text-gray-50 min-h-screen flex flex-col">
     <header>
       <navbar />
     </header>
