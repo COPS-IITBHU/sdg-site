@@ -1,23 +1,6 @@
 <template>
   <div>
-    <aboutuslogo />
-    <h1
-      class="
-        text-lg
-        my-20
-        mx-auto
-        text-center
-        quote
-        md:text-2xl
-        text-gray-200
-        px-2
-        italic
-      "
-    >
-      “Any fool can write code that a computer can understand. <br />
-      Good programmers write code that humans can understand.” <br />
-      - Martin Fowler
-    </h1>
+    <site-hero title="About Us" subtitle="“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”  - Martin Fowler" image="/aboutus/news.jpeg" />
     <section class="w-9/10 mx-auto">
       <figure v-for="(con, idx) in content" :key="con.heading">
         <about-us-card :index="idx" :heading="con.heading" :image="con.image" :text="con.text" />
@@ -67,22 +50,22 @@
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 import AboutUsCard from '~/components/about-us/aboutuscard.vue'
-import aboutuslogo from '~/components/about-us/aboutuslogo.vue'
 import achievementslogo from '~/components/about-us/achievementslogo.vue'
 import carousel3d from '~/components/about-us/carousel/carousel-3d.vue'
 import slide from '~/components/about-us/carousel/carousel-slide.vue'
 import youtube from '~/components/about-us/youtube.vue'
 import LoadingSpinner from '~/components/LoadingSpinner.vue'
+import SiteHero from '~/components/SiteHero.vue'
 
 export default defineComponent({
   components: {
-    aboutuslogo,
     youtube,
     achievementslogo,
     carousel3d,
     slide,
     AboutUsCard,
-    LoadingSpinner
+    LoadingSpinner,
+    SiteHero
   },
   data () {
     return {
@@ -130,7 +113,7 @@ export default defineComponent({
     }
   },
   async fetch () {
-    const fetchedData = await this.$content('achievements').fetch()
+    const fetchedData = await (this as any).$content('achievements').fetch()
     this.slides = fetchedData
   },
   head: {

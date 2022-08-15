@@ -1,67 +1,11 @@
 <template>
   <section>
-    <div
-      class="
-        h-auto
-        md:h-65vh
-        lg:h-55vh
-        relative
-        z-1
-        bg-hex-050505
-        lg:text-xl
-        w-100%
-      "
-    >
-      <transition appear @before-enter="beforeEnter" @enter="enter">
-        <h2
-          class="
-            text-white text-4xl
-            md:text-5xl
-            lg:text-7xl
-            font-display font-700
-            text-center
-            p-20
-          "
-        >
-          Meet the Team
-        </h2>
-      </transition>
-      <transition appear @before-enter="beforeEnter" @enter="enter">
-        <p
-          class="
-            w-80vw
-            m-auto
-            text-gray-300
-            font-400
-            text-lg
-            md:text-xl
-            sm:text-md
-            text-center
-            -mt-10
-          "
-        >
-          Since the inception of COPS in 2015, we have continuously developed the incredible. From kingpins who drive the group to reach greater heights to comrades who constantly pursue, we are a bunch that assimilates knowledge, applies resources, and achieves goals.
-        </p>
-      </transition>
-      <client-only>
-        <Particles
-          class="z-0 absolute w-100% inset-0 h-50vh"
-          color="#ccc"
-          :particles-number="70"
-          shape-type="circle"
-          :particle-size="4"
-          movement-direction="top-left"
-          lines-color="#dedede"
-          :line-linked="true"
-          :move-speed="1.5"
-        />
-      </client-only>
-    </div>
+    <site-hero :title="title" :subtitle="subtitle" image="/team.webp"></site-hero>
     <main
-      class="w-full bg-hex-101010 z-1 p-4"
+      class="w-full"
     >
-      <section class="flex-col lg:flex-row flex p-4 justify-evenly text-white items-center">
-        <figure class="nav-elements p-4 md:px-8 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
+      <section class="flex-col lg:flex-row flex justify-evenly items-center">
+        <figure class="nav-elements px-4 md:px-8 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
           <div>
             <lottie
               :width="250"
@@ -92,7 +36,7 @@
             </button>
           </figcaption>
         </figure>
-        <figure class="nav-elements px-8 py-4 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
+        <figure class="nav-elements px-4 md:px-8 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
           <div>
             <lottie
               :width="250"
@@ -131,7 +75,7 @@
         <div v-for="(value, header) in members" :key="header" class="text-center px-4 mx-auto my-4">
           <h2
             class="
-              text-white text-center text-4xl
+              text-center text-4xl
               md:text-4xl
               lg:text-6xl
             "
@@ -163,7 +107,7 @@
       <!-- Alums -->
       <section v-if="showAlum && !showCard" id="team-id" class="text-center p-20">
         <h2
-          class="text-white text-center text-3xl md:text-4xl lg:text-6xl"
+          class="text-center text-3xl md:text-4xl lg:text-6xl"
         >
           ALUMNI
         </h2>
@@ -195,9 +139,11 @@ import { defineComponent } from '@nuxtjs/composition-api'
 import lottie from 'vue-lottie/src/lottie.vue'
 import * as alumniAnimationData from '~/assets/30304-back-to-school.json'
 import * as devAnimationData from '~/assets/55885-developer.json'
+import SiteHeroVue from '~/components/SiteHero.vue'
 export default defineComponent({
   components: {
-    lottie
+    lottie,
+    SiteHero: SiteHeroVue
   },
   data () {
     return {
@@ -216,7 +162,9 @@ export default defineComponent({
       lottieOptions: {
         first: { animationData: devAnimationData.default },
         sophies: { animationData: alumniAnimationData.default }
-      }
+      },
+      title: 'Meet the Team',
+      subtitle: 'Since the inception of COPS in 2015, we have continuously developed the incredible. From kingpins who drive the group to reach greater heights to comrades who constantly pursue, we are a bunch that assimilates knowledge, applies resources, and achieves goals.'
     }
   },
   async fetch () {
