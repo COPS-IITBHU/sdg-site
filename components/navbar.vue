@@ -11,7 +11,7 @@
         focus:outline-none
         cursor-pointer
         fixed
-        z-20
+        z-100
         top-4
         right-4
         p-0
@@ -32,7 +32,7 @@
         />
       </svg>
     </button>
-    <section class="navbar top-0 w-screen fixed flex z-10">
+    <section class="navbar top-0 w-screen fixed flex z-20">
       <ul
         v-show="isOpen"
         class="
@@ -58,7 +58,7 @@
               relative
               tracking-12px
               cursor-pointer
-              text-white text-center
+              text-center
               my-8
             "
             @click="closeNavbar"
