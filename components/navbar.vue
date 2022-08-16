@@ -84,13 +84,13 @@
     </section>
   </section>
 </template>
-<script lang="ts">
-import { defineComponent } from '@nuxtjs/composition-api'
+<script>
+import { defineComponent } from '@nuxtjs/composition-api';
 
 export default defineComponent({
-  data () {
+  data() {
     return {
-      openTimeline: null as unknown as GSAPTimeline,
+      openTimeline: null,
       isActive: false,
       isOpen: false,
       pages: [
