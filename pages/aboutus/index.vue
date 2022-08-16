@@ -1,6 +1,6 @@
 <template>
   <div>
-    <site-hero title="About Us" subtitle="“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”  - Martin Fowler" image="/aboutus/news.jpeg" />
+    <site-hero title="About Us" subtitle="“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”  - Martin Fowler" image="/aboutus/news.webp" />
     <section class="w-9/10 mx-auto">
       <figure v-for="(con, idx) in content" :key="con.heading">
         <about-us-card :index="idx" :heading="con.heading" :image="con.image" :text="con.text" />
@@ -47,9 +47,8 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from '@nuxtjs/composition-api'
-import AboutUsCard from '~/components/about-us/aboutuscard.vue'
 import achievementslogo from '~/components/about-us/achievementslogo.vue'
 import carousel3d from '~/components/about-us/carousel/carousel-3d.vue'
 import slide from '~/components/about-us/carousel/carousel-slide.vue'
@@ -69,7 +68,7 @@ export default defineComponent({
   },
   data () {
     return {
-      slides: [] as any,
+      slides: [],
       content: [
         {
           heading: 'WHAT IS SDG?',
@@ -113,7 +112,7 @@ export default defineComponent({
     }
   },
   async fetch () {
-    const fetchedData = await (this as any).$content('achievements').fetch()
+    const fetchedData = await this.$content('achievements').fetch()
     this.slides = fetchedData
   },
   head: {
