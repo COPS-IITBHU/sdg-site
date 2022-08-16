@@ -1,5 +1,17 @@
 <template>
-  <nav>
+  <section>
+    <nav class="fixed z-100 w-full backdrop-blur-sm backdrop-filter py-4 hidden md:flex justify-between py-4 px-4 items-center">
+      <aside class="font-bold text-3xl tracking-widest hover:(scale-125) transform px-8 py-2">
+        <nuxt-link to="/">SDG</nuxt-link>
+      </aside>
+      <ul class="ml-auto flex-row md:flex list-none">
+        <li v-for="page in pages" :key="page.url" class="hover:(font-bold scale-125) transform px-8">
+          <nuxt-link :to="page.url" :prefetch="page.prefetch">
+            {{ page.name }}
+          </nuxt-link>
+        </li>
+      </ul>
+    </nav>
     <button
       id="toggle"
       aria-label="navbar-toggle"
@@ -15,6 +27,7 @@
         top-4
         right-4
         p-0
+        md:hidden
       "
       type="button"
       :class="{ active: isActive }"
@@ -32,7 +45,7 @@
         />
       </svg>
     </button>
-    <section class="navbar top-0 w-screen fixed flex z-20">
+    <section class="navbar top-0 w-screen fixed flex z-20 md:hidden">
       <ul
         v-show="isOpen"
         class="
@@ -69,17 +82,19 @@
         </nuxt-link>
       </ul>
     </section>
-  </nav>
+  </section>
 </template>
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from '@nuxtjs/composition-api'
+
+export default defineComponent({
   data () {
     return {
-      openTimeline: null,
+      openTimeline: null as unknown as GSAPTimeline,
       isActive: false,
       isOpen: false,
       pages: [
-        { name: 'Home', url: '/', prefect: false },
+        { name: 'Home', url: '/', prefetch: false },
         { name: 'Blogs', url: '/blog', prefetch: false },
         { name: 'Team', url: '/portfolio', prefetch: false },
         { name: 'About Us', url: '/aboutus', prefetch: true },
@@ -108,7 +123,7 @@ export default {
       this.isOpen = false
     }
   }
-}
+})
 </script>
 
 <style scoped>
