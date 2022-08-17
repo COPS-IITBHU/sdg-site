@@ -8,7 +8,13 @@
       overflow-hidden
     "
   >
-    <img :src="imageUrl" alt="profile" class="object-cover" loading="lazy" />
+    <opti-image
+      :src="imageUrl"
+      alt="profile"
+      class="object-cover"
+      loading="lazy"
+      width="200"
+      height="200" />
     <div class="team-content">
       <h3 class="title text-lg font-700">
         {{ name }}
@@ -71,7 +77,13 @@
   </div>
 </template>
 <script>
-export default {
+import { defineComponent } from '@nuxtjs/composition-api'
+import { OptiImage } from 'opti-image'
+
+export default defineComponent({
+  components: {
+    OptiImage
+  },
   props: {
     name: {
       type: String,
@@ -102,22 +114,16 @@ export default {
       default: 'xd',
       required: true
     }
-  },
-  data () {
-    return {}
   }
-}
+})
 </script>
 
-<style>
+<style scoped>
 .our-team {
   padding: 20px 20px;
   border-radius: 50%;
 }
-.our-team img {
-  transform: scale(1);
-  transition: all 1s ease 0s;
-}
+
 .our-team:hover img {
   transform: scale(1.2);
 }
@@ -131,30 +137,33 @@ export default {
   opacity: 0;
   top: 0;
   left: 0;
-  transition: all 0.5s ease-out 0s;
+  transition: opacity 0.5s ease-out 0s;
 }
 .our-team:hover .team-content {
   opacity: 0.8;
 }
 .our-team .title {
   transform: rotate(-90deg);
-  transition: all 0.3s ease-in-out 0.2s;
+  transition: transform 0.3s ease-in-out 0.2s, opacity 0.3s ease-in-out 0.2s;
 }
 .our-team:hover .title {
   opacity: 1;
   transform: scale(1);
-  transition-delay: 0.1s;
 }
 .our-team .post {
   transform: scale(1.2);
-  transition: all 0.3s ease-in-out 0.2s;
+  transition: tranform 0.3s ease-in-out 0.2s;
 }
 .our-team:hover .post {
   opacity: 1;
   transform: scale(1);
 }
 
-.our-team .icon li a {
-  transition: all 0.3s ease 0s;
+.opti-image-loaded.opti-image {
+  transition: transform 0.8s ease 0s;
+}
+.opti-image-before-load {
+  transform: scaleY(0);
+  transform-origin: center center -20px;
 }
 </style>

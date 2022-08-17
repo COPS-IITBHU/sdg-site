@@ -36,11 +36,22 @@ export default defineComponent({
     const { singlePost } = params
     const post = await $content('blog', singlePost).fetch()
     return {
-      post, title: post.title
+      post
     }
   },
   head () {
-    return { title: this.title }
+    return {
+      title: this.post.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.post.description },
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: this.post.title },
+        { hid: 'og:description', property: 'og:description', content: this.post.description },
+        // Twitter Card
+        { hid: 'twitter:title', name: 'twitter:title', content: this.post.title },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.post.description }
+      ]
+    }
   },
   computed: {
     date () {

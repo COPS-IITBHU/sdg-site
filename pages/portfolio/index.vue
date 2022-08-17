@@ -18,7 +18,7 @@
             text-white text-4xl
             md:text-5xl
             lg:text-7xl
-            font-mono font-700
+            font-display font-700
             text-center
             p-20
           "
@@ -95,7 +95,7 @@
         <figure class="nav-elements px-8 py-4 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
           <div>
             <lottie
-              :width="200"
+              :width="250"
               :options="lottieOptions.sophies"
               class="lottie"
               @mouseover="play"
@@ -127,7 +127,7 @@
           </figcaption>
         </figure>
       </section>
-      <section v-if="showCard && !showAlum">
+      <section v-if="showCard && !showAlum" id="team-id">
         <div v-for="(value, header) in members" :key="header" class="text-center px-4 mx-auto my-4">
           <h2
             class="
@@ -161,7 +161,7 @@
       </section>
 
       <!-- Alums -->
-      <section v-if="showAlum && !showCard" class="text-center p-20">
+      <section v-if="showAlum && !showCard" id="team-id" class="text-center p-20">
         <h2
           class="text-white text-center text-3xl md:text-4xl lg:text-6xl"
         >
@@ -264,10 +264,22 @@ export default defineComponent({
     showSdg () {
       this.showCard = true
       this.showAlum = false
+      setTimeout(() => {
+        document.getElementById('team-id').scrollIntoView({
+          behavior: 'smooth'
+        })
+      }
+      , 1000)
     },
     showAlums () {
       this.showAlum = true
       this.showCard = false
+      setTimeout(() => {
+        document.getElementById('team-id').scrollIntoView({
+          behavior: 'smooth'
+        })
+      }
+      , 1000)
     },
     beforeEnter (el) {
       el.style.opacity = 0

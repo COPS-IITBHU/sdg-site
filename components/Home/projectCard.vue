@@ -60,11 +60,11 @@
                 ease-in-out
                 duration-150
                 px-6
-                py-4
+                py-2
                 rounded-full
-                md:mt-8
                 mt-4
-                mb-2
+                md:mb-4
+                mb-8
                 font-heading
               "
             >

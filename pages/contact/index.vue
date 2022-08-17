@@ -2,7 +2,7 @@
   <main class="text-center text-light-50">
     <div id="head-map" class="flex justify-center items-center">
       <Map class="w-full" />
-      <span class="absolute text-light-50 text-6xl xl:text-8xl font-bold" style="font-family: Lato">Contact Us</span>
+      <span class="absolute text-light-50 text-6xl xl:text-8xl font-bold font-display">Contact Us</span>
     </div>
 
     <div
@@ -33,34 +33,26 @@
             <lg:(w-full)
           "
         >
-          <Online class="w-full md:w-3/4 md:mr-auto" :serverid="serverid" />
+          <Online class="w-full md:w-3/4 md:mr-auto ml-auto md:ml-0" :serverid="serverid" />
         </div>
       </div>
 
-      <div id="clg_img" class="ml-12 <lg:(w-full ml-0 my-4)">
+      <div
+        id="clg_img"
+        class="lg:ml-12 my-8 md:my-4 flex justify-center items-center">
         <div
           id="content"
           class="
-            w-11/12
-            h-3/5
+            w-full
             relative
-            top-15
-            flex
-            justify-center
-            items-center
             overflow-hidden
-            mx-auto
-            <lg:(w-full
-            h-400px
-            top-0)
           "
         >
           <nuxt-img
             src="contact/iit-varanasi.webp"
-            height="600"
-            width="800"
+            width="600"
             alt="Institute Image"
-            class="w-full h-400px object-cover select-none filter brightness-60"
+            class="object-cover select-none filter brightness-60 mx-auto"
             loading="lazy"
           />
           <div
@@ -91,7 +83,7 @@
                   ></span>
                 </div>
                 <div>
-                  <h2 class="text-3xl font-bold text-light-50">VISIT US</h2>
+                  <h2 class="text-2xl lg:text-3xl font-bold text-light-50">VISIT US</h2>
                   <p class="text-light-50">
                     A Malaiyo date discussing some bugs sounds cool, right?
                     Visit us in our Natural Banarasi Habitat and let us treat
