@@ -2,13 +2,13 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   extends: [
     'plugin:vuejs-accessibility/recommended',
     'plugin:nuxt/recommended',
-    'eslint:recommended',
-    '@nuxtjs/eslint-config-typescript'
+    '@nuxtjs/eslint-config-typescript',
+    'prettier',
   ],
   plugins: ['vuejs-accessibility', 'prettier'],
   // add your custom rules here
@@ -17,16 +17,16 @@ module.exports = {
     'vue/singleline-html-element-content-newline': 0,
     'vue/html-self-closing': 0,
     'vue/html-closing-bracket-newline': 0,
-    'vue/html-indent': ['warn', 2, { baseIndent: 1 }]
+    'vue/html-indent': ['warn', 2, { baseIndent: 1 }],
   },
   parserOptions: {
-    parser: '@typescript-eslint/parser'
+    parser: '@typescript-eslint/parser',
   },
   globals: {
     $nuxt: true,
     defineProps: 'readonly',
     defineEmits: 'readonly',
     defineExpose: 'readonly',
-    withDefaults: 'readonly'
-  }
-}
+    withDefaults: 'readonly',
+  },
+};
