@@ -49,6 +49,7 @@
 
 <script>
 import { defineComponent } from '@nuxtjs/composition-api'
+import AboutUsCard from '~/components/about-us/aboutuscard.vue'
 import achievementslogo from '~/components/about-us/achievementslogo.vue'
 import carousel3d from '~/components/about-us/carousel/carousel-3d.vue'
 import slide from '~/components/about-us/carousel/carousel-slide.vue'
@@ -64,7 +65,7 @@ export default defineComponent({
     slide,
     AboutUsCard,
     LoadingSpinner,
-    SiteHero
+    SiteHero,
   },
   data () {
     return {
