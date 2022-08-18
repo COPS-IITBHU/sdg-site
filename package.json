@@ -19,7 +19,9 @@
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.21.1",
+    "gsap": "^3.11.0",
     "nuxt": "^2.15.8",
+    "nuxt-gsap-module": "^1.7.1",
     "opti-image": "^0.10.0",
     "particles.js": "^2.0.0",
     "vue-lottie": "^0.2.1"
@@ -39,7 +41,6 @@
     "eslint-plugin-vuejs-accessibility": "^0.7.1",
     "husky": "^7.0.4",
     "is-ci": "^3.0.1",
-    "nuxt-gsap-module": "^1.6.0",
     "nuxt-purge-icons-module": "^0.7.0",
     "nuxt-windicss": "^2.2.5",
     "prettier": "^2.1.2",
