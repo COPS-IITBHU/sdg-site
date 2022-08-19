@@ -23,13 +23,13 @@
     </p>
     <aside aria-hidden="true" class="absolute inset-0 overflow-hidden -z-10">
       <img src="/shapes/dots.svg" alt="dots" class="ShapesBackground_shape" style="top: 40rem; left: 90vw; width: 10.5rem; height: 12.75rem; filter: var(--teal); opacity: 0.25;">
-      <img src="/shapes/dots.svg" alt="dots" class="ShapesBackground_shape" style="top: 40rem; right: 90vw; width: 10.5rem; height: 12.75rem; opacity: 0.25;">
+      <img src="/shapes/dots.svg" alt="dots" class="ShapesBackground_shape" style="top: 40rem; right: 90vw; width: 10.5rem; height: 12.75rem; opacity: 0.25; transform: rotateY(180deg)">
       <img src="/shapes/hash.svg" alt="hash" class="ShapesBackground_shape" style="top: 10rem; left: 9vw; width: 3.75rem; height: 3.75rem; filter: var(--teal);">
       <img src="/shapes/hash.svg" alt="hash" class="ShapesBackground_shape" style="top: 10rem; right: 9vw; width: 3.75rem; height: 3.75rem;">
       <img src="/shapes/triangle.svg" alt="triangle" class="hidden sm:block ShapesBackground_shape" style="top: 20rem; left: 24vw; width: 4.25rem; height: 4.25rem; transform: rotate(18deg); filter: var(--teal);">
-      <img src="/shapes/triangle.svg" alt="triangle" class="hidden sm:block ShapesBackground_shape" style="top: 20rem; right: 24vw; width: 4.25rem; height: 4.25rem; transform: rotate(-26deg);">
+      <img src="/shapes/triangle.svg" alt="triangle" class="hidden sm:block ShapesBackground_shape" style="top: 20rem; right: 24vw; width: 4.25rem; height: 4.25rem; transform: rotate(-18deg);">
       <img src="/shapes/waves.svg" alt="waves" class="ShapesBackground_shape" style="top: 30rem; left: 20vw; width: 7.25rem; height: 3.625rem;">
-      <img src="/shapes/waves.svg" alt="waves" class="ShapesBackground_shape" style="top: 30rem; right: 20vw; width: 6.375rem; height: 3.125rem; filter: var(--teal);">
+      <img src="/shapes/waves.svg" alt="waves" class="ShapesBackground_shape" style="top: 30rem; right: 20vw; width: 6.375rem; height: 3.125rem; filter: var(--teal); transform: rotateY(180deg);">
     </aside>
   </section>
 </template>

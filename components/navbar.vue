@@ -5,7 +5,7 @@
         <nuxt-link to="/">SDG</nuxt-link>
       </aside>
       <ul class="ml-auto flex-row md:flex list-none">
-        <li v-for="page in pages" :key="page.url" class="hover:(font-bold scale-125) transform px-8">
+        <li v-for="page in pages" :key="page.url" class="hover:(font-bold scale-125) transform px-8 transition-transform">
           <nuxt-link :to="page.url" :prefetch="page.prefetch">
             {{ page.name }}
           </nuxt-link>
