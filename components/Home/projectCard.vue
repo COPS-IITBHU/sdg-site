@@ -102,7 +102,7 @@ export default {
   left: 10vw;
 }
 .box {
-  background: #060c21;
+  background: var(--project-card-background);
 }
 .box::before {
   content: '';
@@ -128,7 +128,7 @@ export default {
 .box::before,
 .box::after {
   border-radius: 1.5rem;
-  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+  background: linear-gradient(235deg, var(--project-card-glow-primary), #010615, var(--project-card-glow-secondary));
 }
 
 .info h2 {
@@ -142,10 +142,10 @@ export default {
   margin: 0px 16px 0 0px;
 }
 .contentBtn {
-  box-shadow: 0 0 40px 40px #0946ca inset, 0 0 0 0 #0946ca;
+  box-shadow: 0 0 40px 40px var(--project-card-content) inset, 0 0 0 0 var(--project-card-content);
 }
 .contentBtn:hover {
-  box-shadow: 0 0 10px 0 #0946ca inset, 0 0 10px 4px #0946ca;
+  box-shadow: 0 0 10px 0 var(--project-card-content) inset, 0 0 10px 4px var(--project-card-content);
 }
 @media only screen and (max-width: 1000px) {
   .wrapper {

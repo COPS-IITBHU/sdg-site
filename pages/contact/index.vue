@@ -202,12 +202,12 @@ img {
 }
 
 ul li a {
-  background-color: rgba(255, 255, 255, 0.911);
+  background-color: var(--contact-link-bg-primary);
   transition: 0.4s;
 }
 ul li a:hover {
   transform: translate(0, -5px) scale(1.05);
-  background-color: rgba(255, 255, 255, 0.979);
-  box-shadow: 0px 0px 18px rgba(116, 227, 235, 0.959);
+  background-color: var(--contact-link-bg-secondary);
+  box-shadow: 0px 0px 18px var(--contact-link-shadow-primary);
 }
 </style>
