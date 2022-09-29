@@ -4,7 +4,9 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 _Under Heavy Development_
-
+## Description
+SDG is group of developers at IIT BHU, which aims to encourage the development of technology and innovation in the campus and beyond. We believe in learning and sharing knowledge; collaboration and experimentation; and human interaction that matters the most.
+SDG group is amazing amalgamation of developers along with a vast alumni base where we constantly explore and experiment, try to learn new things, and get out of the comfort zones. We are involved in a lot of activities on the campus, off the campus and on the web. We conduct lectures and workshops on different fields of tech, organize hackathons, and also conduct online competitions on our various self developed applications.
 ## Dependecies Include
 
 - nuxt
