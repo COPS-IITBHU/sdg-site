@@ -5,7 +5,7 @@
 
 _Under Heavy Development_
 
-## Dependencies Include
+## Dependecies Include
 
 - nuxt
 - @nuxt/content
