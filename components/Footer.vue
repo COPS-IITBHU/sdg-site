@@ -36,10 +36,6 @@ export default defineComponent({
         {
           url: '/blog',
           content: 'Blog'
-        },
-        {
-          url: '/contact',
-          content: 'Contact Us'
         }
       ]
     }
