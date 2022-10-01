@@ -1,7 +1,7 @@
 <template>
   <div
     class="carousel-3d-container my-10 mx-auto"
-    :style="{ height:  parseInt(slideHeight+150,10) + 'px' }"
+    :style="{ height: parseInt(slideHeight+150,10) + 'px' }"
   >
     <div
       class="carousel-3d-slider"

@@ -9,10 +9,11 @@
       @click.prevent="parent.goPrev()"
     >
 
-      <span class="control-prev"
-      v-html="prevHtml"
+      <span
+        class="control-prev"
+        v-html="prevHtml"
       >
-</span>
+      </span>
     </a>
     <a
       href="#"
