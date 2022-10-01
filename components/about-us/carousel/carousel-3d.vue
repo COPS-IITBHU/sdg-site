@@ -1,7 +1,7 @@
 <template>
   <div
     class="carousel-3d-container my-10 mx-auto"
-    :style="{ height: slideHeight + 'px' }"
+    :style="{ height:  parseInt(slideHeight+150,10) + 'px' }"
   >
     <div
       class="carousel-3d-slider"
@@ -150,14 +150,12 @@ export default {
     slideWidth () {
       const vw = this.viewport
       const sw = parseInt(this.width) + parseInt(this.border, 10) * 2
-
       return vw < sw && process.browser ? vw : sw
     },
     slideHeight () {
       const sw = parseInt(this.width, 10) + parseInt(this.border, 10) * 2
       const sh = parseInt(parseInt(this.height) + this.border * 2, 10)
       const ar = this.calculateAspectRatio(sw, sh)
-
       return this.slideWidth / ar
     },
     visible () {
@@ -427,6 +425,7 @@ export default {
   z-index: 0;
   overflow: hidden;
   box-sizing: border-box;
+  /* background: red; */
 }
 
 .carousel-3d-slider {
@@ -436,5 +435,6 @@ export default {
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
   perspective: 1000px;
+  /* background: red; */
 }
 </style>

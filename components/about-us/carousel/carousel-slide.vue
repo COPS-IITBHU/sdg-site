@@ -183,6 +183,8 @@ export default {
   border-color: rgba(0, 0, 0, 0.4);
   border-style: solid;
   background-size: cover;
+  background: linear-gradient(90deg, hsla(180, 0%, 41%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+;
 }
 
 .carousel-3d-slide img {

@@ -47,12 +47,12 @@
     <loading-spinner v-if="$fetchState.pending" />
     <carousel3d v-else>
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
-        <h3 class="text-xl font-semibold">{{ slide.title }}</h3>
-        <p class="px-6 my-2">
+        <h3 class="text-3xl font-semibold text-white" style="color:#39a0ed">{{ slide.title }}</h3>
+        <p class="px-6 my-2 text-white">
           {{ slide.description }}
           <br /><a
             v-if="slide.showlink"
-            style="color: blue"
+            style="color: #6fffe9"
             :href="slide.link"
             target="_blank"
             rel="noreferrer"

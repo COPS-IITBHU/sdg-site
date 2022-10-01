@@ -130,10 +130,10 @@ export default defineComponent({
 .our-team .team-content {
   width: 100%;
   height: 100%;
-  background: #06508b;
+  background: var(--sdgcard-bg);
   position: absolute;
   padding-top: 35%;
-  color: #fff;
+  color: white;
   opacity: 0;
   top: 0;
   left: 0;

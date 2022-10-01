@@ -123,7 +123,7 @@ export default {
   transition-property: stroke, stroke-dasharray, stroke-dashoffset;
   transition-timing-function: ease;
   transition-duration: 400ms;
-  stroke: #fff;
+  stroke: white;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
@@ -150,8 +150,8 @@ export default {
 }
 /* NAVBAR STYLING */
 .navbar {
-  background-color: #111;
-  border-left: 5px solid #56eefd;
+  background-color: var(--navbar-bg);
+  border-left: 5px solid var(--navbar-color);
   height: 100vh;
   left: 100vw;
 }
@@ -167,7 +167,7 @@ export default {
   width: 0;
   top: 2px;
   height: 100%;
-  border-bottom: 2px solid #56eefd;
+  border-bottom: 2px solid var(--navbar-color);
   transition: 0.3s;
 }
 .list_item:before {
@@ -178,7 +178,7 @@ export default {
   bottom: 0;
 }
 .list_item:hover {
-  color: #56eefd;
+  color: var(--navbar-color);
 }
 
 .list_item:hover:before, .list_item:hover:after {
