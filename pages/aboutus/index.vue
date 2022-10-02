@@ -1,6 +1,23 @@
 <template>
   <div>
-    <site-hero title="About Us" subtitle="“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”  - Martin Fowler" image="/aboutus/news.webp" />
+    <aboutuslogo />
+    <h1
+      class="
+        text-lg
+        my-20
+        mx-auto
+        text-center
+        quote
+        md:text-2xl
+        text-gray-200
+        px-2
+        italic
+      "
+    >
+      “Any fool can write code that a computer can understand. <br />
+      Good programmers write code that humans can understand.” <br />
+      - Martin Fowler
+    </h1>
     <section class="w-9/10 mx-auto">
       <figure v-for="(con, idx) in content" :key="con.heading">
         <about-us-card :index="idx" :heading="con.heading" :image="con.image" :text="con.text" />
@@ -30,12 +47,12 @@
     <loading-spinner v-if="$fetchState.pending" />
     <carousel3d v-else>
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
-        <h3 class="text-xl font-semibold text-dark-50">{{ slide.title }}</h3>
-        <p class="px-6 my-2 text-gray-500">
+        <h3 class="text-3xl font-semibold text-white" style="color:#39a0ed">{{ slide.title }}</h3>
+        <p class="px-6 my-2 text-white">
           {{ slide.description }}
           <br /><a
             v-if="slide.showlink"
-            style="color: blue"
+            style="color: #6fffe9"
             :href="slide.link"
             target="_blank"
             rel="noreferrer"
@@ -47,29 +64,28 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 import AboutUsCard from '~/components/about-us/aboutuscard.vue'
+import aboutuslogo from '~/components/about-us/aboutuslogo.vue'
 import achievementslogo from '~/components/about-us/achievementslogo.vue'
 import carousel3d from '~/components/about-us/carousel/carousel-3d.vue'
 import slide from '~/components/about-us/carousel/carousel-slide.vue'
 import youtube from '~/components/about-us/youtube.vue'
 import LoadingSpinner from '~/components/LoadingSpinner.vue'
-import SiteHero from '~/components/SiteHero.vue'
-
 export default defineComponent({
   components: {
+    aboutuslogo,
     youtube,
     achievementslogo,
     carousel3d,
     slide,
     AboutUsCard,
-    LoadingSpinner,
-    SiteHero,
+    LoadingSpinner
   },
   data () {
     return {
-      slides: [],
+      slides: [] as any,
       content: [
         {
           heading: 'WHAT IS SDG?',
