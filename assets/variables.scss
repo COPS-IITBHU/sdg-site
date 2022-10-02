@@ -2,7 +2,18 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px0;
-
+:root{
+  --project-card-glow-primary:#89ff00;
+  --project-card-glow-secondary:#00bcd4;
+  --project-card-content:#0946ca;
+  --project-card-background:#060c21;
+  --contact-link-bg-primary:rgba(255, 255, 255, 0.911);
+  --contact-link-bg-secondary:rgba(255, 255, 255, 0.911);
+  --contact-link-shadow-primary:rgba(116, 227, 235, 0.959);
+  --navbar-color:#56eefd;
+  --navbar-bg:#111;
+  --sdgcard-bg:#06508b;
+}
 @layer base {
   @font-face {
     font-family: 'Open Sans';
