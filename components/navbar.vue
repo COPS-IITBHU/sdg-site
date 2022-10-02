@@ -1,17 +1,5 @@
 <template>
-  <section>
-    <nav class="fixed z-100 w-full backdrop-blur-sm backdrop-filter py-4 hidden md:flex justify-between py-4 px-4 items-center">
-      <aside class="font-bold text-3xl tracking-widest hover:(scale-125) transform px-8 py-2">
-        <nuxt-link to="/">SDG</nuxt-link>
-      </aside>
-      <ul class="ml-auto flex-row md:flex list-none">
-        <li v-for="page in pages" :key="page.url" class="hover:(font-bold scale-125) transform px-8 transition-transform">
-          <nuxt-link :to="page.url" :prefetch="page.prefetch">
-            {{ page.name }}
-          </nuxt-link>
-        </li>
-      </ul>
-    </nav>
+  <nav>
     <button
       id="toggle"
       aria-label="navbar-toggle"
@@ -23,11 +11,10 @@
         focus:outline-none
         cursor-pointer
         fixed
-        z-100
+        z-20
         top-4
         right-4
         p-0
-        md:hidden
       "
       type="button"
       :class="{ active: isActive }"
@@ -45,7 +32,7 @@
         />
       </svg>
     </button>
-    <section class="navbar top-0 w-screen fixed flex z-20 md:hidden">
+    <section class="navbar top-0 w-screen fixed flex z-10">
       <ul
         v-show="isOpen"
         class="
@@ -71,7 +58,7 @@
               relative
               tracking-12px
               cursor-pointer
-              text-center
+              text-white text-center
               my-8
             "
             @click="closeNavbar"
@@ -82,19 +69,17 @@
         </nuxt-link>
       </ul>
     </section>
-  </section>
+  </nav>
 </template>
 <script>
-import { defineComponent } from '@nuxtjs/composition-api';
-
-export default defineComponent({
-  data() {
+export default {
+  data () {
     return {
       openTimeline: null,
       isActive: false,
       isOpen: false,
       pages: [
-        { name: 'Home', url: '/', prefetch: false },
+        { name: 'Home', url: '/', prefect: false },
         { name: 'Blogs', url: '/blog', prefetch: false },
         { name: 'Team', url: '/portfolio', prefetch: false },
         { name: 'About Us', url: '/aboutus', prefetch: true },
@@ -123,7 +108,7 @@ export default defineComponent({
       this.isOpen = false
     }
   }
-})
+}
 </script>
 
 <style scoped>
@@ -138,7 +123,7 @@ export default defineComponent({
   transition-property: stroke, stroke-dasharray, stroke-dashoffset;
   transition-timing-function: ease;
   transition-duration: 400ms;
-  stroke: #fff;
+  stroke: white;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
@@ -152,7 +137,6 @@ export default defineComponent({
 .navbar-toggle.active {
   transform: rotate(45deg);
 }
-
 .navbar-toggle.active .line.top {
   stroke-dashoffset: -98px;
 }
@@ -165,16 +149,14 @@ export default defineComponent({
 }
 /* NAVBAR STYLING */
 .navbar {
-  background-color: #111;
-  border-left: 5px solid #56eefd;
+  background-color: var(--navbar-bg);
+  border-left: 5px solid var(--navbar-color);
   height: 100vh;
   left: 100vw;
 }
-
 .list_item {
   @apply text-2xl md:text-3xl lg:text-4xl;
 }
-
 .list_item:before, .list_item::after {
   content: ' ';
   display: block;
@@ -182,22 +164,21 @@ export default defineComponent({
   width: 0;
   top: 2px;
   height: 100%;
-  border-bottom: 2px solid #56eefd;
+  border-bottom: 2px solid var(--navbar-color);
   transition: 0.3s;
 }
 .list_item:before {
   right: 0;
 }
-
 .list_item:after {
   bottom: 0;
 }
 .list_item:hover {
-  color: #56eefd;
+  color: var(--navbar-color);
 }
-
 .list_item:hover:before, .list_item:hover:after {
   width: 50%;
 }
+
 
 </style>
