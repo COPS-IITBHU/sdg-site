@@ -2,7 +2,7 @@
   <main class="text-center text-light-50">
     <div id="head-map" class="flex justify-center items-center">
       <Map class="w-full" />
-        <span class="absolute text-light-50 text-6xl xl:text-8xl font-bold font-display">Contact Us</span>
+      <span class="absolute text-light-50 text-6xl xl:text-8xl font-bold font-display">Contact Us</span>
     </div>
 
     <div

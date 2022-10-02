@@ -15,7 +15,7 @@
       loading="lazy"
       width="200"
       height="200" />
-      <div class="team-content">
+    <div class="team-content">
       <h3 class="title text-lg font-700">
         {{ name }}
       </h3>
@@ -125,7 +125,7 @@ export default defineComponent({
           avatarURL.value = props.imageUrl;
         }
         else {
-          var parts = props.name.split(" ")
+          const parts = props.name.split(" ")
           avatarURL.value = `https://ui-avatars.com/api/?name=${parts[0]}+${parts[1]}&&size=200&&rounded=true`
         }
     })
