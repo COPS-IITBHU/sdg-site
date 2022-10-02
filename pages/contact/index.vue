@@ -2,7 +2,7 @@
   <main class="text-center text-light-50">
     <div id="head-map" class="flex justify-center items-center">
       <Map class="w-full" />
-      <span class="absolute text-light-50 text-6xl xl:text-8xl font-bold font-display">Contact Us</span>
+        <span class="map-title absolute text-light-50 text-6xl xl:text-8xl font-bold font-display">Contact Us</span>
     </div>
 
     <div
@@ -209,5 +209,10 @@ ul li a:hover {
   transform: translate(0, -5px) scale(1.05);
   background-color: rgba(255, 255, 255, 0.979);
   box-shadow: 0px 0px 18px rgba(116, 227, 235, 0.959);
+}
+.map-title{
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 18px;
+  border-radius: 100000000px;
 }
 </style>
