@@ -15,7 +15,6 @@
       ></div>
       <div
         class="
-          text-white
           flex
           justify-between
           items-center
@@ -55,7 +54,6 @@
             <button
               class="
                 contentBtn
-                text-white
                 transition-all
                 ease-in-out
                 duration-150
@@ -102,7 +100,7 @@ export default {
   left: 10vw;
 }
 .box {
-  background: var(--project-card-background);
+  background: #060c21;
 }
 .box::before {
   content: '';
@@ -128,8 +126,9 @@ export default {
 .box::before,
 .box::after {
   border-radius: 1.5rem;
-  background: linear-gradient(235deg, var(--project-card-glow-primary), #010615, var(--project-card-glow-secondary));
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
 }
+
 .info h2 {
   color: #00bcd4;
 }
@@ -141,10 +140,10 @@ export default {
   margin: 0px 16px 0 0px;
 }
 .contentBtn {
-  box-shadow: 0 0 40px 40px var(--project-card-content) inset, 0 0 0 0 var(--project-card-content);
+  box-shadow: 0 0 40px 40px #0946ca inset, 0 0 0 0 #0946ca;
 }
 .contentBtn:hover {
-  box-shadow: 0 0 10px 0 var(--project-card-content) inset, 0 0 10px 4px var(--project-card-content);
+  box-shadow: 0 0 10px 0 #0946ca inset, 0 0 10px 4px #0946ca;
 }
 @media only screen and (max-width: 1000px) {
   .wrapper {

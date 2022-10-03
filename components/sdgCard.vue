@@ -79,6 +79,7 @@
 <script>
 import { defineComponent } from '@nuxtjs/composition-api'
 import { OptiImage } from 'opti-image'
+
 export default defineComponent({
   components: {
     OptiImage
@@ -122,16 +123,17 @@ export default defineComponent({
   padding: 20px 20px;
   border-radius: 50%;
 }
+
 .our-team:hover img {
   transform: scale(1.2);
 }
 .our-team .team-content {
   width: 100%;
   height: 100%;
-  background: var(--sdgcard-bg);
+  background: #06508b;
   position: absolute;
   padding-top: 35%;
-  color: white;
+  color: #fff;
   opacity: 0;
   top: 0;
   left: 0;
@@ -156,6 +158,7 @@ export default defineComponent({
   opacity: 1;
   transform: scale(1);
 }
+
 .opti-image-loaded.opti-image {
   transition: transform 0.8s ease 0s;
 }
