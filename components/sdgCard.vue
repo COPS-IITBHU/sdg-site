@@ -121,7 +121,7 @@ export default defineComponent({
 
     fetch(props.githubLink, {method: "HEAD"})
     .then((res) => {
-        if (res.status != 200) {
+        if (res.status !== 200) {
           const parts = props.name.split(" ")
           avatarURL.value = `https://ui-avatars.com/api/?name=${parts[0]}+${parts[1]}&&size=200&&rounded=true`
         }
