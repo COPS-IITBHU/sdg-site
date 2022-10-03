@@ -146,6 +146,7 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 import Online from '~/components/contact-us/discord/online.vue'
 import Map from '~/components/contact-us/map.vue'
+
 interface itemsObject {
   name: string
   url: string
@@ -156,6 +157,7 @@ interface itemsObject {
     color: string
   }
 }
+
 export default defineComponent({
   components: { Map, Online },
   data () {
@@ -198,13 +200,14 @@ img {
 #content:hover img {
   transform: scale(1.1);
 }
+
 ul li a {
-  background-color: var(--contact-link-bg-primary);
+  background-color: rgba(255, 255, 255, 0.911);
   transition: 0.4s;
 }
 ul li a:hover {
   transform: translate(0, -5px) scale(1.05);
-  background-color: var(--contact-link-bg-secondary);
-  box-shadow: 0px 0px 18px var(--contact-link-shadow-primary);
+  background-color: rgba(255, 255, 255, 0.979);
+  box-shadow: 0px 0px 18px rgba(116, 227, 235, 0.959);
 }
 </style>
