@@ -86,7 +86,6 @@
 </template>
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
-
 export default defineComponent({
   data() {
     return {
@@ -125,7 +124,6 @@ export default defineComponent({
   }
 })
 </script>
-
 <style scoped>
 /* BUTTON STYLING */
 .navbar-toggle {
