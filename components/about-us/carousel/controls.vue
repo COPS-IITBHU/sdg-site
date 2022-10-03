@@ -12,7 +12,7 @@
       <span class="control-prev"
       v-html="prevHtml"
       >
-</span>
+      </span>
     </a>
     <a
       href="#"
@@ -66,16 +66,8 @@ export default {
   z-index: 1000;
   min-width: 12rem;
 }
-@media(max-width: 963px) {
-  .carousel-3d-controls {
-    left: calc(47% - 6rem);
-  }
-}
-@media(max-width: 700px){
-  .carousel-3d-controls {
-     display: none;
-  }
-}
+
+
 .next,
 .prev {
   width: 60px;
@@ -130,5 +122,44 @@ export default {
   justify-content: center;
   align-content: center;
   box-shadow: 0 0rem 3rem rgb(0, 238, 255);
+}
+@media(max-width: 963px) {
+  .carousel-3d-controls {
+    left: 27%;
+    width: 40%;
+  }
+  .control-next,
+  .control-prev{
+    padding: 0.4rem 40px;
+
+  }
+  .next,.prev{
+    font-size: 50px;
+  }
+}
+@media(max-width: 700px){
+  .carousel-3d-controls{
+    width: 50%;
+    left: 22%;
+  }
+  .control-next,
+  .control-prev{
+    padding: 0.1rem 35px;
+  }
+  .next,.prev{
+    font-size: 40px;
+  }
+}
+@media(max-width:385px){
+  .carousel-3d-controls{
+    left: calc(47% - 6rem);
+  }
+  .control-next,
+  .control-prev{
+    padding: 0.4px 25px;
+  }
+  .next,.prev{
+    font-size: 30px;
+  }
 }
 </style>
