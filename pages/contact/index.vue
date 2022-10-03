@@ -2,7 +2,11 @@
   <main class="text-center text-light-50">
     <div id="head-map" class="flex justify-center items-center">
       <Map class="w-full" />
-      <span class="absolute text-light-50 text-6xl xl:text-8xl font-bold font-display">Contact Us</span>
+      <span class="map-title rounded-full absolute text-light-50 font-bold font-display
+      text-8xl p-4
+      <lg:(text-6xl p-4)
+      <md:(text-4xl p-4)
+      ">Contact Us</span>
     </div>
 
     <div
@@ -146,7 +150,6 @@
 import { defineComponent } from '@nuxtjs/composition-api'
 import Online from '~/components/contact-us/discord/online.vue'
 import Map from '~/components/contact-us/map.vue'
-
 interface itemsObject {
   name: string
   url: string
@@ -157,7 +160,6 @@ interface itemsObject {
     color: string
   }
 }
-
 export default defineComponent({
   components: { Map, Online },
   data () {
@@ -200,14 +202,16 @@ img {
 #content:hover img {
   transform: scale(1.1);
 }
-
 ul li a {
-  background-color: rgba(255, 255, 255, 0.911);
+  background-color: var(--contact-link-bg-primary);
   transition: 0.4s;
 }
 ul li a:hover {
   transform: translate(0, -5px) scale(1.05);
-  background-color: rgba(255, 255, 255, 0.979);
-  box-shadow: 0px 0px 18px rgba(116, 227, 235, 0.959);
+  background-color: var(--contact-link-bg-secondary);
+  box-shadow: 0px 0px 18px var(--contact-link-shadow-primary);
+}
+.map-title{
+  background: rgba(0, 0, 0, 0.6);
 }
 </style>

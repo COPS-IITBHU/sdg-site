@@ -86,7 +86,6 @@
 </template>
 <script>
 import { defineComponent } from '@nuxtjs/composition-api';
-
 export default defineComponent({
   data() {
     return {
@@ -125,7 +124,6 @@ export default defineComponent({
   }
 })
 </script>
-
 <style scoped>
 /* BUTTON STYLING */
 .navbar-toggle {
@@ -138,7 +136,7 @@ export default defineComponent({
   transition-property: stroke, stroke-dasharray, stroke-dashoffset;
   transition-timing-function: ease;
   transition-duration: 400ms;
-  stroke: #fff;
+  stroke: white;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
@@ -152,7 +150,6 @@ export default defineComponent({
 .navbar-toggle.active {
   transform: rotate(45deg);
 }
-
 .navbar-toggle.active .line.top {
   stroke-dashoffset: -98px;
 }
@@ -165,16 +162,14 @@ export default defineComponent({
 }
 /* NAVBAR STYLING */
 .navbar {
-  background-color: #111;
-  border-left: 5px solid #56eefd;
+  background-color: var(--navbar-bg);
+  border-left: 5px solid var(--navbar-color);
   height: 100vh;
   left: 100vw;
 }
-
 .list_item {
   @apply text-2xl md:text-3xl lg:text-4xl;
 }
-
 .list_item:before, .list_item::after {
   content: ' ';
   display: block;
@@ -182,22 +177,21 @@ export default defineComponent({
   width: 0;
   top: 2px;
   height: 100%;
-  border-bottom: 2px solid #56eefd;
+  border-bottom: 2px solid var(--navbar-color);
   transition: 0.3s;
 }
 .list_item:before {
   right: 0;
 }
-
 .list_item:after {
   bottom: 0;
 }
 .list_item:hover {
-  color: #56eefd;
+  color: var(--navbar-color);
 }
-
 .list_item:hover:before, .list_item:hover:after {
   width: 50%;
 }
+
 
 </style>
