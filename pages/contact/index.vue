@@ -6,7 +6,6 @@
       text-8xl p-4
       <lg:(text-6xl p-4)
       <md:(text-4xl p-4)
-      <sm:(text-2xl p-2)
       ">Contact Us</span>
     </div>
 
