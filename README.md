@@ -5,7 +5,9 @@
 
 SDG site is the place for Software designers, architects and developers to learn, develop and innovate. Containing various Web and App Dev Projects to make college more manageable and blogs to make your learning experience structured and faster, SDG is the go-to site to get rid of your BTs. 
 
-Software Development Group (SDG) is one of the prominent pillars of COPS, IIT (BHU), which aims to unravel the mysteries of the Software world with regular discussions and collaborations. 
+The Software Development Group (SDG) is one of the prominent pillars of COPS (Club Of ProgrammerS), IIT (BHU), which aims to unravel the mysteries of the Software world with regular discussions and collaborations. The SDG holds regular Dev talks on intriguing topics and also conducts workshops for students to get started with software development.
+
+
 _Under Heavy Development_
 
 ## Dependencies Include
