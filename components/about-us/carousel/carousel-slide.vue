@@ -39,6 +39,7 @@ export default {
         this.getSideIndex(this.parent.leftIndices) >
           this.parent.currentIndex - 1
       ) { return -1 }
+
       return this.getSideIndex(this.parent.leftIndices)
     },
     rightIndex () {
@@ -47,10 +48,12 @@ export default {
         this.getSideIndex(this.parent.rightIndices) >
           this.parent.total - this.parent.currentIndex - 2
       ) { return -1 }
+
       return this.getSideIndex(this.parent.rightIndices)
     },
     slideStyle () {
       let styles = {}
+
       if (!this.isCurrent) {
         const lIndex = this.leftIndex
         const rIndex = this.rightIndex
@@ -62,6 +65,7 @@ export default {
           styles.opacity = 1
           styles.visibility = 'visible'
         }
+
         if (this.parent.hasHiddenSlides) {
           if (this.matchIndex(this.parent.leftOutIndex)) {
             styles = this.calculatePosition(
@@ -78,6 +82,7 @@ export default {
           }
         }
       }
+
       return Object.assign(styles, {
         'border-width': this.parent.border + 'px',
         width: this.parent.slideWidth + 'px',
@@ -105,11 +110,13 @@ export default {
   methods: {
     getSideIndex (array) {
       let index = -1
+
       array.forEach((pos, i) => {
         if (this.matchIndex(pos)) {
           index = i
         }
       })
+
       return index
     },
     matchIndex (index) {
@@ -147,6 +154,7 @@ export default {
         this.parent.space === 'auto'
           ? 0
           : parseInt((i + 1) * this.parent.space)
+
       return {
         transform,
         top,
@@ -176,9 +184,11 @@ export default {
   border-style: solid;
   background-size: cover;
   background: linear-gradient(90deg, hsla(180, 0%, 41%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
 }
 .carousel-3d-slide img {
   width: 100%;
+  
 }
 .carousel-3d-slide.current {
   opacity: 1 !important;

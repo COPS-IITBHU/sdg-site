@@ -66,6 +66,7 @@ export default {
   z-index: 1000;
   min-width: 12rem;
 }
+
 .next,
 .prev {
   width: 60px;
@@ -80,28 +81,34 @@ export default {
   text-decoration: none;
   top: 0;
 }
+
 .next:hover,
 .prev:hover {
   cursor: pointer;
   opacity: 0.8;
   /* filter: brightness(2); */
 }
+
 .prev {
   left: 10px;
   text-align: center;
 }
+
 .next {
   right: 10px;
   text-align: center;
 }
+
 .disabled {
   opacity: 0.2;
   cursor: default;
 }
+
 .disabled:hover {
   cursor: default;
   opacity: 0.2;
 }
+
 .control-next{
   background: rgb(0, 238, 255);
   padding: 0.5rem 50px;
