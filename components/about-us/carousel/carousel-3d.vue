@@ -1,7 +1,7 @@
 <template>
   <div
     class="carousel-3d-container my-10 mx-auto"
-    :style="{ height: slideHeight + 'px' }"
+    :style="{ height:slideHeight+150 + 'px' }"
   >
     <div
       class="carousel-3d-slider"
@@ -23,9 +23,7 @@
 
 <script>
 import Controls from './controls'
-
 const noop = () => {}
-
 export default {
   name: 'Carousel3d',
   components: {
@@ -150,14 +148,12 @@ export default {
     slideWidth () {
       const vw = this.viewport
       const sw = parseInt(this.width) + parseInt(this.border, 10) * 2
-
       return vw < sw && process.browser ? vw : sw
     },
     slideHeight () {
       const sw = parseInt(this.width, 10) + parseInt(this.border, 10) * 2
       const sh = parseInt(parseInt(this.height) + this.border * 2, 10)
       const ar = this.calculateAspectRatio(sw, sh)
-
       return this.slideWidth / ar
     },
     visible () {
@@ -169,11 +165,8 @@ export default {
     },
     leftIndices () {
       let n = (this.visible - 1) / 2
-
       n = this.bias.toLowerCase() === 'left' ? Math.ceil(n) : Math.floor(n)
-
       const indices = []
-
       for (let m = 1; m <= n; m++) {
         indices.push(
           this.dir === 'ltr'
@@ -181,15 +174,12 @@ export default {
             : (this.currentIndex - m) % this.total
         )
       }
-
       return indices
     },
     rightIndices () {
       let n = (this.visible - 1) / 2
-
       n = this.bias.toLowerCase() === 'right' ? Math.ceil(n) : Math.floor(n)
       const indices = []
-
       for (let m = 1; m <= n; m++) {
         indices.push(
           this.dir === 'ltr'
@@ -197,15 +187,12 @@ export default {
             : (this.currentIndex + m) % this.total
         )
       }
-
       return indices
     },
     leftOutIndex () {
       let n = (this.visible - 1) / 2
-
       n = this.bias.toLowerCase() === 'left' ? Math.ceil(n) : Math.floor(n)
       n++
-
       if (this.dir === 'ltr') {
         return this.total - this.currentIndex - n <= 0
           ? -parseInt(this.total - this.currentIndex - n)
@@ -216,10 +203,8 @@ export default {
     },
     rightOutIndex () {
       let n = (this.visible - 1) / 2
-
       n = this.bias.toLowerCase() === 'right' ? Math.ceil(n) : Math.floor(n)
       n++
-
       if (this.dir === 'ltr') {
         return this.currentIndex - n
       } else {
@@ -234,12 +219,10 @@ export default {
       this.computeData()
     }
   },
-
   mounted () {
     this.computeData(true)
     this.attachMutationObserver()
     window.addEventListener('resize', this.setSize)
-
     if ('ontouchstart' in window) {
       this.$el.addEventListener('touchstart', this.handleMousedown)
       this.$el.addEventListener('touchend', this.handleMouseup)
@@ -250,16 +233,13 @@ export default {
       this.$el.addEventListener('mousemove', this.handleMousemove)
     }
   },
-
   beforeDestroy () {
     this.detachMutationObserver()
-
     if ('ontouchstart' in window) {
       this.$el.removeEventListener('touchmove', this.handleMousemove)
     } else {
       this.$el.removeEventListener('mousemove', this.handleMousemove)
     }
-
     window.removeEventListener('resize', this.setSize)
   },
   methods: {
@@ -279,7 +259,6 @@ export default {
     },
     goSlide (index) {
       this.currentIndex = index < 0 || index > this.total - 1 ? 0 : index
-
       setTimeout(() => this.animationEnd(), this.animationSpeed)
     },
     goFar (index) {
@@ -287,24 +266,19 @@ export default {
         index === this.total - 1 && this.isFirstSlide
           ? -1
           : index - this.currentIndex
-
       if (this.isLastSlide && index === 0) {
         diff = 1
       }
-
       const diff2 = diff < 0 ? -diff : diff
       let timeBuff = 0
       let i = 0
-
       while (i < diff2) {
         i += 1
         const timeout = diff2 === 1 ? 0 : timeBuff
-
         setTimeout(
           () => (diff < 0 ? this.goPrev(diff2) : this.goNext(diff2)),
           timeout
         )
-
         timeBuff += this.animationSpeed / diff2
       }
     },
@@ -318,7 +292,6 @@ export default {
       if (!e.touches) {
         e.preventDefault()
       }
-
       this.mousedown = true
       this.dragStartX =
         'ontouchstart' in window ? e.touches[0].clientX : e.clientX
@@ -329,21 +302,17 @@ export default {
       if (!this.mousedown) {
         return
       }
-
       const eventPosX =
         'ontouchstart' in window ? e.touches[0].clientX : e.clientX
       const eventPosY =
         'ontouchstart' in window ? e.touches[0].clientY : e.clientY
       const deltaX = this.dragStartX - eventPosX
       const deltaY = this.dragStartY - eventPosY
-
       this.dragOffsetX = deltaX
       this.dragOffsetY = deltaY
-
       if (Math.abs(this.dragOffsetY) > Math.abs(this.dragOffsetX)) {
         return
       }
-
       if (this.dragOffsetX > this.minSwipeDistance) {
         this.handleMouseup()
         this.goNext()
@@ -357,26 +326,22 @@ export default {
         window.MutationObserver ||
         window.WebKitMutationObserver ||
         window.MozMutationObserver
-
       if (MutationObserver) {
         const config = {
           attributes: true,
           childList: true,
           characterData: true
         }
-
         this.mutationObserver = new MutationObserver(() => {
           this.$nextTick(() => {
             this.computeData()
           })
         })
-
         if (this.$el) {
           this.mutationObserver.observe(this.$el, config)
         }
       }
     },
-
     detachMutationObserver () {
       if (this.mutationObserver) {
         this.mutationObserver.disconnect()
@@ -388,7 +353,6 @@ export default {
           return value.tag !== undefined
         }).length
       }
-
       return 0
     },
     calculateAspectRatio (width, height) {
@@ -402,7 +366,6 @@ export default {
             ? this.total - 1
             : parseInt(this.startIndex)
       }
-
       this.viewport = this.$el.clientWidth
     },
     setSize () {
@@ -428,7 +391,6 @@ export default {
   overflow: hidden;
   box-sizing: border-box;
 }
-
 .carousel-3d-slider {
   position: relative;
   margin: 0 auto;
