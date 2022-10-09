@@ -1,7 +1,7 @@
 <template>
   <div
     class="carousel-3d-container my-10 mx-auto"
-    :style="{ height: slideHeight + 'px' }"
+    :style="{ height: slideHeight+150 + 'px' }"
   >
     <div
       class="carousel-3d-slider"
