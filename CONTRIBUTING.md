@@ -8,19 +8,19 @@ We welcome contributions of all sorts. Even the most minor changes are warmly we
 
 Some examples of contributions are:
 
-1. Documentation: From spell corrections to documenting the necessary information, all comes in this section.
+1. Documentation: From spelling corrections to documenting any necessary information, everything comes under this section.
 
-2. Bugs: Any bug fixes are counted in this section. If you see a new bug, feel free to create a new issue mentioning the problem faced.
+2. Bugs: Any bug fixes are counted in this section. If you come across a new bug, feel free to create a new issue mentioning the problem.
 
 3. Feature Requests: If you would like to see some new features around the website, you can always create a new issue mentioning the requested feature.
 
-**Important:** Every PR must correspond to an issue. If there isn't an issue related to the PR, open a new issue in the Issues section.
+**Important:** Every PR must correspond to an issue. If there isn't an issue related to the PR, open a new issue in the [Issues page](https://github.com/COPS-IITBHU/sdg-site/issues).
 
 ### Grabbing an issue
 
 To work on an existing issue, comment on it and say you're working on that issue. Any maintainer will assign you to the issue. This is to avoid conflicts with others also working on the issue.
 
-You can always seek help and are recommended to discuss the course of action and design decisions to tackle the issue on the issue page before making the Pull Request.
+You can always seek help and are recommended to discuss the course of action and design decisions to tackle the issue on the [Issues page](https://github.com/COPS-IITBHU/sdg-site/issues) before making the Pull Request.
 
 ### How to Contribute?
 

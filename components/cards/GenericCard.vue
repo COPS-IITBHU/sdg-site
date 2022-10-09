@@ -10,6 +10,7 @@
             v-if="image"
             class="image_flex"
             :src="`${image}`"
+            :alt="`Loading`"
             :srcset="responsiveImage.srcSet"
             :width="imageRatio[0]"
             :height="imageRatio[1]"
@@ -18,12 +19,12 @@
         </figure>
       </component>
     </div>
-    <div class="card-content">
-      <nuxt-link :to="link">
+    <nuxt-link :to="link">
+      <div class="card-content">
         <h2 :class="`${title ? '' : 'empty-content-placeholder'}`">
           {{ title }}
         </h2>
-        <h4
+        <h3
           :class="{
             subtitle: true,
             'is-6': true,
@@ -31,9 +32,9 @@
           }"
         >
           <slot></slot>
-        </h4>
-      </nuxt-link>
-    </div>
+        </h3>
+      </div>
+    </nuxt-link>
   </div>
 </template>
 <script>
