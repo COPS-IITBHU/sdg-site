@@ -10,7 +10,7 @@
     >
 
       <span class="control-prev"
-      v-html="prevHtml"
+            v-html="prevHtml"
       >
       </span>
     </a>
