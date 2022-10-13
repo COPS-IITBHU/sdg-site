@@ -9,7 +9,7 @@
     "
   >
     <opti-image
-      :src="imageUrl"
+      :src="avatarURL"
       alt="profile"
       class="object-cover"
       loading="lazy"
@@ -76,8 +76,9 @@
     </div>
   </div>
 </template>
+
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent, ref } from '@nuxtjs/composition-api'
 import { OptiImage } from 'opti-image'
 export default defineComponent({
   components: {
@@ -113,7 +114,23 @@ export default defineComponent({
       default: 'xd',
       required: true
     }
-  }
+  },
+  setup(props){
+    const avatarURL = ref(props.imageUrl)
+
+    fetch(props.githubLink, {method: "HEAD"})
+    .then((res) => {
+        if (res.status !== 200) {
+          const parts = props.name.split(" ")
+          avatarURL.value = `https://ui-avatars.com/api/?name=${parts[0]}+${parts[1]}&&size=200&&rounded=true`
+        }
+    })
+    .catch(err => console.log('Error:', err));
+
+    return {
+      avatarURL
+    }
+  } 
 })
 </script>
 
@@ -163,4 +180,5 @@ export default defineComponent({
   transform: scaleY(0);
   transform-origin: center center -20px;
 }
+
 </style>
