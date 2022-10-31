@@ -1,6 +1,6 @@
 ## Contributing Guidelines
 
-So you have made your mind to contribute to this project? Here's everything you'll need to make your first contribution.
+So you have made up your mind to contribute to this project? Here's everything you'll need to make your first contribution.
 
 ### What can I help with?
 
@@ -14,7 +14,7 @@ Some examples of contributions are:
 
 3. Feature Requests: If you would like to see some new features around the website, you can always create a new issue mentioning the requested feature.
 
-**Important:** Every PR must correspond to an issue. If there isn't an issue related to the PR, open a new issue in the [Issues page](https://github.com/COPS-IITBHU/sdg-site/issues).
+**Important:** Every PR must correspond to an issue. If there isn't an issue related to the PR, open a new issue on the [Issues page](https://github.com/COPS-IITBHU/sdg-site/issues).
 
 ### Grabbing an issue
 
