@@ -137,6 +137,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "EshaanAgg",
+      "name": "Eshaan Aggarwal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96648934?v=4",
+      "profile": "https://eshaanagg.netlify.app/",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -144,5 +154,6 @@
   "projectOwner": "COPS-IITBHU",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
