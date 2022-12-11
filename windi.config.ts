@@ -11,6 +11,15 @@ export default {
   safelist: 'prose prose-sm m-auto text-left',
   theme: {
     extend: {
+      colors: {
+        'bg-color':'#000',
+        'text-color':'#fff',
+        'text-accent-color':'#0cbc8b',
+        'acccent-color':'#08fdd8',
+        'blob-color-1': '#005c43',
+        'blob-color-2': '#0cbc8b',
+        'blob-color-3': '#08fdd8',
+      },
       spacing: {
         half: '50%',
         '1/20': '5%',
@@ -21,8 +30,9 @@ export default {
       }
     },
     fontFamily: {
-      display: ['Raleway'],
-      heading: ["'Libre Baskerville'", 'Arial', 'Helvetica', 'sans-serif']
+      display: ['Nunito', 'sans-serif'],
+      heading: ['Jura','sans-serif'],
+      cardtopic: ['Libre Baskerville', 'serif'],
     }
   }
 }
