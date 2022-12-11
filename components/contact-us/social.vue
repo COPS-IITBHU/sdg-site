@@ -70,8 +70,16 @@ export default defineComponent({
   border-radius: 50%;
   padding: 10px;
   background: #fff;
-  border: 3px solid #000;
-  color: #000;
+  border: 2px solid #fff;
   text-align: center;
+}
+
+ul li a {
+  transition: 0.4s;
+}
+
+ul li a:hover {
+  transform: translate(0, -5px) scale(1.05);
+  box-shadow: 0px 0px 18px #08fdd8;
 }
 </style>
