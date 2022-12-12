@@ -30,8 +30,8 @@ export default {
       },
     },
     fontFamily: {
-      display: ['Nunito'],
-      heading: ['Jura'],
+      display: ['Nunito', 'sans-serif'],
+      heading: ['Jura', 'sans-serif'],
       cardtopic: ['Libre Baskerville', 'serif'],
     },
   },
