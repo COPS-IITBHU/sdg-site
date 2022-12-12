@@ -1,62 +1,46 @@
-[
-  {
-    "name": "Facebook",
-    "url": "https://www.facebook.com/cops.iitbhu",
-    "icon": "mdi:facebook",
-    "height": 32,
-    "width": 32,
-    "style": {
-      "color": "#4267b2"
+{
+  "items": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/cops.iitbhu",
+      "icon": "mdi:facebook",
+      "height": 32,
+      "width": 32
+    },
+    {
+      "name": "Linkedin",
+      "url": "https://www.linkedin.com/company/cops-iitbhu",
+      "icon": "mdi:linkedin",
+      "height": 32,
+      "width": 32
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/COPS-IITBHU",
+      "icon": "mdi:github",
+      "height": 32,
+      "width": 32
+    },
+    {
+      "name": "Youtube",
+      "url": "https://www.youtube.com/channel/UC01TZlNfu29QgG4FmUqVsdg",
+      "icon": "mdi:youtube",
+      "height": 32,
+      "width": 32
+    },
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com/cops.iitbhu",
+      "icon": "mdi:instagram",
+      "height": 32,
+      "width": 32
+    },
+    {
+      "name": "Gmail",
+      "url": "mailto:iitbhu.cops@gmail.com",
+      "icon": "mdi:gmail",
+      "height": 32,
+      "width": 32
     }
-  },
-  {
-    "name": "Linkedin",
-    "url": "https://www.linkedin.com/company/cops-iitbhu",
-    "icon": "mdi:linkedin",
-    "height": 32,
-    "width": 32,
-    "style": {
-      "color": "#006192"
-    }
-  },
-  {
-    "name": "Github",
-    "url": "https://github.com/COPS-IITBHU",
-    "icon": "mdi:github",
-    "height": 32,
-    "width": 32,
-    "style": {
-      "color": "#211f1f"
-    }
-  },
-  {
-    "name": "Youtube",
-    "url": "https://www.youtube.com/channel/UC01TZlNfu29QgG4FmUqVsdg",
-    "icon": "mdi:youtube",
-    "height": 32,
-    "width": 32,
-    "style": {
-      "color": "#FF0000"
-    }
-  },
-  {
-    "name": "Instagram",
-    "url": "https://instagram.com/cops.iitbhu",
-    "icon": "mdi:instagram",
-    "height": 32,
-    "width": 32,
-    "style": {
-      "color": "#E1306C"
-    }
-  },
-  {
-    "name": "Gmail",
-    "url": "mailto:iitbhu.cops@gmail.com",
-    "icon": "mdi:gmail",
-    "height": 32,
-    "width": 32,
-    "style": {
-      "color": "#DB4437"
-    }
-  }
-]
+  ]
+}
