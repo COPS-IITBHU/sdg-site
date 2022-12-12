@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="my-4 px-2">
-      <h3 class="py-2 text-cyan-400 text-3xl social-links">
+      <h3 class="py-2 text-accent-color text-3xl font-heading">
         We're also here....
       </h3>
       <br />
-      <p class="text-light-50 content">
+      <p class="text-light-50 font-display">
         Follow us on the following social media handles and stay apprised about
         the latest events and workshops!
       </p>
@@ -55,17 +55,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-.social-links {
-  color: #08fdd8;
-  font-family: 'Jura';
-}
-
-.content {
-  font-family: 'Nunito';
-}
 .icon-circle {
   border-radius: 50%;
   padding: 10px;
@@ -80,6 +69,6 @@ ul li a {
 
 ul li a:hover {
   transform: translate(0, -5px) scale(1.05);
-  box-shadow: 0px 0px 18px #08fdd8;
+  box-shadow: 0px 0px 18px theme('colors.accent-color');
 }
 </style>
