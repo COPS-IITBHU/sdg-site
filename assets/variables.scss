@@ -16,8 +16,16 @@
 }
 @layer base {
   @font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans'), local('OpenSans-Regular'), url('~/assets/OpenSans-Regular.ttf') format('truetype');
+    font-family: 'Jura';
+    src: local('Jura'), local('Jura-VariableFont'), url('~/assets/Jura-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: optional;
+  }
+
+  @font-face {
+    font-family: 'Nunito';
+    src: local('Nunito'), local('Nunito-VariableFont'), url('~/assets/Nunito-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: optional;
@@ -26,14 +34,6 @@
   @font-face {
     font-family: 'Libre Baskerville';
     src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url('~/assets/LibreBaskerville-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: optional;
-  }
-
-  @font-face {
-    font-family: 'Raleway';
-    src: local('Raleway'), local('Raleway-VariableFont'), url('~/assets/Raleway-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: optional;
@@ -51,10 +51,10 @@
 body {
   background-color: #111;
   scroll-behavior: smooth;
-  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
 }
 
 h1, h2, h3 {
-  font-family: 'Libre Baskerville', Arial, Helvetica, sans-serif;
+  font-family: 'Jura', 'sans-serif';
 }
