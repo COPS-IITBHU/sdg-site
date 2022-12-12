@@ -1,6 +1,6 @@
 # SDG Site
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 SDG site is the place for Software designers, architects and developers to learn, develop and innovate. Containing various Web and App Dev Projects to make college more manageable and blogs to make your learning experience structured and faster, SDG is the go-to site to get rid of your BTs. 
@@ -80,6 +80,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center"><a href="https://eshaanagg.netlify.app/"><img src="https://avatars.githubusercontent.com/u/96648934?v=4?s=100" width="100px;" alt="Eshaan Aggarwal"/><br /><sub><b>Eshaan Aggarwal</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=EshaanAgg" title="Code">💻</a> <a href="#maintenance-EshaanAgg" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://github.com/soustab10"><img src="https://avatars.githubusercontent.com/u/95632583?v=4?s=100" width="100px;" alt="Soustab Haldar"/><br /><sub><b>Soustab Haldar</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=soustab10" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
