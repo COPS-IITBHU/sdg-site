@@ -80,7 +80,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center"><a href="https://eshaanagg.netlify.app/"><img src="https://avatars.githubusercontent.com/u/96648934?v=4?s=100" width="100px;" alt="Eshaan Aggarwal"/><br /><sub><b>Eshaan Aggarwal</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=EshaanAgg" title="Code">💻</a> <a href="#maintenance-EshaanAgg" title="Maintenance">🚧</a></td>
-      <td align="center"><a href="https://github.com/soustab10"><img src="https://avatars.githubusercontent.com/u/95632583?v=4?s=100" width="100px;" alt="Soustab Haldar"/><br /><sub><b>Soustab Haldar</b></sub></a><br /><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=soustab10" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/soustab10"><img src="https://avatars.githubusercontent.com/u/95632583?v=4?s=100" width="100px;" alt="Soustab Haldar"/><br /><sub><b>Soustab Haldar</b></sub></a><br /><a href="#ideas-soustab10" title="Ideas, Planning, & Feedback">🤔</a><a href="https://github.com/COPS-IITBHU/sdg-site/commits?author=soustab10" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
