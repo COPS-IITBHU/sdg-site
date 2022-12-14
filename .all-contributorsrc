@@ -157,6 +157,16 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "vcvedika",
+      "name": "Vedika Chandra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94168243?v=4",
+      "profile": "https://github.com/vcvedika",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
