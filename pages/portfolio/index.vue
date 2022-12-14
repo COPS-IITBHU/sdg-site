@@ -1,11 +1,15 @@
 <template>
   <section>
-    <site-hero :title="title" :subtitle="subtitle" image="/team.webp"></site-hero>
-    <main
-      class="w-full"
-    >
+    <site-hero
+      :title="title"
+      :subtitle="subtitle"
+      image="/team.webp"
+    ></site-hero>
+    <main class="w-full">
       <section class="flex-col lg:flex-row flex justify-evenly items-center">
-        <figure class="nav-elements px-4 md:px-8 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
+        <figure
+          class="nav-elements px-4 md:px-8 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl"
+        >
           <div>
             <lottie
               :width="250"
@@ -17,18 +21,11 @@
           <figcaption class="py-4">
             <span class="text-3xl py-10 font-heading">Developers</span>
             <p class="text-sm mt-2 text-justify">
-              A team of zealous coders improvising the world as you complete reading this sentence.
+              A team of zealous coders improvising the world as you complete
+              reading this sentence.
             </p>
             <button
-              class="
-                btn
-                w-30
-                p-2
-                mt-8
-                border
-                rounded-lg
-                hover:bg-hex-fff hover:text-black
-              "
+              class="btn w-30 p-2 mt-8 border rounded-lg hover:bg-hex-fff hover:text-black"
               aria-label="view-team"
               @click="showSdg()"
             >
@@ -36,7 +33,9 @@
             </button>
           </figcaption>
         </figure>
-        <figure class="nav-elements px-4 md:px-8 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl">
+        <figure
+          class="nav-elements px-4 md:px-8 drop-shadow-3xl flex-col md:flex-row flex my-4 block max-w-lg rounded-3xl"
+        >
           <div>
             <lottie
               :width="250"
@@ -50,19 +49,11 @@
           <figcaption class="py-4">
             <span class="text-3xl py-10 font-heading">Alums</span>
             <p class="text-sm mt-2 text-justify">
-              They are the building blocks, our mentors, and the very soul of this team.
+              They are the building blocks, our mentors, and the very soul of
+              this team.
             </p>
             <button
-              class="
-                btn
-                w-30
-                p-2
-                mt-8
-                border
-                font-400
-                rounded-lg
-                hover:bg-hex-fff hover:text-black
-              "
+              class="btn w-30 p-2 mt-8 border font-400 rounded-lg hover:bg-hex-fff hover:text-black"
               aria-label="view-alums"
               @click="showAlums()"
             >
@@ -72,27 +63,21 @@
         </figure>
       </section>
       <section v-if="showCard && !showAlum" id="team-id">
-        <div v-for="(value, header) in members" :key="header" class="text-center px-4 mx-auto my-4">
-          <h2
-            class="
-              text-center text-4xl
-              md:text-4xl
-              lg:text-6xl
-            "
-          >
+        <div
+          v-for="(value, header) in members"
+          :key="header"
+          class="text-center px-4 mx-auto my-4"
+        >
+          <h2 class="text-center text-4xl md:text-4xl lg:text-6xl">
             {{ header }}
           </h2>
           <div class="line"></div>
           <ul class="flex flex-row flex-wrap mx-auto list-none justify-center">
-            <li
-              v-for="person in value"
-              :key="person.github"
-            >
+            <li v-for="person in value" :key="person.github" class="m-3">
               <transition appear @before-enter="beforeEnter" @enter="enter">
                 <sdgCard
                   v-show="showCard"
                   :name="person.name"
-
                   :title="person.title"
                   :social-media-link="person.link"
                   :github-link="person.github"
@@ -105,18 +90,15 @@
       </section>
 
       <!-- Alums -->
-      <section v-if="showAlum && !showCard" id="team-id" class="text-center p-20">
-        <h2
-          class="text-center text-3xl md:text-4xl lg:text-6xl"
-        >
-          ALUMNI
-        </h2>
+      <section
+        v-if="showAlum && !showCard"
+        id="team-id"
+        class="text-center p-20"
+      >
+        <h2 class="text-center text-3xl md:text-4xl lg:text-6xl">ALUMNI</h2>
         <div class="line"></div>
         <ul class="flex flex-row flex-wrap mx-auto list-none justify-center">
-          <li
-            v-for="person in alums"
-            :key="person.name"
-          >
+          <li v-for="person in alums" :key="person.name" class="m-3">
             <transition appear @before-enter="beforeEnter" @enter="enter">
               <sdgCard
                 v-show="showAlum"
@@ -135,17 +117,17 @@
   </section>
 </template>
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
-import lottie from 'vue-lottie/src/lottie.vue'
-import * as alumniAnimationData from '~/assets/30304-back-to-school.json'
-import * as devAnimationData from '~/assets/55885-developer.json'
-import SiteHeroVue from '~/components/SiteHero.vue'
+import { defineComponent } from '@nuxtjs/composition-api';
+import lottie from 'vue-lottie/src/lottie.vue';
+import * as alumniAnimationData from '~/assets/30304-back-to-school.json';
+import * as devAnimationData from '~/assets/55885-developer.json';
+import SiteHeroVue from '~/components/SiteHero.vue';
 export default defineComponent({
   components: {
     lottie,
     SiteHero: SiteHeroVue
   },
-  data () {
+  data() {
     return {
       alums: [],
       members: {
@@ -164,31 +146,38 @@ export default defineComponent({
         sophies: { animationData: alumniAnimationData.default }
       },
       title: 'Meet the Team',
-      subtitle: 'Since the inception of COPS in 2015, we have continuously developed the incredible. From kingpins who drive the group to reach greater heights to comrades who constantly pursue, we are a bunch that assimilates knowledge, applies resources, and achieves goals.'
-    }
+      subtitle:
+        'Since the inception of COPS in 2015, we have continuously developed the incredible. From kingpins who drive the group to reach greater heights to comrades who constantly pursue, we are a bunch that assimilates knowledge, applies resources, and achieves goals.'
+    };
   },
-  async fetch () {
-    let currentYear = new Date().getFullYear()
-    const currentMonth = new Date().getMonth()
+  async fetch() {
+    let currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth();
 
     if (currentMonth < 7) {
-      currentYear -= 1
+      currentYear -= 1;
     }
 
     try {
       const [seniors, juniors, sophies, alums] = await Promise.all([
-        this.$content('members').where({ year: { $lte: currentYear - 3 } }).fetch(),
-        this.$content('members').where({ year: currentYear - 2 }).fetch(),
-        this.$content('members').where({ year: currentYear - 1 }).fetch(),
+        this.$content('members')
+          .where({ year: { $lte: currentYear - 3 } })
+          .fetch(),
+        this.$content('members')
+          .where({ year: currentYear - 2 })
+          .fetch(),
+        this.$content('members')
+          .where({ year: currentYear - 1 })
+          .fetch(),
         this.$content('alums').fetch()
-      ])
+      ]);
 
-      this.members.Seniors = seniors
-      this.members.Juniors = juniors
-      this.members.Sophomores = sophies
-      this.alums = alums
+      this.members.Seniors = seniors;
+      this.members.Juniors = juniors;
+      this.members.Sophomores = sophies;
+      this.alums = alums;
     } catch (e) {
-      throw new Error('Failed to fetch data')
+      throw new Error('Failed to fetch data');
     }
   },
   head: {
@@ -202,53 +191,51 @@ export default defineComponent({
       }
     ]
   },
-  mounted () {
+  mounted() {
     this.$nextTick(() => {
-      this.$nuxt.$loading.start()
-      setTimeout(() => this.$nuxt.$loading.finish(), 1000)
-    })
+      this.$nuxt.$loading.start();
+      setTimeout(() => this.$nuxt.$loading.finish(), 1000);
+    });
   },
   methods: {
-    showSdg () {
-      this.showCard = true
-      this.showAlum = false
+    showSdg() {
+      this.showCard = true;
+      this.showAlum = false;
       setTimeout(() => {
         document.getElementById('team-id').scrollIntoView({
           behavior: 'smooth'
-        })
-      }
-      , 1000)
+        });
+      }, 1000);
     },
-    showAlums () {
-      this.showAlum = true
-      this.showCard = false
+    showAlums() {
+      this.showAlum = true;
+      this.showCard = false;
       setTimeout(() => {
         document.getElementById('team-id').scrollIntoView({
           behavior: 'smooth'
-        })
-      }
-      , 1000)
+        });
+      }, 1000);
     },
-    beforeEnter (el) {
-      el.style.opacity = 0
-      el.style.transform = 'translateY(-60px)'
+    beforeEnter(el) {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(-60px)';
     },
-    enter (el) {
+    enter(el) {
       this.$gsap.to(el, {
         opacity: 1,
         y: 0,
         duration: 1,
         ease: 'bounce.out'
-      })
+      });
     },
-    handleAnimation (anim, type) {
-      this.anim[type] = anim
+    handleAnimation(anim, type) {
+      this.anim[type] = anim;
     },
-    play (type) {
-      this.anim[type].play()
+    play(type) {
+      this.anim[type].play();
     }
   }
-})
+});
 </script>
 <style>
 .nav-elements {
