@@ -4,34 +4,12 @@
       <Map class="w-full" />
       <span
         class="map-title rounded-full absolute text-light-50 font-bold font-display text-8xl p-4 <lg:(text-6xl p-4) <md:(text-4xl p-4)"
-      >Contact Us</span
+        >Contact Us</span
       >
     </div>
 
     <div class="flex flex-row justify-around m-6 mt-12 <lg:flex-col">
-      <div class="flex flex-col">
-        <div class="text-left mx-auto mb-4 <lg:(w-full)">
-          <div>
-            <h2 class="py-2 text-cyan-400 text-4xl font-bold">LET'S TALK</h2>
-            <p class="text-light-50 text-justify">
-              With over 1700 members, the Discord server is a haven for
-              programming enthusiasts! <br />
-              We have separate channels dedicated to the 4 verticals,
-              competitions as well as some random bakar.<br />
-              Hop onto the server.<br />
-              Savor as well as share the infinite domains of the code!
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-row justify-center items-center flex-wrap <lg:(w-full)"
-        >
-          <Online
-            class="w-full md:w-3/4 md:mr-auto ml-auto md:ml-0"
-            :serverid="serverid"
-          />
-        </div>
-      </div>
+      <Online class="w-full md:mr-auto ml-auto md:ml-0" :serverid="serverid" />
 
       <div
         id="clg_img"
@@ -91,7 +69,7 @@ export default defineComponent({
   components: { Map, Online, Social },
   data() {
     return {
-      serverid: '786971759496790046'
+      serverid: '786971759496790046',
     } as {
       serverid: string;
     };
@@ -103,10 +81,10 @@ export default defineComponent({
         hid: 'description',
         name: 'description',
         content:
-          'Contact us via any of the mentioned mediums. We’d highly appreciate you reaching out to us!'
-      }
-    ]
-  }
+          'Contact us via any of the mentioned mediums. We’d highly appreciate you reaching out to us!',
+      },
+    ],
+  },
 });
 </script>
 
@@ -116,22 +94,27 @@ img {
   border-bottom-right-radius: 70px;
   transition: all 1s;
 }
+
 #content {
   border-top-left-radius: 70px;
   border-bottom-right-radius: 70px;
 }
+
 #content:hover img {
   transform: scale(1.1);
 }
+
 ul li a {
   background-color: var(--contact-link-bg-primary);
   transition: 0.4s;
 }
+
 ul li a:hover {
   transform: translate(0, -5px) scale(1.05);
   background-color: var(--contact-link-bg-secondary);
   box-shadow: 0px 0px 18px var(--contact-link-shadow-primary);
 }
+
 .map-title {
   background: rgba(0, 0, 0, 0.6);
 }
