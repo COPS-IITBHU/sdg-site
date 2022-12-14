@@ -114,8 +114,7 @@ export default defineComponent({
   background-image: radial-gradient(
     black 0%,
     black 50%,
-    theme('colors.blob-color-3') 90%,
-    transparent 100%
+    theme('colors.blob-color-3') 100%
   );
   position: absolute;
   padding-top: 35%;
