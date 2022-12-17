@@ -4,7 +4,7 @@
       <Map class="w-full" />
       <span
         class="map-title rounded-full absolute text-light-50 font-bold font-display text-8xl p-4 <lg:(text-6xl p-4) <md:(text-4xl p-4)"
-        >Contact Us</span
+      >Contact Us</span
       >
     </div>
 

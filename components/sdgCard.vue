@@ -1,44 +1,30 @@
 <template>
-  <div
-    class="
-      our-team
-      w-60
-      text-center
-      relative
-      overflow-hidden
-    "
-  >
+  <div class="our-team w-60 text-center relative overflow-hidden">
     <opti-image
       :src="imageUrl"
       alt="profile"
       class="object-cover"
       loading="lazy"
       width="200"
-      height="200" />
+      height="200"
+    />
     <div class="team-content">
-      <h3 class="title text-lg font-700">
+      <h3 class="title text-lg font-700 text-display">
         {{ name }}
       </h3>
-      <span class="post block text-md opacity-0 mb-1"> {{ title }} </span>
-      <span class="post block text-md opacity-0 mb-4"> {{ company }} </span>
+      <span class="post block text-md opacity-0 mb-1 text-display">
+        {{ title }}
+      </span>
+      <span class="post block text-md opacity-0 mb-4 text-display">
+        {{ company }}
+      </span>
       <ul class="icon">
         <li class="inline-block">
           <a
             aria-label="linkedin"
             target="_blank"
             :href="socialMediaLink"
-            class="
-              iconify
-              border-solid border
-              block
-              h-8
-              text-base
-              leading-9
-              text-center
-              w-8
-              rounded-full
-              hover:bg-hex-006192 hover:border-hex-006192
-            "
+            class="iconify border-solid border block h-8 text-base leading-9 text-center w-8 rounded-full hover:bg-hex-006192 hover:border-hex-006192"
             rel="noreferrer"
           >
             <span
@@ -52,24 +38,10 @@
             target="_blank"
             aria-label="github"
             :href="githubLink"
-            class="
-              iconify
-              border-solid border
-              block
-              h-8
-              text-base
-              leading-9
-              text-center
-              w-8
-              rounded-full
-              hover:bg-gray-900 hover:border-gray-900
-            "
+            class="iconify border-solid border block h-8 text-base leading-9 text-center w-8 rounded-full hover:bg-gray-900 hover:border-gray-900"
             rel="noreferrer"
           >
-            <span
-              class="iconify m-auto text-xl mt-1"
-              :data-icon="icon"
-            ></span>
+            <span class="iconify m-auto text-xl mt-1" :data-icon="icon"></span>
           </a>
         </li>
       </ul>
@@ -77,8 +49,8 @@
   </div>
 </template>
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
-import { OptiImage } from 'opti-image'
+import { defineComponent } from '@nuxtjs/composition-api';
+import { OptiImage } from 'opti-image';
 export default defineComponent({
   components: {
     OptiImage
@@ -114,7 +86,7 @@ export default defineComponent({
       required: true
     }
   }
-})
+});
 </script>
 
 <style scoped>
@@ -122,16 +94,31 @@ export default defineComponent({
   padding: 20px 20px;
   border-radius: 50%;
 }
-.our-team:hover img {
+.team-content {
+  border-image: radial-gradient(#000 60%, theme('colors.blob-color-3') 100%);
+  border-width: 4px;
+  border-style: solid;
+}
+.our-team img {
   transform: scale(1.2);
+  border-radius: 50%;
+}
+
+.our-team:hover img {
+  transform: scale(1);
+  background: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 .our-team .team-content {
   width: 100%;
   height: 100%;
-  background: var(--sdgcard-bg);
+  background-image: radial-gradient(
+    black 0%,
+    black 50%,
+    theme('colors.blob-color-3') 100%
+  );
   position: absolute;
   padding-top: 35%;
-  color: white;
+  color: theme('colors.text-color');
   opacity: 0;
   top: 0;
   left: 0;
