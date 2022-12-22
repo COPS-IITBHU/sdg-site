@@ -3,21 +3,21 @@
     <ul class="flex flex-col md:flex-row justify-evenly relative font-Jura">
       <li>
         <h1
-          class="text-5xl xl:text-8xl antialiased mx-2 my-2 text-center tracking-widest"
+          class="text-5xl xl:text-8xl antialiased mx-2 sm:my-2 text-center tracking-widest my-2"
         >
           Design
         </h1>
       </li>
       <li>
         <h1
-          class="text-5xl xl:text-8xl antialiased mx-2 my-2 text-center tracking-widest relative top-16"
+          class="text-5xl xl:text-8xl antialiased mx-2 sm:my-2 text-center tracking-widest md:relative md:top-16 my-2"
         >
           Develop
         </h1>
       </li>
       <li>
         <h1
-          class="text-5xl xl:text-8xl antialiased mx-2 my-2 text-center tracking-widest relative top-32"
+          class="text-5xl xl:text-8xl antialiased mx-2 sm:my-2 text-center tracking-widest relative md:top-32"
         >
           Deploy
         </h1>
