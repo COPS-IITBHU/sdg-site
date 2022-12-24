@@ -1,58 +1,26 @@
 <template>
   <main class="text-center text-light-50">
     <div id="head-map" class="flex justify-center items-center">
-      <Map class="w-full" />
+      <iframe
+        title="IIT BHU Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.245385337551!2d82.9871848146768!3d25.26232953525508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e33ef9b1f7cdd%3A0x7555db6d623dc140!2sIndian%20Institute%20of%20Technology%20(BHU)%20Varanasi!5e0!3m2!1sen!2sin!4v1634069543926!5m2!1sen!2sin"
+        width="100%"
+        height="400px"
+        allowfullscreen="false"
+        loading="lazy"
+        class="filter invert-90 hue-rotate-180 brightness-95 saturate-200 ">
+      </iframe> 
       <span
         class="map-title rounded-full absolute text-light-50 font-bold font-display text-8xl p-4 <lg:(text-6xl p-4) <md:(text-4xl p-4)"
-      >Contact Us</span
-      >
+      >Contact Us</span>
     </div>
 
-    <div class="flex flex-row justify-around m-6 mt-12 <lg:flex-col">
-      <Online class="w-full md:mr-auto ml-auto md:ml-0" :serverid="serverid" />
-
-      <div
-        id="clg_img"
-        class="lg:ml-12 my-8 md:my-4 flex justify-center items-center"
-      >
-        <div id="content" class="w-full relative overflow-hidden">
-          <nuxt-img
-            src="contact/iit-varanasi.webp"
-            width="600"
-            alt="Institute Image"
-            class="object-cover select-none filter brightness-60 mx-auto"
-            loading="lazy"
-          />
-          <div
-            class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover flex flex-col justify-center items-center"
-          >
-            <div class="w-3/5 flex flex-col justify-center items-center">
-              <div class="box">
-                <div class="m-1 flex justify-center items-center">
-                  <span
-                    class="iconify"
-                    data-icon="gis:poi-map"
-                    style="color: #fff"
-                    data-width="60"
-                    data-height="60"
-                    data-flip="horizontal"
-                  ></span>
-                </div>
-                <div>
-                  <h2 class="text-2xl lg:text-3xl font-bold text-light-50">
-                    VISIT US
-                  </h2>
-                  <p class="text-light-50">
-                    A Malaiyo date discussing some bugs sounds cool, right?
-                    Visit us in our Natural Banarasi Habitat and let us treat
-                    you to something!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="wrapper flex flex-row justify-center m-6 mt-12 <lg:flex-col">
+      <div class="flex flex-col w-full ">
+        <Map />
       </div>
+      <br />
+      <Online class="w-full" :serverid="serverid" />
     </div>
     <br />
     <Social />
@@ -89,33 +57,18 @@ export default defineComponent({
 </script>
 
 <style scoped>
-img {
-  border-top-left-radius: 70px;
-  border-bottom-right-radius: 70px;
-  transition: all 1s;
-}
-
-#content {
-  border-top-left-radius: 70px;
-  border-bottom-right-radius: 70px;
-}
-
-#content:hover img {
-  transform: scale(1.1);
-}
-
-ul li a {
-  background-color: var(--contact-link-bg-primary);
-  transition: 0.4s;
-}
-
-ul li a:hover {
-  transform: translate(0, -5px) scale(1.05);
-  background-color: var(--contact-link-bg-secondary);
-  box-shadow: 0px 0px 18px var(--contact-link-shadow-primary);
-}
-
 .map-title {
   background: rgba(0, 0, 0, 0.6);
+}
+
+.wrapper{
+  margin: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 1030px) {
+  
 }
 </style>

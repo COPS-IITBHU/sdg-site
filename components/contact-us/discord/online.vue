@@ -1,19 +1,19 @@
 <template>
-  <div class="flex flex-col w-2/5">
-    <div class="text-right mx-auto mb-4 <lg:(w-full)">
+  <div class="flex flex-col ">
+    <div class="online-desc text-right mb-4 <lg:(w-full)">
       <div>
-        <h2 class="py-2 text-accent-color text-3xl font-heading">Let's Talk</h2>
-        <p class="text-light-50 font-display">
-          With over 1700 members, the Discord server is a haven for programming
+        <h2 class="py-2 text-accent-color text-4xl font-heading">Let's Talk</h2>
+        <p class="text-light-50 font-display justify">
+          With over 1700 members, the Discord server is a haven for programming <br/>
           enthusiasts! We have separate channels dedicated to the 4 verticals,
-          competitions as well as some random bakar. <br />
-          Hop onto the server! <br />
+          competitions <br/> as well as some random bakar. 
+          Hop onto the server! <br/>
           Savor as well as share the infinite domains of the code!
         </p>
       </div>
     </div>
     <div
-      class="flex flex-row justify-center items-center flex-wrap <lg:(w-full)"
+      class="online flex flex-row justify-end flex-wrap <lg:(w-full)"
     >
       <iframe
         title="COPS Insights"
@@ -22,7 +22,8 @@
         frameborder="0"
         sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
         width="100%"
-        height="500px"
+        height="400px"
+        class="md:w-4/5">
       ></iframe>
     </div>
   </div>
@@ -42,3 +43,20 @@ export default defineComponent({
   },
 });
 </script>
+
+
+<style scoped>
+
+@media screen and (max-width: 1030px) {
+  .online{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .online-desc{
+    text-align: center;
+  }
+}
+
+</style>
