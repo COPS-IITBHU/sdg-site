@@ -41,7 +41,7 @@
 
       <img src="/shapes/vector2.png" alt="hash" class="ShapesBackground_shape  " style="top: 5%; right: 40vw; width: 50%; height: auto; opacity: 0.2;">
    
-      <img src="/shapes/vector3.png" alt="triangle" class=" sm:block ShapesBackground_shape  bg-center " style="top: 50%; right: 37vw; width: 15.5%; height: auto; opacity: 0.2;">
+      <img src="/shapes/vector3.png" alt="triangle" class=" sm:block ShapesBackground_shape  bg-center md:top-[50%] top-[35%]" style="right: 37vw; width: 15.5%; height: auto; opacity: 0.2;">
 
       <img src="/shapes/vector4.png" alt="waves" class="ShapesBackground_shape bg-center  " style="top: 4%; right: 6vw; width: 50%; height: auto; opacity: 0.2;">
      
