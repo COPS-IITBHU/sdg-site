@@ -9,6 +9,10 @@ featureImage: /blog/metamask.webp
 **The Tale of the Missing Seed: How to Recover Your Metamask Wallet in case you forget the 12 word seed phrase.**
 =================================================================================================================
 
+**Team Members-**
+Shaan Kumar, Nishtha Bodani, Ankur Patil, Sahil Saini, Aadeesh Oswal, Partik Singh, Aaryan Kumar, Pallav Agarwal
+Thanking our Mentors - Arpit Shukla, Sanchit Gupta, Eshwar
+
 **Preamble-**
 
 The idea was proposed and designed for the Inter IIT 11.0 hackathon conducted by Consensys where our team bagged a Silver Medal. We would like to thank Consensys for providing us with an opportunity where our innovation could be valued on a larger scale. The learning and the experience during the course of designing was phenomenal.
