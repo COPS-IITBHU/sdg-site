@@ -1,17 +1,31 @@
 [
   {
+    "title": "Google Summer of Code 2022",
+    "description": "16 students from the club got accepted in Google Summer of Code (GSOC) and a total of 22 students including other open source programmes.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
+  },
+    {
     "title": "LFX Mentorship 2023 Spring",
     "description": "Three students from the club namely Ankur Patil, Paarth Agarwal and Yash Raj got accepted as mentees in LFX Mentorship Spring 2023.",
     "link": "https://lfx.linuxfoundation.org/tools/mentorship/",
     "linkdes": "LFX Mentorship.",
     "showlink": true
   },
-  {
-    "title": "CSAW 2021",
-    "description": "2 teams from IIT(BHU) made it to the finals of the Cyber Security Awareness Week (CSAW).",
-    "link": "https://ctf.csaw.io/scoreboard",
-    "linkdes": "Cyber Security Awareness Week (CSAW).",
-    "showlink": true
+   {
+    "title": "Summer of Bitcoin 2023",
+    "description": "Two students from the club namely Prakhar Agarwal and Lakshay Singh got accepted as mentees in Summer of Bitcoin 2023.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
+  },
+   {
+    "title": "Summer of Reproducibility 2023",
+    "description": "Two students from the club namely Srishti Jaiswal and Krishna Madhwani got accepted as mentees in Summer of Reproducibility 2023.",
+    "link": "",
+    "linkdes":"",
+    "showlink": false
   },
   {
     "title": "LFX Mentorship Program",
@@ -19,13 +33,6 @@
     "link": "https://lfx.linuxfoundation.org/tools/mentorship/",
     "linkdes": "LFX Mentorship.",
     "showlink": true
-  },
-  {
-    "title": "ACM ICPC 2020",
-    "description": "Team rng(weed) topped Kanpur-Mathura Regionals and have chance to Represent IIT BHU in World Finals. 23 Teams from the College qualified for ICPC Amritapuri Regionals.",
-    "link": "",
-    "linkdes":"",
-    "showlink": false
   },
   {
     "title": "Google Summer of Code 2021",
@@ -51,13 +58,6 @@
   {
     "title": "Google Summer of Code 2020",
     "description": "Ten students from the club successfully completed a project in one of the most prestigious open-source software development programs - Google Summer of Code. IIT (BHU) is one of top 10 institutes in the world with most number of GSoC selections in 2020.",
-    "link": "",
-    "linkdes":"",
-    "showlink": false
-  },
-  {
-    "title": "ICPC 2019-2020",
-    "description": "One team from the club qualified for ICPC World Finals.",
     "link": "",
     "linkdes":"",
     "showlink": false
@@ -98,13 +98,6 @@
     "showlink": true
   },
   {
-    "title": "Third at ICPC Regionals",
-    "description": "TooLazyToPropogate, a team of Pranjal Jain, Himanshu Singh and Debrup Roy Choudhary secured third position at ICPC Kanpur Regionals 2017.",
-    "link": "",
-    "linkdes":"",
-    "showlink": false
-  },
-  {
     "title": "Bronze at Inter-IIT",
     "description": "A team of two members, Suyash Shukla and Abhinav Patel, won Bronze Medal in an Inter IIT Event.",
     "link": "",
@@ -117,12 +110,5 @@
     "link": "",
     "linkdes":"",
     "showlink": false
-  },
-  {
-    "title": "Problem of the Week",
-    "description": "COPS made an amazing study material to start and excel competitve programming. This includes resources to study on each topic and some good problems to practice.",
-    "link": "https://www.copsiitbhu.co.in/resources/cp/potw/",
-    "linkdes": "Here.",
-    "showlink": true
   }
-]
+]    
