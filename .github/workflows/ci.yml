@@ -15,26 +15,39 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [16]
 
     steps:
-      - name: Checkout 🛎
-        uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Cache pnpm modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-pnpm-modules
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
+            ${{ runner.os }}-pnpm-store-
 
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.0.2
-          run_install: true
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Build project 👨🏻‍💻
         run: pnpm build
