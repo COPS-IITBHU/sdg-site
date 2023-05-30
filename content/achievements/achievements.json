@@ -1,5 +1,12 @@
 [
   {
+    "title": "LFX Mentorship 2023 Summer",
+    "description": "One student from the club namely Eshaan Agarwal got accepted as mentee in LFX Mentorship Summer 2023.",
+    "link": "https://lfx.linuxfoundation.org/tools/mentorship/",
+    "linkdes": "LFX Mentorship.",
+    "showlink": true
+  },
+  {
     "title": "Google Summer of Code 2022",
     "description": "16 students from the club got accepted in Google Summer of Code (GSOC) and a total of 22 students including other open source programmes.",
     "link": "",
