@@ -1,7 +1,7 @@
 <template>
   <div class="hero text-center">
     <div class="card-main-body flex-col flex justify-center items-center relative" :style="{'--bg-image': `url(${image})`}">
-      <h1 class="title animated animatedFadeInUp fadeInUp font-display text-4xl xl:text-6xl px-4 z-10">
+      <h1 class="title animated animatedFadeInUp fadeInUp font-display text-4xl xl:text-6xl px-4 z-10 mt-12">
         {{ title }}
       </h1>
       <h2 class="subtitle w-full md:w-3/4 2xl:w-1/2 px-4 mx-auto font-heading mt-2 text-lg xl:text-2xl z-10">
