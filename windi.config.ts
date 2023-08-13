@@ -19,6 +19,7 @@ export default {
         'blob-color-1': '#005c43',
         'blob-color-2': '#0cbc8b',
         'blob-color-3': '#08fdd8',
+        'blob-color-4': '#08FD7C',
       },
       spacing: {
         half: '50%',
